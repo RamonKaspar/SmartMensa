@@ -3,23 +3,31 @@
 [[_TOC_]]
 
 ## Team Members
-1. Team member 1
-2. Team member 2
-3. Team member 3
-4. ...
-5. ...
+1. Lukas Mast
+2. Ramon Kaspar
+3. Alex Feng
+4. Kiara Chau
 
 ## Project Description 
-Describe here your project in detail and define your goals.
+In the bustling academic environment of ETH and UZH, finding the perfect meal can be a daily challenge. Therefore we want to design SmartMensa, an innovative web app that will make life easier for ETH students, employees and external users.
 
 ### Project goals
-Describe here what are the goals of the project.
+The goal of SmartMensa is to create a user-friendly, accessible web application that simplifies and enriches the eating experience at ETH and UZH by providing real-time information on menus, nutritional content, allergy alerts, and personalized recommendations, all in one integrated platform. 
 
 ### Data Sources
-Add here all used datasources and their origin.
+Mensa Menus from ETH: https://ethz.ch/de/campus/erleben/gastronomie-und-einkaufen/gastronomie/menueplaene.html
+Mensa Menus from UZH: https://www.mensa.uzh.ch/de/menueplaene.html
 
 ### Tasks
-Define all the tasks you want your app to solve.
+Here we present the key features of our app:
+
+- *Comprehensive Menu Display:* The app features a real-time showcase of all available menus across various canteens in both ETH and UZH.
+- *Detailed Nutritional Information:* Each menu item comes with a detailed breakdown of its nutritional content (i.e. ingredients)
+- *Allergy Informations*: The user can select his allergies in the settings and the app automatically filter out/highlights the dishes which the user could not eat.
+- *Filtering*: Filter out list of dishes by location, opening time and price.
+- *Sorting*: Sort by name and location.
+- *Opening Hours*: Display whether a mensa is open (eventually detailed opening times as well).
+- *Sharing*: Feature to copy text directly or copy the link to send it via WhatsApp/…
 
 
 ## Requirements
