@@ -78,13 +78,27 @@ docker run -it --rm -p 5173:5173 my-webapp bash
 
 ## Milestones
 Document here the major milestones of your code and future planned steps.\
-- [ ] Milestone 1
-  - [x] Completed Sub-task: ...
-  - [ ] Completed Sub-task: ...
+- [ ] Milestone 1: Create non-functional frontend
+  - [ ] Sub-task: Create react skeleton (all react components)
+  - [ ] Sub-task: Create all routes using BrowserRouter
+  - [ ] Sub-task: Style the frontend using CSS
+  - [ ] Sub-task: Hardcode all static mensa information (name, open hours etc.)
 
-- [ ] Milestone 2
-  - [ ] Sub-task: ...
-  - [ ] Sub-task: ...
+- [ ] Milestone 2: Make frontend functional
+  - [ ] Sub-task: Create backend
+  - [ ] Sub-task: Implement filter functions
+  - [ ] Sub-task: Implement some settings
+
+- [ ] Milestone 3: Use webscraping to get the latest menus
+  - [ ] Sub-task: Get the menus for ETH mensas
+  - [ ] Sub-task: Get the menus for UZH mensas
+  - [ ] Sub-task: Run scripts weekly in backend
+
+- [ ] Milestone 4: Personalize the web-app
+  - [ ] Sub-task: Add login functionality
+  - [ ] Sub-task: Add favourite menus functionality
+  - [ ] Sub-task: Add favourite mensas functionality
+  - [ ] Sub-task: Add personalized setting (allergens etc.)
 
 Create a list subtask.\
 Open an issue for each subtask. Once you create a subtask, link the corresponding issue.\
