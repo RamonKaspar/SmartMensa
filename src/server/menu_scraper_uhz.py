@@ -196,7 +196,7 @@ def main():
             print(f'{"USER AGENT:":<15} {user_agent}')
             chrome_options.add_argument(f'--user-agent={user_agent}')
 
-            print(f'{ "FACILITY ID:":<15} Processing facility {facility_id}...')
+            print(f'{ "FACILITY ID:":<15} Processing {day} of facility {facility_id}...')
             url = generate_url(facility_id, days.index(day)+1)
             xml_data = getXMLData(url)
             day_time = "Dinner" if (facility_id == 506 or facility_id == 514) else "Lunch"
