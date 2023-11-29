@@ -1,0 +1,784 @@
+{
+  "Monday": {
+    "Lunch": [
+      {
+        "line_name": "Curry | Meat",
+        "meal_name": "Chicken and pork curry",
+        "meal_description": "Chicken coconut | pork mango | basmati rice | vegetables",
+        "allergens": [
+          "gluten wheat",
+          "soya",
+          "milk, lactose",
+          "celery",
+          "mustard",
+          "Sulfites",
+          "lupin"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "porc",
+            "origin": [
+              "Switzerland"
+            ]
+          },
+          {
+            "type": "chicken",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 11.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Curry | Vegi",
+        "meal_name": "Potato & cauliflower curry",
+        "meal_description": "Potato eggplant curry | cauliflower beetroot | basmati rice | vegetables",
+        "allergens": [
+          "gluten wheat",
+          "eggs",
+          "soya",
+          "milk, lactose",
+          "celery",
+          "mustard",
+          "Sulfites",
+          "lupin"
+        ],
+        "meal_class": [
+          "Vegetarian"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 13.5
+        }
+      },
+      {
+        "line_name": "Hit Curry Dish ",
+        "meal_name": "Beef strips curry",
+        "meal_description": "Red curry | basmati rice | vegetables",
+        "allergens": [
+          "gluten wheat",
+          "crustaceans",
+          "eggs",
+          "soya",
+          "milk, lactose",
+          "celery",
+          "mustard",
+          "Sulfites",
+          "lupin"
+        ],
+        "meal_class": [
+          "Vegetarian"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 11.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Green | Wraps",
+        "meal_name": "Wraps",
+        "meal_description": "Various meat & veggie wraps",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.3,
+          "internal": 9.3,
+          "external": 10.9
+        }
+      },
+      {
+        "line_name": "Green | Salad",
+        "meal_name": "Salads",
+        "meal_description": "Various | Take Away",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.5,
+          "internal": 10.5,
+          "external": 11.5
+        }
+      },
+      {
+        "line_name": "Green | Gyros Panini",
+        "meal_name": "Hot Gyros Sandwich",
+        "meal_description": "with meat",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 9.9,
+          "external": 11.5
+        }
+      },
+      {
+        "line_name": "Green | Hot Panini",
+        "meal_name": "Hot Panini",
+        "meal_description": "Meat | Vegi",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.9,
+          "internal": 7.9,
+          "external": 9.5
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Tuesday": {
+    "Lunch": [
+      {
+        "line_name": "Curry | Meat",
+        "meal_name": "Lamb & veal mince curry",
+        "meal_description": "Lamb spinach curry & veal mince | peanut curry | basmati rice | vegetables",
+        "allergens": [
+          "gluten wheat",
+          "peanuts",
+          "soya",
+          "milk, lactose",
+          "nuts",
+          "celery",
+          "mustard",
+          "Sulfites",
+          "lupin"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "veal",
+            "origin": [
+              "Switzerland"
+            ]
+          },
+          {
+            "type": "lamb",
+            "origin": [
+              "Ireland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 11.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Curry | Vegi",
+        "meal_name": "Chickpeas & fried cheese",
+        "meal_description": "Chickpeas Tomatoes Ginger Curry | Basmati Rice | Vegetables",
+        "allergens": [
+          "gluten wheat",
+          "soya",
+          "milk, lactose",
+          "celery",
+          "mustard",
+          "Sulfites",
+          "lupin"
+        ],
+        "meal_class": [
+          "Vegetarian"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 13.5
+        }
+      },
+      {
+        "line_name": "Hit Curry Dish ",
+        "meal_name": "Calamari",
+        "meal_description": "Tandoori rice | calamari | vegetables | coriander | chili",
+        "allergens": [
+          "gluten wheat",
+          "soya",
+          "celery",
+          "mustard",
+          "sesame",
+          "Sulfites",
+          "lupin",
+          "molluscs"
+        ],
+        "meal_class": [
+          "Fish"
+        ],
+        "meat_info": [],
+        "fish_info": [
+          {
+            "desc": "inland fisheries",
+            "origin": [
+              "Estonia"
+            ]
+          }
+        ],
+        "price_info": {
+          "students": 9.9,
+          "internal": 11.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Green | Wraps",
+        "meal_name": "Wraps",
+        "meal_description": "Various meat & veggie wraps",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.3,
+          "internal": 9.3,
+          "external": 10.9
+        }
+      },
+      {
+        "line_name": "Green | Salad",
+        "meal_name": "Salads",
+        "meal_description": "Various | Take Away",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.5,
+          "internal": 10.5,
+          "external": 11.5
+        }
+      },
+      {
+        "line_name": "Green | Gyros Panini",
+        "meal_name": "Hot Gyros Sandwich",
+        "meal_description": "with meat",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 9.9,
+          "external": 11.5
+        }
+      },
+      {
+        "line_name": "Green | Hot Panini",
+        "meal_name": "Hot Panini",
+        "meal_description": "Meat | Vegi",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.9,
+          "internal": 7.9,
+          "external": 9.5
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Wednesday": {
+    "Lunch": [
+      {
+        "line_name": "Curry | Meat",
+        "meal_name": "Beef & chicken curry",
+        "meal_description": "Beef massaman curry / chicken balls curry | basmati rice | vegetables",
+        "allergens": [
+          "gluten wheat",
+          "crustaceans",
+          "eggs",
+          "peanuts",
+          "soya",
+          "milk, lactose",
+          "celery",
+          "mustard",
+          "Sulfites",
+          "lupin"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          },
+          {
+            "type": "chicken",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 11.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Curry | Vegi",
+        "meal_name": "Lentils & tofu curry",
+        "meal_description": "Lentil curry & tofu / spinach curry | basmati rice | vegetables",
+        "allergens": [
+          "gluten wheat",
+          "soya",
+          "milk, lactose",
+          "celery",
+          "mustard",
+          "Sulfites",
+          "lupin"
+        ],
+        "meal_class": [
+          "Vegetarian"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 13.5
+        }
+      },
+      {
+        "line_name": "Hit Curry Dish ",
+        "meal_name": "Pork curry",
+        "meal_description": "Pork curry | fried noodles | vegetables | egg",
+        "allergens": [
+          "gluten wheat",
+          "eggs",
+          "soya",
+          "milk, lactose",
+          "celery",
+          "mustard",
+          "sesame",
+          "Sulfites",
+          "lupin"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "porc",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 11.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Green | Wraps",
+        "meal_name": "Wraps",
+        "meal_description": "Various meat & veggie wraps",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.3,
+          "internal": 9.3,
+          "external": 10.9
+        }
+      },
+      {
+        "line_name": "Green | Salad",
+        "meal_name": "Salads",
+        "meal_description": "Various | Take Away",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.5,
+          "internal": 10.5,
+          "external": 11.5
+        }
+      },
+      {
+        "line_name": "Green | Gyros Panini",
+        "meal_name": "Hot Gyros Sandwich",
+        "meal_description": "with meat",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 9.9,
+          "external": 11.5
+        }
+      },
+      {
+        "line_name": "Green | Hot Panini",
+        "meal_name": "Hot Panini",
+        "meal_description": "Meat | Vegi",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.9,
+          "internal": 7.9,
+          "external": 9.5
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Thursday": {
+    "Lunch": [
+      {
+        "line_name": "Curry | Meat",
+        "meal_name": "Pork & lamb curry",
+        "meal_description": "Pork sesame & lamb curry | basmati rice | vegetables",
+        "allergens": [
+          "gluten wheat",
+          "soya",
+          "milk, lactose",
+          "celery",
+          "mustard",
+          "sesame",
+          "Sulfites",
+          "lupin"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "porc",
+            "origin": [
+              "Switzerland"
+            ]
+          },
+          {
+            "type": "lamb",
+            "origin": [
+              "Ireland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 11.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Curry | Vegi",
+        "meal_name": "Mushroom & sweet potato curry",
+        "meal_description": "Mushroom curry & sweet potato yogurt curry | basmati rice | vegetables",
+        "allergens": [
+          "milk, lactose",
+          "celery",
+          "mustard",
+          "Sulfites",
+          "lupin"
+        ],
+        "meal_class": [
+          "Vegetarian"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 13.5
+        }
+      },
+      {
+        "line_name": "Hit Curry Dish ",
+        "meal_name": "Prawns",
+        "meal_description": "Prawns | fried glass noodles | chili vegetables | Thai basil",
+        "allergens": [
+          "gluten wheat",
+          "crustaceans",
+          "soya",
+          "milk, lactose",
+          "celery",
+          "mustard",
+          "sesame",
+          "Sulfites",
+          "lupin"
+        ],
+        "meal_class": [
+          "Fish"
+        ],
+        "meat_info": [],
+        "fish_info": [
+          {
+            "desc": "inland fisheries",
+            "origin": [
+              "Viet Nam"
+            ]
+          }
+        ],
+        "price_info": {
+          "students": 9.9,
+          "internal": 11.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Green | Wraps",
+        "meal_name": "Wraps",
+        "meal_description": "Various meat & veggie wraps",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.3,
+          "internal": 9.3,
+          "external": 10.9
+        }
+      },
+      {
+        "line_name": "Green | Salad",
+        "meal_name": "Salads",
+        "meal_description": "Various | Take Away",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.5,
+          "internal": 10.5,
+          "external": 11.5
+        }
+      },
+      {
+        "line_name": "Green | Gyros Panini",
+        "meal_name": "Hot Gyros Sandwich",
+        "meal_description": "with meat",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 9.9,
+          "external": 11.5
+        }
+      },
+      {
+        "line_name": "Green | Hot Panini",
+        "meal_name": "Hot Panini",
+        "meal_description": "Meat | Vegi",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.9,
+          "internal": 7.9,
+          "external": 9.5
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Friday": {
+    "Lunch": [
+      {
+        "line_name": "Curry | Meat",
+        "meal_name": "Pollack & chicken curry",
+        "meal_description": "Pollock Lime Curry & Chicken Sweet and Sour | Basmati Rice | Vegetables",
+        "allergens": [
+          "gluten wheat",
+          "fish",
+          "soya",
+          "celery",
+          "mustard",
+          "Sulfites",
+          "lupin"
+        ],
+        "meal_class": [
+          "Fish",
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "chicken",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [
+          {
+            "desc": "inland fisheries",
+            "origin": [
+              "Netherlands"
+            ]
+          }
+        ],
+        "price_info": {
+          "students": 9.9,
+          "internal": 11.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Curry | Vegi",
+        "meal_name": "Brussels sprouts & soy flakes curry",
+        "meal_description": "Brussels sprouts sesame curry & soy flakes coconut curry | basmati rice | vegetables",
+        "allergens": [
+          "gluten wheat",
+          "soya",
+          "milk, lactose",
+          "celery",
+          "mustard",
+          "sesame",
+          "Sulfites",
+          "lupin"
+        ],
+        "meal_class": [
+          "Vegetarian"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 13.5
+        }
+      },
+      {
+        "line_name": "Hit Curry Dish ",
+        "meal_name": "Curry rice noodles",
+        "meal_description": "Curry rice noodles | beef | vegetables | chili | coriander",
+        "allergens": [
+          "gluten wheat",
+          "soya",
+          "milk, lactose",
+          "celery",
+          "mustard",
+          "sesame",
+          "Sulfites",
+          "lupin"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 11.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Green | Wraps",
+        "meal_name": "Wraps",
+        "meal_description": "Various meat & veggie wraps",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.3,
+          "internal": 9.3,
+          "external": 10.9
+        }
+      },
+      {
+        "line_name": "Green | Salad",
+        "meal_name": "Salads",
+        "meal_description": "Various | Take Away",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.5,
+          "internal": 10.5,
+          "external": 11.5
+        }
+      },
+      {
+        "line_name": "Green | Gyros Panini",
+        "meal_name": "Hot Gyros Sandwich",
+        "meal_description": "with meat",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 9.9,
+          "external": 11.5
+        }
+      },
+      {
+        "line_name": "Green | Hot Panini",
+        "meal_name": "Hot Panini",
+        "meal_description": "Meat | Vegi",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.9,
+          "internal": 7.9,
+          "external": 9.5
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Saturday": {
+    "Lunch": [],
+    "Dinner": []
+  },
+  "Sunday": {
+    "Lunch": [],
+    "Dinner": []
+  }
+}
