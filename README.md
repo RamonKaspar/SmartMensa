@@ -79,8 +79,7 @@ docker run -it --rm -p 5173:5173 my-webapp bash
 ## Milestones
 Document here the major milestones of your code and future planned steps.\
 - [ ] Milestone 1: Create non-functional frontend
-  - [ ] Sub-task: Create react skeleton (all react components): Issue: #1
-  - [ ] Sub-task: Create all routes using BrowserRouter
+  - [x] Sub-task: Create react skeleton (all react components) and implement routes for BrowserRouter: #1 !1
   - [ ] Sub-task: Style the frontend using CSS
   - [ ] Sub-task: Hardcode all static mensa information (name, open hours etc.)
 
