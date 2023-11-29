@@ -1,0 +1,235 @@
+{
+    "Monday": {
+        "Lunch": [
+            {
+                "line_name": "farm",
+                "price_info": {
+                    "students": 6.1,
+                    "intern": 9.0,
+                    "extern": 13.0
+                },
+                "meal_description": "Farfalle Gratin alla Cinque Pi \nReibkäse\nMenusalat",
+                "nutrition": {
+                    "Balance": "unbalanced",
+                    "Environmental impact": "low"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "soya",
+                    "milk",
+                    "celery",
+                    "sesame"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "intern": 10.5,
+                    "extern": 15.0
+                },
+                "meal_description": "Sternpastetli mit Brätchügeli, Erbsen und Rüebli und Reis \nPilaw-Reis \nErbsen\nFleisch; Kalb; Schweiz",
+                "nutrition": {
+                    "Balance": "unbalanced",
+                    "Environmental impact": "high"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "eggs",
+                    "soya",
+                    "milk",
+                    "celery",
+                    "sesame"
+                ]
+            }
+        ],
+        "Dinner": []
+    },
+    "Tuesday": {
+        "Lunch": [
+            {
+                "line_name": "farm",
+                "price_info": {
+                    "students": 6.1,
+                    "intern": 9.0,
+                    "extern": 13.0
+                },
+                "meal_description": "Cannelloni mit Ricotta und Spinat, Port. a 450g \nmit Tomatensauce und Käse überbacken\nMenusalat",
+                "nutrition": {
+                    "Balance": "unbalanced",
+                    "Environmental impact": "high"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "eggs",
+                    "soya",
+                    "milk",
+                    "celery"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "intern": 10.5,
+                    "extern": 15.0
+                },
+                "meal_description": "Truten Voressen\nRahmsauce / Hellbraune Rahmsauce \nBulgur\nStangensellerie Gemüse\nFenchel\nFleisch, Truten, Schweiz",
+                "nutrition": {
+                    "Balance": "unbalanced",
+                    "Environmental impact": "medium"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "fish",
+                    "soya",
+                    "milk",
+                    "celery",
+                    "mustard",
+                    "sesame"
+                ]
+            }
+        ],
+        "Dinner": []
+    },
+    "Wednesday": {
+        "Lunch": [
+            {
+                "line_name": "farm",
+                "price_info": {
+                    "students": 6.1,
+                    "intern": 9.0,
+                    "extern": 13.0
+                },
+                "meal_description": "Rotes Thai Curry Tofu, Gemüse\nBasmati Reis mit oder ohne Fairtrade Reis\nApfelmus hausgemacht",
+                "nutrition": {
+                    "Balance": "balanced",
+                    "Environmental impact": "low"
+                },
+                "allergens": [
+                    "Fish",
+                    "soya",
+                    "celery",
+                    "sesame"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "intern": 10.5,
+                    "extern": 15.0
+                },
+                "meal_description": "Peri-Peri Pouletsteak mit Haut \nPeproni Coulis von roten Paprika / Rotes Peperoni Coulis\nBratkartoffeln\nMenusalat\nFleisch, Poulet, Schweiz",
+                "nutrition": {
+                    "Balance": "acceptable",
+                    "Environmental impact": "medium"
+                },
+                "allergens": [
+                    "Milk",
+                    "mustard"
+                ]
+            }
+        ],
+        "Dinner": []
+    },
+    "Thursday": {
+        "Lunch": [
+            {
+                "line_name": "farm",
+                "price_info": {
+                    "students": 6.1,
+                    "intern": 9.0,
+                    "extern": 13.0
+                },
+                "meal_description": "«Stifado» Quornstreifen, Schwarze Bohnen und Orange\nQuornstreifen, Linsen & Thymian \nGrünkern\ngrillierte Peperoni nature",
+                "nutrition": {
+                    "Balance": "balanced",
+                    "Environmental impact": "low"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "eggs",
+                    "soya",
+                    "celery",
+                    "sulphur dioxide and sulphite"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "intern": 10.5,
+                    "extern": 15.0
+                },
+                "meal_description": "Meatballs / Fleischbällchen\nGelbe Curry Sauce\nBasmati Reis mit oder ohne Fairtrade Reis\nApfelmus hausgemacht\nFleisch, Rind, Schweiz",
+                "nutrition": {
+                    "Balance": "acceptable",
+                    "Environmental impact": "medium"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "fish",
+                    "soya",
+                    "celery",
+                    "sesame"
+                ]
+            }
+        ],
+        "Dinner": []
+    },
+    "Friday": {
+        "Lunch": [
+            {
+                "line_name": "farm",
+                "price_info": {
+                    "students": 6.1,
+                    "intern": 9.0,
+                    "extern": 13.0
+                },
+                "meal_description": "Frühlingsrollen mit Gemüse\nSweet Chilisauce\nSüsskartoffelragout mit Wirsing",
+                "nutrition": {
+                    "Balance": "unbalanced",
+                    "Environmental impact": "low"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "soya",
+                    "nuts",
+                    "celery",
+                    "sesame"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "intern": 10.5,
+                    "extern": 15.0
+                },
+                "meal_description": "Ghackets Rind / Rindshackfleisch\nReibkäse\nHörnli Napoli Pistor\nMenusalat\nFleisch, Rind, Schweiz",
+                "nutrition": {
+                    "Balance": "unbalanced",
+                    "Environmental impact": "high"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "eggs",
+                    "soya",
+                    "milk",
+                    "celery",
+                    "mustard"
+                ]
+            }
+        ],
+        "Dinner": []
+    },
+    "Saturday": {
+        "Lunch": [],
+        "Dinner": []
+    },
+    "Sunday": {
+        "Lunch": [],
+        "Dinner": []
+    }
+}

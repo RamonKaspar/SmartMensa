@@ -1,0 +1,353 @@
+{
+    "Monday": {
+        "Lunch": [
+            {
+                "line_name": "garden",
+                "price_info": {
+                    "students": 6.1,
+                    "intern": 9.0,
+                    "extern": 13.0
+                },
+                "meal_description": "Kichererbseneintopf Oriental \nBulgur Pilavi \nMenüsalat oder Apfelmus",
+                "nutrition": {
+                    "Calories": "1'713 kJ (410 kcal)",
+                    "Protein": "14.9 g",
+                    "Total Fat": "8.4 g",
+                    "Total Carbohydrates": "67.9 g",
+                    "Salt": "0.0 g"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "celery",
+                    "sulphur dioxide and sulphite"
+                ]
+            },
+            {
+                "line_name": "pure asia",
+                "price_info": {
+                    "students": 9.0,
+                    "intern": 11.0,
+                    "extern": 15.0
+                },
+                "meal_description": "Pad Kapao Rind\nSpiegelei\nTrockenreis / Reis\nMenüsalat oder Apfelmus\nFleisch; Rind, CH",
+                "nutrition": {
+                    "Calories": "1'798 kJ (430 kcal)",
+                    "Protein": "12.7 g",
+                    "Total Fat": "12.6 g",
+                    "Total Carbohydrates": "65.0 g",
+                    "Salt": "0.4 g"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "eggs",
+                    "soya"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "intern": 10.5,
+                    "extern": 15.0
+                },
+                "meal_description": "Schweinsgeschnetzeltes `Thurgauer Art`\nBrätler gebacken / Ofen Frühkartoffeln \nGlasierte Karotten\nFleisch; Schwein, CH",
+                "nutrition": {
+                    "Calories": "2'928 kJ (700 kcal)",
+                    "Protein": "34.8 g",
+                    "Total Fat": "36.5 g",
+                    "Total Carbohydrates": "64.2 g",
+                    "Salt": "5.8 g"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "milk",
+                    "celery",
+                    "sulphur dioxide and sulphite"
+                ]
+            }
+        ],
+        "Dinner": []
+    },
+    "Tuesday": {
+        "Lunch": [
+            {
+                "line_name": "garden",
+                "price_info": {
+                    "students": 6.1,
+                    "intern": 9.0,
+                    "extern": 13.0
+                },
+                "meal_description": "Gebackene Susskartoffeln\nErbsenpesto\nGerste Salat",
+                "nutrition": {
+                    "Calories": "3'843 kJ (919 kcal)",
+                    "Protein": "21.6 g",
+                    "Total Fat": "51.6 g",
+                    "Total Carbohydrates": "91.4 g",
+                    "Salt": "5.8 g"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "nuts",
+                    "sulphur dioxide and sulphite"
+                ]
+            },
+            {
+                "line_name": "pure asia",
+                "price_info": {
+                    "students": 9.0,
+                    "intern": 11.0,
+                    "extern": 15.0
+                },
+                "meal_description": "Pad Kapao Rind\nSpiegelei\nAllergen Erdnuss \nTrockenreis / Reis\nMenüsalat oder Apfelmus\nFleisch; Rind, CH",
+                "nutrition": {
+                    "Calories": "1'798 kJ (430 kcal)",
+                    "Protein": "12.7 g",
+                    "Total Fat": "12.6 g",
+                    "Total Carbohydrates": "65.0 g",
+                    "Salt": "0.4 g"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "eggs",
+                    "peanuts",
+                    "soya"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "intern": 10.5,
+                    "extern": 15.0
+                },
+                "meal_description": "Mildes Massamam Thai Curry Poulet\nMie Nudeln \nMenüsalat oder Apfelmus\nFleisch; Poulet, CH",
+                "nutrition": {
+                    "Calories": "3'021 kJ (722 kcal)",
+                    "Protein": "28.2 g",
+                    "Total Fat": "14.6 g",
+                    "Total Carbohydrates": "110.7 g",
+                    "Salt": "4.6 g"
+                },
+                "allergens": [
+                    "Cereals containing gluten"
+                ]
+            }
+        ],
+        "Dinner": []
+    },
+    "Wednesday": {
+        "Lunch": [
+            {
+                "line_name": "garden",
+                "price_info": {
+                    "students": 6.1,
+                    "intern": 9.0,
+                    "extern": 13.0
+                },
+                "meal_description": "Vegi Nuggets \nApfel-Zwiebel-Chutney\nLinsen Curry Salat \nMenüsalat oder Apfelmus",
+                "nutrition": {
+                    "Calories": "3'240 kJ (774 kcal)",
+                    "Protein": "59.0 g",
+                    "Total Fat": "13.6 g",
+                    "Total Carbohydrates": "101.0 g",
+                    "Salt": "3.2 g"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "eggs",
+                    "soya",
+                    "celery"
+                ]
+            },
+            {
+                "line_name": "pure asia",
+                "price_info": {
+                    "students": 9.0,
+                    "intern": 11.0,
+                    "extern": 15.0
+                },
+                "meal_description": "Pad Kapao Rind\nSpiegelei\nAllergen Erdnuss \nTrockenreis / Reis\nMenüsalat oder Apfelmus\nFleisch; Rind, CH",
+                "nutrition": {
+                    "Calories": "1'798 kJ (430 kcal)",
+                    "Protein": "12.7 g",
+                    "Total Fat": "12.6 g",
+                    "Total Carbohydrates": "65.0 g",
+                    "Salt": "0.4 g"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "eggs",
+                    "peanuts",
+                    "soya"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "intern": 10.5,
+                    "extern": 15.0
+                },
+                "meal_description": "Chili Con Carne \nPop Corn \nPilaw Reis\nMenüsalat oder Apfelmus\nFleisch; Rind,CH",
+                "nutrition": {
+                    "Calories": "2'996 kJ (716 kcal)",
+                    "Protein": "28.8 g",
+                    "Total Fat": "16.9 g",
+                    "Total Carbohydrates": "106.1 g",
+                    "Salt": "1.3 g"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "celery"
+                ]
+            }
+        ],
+        "Dinner": []
+    },
+    "Thursday": {
+        "Lunch": [
+            {
+                "line_name": "garden",
+                "price_info": {
+                    "students": 6.1,
+                    "intern": 9.0,
+                    "extern": 13.0
+                },
+                "meal_description": "Allergen Schalenfrüchte\nGnocchi Auflauf vegan \nMenüsalat oder Apfelmus",
+                "nutrition": {
+                    "Calories": "1'834 kJ (438 kcal)",
+                    "Protein": "11.3 g",
+                    "Total Fat": "4.0 g",
+                    "Total Carbohydrates": "86.3 g",
+                    "Salt": "4.5 g"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "soya",
+                    "nuts",
+                    "celery"
+                ]
+            },
+            {
+                "line_name": "pure asia",
+                "price_info": {
+                    "students": 9.0,
+                    "intern": 11.0,
+                    "extern": 15.0
+                },
+                "meal_description": "Pad Kapao Rind\nSpiegelei\nAllergen Erdnuss \nTrockenreis / Reis\nMenüsalat oder Apfelmus\nFleisch; Rind, CH",
+                "nutrition": {
+                    "Calories": "1'798 kJ (430 kcal)",
+                    "Protein": "12.7 g",
+                    "Total Fat": "12.6 g",
+                    "Total Carbohydrates": "65.0 g",
+                    "Salt": "0.4 g"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "eggs",
+                    "peanuts",
+                    "soya"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "intern": 10.5,
+                    "extern": 15.0
+                },
+                "meal_description": "Pouletspiess\nPortweinsauce / Jus mit Portwein\nKartoffelgratin/Mensa\nBroccoli gedämpft / Gedämpfter Broccoli\nFleisch; Poulet, CH",
+                "nutrition": {
+                    "Calories": "2'427 kJ (580 kcal)",
+                    "Protein": "46.3 g",
+                    "Total Fat": "18.2 g",
+                    "Total Carbohydrates": "50.7 g",
+                    "Salt": "7.5 g"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "milk",
+                    "celery",
+                    "sulphur dioxide and sulphite"
+                ]
+            }
+        ],
+        "Dinner": []
+    },
+    "Friday": {
+        "Lunch": [
+            {
+                "line_name": "garden",
+                "price_info": {
+                    "students": 6.1,
+                    "intern": 9.0,
+                    "extern": 13.0
+                },
+                "meal_description": "Bananen-Pastinaken Curry\nKnusprige Chia-Nudeln\nBasmati mit Sesam\nMenüsalat oder Apfelmus",
+                "nutrition": {
+                    "Calories": "3'294 kJ (787 kcal)",
+                    "Protein": "14.7 g",
+                    "Total Fat": "18.9 g",
+                    "Total Carbohydrates": "133.4 g",
+                    "Salt": "8.5 g"
+                },
+                "allergens": [
+                    "Sesame"
+                ]
+            },
+            {
+                "line_name": "pure asia",
+                "price_info": {
+                    "students": 9.0,
+                    "intern": 11.0,
+                    "extern": 15.0
+                },
+                "meal_description": "Pad Kapao Rind\nAllergen Erdnuss \nSpiegelei\nTrockenreis / Reis\nMenüsalat oder Apfelmus\nFleisch; Rind, CH",
+                "nutrition": {
+                    "Calories": "1'798 kJ (430 kcal)",
+                    "Protein": "12.7 g",
+                    "Total Fat": "12.6 g",
+                    "Total Carbohydrates": "65.0 g",
+                    "Salt": "0.4 g"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "eggs",
+                    "peanuts",
+                    "soya"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "intern": 10.5,
+                    "extern": 15.0
+                },
+                "meal_description": "Pulled Pork\nCiabatta Bun \nketchup\nPommes frites\nMenüsalat oder Apfelmus\nFleisch; Schwein, CH",
+                "nutrition": {
+                    "Calories": "4'089 kJ (977 kcal)",
+                    "Protein": "49.6 g",
+                    "Total Fat": "32.3 g",
+                    "Total Carbohydrates": "115.2 g",
+                    "Salt": "5.4 g"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "milk",
+                    "sulphur dioxide and sulphite"
+                ]
+            }
+        ],
+        "Dinner": []
+    },
+    "Saturday": {
+        "Lunch": [],
+        "Dinner": []
+    },
+    "Sunday": {
+        "Lunch": [],
+        "Dinner": []
+    }
+}
