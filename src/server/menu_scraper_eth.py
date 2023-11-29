@@ -259,6 +259,8 @@ def main():
         url = generate_url(facility_id, valid_after, valid_before)
         parseToJson(url)
         sleep(1)
+        
+    print(f'{"STATUS:":<15} All menus successfully stored!')
 
 if __name__ == "__main__":
     main()
