@@ -129,15 +129,6 @@ def parseXMLToJSON(xml_data, day_time):
                 allergens = item["allergens"][0]
                 item["allergens"] = process_allergens(allergens)
 
-    # Update meal_descriptions for each menu item
-    for menu in menus:
-        for item in menu[day_time]:
-            # Split meal_description by '\n' and take everything after the first '\n' as new meal_description
-            meal_description_parts = item['meal_description'].split('\n', 1)
-            if len(meal_description_parts) > 1:
-                item['meal_description'] = meal_description_parts[1].strip()
-                item['meal_name'] = meal_description_parts[0].strip()
-
     # Function to clean up the meal descriptions
     def clean_meal_descriptions(data):
         for item in data[0][day_time]:
