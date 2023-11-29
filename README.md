@@ -79,26 +79,26 @@ docker run -it --rm -p 5173:5173 my-webapp bash
 ## Milestones
 Document here the major milestones of your code and future planned steps.\
 - [ ] Milestone 1: Create non-functional frontend
-  - [x] Sub-task: Create react skeleton (all react components) and implement routes for BrowserRouter: #1 !1
-  - [ ] Sub-task: Implement the created react components
-  - [ ] Sub-task: Style the frontend using CSS
-  - [ ] Sub-task: Hardcode all static mensa information (name, open hours etc.)
+  - [x] Create react skeleton (all react components) and implement routes for BrowserRouter: #1 !1
+  - [ ] Implement the created react components
+  - [ ] Style the frontend using CSS
+  - [ ] Hardcode all static mensa information (name, open hours etc.)
 
 - [ ] Milestone 2: Make frontend functional
-  - [ ] Sub-task: Create backend
-  - [ ] Sub-task: Implement filter functions
-  - [ ] Sub-task: Implement some settings
+  - [ ] Create backend
+  - [ ] Implement filter functions
+  - [ ] Implement some settings
 
 - [ ] Milestone 3: Use webscraping to get the latest menus
-  - [ ] Sub-task: Get the menus for ETH mensas
-  - [ ] Sub-task: Get the menus for UZH mensas
-  - [ ] Sub-task: Run scripts weekly in backend
+  - [x] Get the menus for ETH mensas: #2 !2
+  - [ ] Get the menus for UZH mensas: #1 !1
+  - [ ] Run scripts weekly in backend
 
 - [ ] Milestone 4: Personalize the web-app
-  - [ ] Sub-task: Add login functionality
-  - [ ] Sub-task: Add favourite menus functionality
-  - [ ] Sub-task: Add favourite mensas functionality
-  - [ ] Sub-task: Add personalized setting (allergens etc.)
+  - [ ] Add login functionality
+  - [ ] Add favourite menus functionality
+  - [ ] Add favourite mensas functionality
+  - [ ] Add personalized setting (allergens etc.)
 
 Create a list subtask.\
 Open an issue for each subtask. Once you create a subtask, link the corresponding issue.\
