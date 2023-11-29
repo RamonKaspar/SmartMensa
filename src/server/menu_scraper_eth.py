@@ -248,14 +248,17 @@ def main():
                     23  # Oerlikon
                     ]
     
+    valid_after = '2023-11-27'
+    valid_before = '2023-12-04'
+    
     for facility_id in facility_ids:
         user_agent = ua.random
         print(f'{"USER AGENT:":<15} {user_agent}')
         chrome_options.add_argument(f'--user-agent={user_agent}')
         print(f'{ "FACILITY ID:":<15} Processing facility {facility_id}...')
-        url = generate_url(facility_id, '2023-11-20', '2023-11-27')
+        url = generate_url(facility_id, valid_after, valid_before)
         parseToJson(url)
-        sleep(2)
+        sleep(1)
 
 if __name__ == "__main__":
     main()
