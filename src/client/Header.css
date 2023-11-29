@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  flex-wrap: wrap;
+  height: 40px;
+  padding: var(--space);
+  background-color: var(--background-color-dark);
+  color: var(--text-color-light);
+
+  & #filter-button,
+  #settings-button {
+    color: var(--background-color-light);
+    cursor: pointer;
+  }
+
+  & #app-name {
+    text-align: center;
+    font-size: 2em;
+  }
+}
