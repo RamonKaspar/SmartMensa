@@ -1,0 +1,575 @@
+{
+  "Monday": {
+    "Lunch": [
+      {
+        "line_name": " Rice Up! Bowl",
+        "meal_name": "Rice Up! Bowl",
+        "meal_description": "Jasmine Rice | Chicken Balls | Broccoli | Green Curry | Asian Cabbage Salad | Herb Salad | Puffed Rice",
+        "allergens": [
+          "crustaceans",
+          "fish",
+          "soya",
+          "nuts",
+          "celery"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "chicken",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 12.9,
+          "external": 13.9
+        }
+      },
+      {
+        "line_name": " Tofu Cashew Bowl",
+        "meal_name": " Tofu Cashew Bowl",
+        "meal_description": "Red Rice | Marinated Tofu | Seasonal Vegetables | Satay Sauce | Asian Pickles Slaw | Herb Salad | Puffed Rice\n",
+        "allergens": [
+          "peanuts",
+          "soya"
+        ],
+        "meal_class": [
+          "Vegan"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 13.9,
+          "external": 14.9
+        }
+      },
+      {
+        "line_name": " Beef Bowl",
+        "meal_name": "Beef Bowl",
+        "meal_description": "Chilled rice noodle | Beef mince | Green beans | Red curry | Asian slaw | Herb salad | Chili",
+        "allergens": [
+          "crustaceans",
+          "fish",
+          "soya",
+          "nuts",
+          "celery",
+          "molluscs"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 10.9,
+          "internal": 14.9,
+          "external": 15.9
+        }
+      },
+      {
+        "line_name": " Chicken Satay Bowl",
+        "meal_name": "Chicken Satay Bowl",
+        "meal_description": "Leaf Salad | Grilled Chicken Satay | Corn | Tamarind Vinaigrette | Asian Pickles Slaw | Herb Salad | Peanuts",
+        "allergens": [
+          "crustaceans",
+          "fish",
+          "peanuts",
+          "soya",
+          "nuts",
+          "molluscs"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "chicken",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 11.9,
+          "internal": 15.9,
+          "external": 16.9
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Tuesday": {
+    "Lunch": [
+      {
+        "line_name": " Rice Up! Bowl",
+        "meal_name": "Rice Up! Bowl",
+        "meal_description": "Jasmine Rice | Chicken Balls | Broccoli | Green Curry | Asian Cabbage Salad | Herb Salad | Puffed Rice",
+        "allergens": [
+          "crustaceans",
+          "fish",
+          "soya",
+          "nuts",
+          "celery"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "chicken",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 12.9,
+          "external": 13.9
+        }
+      },
+      {
+        "line_name": " Tofu Cashew Bowl",
+        "meal_name": " Tofu Cashew Bowl",
+        "meal_description": "Red Rice | Marinated Tofu | Seasonal Vegetables | Satay Sauce | Asian Pickles Slaw | Herb Salad | Puffed Rice\n",
+        "allergens": [
+          "peanuts",
+          "soya"
+        ],
+        "meal_class": [
+          "Vegan"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 13.9,
+          "external": 14.9
+        }
+      },
+      {
+        "line_name": " Beef Bowl",
+        "meal_name": "Beef Bowl",
+        "meal_description": "Chilled rice noodle | Beef mince | Green beans | Red curry | Asian slaw | Herb salad | Chili",
+        "allergens": [
+          "crustaceans",
+          "fish",
+          "soya",
+          "nuts",
+          "celery",
+          "molluscs"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 10.9,
+          "internal": 14.9,
+          "external": 15.9
+        }
+      },
+      {
+        "line_name": " Chicken Satay Bowl",
+        "meal_name": "Chicken Satay Bowl",
+        "meal_description": "Leaf Salad | Grilled Chicken Satay | Corn | Tamarind Vinaigrette | Asian Pickles Slaw | Herb Salad | Peanuts",
+        "allergens": [
+          "crustaceans",
+          "fish",
+          "peanuts",
+          "soya",
+          "nuts",
+          "molluscs"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "chicken",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 11.9,
+          "internal": 15.9,
+          "external": 16.9
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Wednesday": {
+    "Lunch": [
+      {
+        "line_name": " Rice Up! Bowl",
+        "meal_name": "Rice Up! Bowl",
+        "meal_description": "Jasmine Rice | Chicken Balls | Broccoli | Green Curry | Asian Cabbage Salad | Herb Salad | Puffed Rice",
+        "allergens": [
+          "crustaceans",
+          "fish",
+          "soya",
+          "nuts",
+          "celery"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "chicken",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 12.9,
+          "external": 13.9
+        }
+      },
+      {
+        "line_name": " Tofu Cashew Bowl",
+        "meal_name": " Tofu Cashew Bowl",
+        "meal_description": "Red Rice | Marinated Tofu | Seasonal Vegetables | Satay Sauce | Asian Pickles Slaw | Herb Salad | Puffed Rice\n",
+        "allergens": [
+          "peanuts",
+          "soya"
+        ],
+        "meal_class": [
+          "Vegan"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 13.9,
+          "external": 14.9
+        }
+      },
+      {
+        "line_name": " Beef Bowl",
+        "meal_name": "Beef Bowl",
+        "meal_description": "Chilled rice noodle | Beef mince | Green beans | Red curry | Asian slaw | Herb salad | Chili",
+        "allergens": [
+          "crustaceans",
+          "fish",
+          "soya",
+          "nuts",
+          "celery",
+          "molluscs"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 10.9,
+          "internal": 14.9,
+          "external": 15.9
+        }
+      },
+      {
+        "line_name": " Chicken Satay Bowl",
+        "meal_name": "Chicken Satay Bowl",
+        "meal_description": "Leaf Salad | Grilled Chicken Satay | Corn | Tamarind Vinaigrette | Asian Pickles Slaw | Herb Salad | Peanuts",
+        "allergens": [
+          "crustaceans",
+          "fish",
+          "peanuts",
+          "soya",
+          "nuts",
+          "molluscs"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "chicken",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 11.9,
+          "internal": 15.9,
+          "external": 16.9
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Thursday": {
+    "Lunch": [
+      {
+        "line_name": " Rice Up! Bowl",
+        "meal_name": "Rice Up! Bowl",
+        "meal_description": "Jasmine Rice | Chicken Balls | Broccoli | Green Curry | Asian Cabbage Salad | Herb Salad | Puffed Rice",
+        "allergens": [
+          "crustaceans",
+          "fish",
+          "soya",
+          "nuts",
+          "celery"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "chicken",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 12.9,
+          "external": 13.9
+        }
+      },
+      {
+        "line_name": " Tofu Cashew Bowl",
+        "meal_name": " Tofu Cashew Bowl",
+        "meal_description": "Red Rice | Marinated Tofu | Seasonal Vegetables | Satay Sauce | Asian Pickles Slaw | Herb Salad | Puffed Rice\n",
+        "allergens": [
+          "peanuts",
+          "soya"
+        ],
+        "meal_class": [
+          "Vegan"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 13.9,
+          "external": 14.9
+        }
+      },
+      {
+        "line_name": " Beef Bowl",
+        "meal_name": "Beef Bowl",
+        "meal_description": "Chilled rice noodle | Beef mince | Green beans | Red curry | Asian slaw | Herb salad | Chili",
+        "allergens": [
+          "crustaceans",
+          "fish",
+          "soya",
+          "nuts",
+          "celery",
+          "molluscs"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 10.9,
+          "internal": 14.9,
+          "external": 15.9
+        }
+      },
+      {
+        "line_name": " Chicken Satay Bowl",
+        "meal_name": "Chicken Satay Bowl",
+        "meal_description": "Leaf Salad | Grilled Chicken Satay | Corn | Tamarind Vinaigrette | Asian Pickles Slaw | Herb Salad | Peanuts",
+        "allergens": [
+          "crustaceans",
+          "fish",
+          "peanuts",
+          "soya",
+          "nuts",
+          "molluscs"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "chicken",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 11.9,
+          "internal": 15.9,
+          "external": 16.9
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Friday": {
+    "Lunch": [
+      {
+        "line_name": " Rice Up! Bowl",
+        "meal_name": "Rice Up! Bowl",
+        "meal_description": "Jasmine Rice | Chicken Balls | Broccoli | Green Curry | Asian Cabbage Salad | Herb Salad | Puffed Rice",
+        "allergens": [
+          "crustaceans",
+          "fish",
+          "soya",
+          "nuts",
+          "celery"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "chicken",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 12.9,
+          "external": 13.9
+        }
+      },
+      {
+        "line_name": " Tofu Cashew Bowl",
+        "meal_name": " Tofu Cashew Bowl",
+        "meal_description": "Red Rice | Marinated Tofu | Seasonal Vegetables | Satay Sauce | Asian Pickles Slaw | Herb Salad | Puffed Rice\n",
+        "allergens": [
+          "peanuts",
+          "soya"
+        ],
+        "meal_class": [
+          "Vegan"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 13.9,
+          "external": 14.9
+        }
+      },
+      {
+        "line_name": " Beef Bowl",
+        "meal_name": "Beef Bowl",
+        "meal_description": "Chilled rice noodle | Beef mince | Green beans | Red curry | Asian slaw | Herb salad | Chili",
+        "allergens": [
+          "crustaceans",
+          "fish",
+          "soya",
+          "nuts",
+          "celery",
+          "molluscs"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 10.9,
+          "internal": 14.9,
+          "external": 15.9
+        }
+      },
+      {
+        "line_name": " Chicken Satay Bowl",
+        "meal_name": "Chicken Satay Bowl",
+        "meal_description": "Leaf Salad | Grilled Chicken Satay | Corn | Tamarind Vinaigrette | Asian Pickles Slaw | Herb Salad | Peanuts",
+        "allergens": [
+          "crustaceans",
+          "fish",
+          "peanuts",
+          "soya",
+          "nuts",
+          "molluscs"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "chicken",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 11.9,
+          "internal": 15.9,
+          "external": 16.9
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Saturday": {
+    "Lunch": [],
+    "Dinner": []
+  },
+  "Sunday": {
+    "Lunch": [],
+    "Dinner": []
+  }
+}
