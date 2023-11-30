@@ -1,1 +1,45 @@
 /* Here goes the CSS for the LoginBody component */
+.login-body-container {
+    height: 100%;
+    width: 100%;
+    background-color: #E5F9EE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+
+    & input {
+        border-radius: 20px;
+        margin-top: 20px;
+        height: 20px;
+        text-align: center;
+        border: black;
+    }
+
+    & button {
+        border-radius: 20px;
+        margin-top: 20px;
+        height: 20px;
+        text-align: center;
+        border: black;
+        width: 100px;
+        background-color: #656363;
+        color: white;
+        font-size: 0.8em;
+    }
+}
+
+.register {
+    width: 160px;
+    margin-top: 20px;
+    font-size: 0.8em;
+    text-align: center;
+    font-style: italic;
+}
+
+.logo {
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+}
+
