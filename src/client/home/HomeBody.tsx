@@ -1,8 +1,8 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./HomeBody.css";
 import { BsHeartFill } from "react-icons/bs";
 import { MdArrowForwardIos } from "react-icons/md";
-import { useState } from 'react';
+import { useState } from "react";
 
 const mensas = [
   {
@@ -75,15 +75,17 @@ interface FavoritesState {
 }
 
 function HomeBody() {
-
   // Saves the state of the heart (mensa selected as favorite) for each mensa
   const [favorites, setFavorites] = useState<FavoritesState>({});
   // Handles if one clicks on a heart (for now, only the color changes)
-  const handleFavoriteClick = (locationName: string, event: React.MouseEvent) => {
+  const handleFavoriteClick = (
+    locationName: string,
+    event: React.MouseEvent
+  ) => {
     event.stopPropagation(); // Prevents the button's click event
-    setFavorites(prevFavorites => ({
+    setFavorites((prevFavorites) => ({
       ...prevFavorites,
-      [locationName]: !prevFavorites[locationName] // Toggle the favorite state for the clicked location
+      [locationName]: !prevFavorites[locationName], // Toggle the favorite state for the clicked location
     }));
   };
 
@@ -101,50 +103,69 @@ function HomeBody() {
         <div>NOT YET IMPLEMENTED!</div>
       </div>
       <h2>Mensas</h2>
-      {mensas.map((mensa) => (
-        <div className="mensa-buttons-container">
-          {mensa.locations.map((location) => (
-              <button className="mensa-component">
+      <div className="mensa-buttons-container">
+        {mensas.map((mensa) => (
+          <div className="mensas" key={mensas.indexOf(mensa)}>
+            {mensa.locations.map((location) => (
+              <button className="mensa-component" key={location.name}>
                 <div className="first-row">
-                  <div className="mensa-title">{changeName(location.name)}</div> 
+                  <div className="mensa-title">{changeName(location.name)}</div>
                   <div className="mark-as-favorite">
-                    <BsHeartFill   size={20} onClick={(e) => handleFavoriteClick(location.name, e)} style={{ fill: favorites[location.name] ? 'red' : 'gray' }}/>
+                    <BsHeartFill
+                      size={20}
+                      onClick={(e) => handleFavoriteClick(location.name, e)}
+                      style={{
+                        fill: favorites[location.name] ? "red" : "gray",
+                      }}
+                    />
                   </div>
                 </div>
                 <div className="second-row">
                   <div className="location-tag">{mensa.name}</div>
                   <div className="open-closed-tag">Open</div>
-                  <div className="goTo" onClick={() => handleClickAndNavigate(location.name)}>
-                    <MdArrowForwardIos size={20}/>
+                  <div
+                    className="goTo"
+                    onClick={() => handleClickAndNavigate(location.name)}
+                  >
+                    <MdArrowForwardIos size={20} />
                   </div>
                 </div>
-              </button> 
-          ))}
-        </div>
-      ))}
+              </button>
+            ))}
+          </div>
+        ))}
+      </div>
     </main>
   );
 }
 
-
 function changeName(oldMensaName: string): string {
   // Here we can handle excpetional cases
-  switch(oldMensaName) {
-    case "uzh-untere-mensa-lunch": return "UZH Untere Mensa (Lunch)";
-    case "uzh-untere-mensa-dinner": return "UZH Untere Mensa (Dinner)";
-    case "uzh-obere-mensa": return "UZH Obere Mensa";
-    case "cafeteria-irchel-seerose-lunch": return "Cafeteria Irchel Seerose (Lunch)";
-    case "cafeteria-irchel-seerose-dinner": return "Cafeteria Irchel Seerose (Dinner)";
-    case "mensa-polyterrasse-lunch": return "Mensa Polyterrasse (Lunch)";
-    case "mensa-polyterrasse-dinner": return "Mensa Polyterrasse (Dinner)"
-    case "alumni-quattro-lounge-lunch": return "Alumni Quattro Lounge (Lunch)";
-    case "alumni-quattro-lounge-dinner": return "Alumni Quattro Lounge (Dinner)";
+  switch (oldMensaName) {
+    case "uzh-untere-mensa-lunch":
+      return "UZH Untere Mensa (Lunch)";
+    case "uzh-untere-mensa-dinner":
+      return "UZH Untere Mensa (Dinner)";
+    case "uzh-obere-mensa":
+      return "UZH Obere Mensa";
+    case "cafeteria-irchel-seerose-lunch":
+      return "Cafeteria Irchel Seerose (Lunch)";
+    case "cafeteria-irchel-seerose-dinner":
+      return "Cafeteria Irchel Seerose (Dinner)";
+    case "mensa-polyterrasse-lunch":
+      return "Mensa Polyterrasse (Lunch)";
+    case "mensa-polyterrasse-dinner":
+      return "Mensa Polyterrasse (Dinner)";
+    case "alumni-quattro-lounge-lunch":
+      return "Alumni Quattro Lounge (Lunch)";
+    case "alumni-quattro-lounge-dinner":
+      return "Alumni Quattro Lounge (Dinner)";
   }
   // Generic case (replace "-" by " " and make every word start with uppercase)
   return oldMensaName
-    .split('-') // Split the string into an array at each hyphen
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize the first letter of each word
-    .join(' '); // Join the words back into a string, separated by spaces
+    .split("-") // Split the string into an array at each hyphen
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize the first letter of each word
+    .join(" "); // Join the words back into a string, separated by spaces
 }
 
 export default HomeBody;
