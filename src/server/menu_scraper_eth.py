@@ -219,7 +219,7 @@ def parseToJson(url):
                             menu_details_per_day[day_of_week_menu]["Dinner"].append(meal_info)
 
     # Define the subfolder name
-    subfolder = 'menus-as-json-eth'
+    subfolder = 'menus-as-json'
 
     # Check if the subfolder exists, if not, create it
     if not os.path.exists(subfolder):

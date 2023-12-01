@@ -205,7 +205,7 @@ def main():
             sleep(1)
         
         json_data_string = convertToJsonString(facility_menus)
-        directory = 'menus-as-json-uzh'
+        directory = 'menus-as-json'
         saveJSON(json_data_string, directory, facility_id)
         sleep(1)
     
