@@ -4,13 +4,13 @@ header {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--border-color);
-  flex-wrap: wrap;
-  height: 40px;
+  min-height: 40px;
   padding: var(--space);
   background-color: var(--background-color-dark);
   color: var(--text-color-light);
 
   & #filter-button,
+  #back-button,
   #settings-button {
     color: var(--background-color-light);
     cursor: pointer;
