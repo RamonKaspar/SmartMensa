@@ -1,22 +1,38 @@
 import "./Header.css";
-import { FaFilter } from "react-icons/fa6";
+import { ImFilter } from "react-icons/im";
 import { FaGear } from "react-icons/fa6";
+import { useLocation, useNavigate } from "react-router-dom";
+import { MdArrowBackIos } from "react-icons/md";
 
 function Header() {
+  const navigate = useNavigate();
   const handleFilterClick = () => {
     console.log("This click would trigger the filter menu!");
+  };
+
+  const handleBackClick = () => {
+    navigate("/home");
   };
 
   const handleSettingsClick = () => {
     console.log("This click would trigger the settings menu!");
   };
 
+  const location = useLocation();
+  const isHomeRoute = location.pathname === "/home";
+
   return (
     <>
       <header>
-        <div id="filter-button">
-          <FaFilter size={30} onClick={() => handleFilterClick()} />
-        </div>
+        {isHomeRoute ? (
+          <div id="filter-button">
+            <ImFilter size={30} onClick={() => handleFilterClick()} />
+          </div>
+        ) : (
+          <div id="back-button">
+            <MdArrowBackIos size={30} onClick={() => handleBackClick()} />
+          </div>
+        )}
         <div id="app-name">
           <span>SmartMensa</span>
         </div>
