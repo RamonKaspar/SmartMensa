@@ -1,0 +1,776 @@
+{
+  "Monday": {
+    "Lunch": [
+      {
+        "line_name": "Budet Pot",
+        "meal_name": "G'Hackets and Hörnli",
+        "meal_description": "Beef or soy mince | Hörnli | Parsley | Applesauce | Extra hard cheese",
+        "allergens": [
+          "gluten wheat",
+          "eggs",
+          "soya",
+          "celery"
+        ],
+        "meal_class": [
+          "Meat",
+          "Pasta"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 10.5,
+          "external": 12.5
+        }
+      },
+      {
+        "line_name": "Classic Pot",
+        "meal_name": "Raclette Potatoes",
+        "meal_description": "Cornichons | baby corn | silver onions | paprika powder | garden cress",
+        "allergens": [
+          "milk, lactose",
+          "mustard",
+          "Sulfites"
+        ],
+        "meal_class": [
+          "Vegetarian"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 11.9
+        }
+      },
+      {
+        "line_name": "World Pot",
+        "meal_name": "ALSATIAN POTATOES",
+        "meal_description": "Creme fraiche | fried onions | chives",
+        "allergens": [
+          "milk, lactose"
+        ],
+        "meal_class": [
+          "Vegetarian"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      }
+    ],
+    "Dinner": [
+      {
+        "line_name": "Classic Pot Dinner",
+        "meal_name": "Raclette Potatoes",
+        "meal_description": "Cornichons | baby corn | silver onions | paprika powder | garden cress",
+        "allergens": [
+          "milk, lactose",
+          "mustard",
+          "Sulfites"
+        ],
+        "meal_class": [
+          "Vegetarian"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 11.9
+        }
+      },
+      {
+        "line_name": "World Pot Dinner",
+        "meal_name": "ALSATIAN POTATOES",
+        "meal_description": "Creme fraiche | fried onions | chives",
+        "allergens": [
+          "milk, lactose"
+        ],
+        "meal_class": [
+          "Vegetarian"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      },
+      {
+        "line_name": "Budget Pot Dinner",
+        "meal_name": "G'Hackets and Hörnli",
+        "meal_description": "Beef or soy mince | Hörnli | Parsley | Applesauce | Extra hard cheese",
+        "allergens": [
+          "gluten wheat",
+          "eggs",
+          "soya",
+          "celery"
+        ],
+        "meal_class": [
+          "Meat",
+          "Pasta"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 10.5,
+          "external": 12.5
+        }
+      }
+    ]
+  },
+  "Tuesday": {
+    "Lunch": [
+      {
+        "line_name": "Budet Pot",
+        "meal_name": "G'Hackets and Hörnli",
+        "meal_description": "Beef or soy mince | Hörnli | Parsley | Applesauce | Extra hard cheese",
+        "allergens": [
+          "gluten wheat",
+          "eggs",
+          "soya",
+          "celery"
+        ],
+        "meal_class": [
+          "Meat",
+          "Pasta"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 10.5,
+          "external": 12.5
+        }
+      },
+      {
+        "line_name": "Classic Pot",
+        "meal_name": "Raclette Potatoes",
+        "meal_description": "Cornichons | baby corn | silver onions | paprika powder | garden cress",
+        "allergens": [
+          "milk, lactose",
+          "mustard",
+          "Sulfites"
+        ],
+        "meal_class": [
+          "Vegetarian"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 11.9
+        }
+      },
+      {
+        "line_name": "World Pot",
+        "meal_name": "ALSATIAN POTATOES",
+        "meal_description": "Creme fraiche | fried onions | chives",
+        "allergens": [
+          "milk, lactose"
+        ],
+        "meal_class": [
+          "Vegetarian"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      }
+    ],
+    "Dinner": [
+      {
+        "line_name": "Classic Pot Dinner",
+        "meal_name": "Raclette Potatoes",
+        "meal_description": "Cornichons | baby corn | silver onions | paprika powder | garden cress",
+        "allergens": [
+          "milk, lactose",
+          "mustard",
+          "Sulfites"
+        ],
+        "meal_class": [
+          "Vegetarian"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 11.9
+        }
+      },
+      {
+        "line_name": "World Pot Dinner",
+        "meal_name": "ALSATIAN POTATOES",
+        "meal_description": "Creme fraiche | fried onions | chives",
+        "allergens": [
+          "milk, lactose"
+        ],
+        "meal_class": [
+          "Vegetarian"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      },
+      {
+        "line_name": "Budget Pot Dinner",
+        "meal_name": "G'Hackets and Hörnli",
+        "meal_description": "Beef or soy mince | Hörnli | Parsley | Applesauce | Extra hard cheese",
+        "allergens": [
+          "gluten wheat",
+          "eggs",
+          "soya",
+          "celery"
+        ],
+        "meal_class": [
+          "Meat",
+          "Pasta"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 10.5,
+          "external": 12.5
+        }
+      }
+    ]
+  },
+  "Wednesday": {
+    "Lunch": [
+      {
+        "line_name": "Budet Pot",
+        "meal_name": "G'Hackets and Hörnli",
+        "meal_description": "Beef or soy mince | Hörnli | Parsley | Applesauce | Extra hard cheese",
+        "allergens": [
+          "gluten wheat",
+          "eggs",
+          "soya",
+          "celery"
+        ],
+        "meal_class": [
+          "Meat",
+          "Pasta"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 10.5,
+          "external": 12.5
+        }
+      },
+      {
+        "line_name": "Classic Pot",
+        "meal_name": "Raclette Potatoes",
+        "meal_description": "Cornichons | baby corn | silver onions | paprika powder | garden cress",
+        "allergens": [
+          "milk, lactose",
+          "mustard",
+          "Sulfites"
+        ],
+        "meal_class": [
+          "Vegetarian"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 11.9
+        }
+      },
+      {
+        "line_name": "World Pot",
+        "meal_name": "HOISIN POTATOES",
+        "meal_description": "Minced beef | hosin sauce | carrots | cucumber | bean sprouts | wasabi mayonnaise | coriander | sesame seeds",
+        "allergens": [
+          "gluten wheat",
+          "soya",
+          "milk, lactose",
+          "sesame",
+          "molluscs"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      }
+    ],
+    "Dinner": [
+      {
+        "line_name": "Classic Pot Dinner",
+        "meal_name": "Raclette Potatoes",
+        "meal_description": "Cornichons | baby corn | silver onions | paprika powder | garden cress",
+        "allergens": [
+          "milk, lactose",
+          "mustard",
+          "Sulfites"
+        ],
+        "meal_class": [
+          "Vegetarian"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 11.9
+        }
+      },
+      {
+        "line_name": "World Pot Dinner",
+        "meal_name": "HOISIN POTATOES",
+        "meal_description": "Minced beef | hosin sauce | carrots | cucumber | bean sprouts | wasabi mayonnaise | coriander | sesame seeds",
+        "allergens": [
+          "gluten wheat",
+          "soya",
+          "milk, lactose",
+          "sesame",
+          "molluscs"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      },
+      {
+        "line_name": "Budget Pot Dinner",
+        "meal_name": "G'Hackets and Hörnli",
+        "meal_description": "Beef or soy mince | Hörnli | Parsley | Applesauce | Extra hard cheese",
+        "allergens": [
+          "gluten wheat",
+          "eggs",
+          "soya",
+          "celery"
+        ],
+        "meal_class": [
+          "Meat",
+          "Pasta"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 10.5,
+          "external": 12.5
+        }
+      }
+    ]
+  },
+  "Thursday": {
+    "Lunch": [
+      {
+        "line_name": "Budet Pot",
+        "meal_name": "G'Hackets and Hörnli",
+        "meal_description": "Beef or soy mince | Hörnli | Parsley | Applesauce | Extra hard cheese",
+        "allergens": [
+          "gluten wheat",
+          "eggs",
+          "soya",
+          "celery"
+        ],
+        "meal_class": [
+          "Meat",
+          "Pasta"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 10.5,
+          "external": 12.5
+        }
+      },
+      {
+        "line_name": "Classic Pot",
+        "meal_name": "Raclette Potatoes",
+        "meal_description": "Cornichons | baby corn | silver onions | paprika powder | garden cress",
+        "allergens": [
+          "milk, lactose",
+          "mustard",
+          "Sulfites"
+        ],
+        "meal_class": [
+          "Vegetarian"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 11.9
+        }
+      },
+      {
+        "line_name": "World Pot",
+        "meal_name": "HOISIN POTATOES",
+        "meal_description": "Minced beef | hosin sauce | carrots | cucumber | bean sprouts | wasabi mayonnaise | coriander | sesame seeds",
+        "allergens": [
+          "gluten wheat",
+          "soya",
+          "milk, lactose",
+          "sesame",
+          "molluscs"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      }
+    ],
+    "Dinner": [
+      {
+        "line_name": "Classic Pot Dinner",
+        "meal_name": "Raclette Potatoes",
+        "meal_description": "Cornichons | baby corn | silver onions | paprika powder | garden cress",
+        "allergens": [
+          "milk, lactose",
+          "mustard",
+          "Sulfites"
+        ],
+        "meal_class": [
+          "Vegetarian"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 11.9
+        }
+      },
+      {
+        "line_name": "World Pot Dinner",
+        "meal_name": "HOISIN POTATOES",
+        "meal_description": "Minced beef | hosin sauce | carrots | cucumber | bean sprouts | wasabi mayonnaise | coriander | sesame seeds",
+        "allergens": [
+          "gluten wheat",
+          "soya",
+          "milk, lactose",
+          "sesame",
+          "molluscs"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      },
+      {
+        "line_name": "Budget Pot Dinner",
+        "meal_name": "G'Hackets and Hörnli",
+        "meal_description": "Beef or soy mince | Hörnli | Parsley | Applesauce | Extra hard cheese",
+        "allergens": [
+          "gluten wheat",
+          "eggs",
+          "soya",
+          "celery"
+        ],
+        "meal_class": [
+          "Meat",
+          "Pasta"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 10.5,
+          "external": 12.5
+        }
+      }
+    ]
+  },
+  "Friday": {
+    "Lunch": [
+      {
+        "line_name": "Budet Pot",
+        "meal_name": "G'Hackets and Hörnli",
+        "meal_description": "Beef or soy mince | Hörnli | Parsley | Applesauce | Extra hard cheese",
+        "allergens": [
+          "gluten wheat",
+          "eggs",
+          "soya",
+          "celery"
+        ],
+        "meal_class": [
+          "Meat",
+          "Pasta"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 10.5,
+          "external": 12.5
+        }
+      },
+      {
+        "line_name": "Classic Pot",
+        "meal_name": "Raclette Potatoes",
+        "meal_description": "Cornichons | baby corn | silver onions | paprika powder | garden cress",
+        "allergens": [
+          "milk, lactose",
+          "mustard",
+          "Sulfites"
+        ],
+        "meal_class": [
+          "Vegetarian"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 11.9
+        }
+      },
+      {
+        "line_name": "World Pot",
+        "meal_name": "HOISIN POTATOES",
+        "meal_description": "Minced beef | hosin sauce | carrots | cucumber | bean sprouts | wasabi mayonnaise | coriander | sesame seeds",
+        "allergens": [
+          "gluten wheat",
+          "soya",
+          "milk, lactose",
+          "sesame",
+          "molluscs"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      }
+    ],
+    "Dinner": [
+      {
+        "line_name": "Classic Pot Dinner",
+        "meal_name": "Raclette Potatoes",
+        "meal_description": "Cornichons | baby corn | silver onions | paprika powder | garden cress",
+        "allergens": [
+          "milk, lactose",
+          "mustard",
+          "Sulfites"
+        ],
+        "meal_class": [
+          "Vegetarian"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 11.9
+        }
+      },
+      {
+        "line_name": "World Pot Dinner",
+        "meal_name": "HOISIN POTATOES",
+        "meal_description": "Minced beef | hosin sauce | carrots | cucumber | bean sprouts | wasabi mayonnaise | coriander | sesame seeds",
+        "allergens": [
+          "gluten wheat",
+          "soya",
+          "milk, lactose",
+          "sesame",
+          "molluscs"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      },
+      {
+        "line_name": "Budget Pot Dinner",
+        "meal_name": "G'Hackets and Hörnli",
+        "meal_description": "Beef or soy mince | Hörnli | Parsley | Applesauce | Extra hard cheese",
+        "allergens": [
+          "gluten wheat",
+          "eggs",
+          "soya",
+          "celery"
+        ],
+        "meal_class": [
+          "Meat",
+          "Pasta"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 10.5,
+          "external": 12.5
+        }
+      }
+    ]
+  },
+  "Saturday": {
+    "Lunch": [],
+    "Dinner": []
+  },
+  "Sunday": {
+    "Lunch": [],
+    "Dinner": []
+  }
+}

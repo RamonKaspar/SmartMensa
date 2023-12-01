@@ -1,0 +1,467 @@
+{
+  "Monday": {
+    "Lunch": [
+      {
+        "line_name": "Wok Street",
+        "meal_name": "KONG PO",
+        "meal_description": "Pork or black tiger prawns\nKong Po Sauce\nPepperoni | Cucumber | Palatinate | Peanuts | Jasmine rice",
+        "allergens": [],
+        "meal_class": [
+          "Fish",
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "porc",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [
+          {
+            "desc": "farming",
+            "origin": [
+              "Viet Nam"
+            ]
+          }
+        ],
+        "price_info": {
+          "students": 13.2,
+          "internal": 14.2,
+          "external": 16.5
+        }
+      },
+      {
+        "line_name": "Wok Green",
+        "meal_name": "KONG PO JE",
+        "meal_description": "Oyster mushrooms |\nChinese Kong Po sauce\nPepperoni | Cucumber | Palatinate | Peanuts |\nJasmine rice",
+        "allergens": [],
+        "meal_class": [
+          "Vegan"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 12.9,
+          "internal": 13.9,
+          "external": 15.9
+        }
+      },
+      {
+        "line_name": "Delight",
+        "meal_name": "PATTAYA",
+        "meal_description": "Giant prawns in panko breading and\nCalamari rings\nBasil - sweet chili sauce\nfried noodles",
+        "allergens": [],
+        "meal_class": [
+          "Fish"
+        ],
+        "meat_info": [],
+        "fish_info": [
+          {
+            "desc": "farming",
+            "origin": [
+              "Viet Nam"
+            ]
+          }
+        ],
+        "price_info": {
+          "students": 9.2,
+          "internal": 12.2,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "Garden",
+        "meal_name": "VEGI SPECIAL",
+        "meal_description": "Red Thai curry\nPleurotus | Beans | Carrots |\nBroccoli |\nPlantbased Chunks |\nPerfumed Rice | Samosa",
+        "allergens": [],
+        "meal_class": [
+          "Vegan"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 11.9,
+          "external": 13.9
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Tuesday": {
+    "Lunch": [
+      {
+        "line_name": "Wok Street",
+        "meal_name": "SI PRAYA",
+        "meal_description": "Duck |\nPanang curry sauce (spicy) |\nCourgette | Carrots | Palatinate |\nJasmine rice",
+        "allergens": [],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "duck",
+            "origin": [
+              "Hungary"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 13.2,
+          "internal": 14.2,
+          "external": 16.5
+        }
+      },
+      {
+        "line_name": "Wok Green",
+        "meal_name": "WANG NAH",
+        "meal_description": "Homemade Saitan |\nPanang curry sauce\nZucchini | Carrots | Palatinate |\nJasmine rice",
+        "allergens": [],
+        "meal_class": [
+          "Vegan"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 12.9,
+          "internal": 13.9,
+          "external": 15.9
+        }
+      },
+      {
+        "line_name": "Delight",
+        "meal_name": "SEUN JEUN",
+        "meal_description": "Turkey ragout - Chinese style\nHoi Sin | Ginger |\nGarlic | Lemon rice |\nleek | chili pepper | sambal",
+        "allergens": [],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "turkey",
+            "origin": [
+              "Hungary"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.2,
+          "internal": 12.2,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "Garden",
+        "meal_name": "JAB SCHAE",
+        "meal_description": "Fried glass noodles - Korea |\nSoy strips | Carrots | Shitake |\nCabbage | chili pepper | spinach |\nGyoza",
+        "allergens": [],
+        "meal_class": [
+          "Vegan"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 11.9,
+          "external": 13.9
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Wednesday": {
+    "Lunch": [
+      {
+        "line_name": "Wok Street",
+        "meal_name": "CHICKEN WOK",
+        "meal_description": "Chicken |\nRed curry sauce |\nWok vegetables|\njasmine rice\n",
+        "allergens": [],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "chicken",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 13.2,
+          "internal": 14.2,
+          "external": 16.5
+        }
+      },
+      {
+        "line_name": "Wok Green",
+        "meal_name": "CRISPY TOFU",
+        "meal_description": "Organic tofu\nCabbage and carrot salad (spicy)\nPepperoni cubes |\njasmine rice",
+        "allergens": [
+          "gluten wheat",
+          "soya"
+        ],
+        "meal_class": [
+          "Vegetarian"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 12.9,
+          "internal": 13.9,
+          "external": 15.9
+        }
+      },
+      {
+        "line_name": "Delight",
+        "meal_name": "OISHI",
+        "meal_description": "Swiss beef stew\nJapanese curry sauce\nAsian noodles |\nZucchini | Mushroom | Sambal",
+        "allergens": [],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.2,
+          "internal": 12.2,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "Garden",
+        "meal_name": "PATUXAI",
+        "meal_description": "Vegan spring rolls |\nsweet and sour sauce\nfried rice\nzucchini | mushroom | sambal",
+        "allergens": [
+          "gluten wheat"
+        ],
+        "meal_class": [
+          "Vegan"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 11.9,
+          "external": 13.9
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Thursday": {
+    "Lunch": [
+      {
+        "line_name": "Wok Street",
+        "meal_name": "CRISPY BEEF",
+        "meal_description": "Beef strips from Black Angus beef |\nKabi-carrot salad (spicy) |\njasmine rice",
+        "allergens": [
+          "gluten wheat"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "beef",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 13.2,
+          "internal": 14.2,
+          "external": 16.5
+        }
+      },
+      {
+        "line_name": "Wok Green",
+        "meal_name": "CRISPY TOFU",
+        "meal_description": "Organic tofu\nCabbage and carrot salad (spicy)\nPepperoni cubes |\njasmine rice",
+        "allergens": [
+          "gluten wheat",
+          "soya"
+        ],
+        "meal_class": [
+          "Vegetarian"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 12.9,
+          "internal": 13.9,
+          "external": 15.9
+        }
+      },
+      {
+        "line_name": "Delight",
+        "meal_name": "PHAD THAI GAI",
+        "meal_description": "Fried rice noodles\nChicken\nTamarind sauce\nThai chives | celery | Palatinate zucchini | egg | peanuts",
+        "allergens": [
+          "peanuts",
+          "soya"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "chicken",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.2,
+          "internal": 12.2,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "Garden",
+        "meal_name": "KELARA",
+        "meal_description": "Vegan Indian vegetable curry |\nCarrots | Peas | Potatoes | Spinach |\nTomatoes |\nbasmati rice | papadam",
+        "allergens": [],
+        "meal_class": [
+          "Vegan"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 11.9,
+          "external": 13.9
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Friday": {
+    "Lunch": [
+      {
+        "line_name": "Wok Street",
+        "meal_name": "KATSU",
+        "meal_description": "Chicken |\nKatsu sauce |\nRadish | Pepperoni | Palatinate | Edamame |\nJasmine rice",
+        "allergens": [
+          "gluten wheat",
+          "soya",
+          "sesame"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "chicken",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 13.2,
+          "internal": 14.2,
+          "external": 16.5
+        }
+      },
+      {
+        "line_name": "Wok Green",
+        "meal_name": "CHIBA",
+        "meal_description": "planted. (vegan pea product) |\nTon Katzsu sauce |\nRadish | Pepperoni | Palatinate | Edamame |\nJasmine rice",
+        "allergens": [
+          "gluten wheat",
+          "soya",
+          "sesame"
+        ],
+        "meal_class": [
+          "Vegan"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 12.9,
+          "internal": 13.9,
+          "external": 15.9
+        }
+      },
+      {
+        "line_name": "Delight",
+        "meal_name": "BULGOGI",
+        "meal_description": "Swiss pork schnitzel - Korean\nKorean style\nGochujang | Ginger |\nSesame oil |\nWheat noodles |\nMixed vegetables",
+        "allergens": [
+          "gluten wheat",
+          "eggs",
+          "soya",
+          "celery",
+          "sesame"
+        ],
+        "meal_class": [
+          "Meat"
+        ],
+        "meat_info": [
+          {
+            "type": "porc",
+            "origin": [
+              "Switzerland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.2,
+          "internal": 12.2,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "Garden",
+        "meal_name": "DELHI",
+        "meal_description": "Onion and ginger pakora\nMint pomegranate rita |\nBombay potatoes | leaf salad",
+        "allergens": [
+          "gluten wheat",
+          "eggs",
+          "soya",
+          "milk, lactose",
+          "mustard",
+          "Sulfites"
+        ],
+        "meal_class": [
+          "Vegetarian"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 11.9,
+          "external": 13.9
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Saturday": {
+    "Lunch": [],
+    "Dinner": []
+  },
+  "Sunday": {
+    "Lunch": [],
+    "Dinner": []
+  }
+}

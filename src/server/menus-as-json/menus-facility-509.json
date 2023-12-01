@@ -1,0 +1,207 @@
+{
+    "Monday": {
+        "Lunch": [
+            {
+                "line_name": "Traditional",
+                "price_info": {
+                    "students": 6.9,
+                    "intern": 9.0,
+                    "extern": 13.5
+                },
+                "meal_description": "Green Thai Curry\nwith lentils, broccoli, pepperoni & zucchini\nJasmine rice & Thai basil",
+                "nutrition": {
+                    "Balance": "acceptable",
+                    "Environmental impact": "low"
+                },
+                "allergens": [
+                    "Soya",
+                    "sulphur dioxide and sulphite"
+                ]
+            },
+            {
+                "line_name": "Global",
+                "price_info": {
+                    "students": 6.9,
+                    "intern": 9.0,
+                    "extern": 13.5
+                },
+                "meal_description": "Mushroom strudel\nwith saffron sauce\nLeaf salad and house dressing",
+                "nutrition": {
+                    "Balance": "acceptable",
+                    "Environmental impact": "low"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "sulphur dioxide and sulphite"
+                ]
+            }
+        ],
+        "Dinner": []
+    },
+    "Tuesday": {
+        "Lunch": [
+            {
+                "line_name": "Traditional",
+                "price_info": {
+                    "students": 6.9,
+                    "intern": 9.0,
+                    "extern": 13.5
+                },
+                "meal_description": "Polenta pizza\nwith smoked tofu, pepperoni, corn & zucchini\nFresh spinach and leaf lettuce",
+                "nutrition": {
+                    "Balance": "unbalanced",
+                    "Environmental impact": "medium"
+                },
+                "allergens": [
+                    "Soya",
+                    "sesame",
+                    "sulphur dioxide and sulphite"
+                ]
+            },
+            {
+                "line_name": "Global",
+                "price_info": {
+                    "students": 6.9,
+                    "intern": 9.0,
+                    "extern": 13.5
+                },
+                "meal_description": "Soy slices with mustard cream sauce\nmashed potatoes\nPeas, carrots & parsley\nAllergen Senf",
+                "nutrition": {
+                    "Balance": "acceptable",
+                    "Environmental impact": "low"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "soya",
+                    "mustard",
+                    "sulphur dioxide and sulphite"
+                ]
+            }
+        ],
+        "Dinner": []
+    },
+    "Wednesday": {
+        "Lunch": [
+            {
+                "line_name": "Traditional",
+                "price_info": {
+                    "students": 6.9,
+                    "intern": 9.0,
+                    "extern": 13.5
+                },
+                "meal_description": "Tagliatelle with pumpkin cream sauce\nBrussels sprouts & chickpeas baked in the oven\nRoasted walnuts & chives\nAllergen Soja",
+                "nutrition": {
+                    "Balance": "acceptable",
+                    "Environmental impact": "low"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "soya",
+                    "nuts"
+                ]
+            },
+            {
+                "line_name": "Global",
+                "price_info": {
+                    "students": 6.9,
+                    "intern": 9.0,
+                    "extern": 13.5
+                },
+                "meal_description": "Autumn risotto\nwith caramelized kumquats & pears\nCicorino rosso & parsley",
+                "nutrition": {
+                    "Balance": "unbalanced",
+                    "Environmental impact": "low"
+                },
+                "allergens": [
+                    "Sulphur dioxide and sulphite"
+                ]
+            }
+        ],
+        "Dinner": []
+    },
+    "Thursday": {
+        "Lunch": [
+            {
+                "line_name": "Traditional",
+                "price_info": {
+                    "students": 6.9,
+                    "intern": 9.0,
+                    "extern": 13.5
+                },
+                "meal_description": "Tofu scrambled eggs\non fried rice with vegetables\nSweet Chili Sauce",
+                "nutrition": {
+                    "Balance": "acceptable",
+                    "Environmental impact": "low"
+                },
+                "allergens": [
+                    "Soya"
+                ]
+            },
+            {
+                "line_name": "Global",
+                "price_info": {
+                    "students": 6.9,
+                    "intern": 9.0,
+                    "extern": 13.5
+                },
+                "meal_description": "Keftas with garlic-harissa dip\nBulgur with Raz el hanout\nOven vegetables with chickpeas",
+                "nutrition": {
+                    "Balance": "acceptable",
+                    "Environmental impact": "low"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "soya",
+                    "sulphur dioxide and sulphite"
+                ]
+            }
+        ],
+        "Dinner": []
+    },
+    "Friday": {
+        "Lunch": [
+            {
+                "line_name": "Traditional",
+                "price_info": {
+                    "students": 6.9,
+                    "intern": 9.0,
+                    "extern": 13.5
+                },
+                "meal_description": "Cevapcici, made from soy with Ajvar sauce\nWild rice mix\nOven vegetables with parsley",
+                "nutrition": {
+                    "Balance": "acceptable",
+                    "Environmental impact": "low"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "soya"
+                ]
+            },
+            {
+                "line_name": "Global",
+                "price_info": {
+                    "students": 6.9,
+                    "intern": 9.0,
+                    "extern": 13.5
+                },
+                "meal_description": "Pumpkin Fritatta\nwith herb dip\nLeaf salad & house dressing",
+                "nutrition": {
+                    "Balance": "acceptable",
+                    "Environmental impact": "low"
+                },
+                "allergens": [
+                    "Soya"
+                ]
+            }
+        ],
+        "Dinner": []
+    },
+    "Saturday": {
+        "Lunch": [],
+        "Dinner": []
+    },
+    "Sunday": {
+        "Lunch": [],
+        "Dinner": []
+    }
+}

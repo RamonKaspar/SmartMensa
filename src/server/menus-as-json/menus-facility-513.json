@@ -1,0 +1,117 @@
+{
+    "Monday": {
+        "Lunch": [
+            {
+                "line_name": "Tagessuppe",
+                "price_info": {
+                    "students": 1.7,
+                    "intern": 3.0,
+                    "extern": ""
+                },
+                "meal_description": "Basler Mehlsuppe",
+                "nutrition": {
+                    "Balance": "no information"
+                },
+                "allergens": [
+                    "Cereals containing gluten"
+                ]
+            }
+        ],
+        "Dinner": []
+    },
+    "Tuesday": {
+        "Lunch": [
+            {
+                "line_name": "Tagessuppe",
+                "price_info": {
+                    "students": 1.7,
+                    "intern": 3.0,
+                    "extern": ""
+                },
+                "meal_description": "Broccolicremesuppe",
+                "nutrition": {
+                    "Balance": "no information"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "milk",
+                    "nuts",
+                    "celery"
+                ]
+            }
+        ],
+        "Dinner": []
+    },
+    "Wednesday": {
+        "Lunch": [
+            {
+                "line_name": "Tagessuppe",
+                "price_info": {
+                    "students": 1.7,
+                    "intern": 3.0,
+                    "extern": ""
+                },
+                "meal_description": "Karotten-Ingwersuppe",
+                "nutrition": {
+                    "Balance": "no information"
+                },
+                "allergens": [
+                    "Milk"
+                ]
+            }
+        ],
+        "Dinner": []
+    },
+    "Thursday": {
+        "Lunch": [
+            {
+                "line_name": "Tagessuppe",
+                "price_info": {
+                    "students": 1.7,
+                    "intern": 3.0,
+                    "extern": ""
+                },
+                "meal_description": "Linsensuppe",
+                "nutrition": {
+                    "Balance": "no information"
+                },
+                "allergens": [
+                    "Cereals containing gluten",
+                    "soya",
+                    "celery",
+                    "mustard",
+                    "sulphur dioxide and sulphite"
+                ]
+            }
+        ],
+        "Dinner": []
+    },
+    "Friday": {
+        "Lunch": [
+            {
+                "line_name": "Tagessuppe",
+                "price_info": {
+                    "students": 1.7,
+                    "intern": 3.0,
+                    "extern": ""
+                },
+                "meal_description": "Pastinakensuppe",
+                "nutrition": {
+                    "Balance": "no information"
+                },
+                "allergens": [
+                    "Sulphur dioxide and sulphite"
+                ]
+            }
+        ],
+        "Dinner": []
+    },
+    "Saturday": {
+        "Lunch": [],
+        "Dinner": []
+    },
+    "Sunday": {
+        "Lunch": [],
+        "Dinner": []
+    }
+}
