@@ -85,7 +85,7 @@ Document here the major milestones of your code and future planned steps.\
   - [ ] Hardcode all static mensa information (name, open hours etc.) in footer
 
 - [ ] Milestone 2: Make frontend functional (dynamic)
-  - [x] Implement backend functionality to get the menus #6 !6
+  - [x] Implement backend functionality to get the menus #6 !5
   - [ ] Implement filter functions
   - [ ] Implement some settings
 
