@@ -82,10 +82,10 @@ Document here the major milestones of your code and future planned steps.\
   - [x] Create react skeleton (all react components) and implement routes for BrowserRouter: #1 !1
   - [x] Implement and style the login- and homepage #4 !4
   - [ ] Implement and style the mensa page
-  - [ ] Hardcode all static mensa information (name, open hours etc.)
+  - [ ] Hardcode all static mensa information (name, open hours etc.) in footer
 
 - [ ] Milestone 2: Make frontend functional (dynamic)
-  - [ ] Implement backend functionality to get the menus
+  - [x] Implement backend functionality to get the menus #6 !6
   - [ ] Implement filter functions
   - [ ] Implement some settings
 
