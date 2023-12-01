@@ -83,8 +83,8 @@ def parseXMLToJSON(xml_data, day_time):
                         prices = [price.strip() for price in prices]
                         price_info = {
                             'students': float(prices[0].replace('CHF', '').replace('|', '').strip()) if len(prices) >= 1 else "",
-                            'intern': float(prices[1].strip()) if len(prices) >= 2 else "",
-                            'extern': float(prices[2].strip()) if len(prices) >= 3 else ""
+                            'internal': float(prices[1].strip()) if len(prices) >= 2 else "",
+                            'external': float(prices[2].strip()) if len(prices) >= 3 else ""
                         }
                         current_item = {
                             'line_name': name_text.split('|')[0].strip(),

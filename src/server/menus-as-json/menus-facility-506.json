@@ -6,8 +6,8 @@
                 "line_name": "garden",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Vegan Paniertes Gemüseschnitzel \nTomatenragout\nQuinoa\nGrüne Bohnen",
                 "nutrition": {
@@ -25,8 +25,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Carbonara Sauce \nSpaghetti \ngeriebener Käse / Reibkäse\nMenüsalat oder Apfelmus\nFleisch; Schwein, CH",
                 "nutrition": {
@@ -50,8 +50,8 @@
                 "line_name": "garden",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Vegane Wurst\nZwiebelsauce \nKartoffelrösti\nMenüsalat oder Apfelmus",
                 "nutrition": {
@@ -72,8 +72,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Kalbs Brätchügeli \nPastetli Vegan \nPilzrahmsauce mit frischen Kräutern\nWildreis\nBroccoli gedämpft / Gedämpfter Broccoli\nFleisch; Kalb, CH",
                 "nutrition": {
@@ -98,8 +98,8 @@
                 "line_name": "garden",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Jerusalem Teller Vegan\nSoja Geschnetzeltes mit Peperoni und Zwiebeln\nHummus\nPita Brot \nMenüsalat oder Apfelmus",
                 "nutrition": {
@@ -119,8 +119,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Poulet Hackbraten\nKräuterjus\nBratkartoffeln\nApfel-Fenchelgemüse\nFleisch; Poulet, CH",
                 "nutrition": {
@@ -146,8 +146,8 @@
                 "line_name": "garden",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Auberginen Gulasch vegan\nTrockenreis, vegan\nMenüsalat oder Apfelmus",
                 "nutrition": {
@@ -167,8 +167,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Schweinsschnitzel `Pizzaiolo`\nHörnli Pasta\ngebratene Zucchetti\nFleisch; Schwein, CH",
                 "nutrition": {
@@ -192,8 +192,8 @@
                 "line_name": "garden",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Gersotto vegan \nrucola \nMenüsalat oder Apfelmus",
                 "nutrition": {
@@ -213,8 +213,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Poulet-Jambalaya mit Cajun, Ananas und Pistatien\nMenüsalat oder Apfelmus\nFleisch; Poulet, CH",
                 "nutrition": {

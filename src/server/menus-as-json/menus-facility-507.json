@@ -5,8 +5,8 @@
                 "line_name": "farm",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Gemüsestrudel\nTrockenreis / Reis\nQuark dip\nMenüsalat oder Apfelmus",
                 "nutrition": {
@@ -26,8 +26,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Schweinsgeschnetzeltes `Thurgauer Art`\nBrätler gebacken / Ofen Frühkartoffeln \nGlasierte Karotten\nFleisch; Schwein, CH",
                 "nutrition": {
@@ -48,8 +48,8 @@
                 "line_name": "voll anders",
                 "price_info": {
                     "students": 8.0,
-                    "intern": 9.0,
-                    "extern": 10.0
+                    "internal": 9.0,
+                    "external": 10.0
                 },
                 "meal_description": "Tomaten-Ravioli\ngeriebener Käse / Reibkäse\nMenüsalat oder Apfelmus",
                 "nutrition": {
@@ -74,8 +74,8 @@
                 "line_name": "farm",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Quorn Stroganoff\nKartoffelstock (Instant)\nBlumenkohl mit Brösmeli",
                 "nutrition": {
@@ -97,8 +97,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Mildes Massamam Thai Curry Poulet\nMie Nudeln \nMenüsalat oder Apfelmus\nFleisch; Poulet, CH",
                 "nutrition": {
@@ -116,8 +116,8 @@
                 "line_name": "voll anders",
                 "price_info": {
                     "students": 8.0,
-                    "intern": 9.0,
-                    "extern": 10.0
+                    "internal": 9.0,
+                    "external": 10.0
                 },
                 "meal_description": "Tomaten-Ravioli\ngeriebener Käse / Reibkäse\nMenüsalat oder Apfelmus",
                 "nutrition": {
@@ -142,8 +142,8 @@
                 "line_name": "farm",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Bami Goreng/ Indonesische Nudelpfanne \nTofu \nMenüsalat oder Apfelmus",
                 "nutrition": {
@@ -163,8 +163,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Chili Con Carne \nPop Corn \nPilaw Reis\nMenüsalat oder Apfelmus\nFleisch; Rind,CH",
                 "nutrition": {
@@ -183,8 +183,8 @@
                 "line_name": "voll anders",
                 "price_info": {
                     "students": 8.0,
-                    "intern": 9.0,
-                    "extern": 10.0
+                    "internal": 9.0,
+                    "external": 10.0
                 },
                 "meal_description": "Tomaten-Ravioli\ngeriebener Käse / Reibkäse\nMenüsalat oder Apfelmus",
                 "nutrition": {
@@ -209,8 +209,8 @@
                 "line_name": "farm",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Blumenkohl Käse Medaillons\nSalzkartoffeln / Dampfkartoffeln gesalzen\nBlattspinat, creme",
                 "nutrition": {
@@ -230,8 +230,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Pouletspiess\nPortweinsauce / Jus mit Portwein\nKartoffelgratin/Mensa\nBroccoli gedämpft / Gedämpfter Broccoli\nFleisch; Poulet, CH",
                 "nutrition": {
@@ -252,8 +252,8 @@
                 "line_name": "voll anders",
                 "price_info": {
                     "students": 8.0,
-                    "intern": 9.0,
-                    "extern": 10.0
+                    "internal": 9.0,
+                    "external": 10.0
                 },
                 "meal_description": "Tomaten-Ravioli\ngeriebener Käse / Reibkäse\nMenüsalat oder Apfelmus",
                 "nutrition": {
@@ -278,8 +278,8 @@
                 "line_name": "farm",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Käsespätzli mir Röstzwiebeln\nMenüsalat oder Apfelmus",
                 "nutrition": {
@@ -301,8 +301,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Sesam Bun Vegan 82g\nPulled Pork\nketchup\nPommes frites\nMenüsalat oder Apfelmus\nFleisch; Poulet, CH",
                 "nutrition": {
@@ -324,8 +324,8 @@
                 "line_name": "voll anders",
                 "price_info": {
                     "students": 8.0,
-                    "intern": 9.0,
-                    "extern": 10.0
+                    "internal": 9.0,
+                    "external": 10.0
                 },
                 "meal_description": "Tomaten-Ravioli\ngeriebener Käse / Reibkäse\nMenüsalat oder Apfelmus",
                 "nutrition": {

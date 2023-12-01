@@ -5,8 +5,8 @@
                 "line_name": "garden",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Stewed beans \nwith cinnamon, ginger, oranges and carrots\nSoy yogurt \nBoiled potatoes\nMenu salad",
                 "nutrition": {
@@ -21,8 +21,8 @@
                 "line_name": "farm",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Cannelloni with ricotta and spinach\ntopped with tomato sauce and cheese\nMenu salad",
                 "nutrition": {
@@ -39,8 +39,8 @@
                 "line_name": "Hit",
                 "price_info": {
                     "students": 9.5,
-                    "intern": 11.0,
-                    "extern": 14.5
+                    "internal": 11.0,
+                    "external": 14.5
                 },
                 "meal_description": "Breaded pork schnitzel\nFrench fries\nFleisch: Schweiz",
                 "nutrition": {
@@ -56,8 +56,8 @@
                 "line_name": "voll anders",
                 "price_info": {
                     "students": 11.5,
-                    "intern": 13.5,
-                    "extern": 16.0
+                    "internal": 13.5,
+                    "external": 16.0
                 },
                 "meal_description": "Chicken wings\nFrench fries\nHouse sauce",
                 "nutrition": {
@@ -72,8 +72,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Turkey ragout with fennel\nand lemon cream sauce\nBulgur\nCelery \nFenchel\nFleisch, Truten, Schweiz",
                 "nutrition": {
@@ -92,8 +92,8 @@
                 "line_name": "Tagessuppe",
                 "price_info": {
                     "students": 1.7,
-                    "intern": 1.8,
-                    "extern": 3.0
+                    "internal": 1.8,
+                    "external": 3.0
                 },
                 "meal_description": "Basel flour soup",
                 "nutrition": {
@@ -107,8 +107,8 @@
                 "line_name": "Tagesdessert",
                 "price_info": {
                     "students": 1.8,
-                    "intern": 2.3,
-                    "extern": ""
+                    "internal": 2.3,
+                    "external": ""
                 },
                 "meal_description": "Diplomat",
                 "nutrition": {
@@ -130,8 +130,8 @@
                 "line_name": "garden",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Red Thai curry tofu, vegetables\nLime rice\nMenu salad",
                 "nutrition": {
@@ -145,8 +145,8 @@
                 "line_name": "farm",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Andalusian yellow pea pan\nwith garlic and smoked paprika\nPurslane \nMenu salad",
                 "nutrition": {
@@ -162,8 +162,8 @@
                 "line_name": "Hit",
                 "price_info": {
                     "students": 9.5,
-                    "intern": 11.0,
-                    "extern": 14.5
+                    "internal": 11.0,
+                    "external": 14.5
                 },
                 "meal_description": "Breaded pork schnitzel\nFrench fries\nFleisch: Schweiz",
                 "nutrition": {
@@ -179,8 +179,8 @@
                 "line_name": "voll anders",
                 "price_info": {
                     "students": 11.5,
-                    "intern": 13.5,
-                    "extern": 16.0
+                    "internal": 13.5,
+                    "external": 16.0
                 },
                 "meal_description": "Chicken wings\nFrench fries\nHouse sauce",
                 "nutrition": {
@@ -195,8 +195,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Peri-Peri chicken steak with skin \nAjvar\nFried potatoes\nRatatouille\nFleisch, Poulet, Schweiz",
                 "nutrition": {
@@ -212,8 +212,8 @@
                 "line_name": "Tagessuppe",
                 "price_info": {
                     "students": 1.7,
-                    "intern": 1.8,
-                    "extern": 3.0
+                    "internal": 1.8,
+                    "external": 3.0
                 },
                 "meal_description": "Broccoli cream soup",
                 "nutrition": {
@@ -230,8 +230,8 @@
                 "line_name": "Tagesdessert",
                 "price_info": {
                     "students": 1.8,
-                    "intern": 2.3,
-                    "extern": ""
+                    "internal": 2.3,
+                    "external": ""
                 },
                 "meal_description": "Apple pie",
                 "nutrition": {
@@ -253,8 +253,8 @@
                 "line_name": "garden",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Creamy vegan conchiglie with nuts, \nBrussels sprouts, champignon and chiccorino rosso\nTomato sauce \nMenu salad",
                 "nutrition": {
@@ -271,8 +271,8 @@
                 "line_name": "farm",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "\"Stifado\"\nquorn strips, lentils and thyme\nGreen spelt \ngrilled peppers",
                 "nutrition": {
@@ -288,8 +288,8 @@
                 "line_name": "Hit",
                 "price_info": {
                     "students": 9.5,
-                    "intern": 11.0,
-                    "extern": 14.5
+                    "internal": 11.0,
+                    "external": 14.5
                 },
                 "meal_description": "Veganes Schnitzel paniert \nFrench fries\nFleisch: Schweiz",
                 "nutrition": {
@@ -303,8 +303,8 @@
                 "line_name": "voll anders",
                 "price_info": {
                     "students": 11.5,
-                    "intern": 13.5,
-                    "extern": 16.0
+                    "internal": 13.5,
+                    "external": 16.0
                 },
                 "meal_description": "Chicken wings\nFrench fries\nHouse sauce",
                 "nutrition": {
@@ -319,8 +319,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Meatballs Pork\nYellow curry sauce\nBasmati rice\nWok vegetables\nFleisch, Rind, Schweiz",
                 "nutrition": {
@@ -337,8 +337,8 @@
                 "line_name": "Tagessuppe",
                 "price_info": {
                     "students": 1.7,
-                    "intern": 1.8,
-                    "extern": 3.0
+                    "internal": 1.8,
+                    "external": 3.0
                 },
                 "meal_description": "Carrot and ginger soup",
                 "nutrition": {
@@ -352,8 +352,8 @@
                 "line_name": "Tagesdessert",
                 "price_info": {
                     "students": 1.8,
-                    "intern": 2.3,
-                    "extern": ""
+                    "internal": 2.3,
+                    "external": ""
                 },
                 "meal_description": "Panna Cotta",
                 "nutrition": {
@@ -373,8 +373,8 @@
                 "line_name": "garden",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Spring rolls with vegetables\nSweet chili sauce\nVegan fried rice with vegetables",
                 "nutrition": {
@@ -392,8 +392,8 @@
                 "line_name": "farm",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Polenta slice with pumpkin sauce\nRosemary and mushrooms\nGreen beans",
                 "nutrition": {
@@ -409,8 +409,8 @@
                 "line_name": "Hit",
                 "price_info": {
                     "students": 9.5,
-                    "intern": 11.0,
-                    "extern": 14.5
+                    "internal": 11.0,
+                    "external": 14.5
                 },
                 "meal_description": "Breaded pork schnitzel\nFrench fries\nFleisch: Schweiz",
                 "nutrition": {
@@ -426,8 +426,8 @@
                 "line_name": "voll anders",
                 "price_info": {
                     "students": 11.5,
-                    "intern": 13.5,
-                    "extern": 16.0
+                    "internal": 13.5,
+                    "external": 16.0
                 },
                 "meal_description": "Chicken wings\nFrench fries\nHouse sauce",
                 "nutrition": {
@@ -442,8 +442,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "\"Ghackets mit Hörnli\"\nMinced beef with pasta\nGrated cheese\nHomemade apple sauce\nFleisch, Rind, Schweiz",
                 "nutrition": {
@@ -460,8 +460,8 @@
                 "line_name": "Tagessuppe",
                 "price_info": {
                     "students": 1.7,
-                    "intern": 1.8,
-                    "extern": 3.0
+                    "internal": 1.8,
+                    "external": 3.0
                 },
                 "meal_description": "Lentil soup",
                 "nutrition": {
@@ -479,8 +479,8 @@
                 "line_name": "Tagesdessert",
                 "price_info": {
                     "students": 1.8,
-                    "intern": 2.3,
-                    "extern": ""
+                    "internal": 2.3,
+                    "external": ""
                 },
                 "meal_description": "Apple and cinnamon muffin",
                 "nutrition": {
@@ -502,8 +502,8 @@
                 "line_name": "garden",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "African peanut stew \nwith vegetables and chili\nJasmine rice\nMenu salad",
                 "nutrition": {
@@ -518,8 +518,8 @@
                 "line_name": "farm",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Vegetarian cordon bleu\nPepperoni sauce\nSpiral pasta\nPeas",
                 "nutrition": {
@@ -536,8 +536,8 @@
                 "line_name": "Hit",
                 "price_info": {
                     "students": 9.5,
-                    "intern": 11.0,
-                    "extern": 14.5
+                    "internal": 11.0,
+                    "external": 14.5
                 },
                 "meal_description": "Breaded pork schnitzel\nFrench fries\nFleisch: Schweiz",
                 "nutrition": {
@@ -553,8 +553,8 @@
                 "line_name": "voll anders",
                 "price_info": {
                     "students": 11.5,
-                    "intern": 13.5,
-                    "extern": 16.0
+                    "internal": 13.5,
+                    "external": 16.0
                 },
                 "meal_description": "Chicken wings\nFrench fries\nHouse sauce",
                 "nutrition": {
@@ -569,8 +569,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Meat loaf\nMustard \nPotato salad\nMenu salad\nFleisch, Schwein, Schweiz",
                 "nutrition": {
@@ -586,8 +586,8 @@
                 "line_name": "Tagessuppe",
                 "price_info": {
                     "students": 1.7,
-                    "intern": 1.8,
-                    "extern": 3.0
+                    "internal": 1.8,
+                    "external": 3.0
                 },
                 "meal_description": "Parsnip soup",
                 "nutrition": {
@@ -601,8 +601,8 @@
                 "line_name": "Tagesdessert",
                 "price_info": {
                     "students": 1.8,
-                    "intern": 2.3,
-                    "extern": ""
+                    "internal": 2.3,
+                    "external": ""
                 },
                 "meal_description": "Orange mousse",
                 "nutrition": {
