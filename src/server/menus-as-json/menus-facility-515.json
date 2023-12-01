@@ -5,8 +5,8 @@
                 "line_name": "garden",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Tajine Kichererbsen Auberginen Dörraprikosen\nPeperoni, Auberginen, Kichererbsen\nBasmati Reis mit oder ohne Fairtrade Reis\nMenusalat",
                 "nutrition": {
@@ -22,8 +22,8 @@
                 "line_name": "farm",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Kartoffel-Lauchgratin/Mensa\nüberbacken mit Käse\nMenusalat\nAllergen Milch",
                 "nutrition": {
@@ -39,8 +39,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Poulet Schenkel aus dem Ofen, Port. 200g\nBarbecue Sauce (Dip Sauce), vegetarisch\nGemüsemischung Carlos\nBratkartoffeln vegan\nAllergen Senf\nFleisch: Schwein, Schweiz",
                 "nutrition": {
@@ -63,8 +63,8 @@
                 "line_name": "garden",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Chili sin Carne mit Linsen\nMais & Bohnen\nTortilla Chips / Mais Chips (Nachos)\nKresse\nMenusalat",
                 "nutrition": {
@@ -79,8 +79,8 @@
                 "line_name": "farm",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Gekochte Eier in Senfrahmsauce\nSalzkartoffeln mit Petersilie Binz\nApfelmus hausgemacht",
                 "nutrition": {
@@ -100,8 +100,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Pouletgeschnetzeltes mit Oliven und Tomaten\nChampignonsrahmsaue\nPapardelle / Breitbandnudeln\nWurzelgemüse\nFleisch: Schweiz",
                 "nutrition": {
@@ -124,8 +124,8 @@
                 "line_name": "garden",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Spaghetti aglio olio e peperoncino\nBroccoli gedämpft / Gedämpfter Broccoli\nMenusalat",
                 "nutrition": {
@@ -140,8 +140,8 @@
                 "line_name": "farm",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Gebratener Reis mit Ei und Tofu\nGebratener Reis mit Ei und Tofu\nMenusalat",
                 "nutrition": {
@@ -159,8 +159,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Schweins Bratwurst gebraten, Port. 140g\nKräuterjus Binz\nRösti gebraten Binz\nBlumenkohl gekocht \nZwiebelsauce Binz\nFleisch: Rind, Schweiz",
                 "nutrition": {
@@ -184,8 +184,8 @@
                 "line_name": "garden",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Falafel / Kichererbsen Bällchen, vegan\nReichhaltiger Couscous Salat\nPetersilie, Pfefferminze\nMenusalat\nAllergen Erdnuss \nAllergen Schalenfrüchte",
                 "nutrition": {
@@ -204,8 +204,8 @@
                 "line_name": "farm",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Zitronen-Risotto mit Fenchel, Zucchetti und Peperoni\nZucchetti\nApfelmus hausgemacht",
                 "nutrition": {
@@ -221,8 +221,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Rindhack Polpette an Tomatensauce\nSpaghetti, vegan\nMischgemüse Binz\nRind, Schweiz",
                 "nutrition": {
@@ -243,8 +243,8 @@
                 "line_name": "garden",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Pad Thai mit Reisnudeln\nErdnüsse\nMenusalat",
                 "nutrition": {
@@ -260,8 +260,8 @@
                 "line_name": "farm",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Ricotta Spinat Tortellini\nMandel-Salbei Butter\nMenusalat",
                 "nutrition": {
@@ -279,8 +279,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Geflügel Fleischkäse, 1,7kg / 100gPort.\nSpätzli Binz\nRotkraut mit Apfel und Zwiebeln\nDemi Glace / Bratensauce (Rezept mit einem Instantprodukt)\nFleisch: Rind, Schwein, Schweiz",
                 "nutrition": {

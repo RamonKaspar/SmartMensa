@@ -5,8 +5,8 @@
                 "line_name": "Häppy Vegan Bowl",
                 "price_info": {
                     "students": 6.9,
-                    "intern": 9.0,
-                    "extern": 13.5
+                    "internal": 9.0,
+                    "external": 13.5
                 },
                 "meal_description": "Kichererbsen Eintopf\nSüsskartoffeln küchenfertig\nKoriander, frisch\n6 Kornbrötli, 70g",
                 "nutrition": {
@@ -24,8 +24,8 @@
                 "line_name": "Lucky Bowl",
                 "price_info": {
                     "students": 7.8,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Chicken Nuggets / Poulet Nuggets, Brustfleisch\nCocktailsauce vegan\nNeue Bratkartoffeln mit Rosmarin\nFleisch: Schweiz",
                 "nutrition": {
@@ -46,8 +46,8 @@
                 "line_name": "Häppy Vegan Bowl",
                 "price_info": {
                     "students": 6.9,
-                    "intern": 9.0,
-                    "extern": 13.5
+                    "internal": 9.0,
+                    "external": 13.5
                 },
                 "meal_description": "Gebratenes Sojageschnetzeltes \nKartoffeln küchenfertig\nStroganoff Vegan\nPeperoni, Kartoffeln, Champignons",
                 "nutrition": {
@@ -64,8 +64,8 @@
                 "line_name": "Lucky Bowl",
                 "price_info": {
                     "students": 7.8,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Gnocchi Gratin mit Spinat\nMozzarella, küchenfertig\nBlattsalate gemischt / Mischsalat",
                 "nutrition": {
@@ -86,8 +86,8 @@
                 "line_name": "Häppy Vegan Bowl",
                 "price_info": {
                     "students": 6.9,
-                    "intern": 9.0,
-                    "extern": 13.5
+                    "internal": 9.0,
+                    "external": 13.5
                 },
                 "meal_description": "Basilikumrahmsauce vegan\nTofu Block, nature\nAepfel (alle Apfelsorten)\nZucchetti grün\nTrockenreis mit gerösteten Mandelsitften / Mandelreis",
                 "nutrition": {
@@ -104,8 +104,8 @@
                 "line_name": "Lucky Bowl",
                 "price_info": {
                     "students": 7.8,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Poulet Geschnetzeltes, Schenkel (nature)\nZitronenrahmsauce\nErbsen / Gartenerbsen, grün\nTagliatelle / Fettucine\nFleisch: Schweiz",
                 "nutrition": {
@@ -128,8 +128,8 @@
                 "line_name": "Häppy Vegan Bowl",
                 "price_info": {
                     "students": 6.9,
-                    "intern": 9.0,
-                    "extern": 13.5
+                    "internal": 9.0,
+                    "external": 13.5
                 },
                 "meal_description": "Spiralen, frisch / Fusilli, frisch (ohne Eier)\nRucolapesto\nOfengemüse\nBlattspinat offen",
                 "nutrition": {
@@ -147,8 +147,8 @@
                 "line_name": "Lucky Bowl",
                 "price_info": {
                     "students": 7.8,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Rindfleischravioli, \nSauce all arrabiata\nHalbrahm, UHT, 0.5 Lt.\nPetersilie gekraust, küchenfertig\nReibkäse, gemischt\nFleisch: Schweiz",
                 "nutrition": {
@@ -172,8 +172,8 @@
                 "line_name": "Häppy Vegan Bowl",
                 "price_info": {
                     "students": 6.9,
-                    "intern": 9.0,
-                    "extern": 13.5
+                    "internal": 9.0,
+                    "external": 13.5
                 },
                 "meal_description": "Gemüse Schnitzel, vegan, 140-150g\nMaionese, vegan\nCurry mild\nRöstgemüse aus dem Ofen / Ofengemüse",
                 "nutrition": {
@@ -189,8 +189,8 @@
                 "line_name": "Lucky Bowl",
                 "price_info": {
                     "students": 7.8,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Nasi Goreng mit Ei",
                 "nutrition": {

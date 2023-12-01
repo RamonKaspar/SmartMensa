@@ -5,8 +5,8 @@
                 "line_name": "Traditional",
                 "price_info": {
                     "students": 6.9,
-                    "intern": 9.0,
-                    "extern": 13.5
+                    "internal": 9.0,
+                    "external": 13.5
                 },
                 "meal_description": "Green Thai Curry\nwith lentils, broccoli, pepperoni & zucchini\nJasmine rice & Thai basil",
                 "nutrition": {
@@ -22,8 +22,8 @@
                 "line_name": "Global",
                 "price_info": {
                     "students": 6.9,
-                    "intern": 9.0,
-                    "extern": 13.5
+                    "internal": 9.0,
+                    "external": 13.5
                 },
                 "meal_description": "Mushroom strudel\nwith saffron sauce\nLeaf salad and house dressing",
                 "nutrition": {
@@ -44,8 +44,8 @@
                 "line_name": "Traditional",
                 "price_info": {
                     "students": 6.9,
-                    "intern": 9.0,
-                    "extern": 13.5
+                    "internal": 9.0,
+                    "external": 13.5
                 },
                 "meal_description": "Polenta pizza\nwith smoked tofu, pepperoni, corn & zucchini\nFresh spinach and leaf lettuce",
                 "nutrition": {
@@ -62,8 +62,8 @@
                 "line_name": "Global",
                 "price_info": {
                     "students": 6.9,
-                    "intern": 9.0,
-                    "extern": 13.5
+                    "internal": 9.0,
+                    "external": 13.5
                 },
                 "meal_description": "Soy slices with mustard cream sauce\nmashed potatoes\nPeas, carrots & parsley\nAllergen Senf",
                 "nutrition": {
@@ -86,8 +86,8 @@
                 "line_name": "Traditional",
                 "price_info": {
                     "students": 6.9,
-                    "intern": 9.0,
-                    "extern": 13.5
+                    "internal": 9.0,
+                    "external": 13.5
                 },
                 "meal_description": "Tagliatelle with pumpkin cream sauce\nBrussels sprouts & chickpeas baked in the oven\nRoasted walnuts & chives\nAllergen Soja",
                 "nutrition": {
@@ -104,8 +104,8 @@
                 "line_name": "Global",
                 "price_info": {
                     "students": 6.9,
-                    "intern": 9.0,
-                    "extern": 13.5
+                    "internal": 9.0,
+                    "external": 13.5
                 },
                 "meal_description": "Autumn risotto\nwith caramelized kumquats & pears\nCicorino rosso & parsley",
                 "nutrition": {
@@ -125,8 +125,8 @@
                 "line_name": "Traditional",
                 "price_info": {
                     "students": 6.9,
-                    "intern": 9.0,
-                    "extern": 13.5
+                    "internal": 9.0,
+                    "external": 13.5
                 },
                 "meal_description": "Tofu scrambled eggs\non fried rice with vegetables\nSweet Chili Sauce",
                 "nutrition": {
@@ -141,8 +141,8 @@
                 "line_name": "Global",
                 "price_info": {
                     "students": 6.9,
-                    "intern": 9.0,
-                    "extern": 13.5
+                    "internal": 9.0,
+                    "external": 13.5
                 },
                 "meal_description": "Keftas with garlic-harissa dip\nBulgur with Raz el hanout\nOven vegetables with chickpeas",
                 "nutrition": {
@@ -164,8 +164,8 @@
                 "line_name": "Traditional",
                 "price_info": {
                     "students": 6.9,
-                    "intern": 9.0,
-                    "extern": 13.5
+                    "internal": 9.0,
+                    "external": 13.5
                 },
                 "meal_description": "Cevapcici, made from soy with Ajvar sauce\nWild rice mix\nOven vegetables with parsley",
                 "nutrition": {
@@ -181,8 +181,8 @@
                 "line_name": "Global",
                 "price_info": {
                     "students": 6.9,
-                    "intern": 9.0,
-                    "extern": 13.5
+                    "internal": 9.0,
+                    "external": 13.5
                 },
                 "meal_description": "Pumpkin Fritatta\nwith herb dip\nLeaf salad & house dressing",
                 "nutrition": {

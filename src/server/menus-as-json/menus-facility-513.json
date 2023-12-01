@@ -5,8 +5,8 @@
                 "line_name": "Tagessuppe",
                 "price_info": {
                     "students": 1.7,
-                    "intern": 3.0,
-                    "extern": ""
+                    "internal": 3.0,
+                    "external": ""
                 },
                 "meal_description": "Basler Mehlsuppe",
                 "nutrition": {
@@ -25,8 +25,8 @@
                 "line_name": "Tagessuppe",
                 "price_info": {
                     "students": 1.7,
-                    "intern": 3.0,
-                    "extern": ""
+                    "internal": 3.0,
+                    "external": ""
                 },
                 "meal_description": "Broccolicremesuppe",
                 "nutrition": {
@@ -48,8 +48,8 @@
                 "line_name": "Tagessuppe",
                 "price_info": {
                     "students": 1.7,
-                    "intern": 3.0,
-                    "extern": ""
+                    "internal": 3.0,
+                    "external": ""
                 },
                 "meal_description": "Karotten-Ingwersuppe",
                 "nutrition": {
@@ -68,8 +68,8 @@
                 "line_name": "Tagessuppe",
                 "price_info": {
                     "students": 1.7,
-                    "intern": 3.0,
-                    "extern": ""
+                    "internal": 3.0,
+                    "external": ""
                 },
                 "meal_description": "Linsensuppe",
                 "nutrition": {
@@ -92,8 +92,8 @@
                 "line_name": "Tagessuppe",
                 "price_info": {
                     "students": 1.7,
-                    "intern": 3.0,
-                    "extern": ""
+                    "internal": 3.0,
+                    "external": ""
                 },
                 "meal_description": "Pastinakensuppe",
                 "nutrition": {

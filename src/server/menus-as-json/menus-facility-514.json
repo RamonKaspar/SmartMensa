@@ -6,8 +6,8 @@
                 "line_name": "farm",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Linsen Daal\nTagesbeilage \nTagesgemüse",
                 "nutrition": {
@@ -24,8 +24,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Ghackets Rind / Rindshackfleisch\nHörnli Napoli Pistor\nReibkäse\nFleisch; Schweiz",
                 "nutrition": {
@@ -47,8 +47,8 @@
                 "line_name": "farm",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Samosas frittiert, Port. 150g\nSweet Chilisauce\nTagesbeilage \nTagesgemüse",
                 "nutrition": {
@@ -64,8 +64,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Poulet Flügeli / Chicken wings\nJogurt Raita\nTagesbeilage \nTagesgemüse\nFleisch; Schweiz",
                 "nutrition": {
@@ -86,8 +86,8 @@
                 "line_name": "farm",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Fried Rice / Gebratener Reis Vegan",
                 "nutrition": {
@@ -102,8 +102,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Bauernschüblig\nDemi Glace / Bratensauce (Rezept mit einem Instantprodukt)\nTagesbeilage \nTagesgemüse\nFleisch; Schweiz",
                 "nutrition": {
@@ -124,8 +124,8 @@
                 "line_name": "farm",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "Kartoffeltortilla \nTomatensauce",
                 "nutrition": {
@@ -141,8 +141,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "Pulled Pork\nBBQ Sauce \nTagesbeilage \nTagesgemüse\nFleisch, Schweiz",
                 "nutrition": {
@@ -162,8 +162,8 @@
                 "line_name": "farm",
                 "price_info": {
                     "students": 6.1,
-                    "intern": 9.0,
-                    "extern": 13.0
+                    "internal": 9.0,
+                    "external": 13.0
                 },
                 "meal_description": "s'foifer",
                 "nutrition": {
@@ -174,8 +174,8 @@
                 "line_name": "butcher",
                 "price_info": {
                     "students": 7.5,
-                    "intern": 10.5,
-                    "extern": 15.0
+                    "internal": 10.5,
+                    "external": 15.0
                 },
                 "meal_description": "s'foifer",
                 "nutrition": {
