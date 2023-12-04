@@ -2,7 +2,47 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  justify-content: space-between;
   padding: 0 var(--space);
   max-height: calc(100dvh - (40px + 300px));
   overflow-y: auto;
+}
+
+.bordered-component {
+  border: 2px solid #333; /* Adjust color and thickness as needed */
+  padding: 10px; /* Optional: Add padding for space inside the border */
+  border-radius: 16.5px;
+  list-style-type: none; /* remove bullet point */
+  background-color: rgb(29, 157, 208);
+  margin-bottom: 20px;
+  
+}
+
+.menu-name {
+  font-size: 20px;
+}
+
+h3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mensa-infos {
+  display: flex;
+  justify-content: center;
+  & p:first-child {
+    margin-right: 30px;
+  }
 }

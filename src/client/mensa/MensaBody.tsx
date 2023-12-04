@@ -1,6 +1,8 @@
 import "./MensaBody.css";
 import { useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar, faShareSquare } from '@fortawesome/free-solid-svg-icons';
 
 function MensaBody() {
   const mensaMapping = new Map<string, string>([
@@ -69,7 +71,7 @@ function MensaBody() {
           "Saturday",
         ];
         const currentDate = new Date();
-        const currentDay = daysOfWeek[currentDate.getDay()] as string;
+        const currentDay = "Monday"; //daysOfWeek[currentDate.getDay()] as string;
 
         if (mealsData[currentDay]) {
           setCurrentDayMeals(mealsData[currentDay].Lunch);
@@ -113,21 +115,44 @@ function MensaBody() {
       .join(" "); // Join the words back into a string, separated by spaces
   }
 
+
+
+  function getPrice(meal: any, priceCategory: string): string {
+    let amount = meal.price_info.external;
+    if (priceCategory == "student") {
+      amount = meal.price_info.students;
+    } else if (priceCategory == "internal") {
+      amount = meal.price_info.internal;
+    } 
+    return amount.toLocaleString('en-US', {
+      style: 'currency',
+      currency: 'CHF', // Change the currency code as needed
+      minimumFractionDigits: 2, // Set the minimum number of digits after the decimal point
+    });
+  }
+
   return (
     <>
       <main className="mensa-body-container">
         <div>
           <h2>{changeName(mensaName)}</h2>
+          <div className="mensa-infos">
+            <p className="location-tag"> UZH Zentrum </p> 
+            <p className="open-closed-tag"> Open </p> {/* change later: make it mensa-dependent*/}
+          </div>
           <ul>
             {currentDayMeals.map((meal, index) => (
-              <li key={index}>
-                <h3>{meal.line_name}</h3>
+              <li key={index} className="bordered-component">
+                <h3> 
+                  <p>{meal.line_name.toUpperCase()}</p> 
+                  <p>{getPrice(meal, "external")}</p>
+                </h3>   {/* change later: priceCategory should be retrieved from user preference */}
                 <p>{meal.meal_name}</p>
-                <p>{meal.meal_description}</p>
+                <p className="menu-name">{meal.meal_description}</p>
                 <p>{meal.allergens}</p>
-                <p>
-                  {meal.price_info.students} / {meal.price_info.internal} /{" "}
-                  {meal.price_info.external}
+                <p className="icons">
+                  <FontAwesomeIcon icon={faStar} style={{ fontSize: '2em' }}/>
+                  <FontAwesomeIcon icon={faShareSquare} style={{ fontSize: '2em' }}/>
                 </p>
               </li>
             ))}
