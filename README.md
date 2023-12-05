@@ -122,7 +122,7 @@ Then list here the weekly tags. \
 We will evaluate your code every week, based on the corresponding version.
 
 Tags:
-- Milestone 1: v1.0.0, v1.1.1
+- Week 1: [v1.1.1] (https://gitlab.inf.ethz.ch/course-fwe2023/students/project/express/lumast_project_express/-/tags/v1.1.1)
 - Milestone 2: v1.0.1, v1.1.0
 - Milestone 3: ...
 - ...
