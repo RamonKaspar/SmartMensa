@@ -4,8 +4,31 @@ import { useState } from "react";
 
 function LoginBody() {
   const navigate = useNavigate();
-  const handleClick = () => {
-    navigate("/home");
+  const handleClick = async () => {
+    try {
+      const response = await fetch('/api/authenticate', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password }),
+      });
+  
+      const data = await response.json();
+  
+      if (response.status === 200) {
+        navigate('/home');
+        // Optionally, handle the user data received from server
+      } else {
+        alert(data.message || 'Login failed');
+      }
+    } catch (error) {
+      console.error('Error during login:', error);
+      alert('Error handling login');
+    }
+  };
+  const handleClick2 = () => {
+    navigate("/register")
   };
 
   // TAKE USERNAME FROM HERE WHEN WE HAVE USER MANAGEMENT
@@ -37,8 +60,9 @@ function LoginBody() {
       />
       <button onClick={handleClick}>Submit</button>
       <div className="register">
-        Are you the first time visiting this page? Please register{" "}
-        <a href="https://ethz.ch/de.html">here</a>
+        Are you the first time visiting this page?{" "}
+        {/* <a href="https://ethz.ch/de.html">here</a> */}
+        <button onClick={handleClick2}>Go Register</button>
       </div>
       <img src="./logo.png" alt="SmartMensa" className="logo" />
     </main>
