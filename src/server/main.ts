@@ -2,8 +2,12 @@ import express from "express";
 import ViteExpress from "vite-express";
 import path from "path";
 import fs from "fs/promises";
+import apiRoutes from './routes/api';
+
 
 const app = express();
+
+app.use('/api', apiRoutes);
 
 // Route to serve files based on facilityID
 app.get("/menus/:facilityID", async function (req, res) {
