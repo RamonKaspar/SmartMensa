@@ -112,6 +112,8 @@ This will help you have a clearer overview of what you are currently doing, trac
 Write here a short summary with weekly progress, including challanges and open questions.\
 We will use this to understand what your struggles and where did the weekly effort go to.
 
+Week 1: In the first week, we focused on getting the menus with help of webscraping and built the basic frontend for our app. We noticed that for the mensa card component, the footer is too large, so will change that in the next week and we will also create a json file, in which we will sotore the hardcoded mensa information like opening times and location for the footer. Additionally, we will try to incorporate the login functionality into our app. 
+
 ## Versioning
 Create stable versions of your code each week by using gitlab tags.\
 Take a look at [Gitlab Tags](https://docs.gitlab.com/ee/topics/git/tags.html) for more details. 
