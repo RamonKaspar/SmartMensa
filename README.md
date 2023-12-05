@@ -92,7 +92,7 @@ Document here the major milestones of your code and future planned steps.\
 - [ ] Milestone 3: Use webscraping to get the latest menus
   - [x] Get the menus for ETH mensas: #2 !2
   - [x] Get the menus for UZH mensas: #3 !3
-  - [ ] Run python scripts weekly in backend
+  - [ ] Run python scripts weekly in backend to fetch the new menus and store them as JSON files
 
 - [ ] Milestone 4: Personalize the web-app
   - [ ] Add login functionality
