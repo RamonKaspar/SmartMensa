@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import "./HomeBody.css";
 import { BsHeartFill } from "react-icons/bs";
 import { MdArrowForwardIos } from "react-icons/md";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const mensas = [
   {
@@ -77,6 +77,17 @@ interface FavoritesState {
 function HomeBody() {
   // Saves the state of the heart (mensa selected as favorite) for each mensa
   const [favorites, setFavorites] = useState<FavoritesState>({});
+  const [userInfo, setUserInfo] = useState(null); // Holds the user information
+
+  useEffect(() => {
+    fetch('/api/users') // Adjust the URL to your API endpoint
+      .then(response => response.json())
+      .then(data => {
+        setUserInfo(data); // Update the state with user information
+      })
+      .catch(error => console.error('Error fetching user information:', error));
+  }, []);
+
   // Handles if one clicks on a heart (for now, only the color changes)
   const handleFavoriteClick = (
     locationName: string,
