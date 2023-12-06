@@ -44,6 +44,15 @@ app.get("/hello", async function (_req, res) {
   res.status(200).json({ message: "Hello World!" });
 });
 
+// Example endpoint in your Express app
+app.get('/api/current-user', (req, res) => {
+  if (req.session && req.session.userId) {
+    res.json({ userId: req.session.userId });
+  } else {
+    res.status(401).json({ message: 'No user logged in' });
+  }
+});
+
 // Do not change below this line
 ViteExpress.listen(app, 5173, () =>
   console.log("Server is listening on http://localhost:5173")
