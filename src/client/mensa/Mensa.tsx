@@ -1,7 +1,6 @@
 import Layout from "../Layout";
 import Header from "../Header";
 import MensaBody from "./MensaBody";
-import Footer from "../Footer";
 
 function Mensa() {
   return (
@@ -9,7 +8,7 @@ function Mensa() {
       <Layout>
         <Header />
         <MensaBody />
-        <Footer />
+        {/* <Footer /> */} {/* Inserted in MensaBody.tsx */}
       </Layout>
     </>
   );
