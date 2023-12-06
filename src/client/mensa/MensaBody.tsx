@@ -3,78 +3,46 @@ import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faShareSquare } from "@fortawesome/free-solid-svg-icons";
+import { BsHeartFill } from "react-icons/bs";
+import { RiExternalLinkFill } from "react-icons/ri";
+import mensaData from "./mensa-infos-static.json"; /* IMPORTED FOR NOW: WILL BE IN BACKEND LATER!!!!! */
+
+type staticInfos = {
+  name: string;
+  facility_id: string;
+  name_display: string;
+  location: string;
+  opening_time_start: number;
+  opening_time_end: number;
+  dining_time_start: number;
+  dining_time_end: number;
+  building: string;
+  street: string;
+  city: string;
+  google_maps_link: string;
+  homepage: string;
+};
+
+/* Returns the data for the given mensa */
+const getMensaStaticInfos = (mensaName: string): staticInfos => {
+  for (const mensa of mensaData.mensas) {
+    if (mensa.name === mensaName) {
+      return mensa;
+    }
+  }
+  throw new Error("Mensa not found.");
+};
 
 function MensaBody() {
-  const mensaMapping = new Map<string, string>([
-    // these are the facility IDs for the menus in german
-    ["archimedes", "8"],
-    ["clausiusbar", "3"],
-    ["dozentenfoyer", "5"],
-    ["food-lab", "7"],
-    ["mensa-polyterrasse-lunch", "9"],
-    ["mensa-polyterrasse-dinner", "9"],
-    ["polysnack", "10"],
-    ["tannenbar", "11"],
-    ["alumni-quattro-lounge-lunch", "14"],
-    ["alumni-quattro-lounge-dinner", "14"],
-    ["bistro-hpi", "16"],
-    ["food-market-green-day", "17"],
-    ["food-market-grill-bbq", "18"],
-    ["food-market-pizza-pasta-day", "19"],
-    ["food-market-dinner", "18"],
-    ["fusion-meal", "20"],
-    ["fusion-coffee", "21"],
-    ["rice-up", "22"],
-    ["octavo", "23"],
-    ["uzh-untere-mensa-lunch", "147"],
-    ["uzh-untere-mensa-dinner", "149"],
-    ["uzh-obere-mensa", "148"],
-    ["lichthof-rondell", "150"],
-    ["raemi-59", "346"],
-    ["platte-14", "143"],
-    ["irchel", "142"],
-    ["cafeteria-irchel-atrium", "176"],
-    ["cafeteria-irchel-seerose-lunch", "241"],
-    ["cafeteria-irchel-seerose-dinner", "256"],
-    ["binzmuehle", "184"],
-    ["cafeteria-cityport", "391"],
-    ["cafeteria-zentrum-fuer-zahnmedizin", "151"],
-    ["cafeteria-tierspital", "146"],
-    ["cafeteria-botanischer-garten", "144"],
-    ["cafeteria-plattenstrasse", "143"],
-
-    // these are the facility IDs for the menus in english
-    // ["uzh-untere-mensa-lunch", "505"],
-    // ["uzh-untere-mensa-dinner", "506"],
-    // ["uzh-obere-mensa", "507"],
-    // ["lichthof-rondell", "508"],
-    // ["raemi-59", "509"],
-    // ["platte-14", "520"],
-    // ["irchel", "180"],
-    // ["cafeteria-irchel-atrium", "512"],
-    // ["cafeteria-irchel-seerose-lunch", "513"],
-    // ["cafeteria-irchel-seerose-dinner", "514"],
-    // ["binzmuehle", "515"],
-    // ["cafeteria-cityport", "516"],
-    // ["cafeteria-zentrum-fuer-zahnmedizin", "517"],
-    // ["cafeteria-tierspital", "518"],
-    // ["cafeteria-botanischer-garten", "519"],
-    // ["cafeteria-plattenstrasse", "520"],
-  ]);
-
-  const getFacilityID = (mensaName: string) => {
-    return mensaMapping.get(mensaName);
-  };
-
   const location = useLocation();
   const mensaName = location.pathname.replace("/", "");
   const [currentDayMeals, setCurrentDayMeals] = useState<any[]>([]);
+  const myMensa: staticInfos = getMensaStaticInfos(mensaName);
 
   useEffect(() => {
     async function fetchMeals() {
       try {
-        const facilityID = getFacilityID(mensaName);
-        const response = await fetch(`/menus/${facilityID}`);
+        const response = await fetch(`/menus/${myMensa.facility_id}`);
         if (!response.ok) {
           throw new Error("Failed to fetch meals");
         }
@@ -92,13 +60,20 @@ function MensaBody() {
         const currentDate = new Date();
         const currentDay = daysOfWeek[currentDate.getDay()] as string;
 
+        // Logic to determine if dinner or lunch
         if (mealsData[currentDay]) {
-          if (mealsData[currentDay].Lunch.length === 0) {
-            setCurrentDayMeals(mealsData[currentDay].Dinner);
-          } else if (mealsData[currentDay].Dinner.length === 0) {
+          if (
+            (mealsData[currentDay].Lunch.length > 0 &&
+              mensaName.includes("lunch")) ||
+            (mealsData[currentDay].Lunch.length > 0 &&
+              mealsData[currentDay].Dinner.length === 0)
+          ) {
             setCurrentDayMeals(mealsData[currentDay].Lunch);
+          } else if (mealsData[currentDay].Dinner.length > 0) {
+            setCurrentDayMeals(mealsData[currentDay].Dinner);
           } else {
             // here I would add the logic if there is no menu available for the current day
+            setCurrentDayMeals([]);
           }
         } else {
           setCurrentDayMeals([]);
@@ -111,83 +86,145 @@ function MensaBody() {
     fetchMeals();
   }, [mensaName]);
 
-  function changeName(oldMensaName: string): string {
-    // Here we can handle excpetional cases
-    switch (oldMensaName) {
-      case "uzh-untere-mensa-lunch":
-        return "UZH Untere Mensa (Lunch)";
-      case "uzh-untere-mensa-dinner":
-        return "UZH Untere Mensa (Dinner)";
-      case "uzh-obere-mensa":
-        return "UZH Obere Mensa";
-      case "cafeteria-irchel-seerose-lunch":
-        return "Cafeteria Irchel Seerose (Lunch)";
-      case "cafeteria-irchel-seerose-dinner":
-        return "Cafeteria Irchel Seerose (Dinner)";
-      case "mensa-polyterrasse-lunch":
-        return "Mensa Polyterrasse (Lunch)";
-      case "mensa-polyterrasse-dinner":
-        return "Mensa Polyterrasse (Dinner)";
-      case "alumni-quattro-lounge-lunch":
-        return "Alumni Quattro Lounge (Lunch)";
-      case "alumni-quattro-lounge-dinner":
-        return "Alumni Quattro Lounge (Dinner)";
+  /* Function that returns either "Open" or "Closed", depending on current time */
+  const handleOpenTag = () => {
+    const now = new Date();
+    const nowAsNumber = now.getHours() + now.getMinutes() / 100;
+    if (
+      nowAsNumber < myMensa.opening_time_start ||
+      nowAsNumber > myMensa.opening_time_end
+    ) {
+      return "Closed";
     }
-    // Generic case (replace "-" by " " and make every word start with uppercase)
-    return oldMensaName
-      .split("-") // Split the string into an array at each hyphen
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize the first letter of each word
-      .join(" "); // Join the words back into a string, separated by spaces
-  }
-
-  function getPrice(meal: any, priceCategory: string): string {
-    let amount = meal.price_info.external;
-    if (priceCategory == "student") {
-      amount = meal.price_info.students;
-    } else if (priceCategory == "internal") {
-      amount = meal.price_info.internal;
-    }
-    return amount.toLocaleString("en-US", {
-      style: "currency",
-      currency: "CHF", // Change the currency code as needed
-      minimumFractionDigits: 2, // Set the minimum number of digits after the decimal point
-    });
-  }
+    return "Open";
+  };
 
   return (
     <>
       <main className="mensa-body-container">
-        <div>
-          <h2>{changeName(mensaName)}</h2>
-          <div className="mensa-infos">
-            <p className="location-tag"> UZH Zentrum </p>
-            <p className="open-closed-tag"> Open </p>{" "}
-            {/* change later: make it mensa-dependent*/}
+        <div className="row-one-title">
+          <h2>{myMensa.name_display}</h2>
+          <p className="mark-as-favorite">
+            <BsHeartFill size={20} />
+          </p>
+        </div>
+        <div className="second-row-tags">
+          <div className="location-tag">{myMensa.location}</div>
+          <div className="open-closed-tag">{handleOpenTag()}</div>
+          {/* HARDCODED FOR NOW!!!! */}
+        </div>
+        <div className="menu-container">
+          {/* Create for each menu a component */}
+          {currentDayMeals.map((meal, index) => (
+            <div key={index} className="menu-component">
+              <h3 className="menu-title-and-price">
+                <p className="menu-title">{transformMensaTitle(meal)}</p>
+                <p className="menu-price">{getPrice(meal, "external")}</p>
+              </h3>
+              {/* change later: priceCategory should be retrieved from user preference */}
+              <div className="menu-line">{}</div>
+              <div className="ingredients-component">
+                {meal.meal_description}
+              </div>
+              <div className="allergies-component">{meal.allergens}</div>
+              <div className="last-row-actions">
+                <FontAwesomeIcon icon={faStar} style={{ fontSize: "2em" }} />
+                <FontAwesomeIcon
+                  icon={faShareSquare}
+                  style={{ fontSize: "2em" }}
+                />
+              </div>
+            </div>
+          ))}
+          {currentDayMeals.length === 0 && (
+            <div className="banner-no-menues-available">No menus available</div>
+          )}
+          <div className="footer-container">
+            {/* ALL INFORMATIONS HARDCODED FOR NOW */}
+            <div className="footer-times">
+              <h3>Opening Times</h3>
+              <div>
+                {formatedTimes(
+                  myMensa.opening_time_start,
+                  myMensa.opening_time_end
+                )}
+              </div>
+              <h3>Dining Times</h3>
+              <div>
+                {formatedTimes(
+                  myMensa.dining_time_start,
+                  myMensa.dining_time_end
+                )}
+              </div>
+            </div>
+            <div className="footer-location">
+              <h3> Location </h3>
+              <div>{myMensa.building}</div>
+              <div>{myMensa.street}</div>
+              <div>{myMensa.city}</div>
+              <div className="footer-maps-link">
+                <a href={myMensa.google_maps_link}>Show in Google Maps</a>
+              </div>
+            </div>
           </div>
-          <ul>
-            {currentDayMeals.map((meal, index) => (
-              <li key={index} className="bordered-component">
-                <h3>
-                  <p>{meal.line_name.toUpperCase()}</p>
-                  <p>{getPrice(meal, "external")}</p>
-                </h3>{" "}
-                {/* change later: priceCategory should be retrieved from user preference */}
-                <p>{meal.meal_name}</p>
-                <p className="menu-name">{meal.meal_description}</p>
-                <p>{meal.allergens}</p>
-                <p className="icons">
-                  <FontAwesomeIcon icon={faStar} style={{ fontSize: "2em" }} />
-                  <FontAwesomeIcon
-                    icon={faShareSquare}
-                    style={{ fontSize: "2em" }}
-                  />
-                </p>
-              </li>
-            ))}
-          </ul>
+          {/* LINK HARDCODED FOR NOW */}
+          <div
+            className="visit-website"
+            onClick={() => window.open(myMensa.homepage)}
+          >
+            <RiExternalLinkFill style={{ fontSize: "2em" }} />
+            <div>Visit Homepage</div>
+          </div>
         </div>
       </main>
     </>
+  );
+}
+
+function transformMensaTitle(meal: any): string {
+  if (meal.line_name) {
+    if (meal.meal_name) {
+      return (
+        meal.line_name.toUpperCase() + " | " + capitalizeWords(meal.meal_name)
+      );
+    } else {
+      return meal.line_name.toUpperCase();
+    }
+  }
+  return "";
+}
+
+function getPrice(meal: any, priceCategory: string): string {
+  let amount = meal.price_info.external;
+  if (priceCategory == "student") {
+    amount = meal.price_info.students;
+  } else if (priceCategory == "internal") {
+    amount = meal.price_info.internal;
+  }
+  return amount.toLocaleString("en-US", {
+    style: "currency",
+    currency: "CHF", // Change the currency code as needed
+    minimumFractionDigits: 2, // Set the minimum number of digits after the decimal point
+  });
+}
+
+/* Makes the first char of every word to uppercase */
+function capitalizeWords(str: string) {
+  return str
+    .split(" ") // Split the string into an array of words
+    .map(
+      (word) => word.charAt(0).toUpperCase() + word.slice(1) // Capitalize the first character of each word
+    )
+    .join(" "); // Join the words back into a single string
+}
+
+/* Function that outputs the formated time to "hh:mm"-"hh:mm"*/
+function formatedTimes(start: number, end: number): string {
+  // Helper function to format a time from a decimal number to "hh:mm"
+  return (
+    start.toFixed(2).replace(".", ":") +
+    " - " +
+    end.toFixed(2).replace(".", ":")
   );
 }
 
