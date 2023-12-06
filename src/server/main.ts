@@ -2,34 +2,34 @@ import express from "express";
 import ViteExpress from "vite-express";
 import path from "path";
 import fs from "fs/promises";
-import { spawn } from "child_process";
+// import { spawn } from "child_process";
 // import cron from "node-cron";
 
 const app = express();
 
-const pythonScriptPathUZH = path.join(__dirname, "menu_scraper_uhz.py");
-const pythonScriptPathETH = path.join(__dirname, "menu_scraper_eth.py");
+// const pythonScriptPathUZH = path.join(__dirname, "menu_scraper_uhz.py");
+// const pythonScriptPathETH = path.join(__dirname, "menu_scraper_eth.py");
 
-let serverLogs: string[] = []; // Store logs from the server
+// let serverLogs: string[] = []; // Store logs from the server
 
-// Function to push logs to the serverLogs array
-function pushToLogs(log: string) {
-  serverLogs.push(log);
-}
+// // Function to push logs to the serverLogs array
+// function pushToLogs(log: string) {
+//   serverLogs.push(log);
+// }
 
-// Endpoint to retrieve server logs
-app.get("/serverlogs", (_req, res) => {
-  res.json(serverLogs); // Send logs to the client
-});
+// // Endpoint to retrieve server logs
+// app.get("/serverlogs", (_req, res) => {
+//   res.json(serverLogs); // Send logs to the client
+// });
 
 // Schedule the execution of the menu scraper scripts (ETH and UZH) every Monday at 00:05
 // cron.schedule(
 //   // "5 0 * * 1", // Run every Monday at 00:05
 //   "*/5 * * * *", // For testing purposes, run every 5 minutes
 //   () => {
-const logMessage = "Fetching new UZH menus..."; // Your log message
-console.log(logMessage);
-pushToLogs(logMessage);
+// const logMessage = "Fetching new UZH menus..."; // Your log message
+// console.log(logMessage);
+// pushToLogs(logMessage);
 
 // // Spawn a new python process to run the menu scraper script for UZH
 // const pythonProcess_uzh = spawn("python", [pythonScriptPathUZH]);
