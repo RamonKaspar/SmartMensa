@@ -31,38 +31,38 @@ const logMessage = "Fetching new UZH menus..."; // Your log message
 console.log(logMessage);
 pushToLogs(logMessage);
 
-// Spawn a new python process to run the menu scraper script for UZH
-const pythonProcess_uzh = spawn("python", [pythonScriptPathUZH]);
+// // Spawn a new python process to run the menu scraper script for UZH
+// const pythonProcess_uzh = spawn("python", [pythonScriptPathUZH]);
 
-pythonProcess_uzh.stdout.on("data", (data) => {
-  const output = data.toString().trim();
-  console.log(output);
-});
+// pythonProcess_uzh.stdout.on("data", (data) => {
+//   const output = data.toString().trim();
+//   console.log(output);
+// });
 
-pythonProcess_uzh.stderr.on("data", (data) => {
-  console.error(`Python script stderr: ${data}`);
-});
+// pythonProcess_uzh.stderr.on("data", (data) => {
+//   console.error(`Python script stderr: ${data}`);
+// });
 
-pythonProcess_uzh.on("close", (code) => {
-  console.log(`Python script process exited with code ${code}`);
-});
+// pythonProcess_uzh.on("close", (code) => {
+//   console.log(`Python script process exited with code ${code}`);
+// });
 
-console.log("Fetching new ETH menus...");
-// Spawn a new python process to run the menu scraper script for ETH
-const pythonProcess_eth = spawn("python", [pythonScriptPathETH]);
+// console.log("Fetching new ETH menus...");
+// // Spawn a new python process to run the menu scraper script for ETH
+// const pythonProcess_eth = spawn("python", [pythonScriptPathETH]);
 
-pythonProcess_eth.stdout.on("data", (data) => {
-  const output = data.toString().trim();
-  console.log(output);
-});
+// pythonProcess_eth.stdout.on("data", (data) => {
+//   const output = data.toString().trim();
+//   console.log(output);
+// });
 
-pythonProcess_eth.stderr.on("data", (data) => {
-  console.error(`Python script stderr: ${data}`);
-});
+// pythonProcess_eth.stderr.on("data", (data) => {
+//   console.error(`Python script stderr: ${data}`);
+// });
 
-pythonProcess_eth.on("close", (code) => {
-  console.log(`Python script process exited with code ${code}`);
-});
+// pythonProcess_eth.on("close", (code) => {
+//   console.log(`Python script process exited with code ${code}`);
+// });
 //   },
 //   {
 //     scheduled: true,
