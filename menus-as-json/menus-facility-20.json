@@ -1,0 +1,632 @@
+{
+  "Monday": {
+    "Lunch": [
+      {
+        "line_name": "Classic Menu",
+        "meal_name": "Schweins-Schnitzel",
+        "meal_description": "Rahmsauce | Nudeln | Karotten",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Schwein",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.5,
+          "internal": 10.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Vegan Menu",
+        "meal_name": "Vegan Burger ",
+        "meal_description": "Mango Relish | Lyoner Kartoffeln | Ofen-Peperoni ",
+        "allergens": [
+          "Gluten",
+          "Sellerie",
+          "Senf",
+          "Sesam",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Vegan"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 11.5,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Vegi Menu",
+        "meal_name": "Appenzeller Hörnli",
+        "meal_description": "Käse | Röstzwiebeln | Apfelmus | oder | Tagessalat",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.5,
+          "internal": 9.9,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "Free Choice",
+        "meal_name": "Free Choice Buffet",
+        "meal_description": "Lassen Sie sich von unserem wechselnden Tagesangebot überraschen",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 2.2,
+          "internal": 2.4,
+          "external": 2.8
+        }
+      },
+      {
+        "line_name": "Salat Buffet",
+        "meal_name": "Salat Buffet",
+        "meal_description": "Lassen Sie sich von unserem saisonalen wechselnden Tagesangebot überraschen",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 2.2,
+          "internal": 2.4,
+          "external": 2.8
+        }
+      },
+      {
+        "line_name": "Mezze Buffet",
+        "meal_name": "Mezze Buffet",
+        "meal_description": "Lassen Sie sich von unserem orientalischen wechselnden Tagesangebot überraschen\n\n",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 2.2,
+          "internal": 2.4,
+          "external": 2.8
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Tuesday": {
+    "Lunch": [
+      {
+        "line_name": "Classic Menu",
+        "meal_name": "Rinds Burger ",
+        "meal_description": "Pita Brot | Cheddar Dip | Cole Slaw | Pommes frites | Ketchup",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.5,
+          "internal": 10.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Vegan Menu",
+        "meal_name": "Tofu",
+        "meal_description": "Sesam-Gemüse Sauce | Aubergine Curry | Broccoli | gebratene Glasnudeln",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sellerie",
+          "Senf",
+          "Sesam",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Vegan"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 11.5,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Vegi Menu",
+        "meal_name": "Soja Chili",
+        "meal_description": "Joghurt Dip | Gemüse Reis | Tagessalat",
+        "allergens": [
+          "Soja",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.5,
+          "internal": 9.9,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "Free Choice",
+        "meal_name": "Free Choice Buffet",
+        "meal_description": "Lassen Sie sich von unserem wechselnden Tagesangebot überraschen",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 2.2,
+          "internal": 2.4,
+          "external": 2.8
+        }
+      },
+      {
+        "line_name": "Salat Buffet",
+        "meal_name": "Salat Buffet",
+        "meal_description": "Lassen Sie sich von unserem saisonalen wechselnden Tagesangebot überraschen",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 2.2,
+          "internal": 2.4,
+          "external": 2.8
+        }
+      },
+      {
+        "line_name": "Mezze Buffet",
+        "meal_name": "Mezze Buffet",
+        "meal_description": "Lassen Sie sich von unserem orientalischen wechselnden Tagesangebot überraschen\n\n",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 2.2,
+          "internal": 2.4,
+          "external": 2.8
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Wednesday": {
+    "Lunch": [
+      {
+        "line_name": "Classic Menu",
+        "meal_name": "Rinds-Stroganoff",
+        "meal_description": "Gnocchi | Blattspinat",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.5,
+          "internal": 10.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Vegan Menu",
+        "meal_name": "Burrito",
+        "meal_description": "Pilz-Gemüse Füllung | BBQ Ebly | Mais-Bohnen Gemüse",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Vegan"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 11.5,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Vegi Menu",
+        "meal_name": "Käse-Raviolini",
+        "meal_description": "Ratatouille-Sauce | Reibkäse | Tagessalat",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.5,
+          "internal": 9.9,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "Free Choice",
+        "meal_name": "Free Choice Buffet",
+        "meal_description": "Lassen Sie sich von unserem wechselnden Tagesangebot überraschen",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 2.2,
+          "internal": 2.4,
+          "external": 2.8
+        }
+      },
+      {
+        "line_name": "Salat Buffet",
+        "meal_name": "Salat Buffet",
+        "meal_description": "Lassen Sie sich von unserem saisonalen wechselnden Tagesangebot überraschen",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 2.2,
+          "internal": 2.4,
+          "external": 2.8
+        }
+      },
+      {
+        "line_name": "Mezze Buffet",
+        "meal_name": "Mezze Buffet",
+        "meal_description": "Lassen Sie sich von unserem orientalischen wechselnden Tagesangebot überraschen\n\n",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 2.2,
+          "internal": 2.4,
+          "external": 2.8
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Thursday": {
+    "Lunch": [
+      {
+        "line_name": "Classic Menu",
+        "meal_name": "Poulet Balls",
+        "meal_description": "Ofen-Kartoffeln | Cocktailsauce | Tagessalat",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Milch, Laktose",
+          "Sellerie",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Huhn",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.5,
+          "internal": 10.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Vegan Menu",
+        "meal_name": "Soja Gyros Tzatziki",
+        "meal_description": "Wedges | Kraut-Salat",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Vegan"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 11.5,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Vegi Menu",
+        "meal_name": "Vegi Glutenarm",
+        "meal_description": "Gemüse Ragout | Pilzrahmsauce | Polenta | Tagessalat",
+        "allergens": [
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.5,
+          "internal": 9.9,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "Free Choice",
+        "meal_name": "Free Choice Buffet",
+        "meal_description": "Lassen Sie sich von unserem wechselnden Tagesangebot überraschen",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 2.2,
+          "internal": 2.4,
+          "external": 2.8
+        }
+      },
+      {
+        "line_name": "Salat Buffet",
+        "meal_name": "Salat Buffet",
+        "meal_description": "Lassen Sie sich von unserem saisonalen wechselnden Tagesangebot überraschen",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 2.2,
+          "internal": 2.4,
+          "external": 2.8
+        }
+      },
+      {
+        "line_name": "Mezze Buffet",
+        "meal_name": "Mezze Buffet",
+        "meal_description": "Lassen Sie sich von unserem orientalischen wechselnden Tagesangebot überraschen\n\n",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 2.2,
+          "internal": 2.4,
+          "external": 2.8
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Friday": {
+    "Lunch": [
+      {
+        "line_name": "Classic Menu",
+        "meal_name": "Rindshackbraten",
+        "meal_description": "Pfeffersauce | Kartoffelstock | Tagessalat",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.5,
+          "internal": 10.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Vegan Menu",
+        "meal_name": "Falafel",
+        "meal_description": "Pita Brot | Minze-Dip | Bulgur mit Kräuter | Broccoli & Nüsse",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Vegan"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 11.5,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Vegi Menu",
+        "meal_name": "Gemüse-Schnitzel paniert",
+        "meal_description": "Tomaten-Pasta | Tagessalat",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.5,
+          "internal": 9.9,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "Free Choice",
+        "meal_name": "Free Choice Buffet",
+        "meal_description": "Lassen Sie sich von unserem wechselnden Tagesangebot überraschen",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 2.2,
+          "internal": 2.4,
+          "external": 2.8
+        }
+      },
+      {
+        "line_name": "Salat Buffet",
+        "meal_name": "Salat Buffet",
+        "meal_description": "Lassen Sie sich von unserem saisonalen wechselnden Tagesangebot überraschen",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 2.2,
+          "internal": 2.4,
+          "external": 2.8
+        }
+      },
+      {
+        "line_name": "Mezze Buffet",
+        "meal_name": "Mezze Buffet",
+        "meal_description": "Lassen Sie sich von unserem orientalischen wechselnden Tagesangebot überraschen\n\n",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 2.2,
+          "internal": 2.4,
+          "external": 2.8
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Saturday": {
+    "Lunch": [],
+    "Dinner": []
+  },
+  "Sunday": {
+    "Lunch": [],
+    "Dinner": []
+  }
+}

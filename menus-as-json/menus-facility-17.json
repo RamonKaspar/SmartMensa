@@ -1,0 +1,220 @@
+{
+  "Monday": {
+    "Lunch": [
+      {
+        "line_name": "green daily",
+        "meal_name": "MIDSOMMAR KÖTBULLAR",
+        "meal_description": "Vegetarische Köttbullar | Pilzrahmsauce | Frühlingskartoffeln | Gurkensalat | Dill",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Milch, Laktose",
+          "Senf",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.5,
+          "internal": 9.9,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "green delight",
+        "meal_name": "Choose 5",
+        "meal_description": "Wähle 5 Komponenten heiss oder kalt",
+        "allergens": [],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 12.9,
+          "external": 16.9
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Tuesday": {
+    "Lunch": [
+      {
+        "line_name": "green daily",
+        "meal_name": "KNACKIGES ZUCKERSCHOTEN CURRY",
+        "meal_description": "Maiskölbchen | Bambusstreifen | Edamame | Wasserkastanien | Lotuswurzeln | Sojasprossen | Basmati",
+        "allergens": [
+          "Soja",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.5,
+          "internal": 9.9,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "green delight",
+        "meal_name": "Choose 5",
+        "meal_description": "Wähle 5 Komponenten heiss oder kalt",
+        "allergens": [],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 12.9,
+          "external": 16.9
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Wednesday": {
+    "Lunch": [
+      {
+        "line_name": "green daily",
+        "meal_name": "LIBANESISCHES BADINGAL",
+        "meal_description": "Kichererbsen | Auberginen | Tomaten | Zimt | Couscous | Jogurt | Pfefferminze",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Milch, Laktose",
+          "Schalenfrüchte",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.5,
+          "internal": 9.9,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "green delight",
+        "meal_name": "Choose 5",
+        "meal_description": "Wähle 5 Komponenten heiss oder kalt",
+        "allergens": [],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 12.9,
+          "external": 16.9
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Thursday": {
+    "Lunch": [
+      {
+        "line_name": "green daily",
+        "meal_name": "PARMIGIANA DI MELANZANE",
+        "meal_description": "Gemüseauflauf | Auberginen | Mozzarella | Parmesan | Insalata di Fregola | Cicorino Rosso | Baumnüssen ",
+        "allergens": [
+          "Gluten",
+          "Milch, Laktose",
+          "Schalenfrüchte"
+        ],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.5,
+          "internal": 9.9,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "green delight",
+        "meal_name": "Choose 5",
+        "meal_description": "Wähle 5 Komponenten heiss oder kalt",
+        "allergens": [],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 12.9,
+          "external": 16.9
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Friday": {
+    "Lunch": [
+      {
+        "line_name": "green daily",
+        "meal_name": "ROTES THAI CURRY",
+        "meal_description": "Tofu | Karotten | Broccoli | Peperoni | Erdnüssen | Basmatireis | Linsen | Quinoa",
+        "allergens": [
+          "Gluten",
+          "Erdnüsse",
+          "Soja",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.5,
+          "internal": 9.9,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "green delight",
+        "meal_name": "Choose 5",
+        "meal_description": "Wähle 5 Komponenten heiss oder kalt",
+        "allergens": [],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 12.9,
+          "external": 16.9
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Saturday": {
+    "Lunch": [],
+    "Dinner": []
+  },
+  "Sunday": {
+    "Lunch": [],
+    "Dinner": []
+  }
+}
