@@ -7,7 +7,7 @@ const dataFilePath = path.join(__dirname, '../data.txt');
 
 
 // Helper function to read and parse the data file
-const readData = (): { id: number; username: string; password: string }[] => {
+const readData = (): { id: number; name: string; username: string; email: string; password: string; favMenus: string[] }[] => {
   try {
     const data = fs.readFileSync(dataFilePath, 'utf8');
     return JSON.parse(data);
@@ -31,14 +31,28 @@ router.post('/users', (req: Request, res: Response) => {
     return;
   }
 
-  if(isValidEmail(email)){
-    res.status(400).send('Type a real email');
+  const users = readData();
+
+  // Check if username or email already exists
+  const isUsernameExist = users.some(user => user.username === username);
+  const isEmailExist = users.some(user => user.email === email);
+
+  if (isUsernameExist) {
+    console.log('Username already exists');
+    res.status(400).send('Username already exists');
     return;
   }
 
-  const users = readData();
+  if (isEmailExist) {
+    console.log('Email already exists');
+    res.status(400).send('Email already exists');
+    return;
+  }
+  
   const newId = users.length + 1; // Simple ID generation
-  const newUser = { id: newId, name, username, email, password };
+  const newUser = { id: newId, name, username, email, password, favMenus: [] };
+
+  console.log(newUser);
 
   users.push(newUser);
   writeData(users);
@@ -56,17 +70,14 @@ router.post('/authenticate', (req, res) => {
   const user = users.find(user => user.username === username && user.password === password);
 
   if (user) {
+    req.session.userId = user.id;
+    req.session.userName = user.username;
+    req.session.favMenus = user.favMenus;
     res.status(200).json({ message: 'Authentication successful', user });
   } else {
     res.status(401).json({ message: 'Authentication failed' });
   }
 });
-
-function isValidEmail(email: string) {
-  console.log("Testing email")
-  const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-  return regex.test(email);
-}
 
 // Don't forget to export the router and include it in your Express app
 

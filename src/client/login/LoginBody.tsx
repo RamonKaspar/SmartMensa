@@ -28,6 +28,7 @@ function LoginBody() {
     }
   };
   const handleClick2 = () => {
+    console.log("hi");
     navigate("/register")
   };
 

@@ -19,11 +19,19 @@ function RegisterBody() {
         return;
       }
       if (!response.ok) {
+        const resBody = await response.text();
+        // Check for specific error messages related to duplicates
+        if (resBody.includes('Username already exists')) {
+          alert('Username already exists');
+        }
+        else if(resBody.includes('Email already exists')){
+          alert('Email already exists');
+        }
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
 
       // Navigate to home on successful submission
-      navigate("/home");
+      navigate("/login");
     } catch (error) {
 
       console.error('Error:', error);
@@ -38,7 +46,6 @@ function RegisterBody() {
     navigate('/login');
   }
   function isValidEmail(email: string) {
-    console.log("testing");
     const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     return regex.test(email);
   }

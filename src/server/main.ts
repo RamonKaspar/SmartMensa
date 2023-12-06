@@ -3,9 +3,19 @@ import ViteExpress from "vite-express";
 import path from "path";
 import fs from "fs/promises";
 import apiRoutes from './routes/api';
-
+import session from 'express-session';
 
 const app = express();
+
+app.use(express.json());
+
+// Configure session middleware
+app.use(session({
+  secret: 'your-secret-key', // Replace with a secure key
+  resave: false,
+  saveUninitialized: true,
+  cookie: { httpOnly: true, secure: false } // Set secure to true if using HTTPS
+}));
 
 app.use('/api', apiRoutes);
 
