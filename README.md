@@ -83,7 +83,7 @@ Document here the major milestones of your code and future planned steps.\
   - [x] Implement and style the login- and homepage #4 !4
   - [x] Implement and style the mensa page #7 !8
   - [x] Refine mensa styling and make it functional #9 !10
-  - [ ] Hardcode all static mensa information (name, open hours etc.) in footer
+  - [ ] Hardcode all static mensa information (name, open hours etc.)
 
 - [ ] Milestone 2: Make frontend functional (dynamic)
   - [x] Implement backend functionality to get the menus #6 !5
@@ -124,7 +124,7 @@ We will evaluate your code every week, based on the corresponding version.
 
 Tags:
 - Week 1: [v1.1.1](https://gitlab.inf.ethz.ch/course-fwe2023/students/project/express/lumast_project_express/-/tags/v1.1.1)
-- Milestone 2: v1.0.1, v1.1.0
+- Week 2: [v1.2.0](https://gitlab.inf.ethz.ch/course-fwe2023/students/project/express/lumast_project_express/-/tags/v1.2.0)
 - Milestone 3: ...
 - ...
 
