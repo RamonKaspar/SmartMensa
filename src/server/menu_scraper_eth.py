@@ -236,9 +236,9 @@ def parseToJson(url):
                         
                         # Categorize meals into Lunch and Dinner based on meal-time-array.name
                         meal_time_name = meal_time.name
-                        if "lunch" or "mittagessen" in meal_time_name.lower():
+                        if "lunch" in meal_time_name.lower() or "mittagessen" in meal_time_name.lower() or "mittag" in meal_time_name.lower():
                             menu_details_per_day[day_of_week_menu]["Lunch"].append(meal_info)
-                        elif "dinner" or "abendessen" in meal_time_name.lower():
+                        else:
                             menu_details_per_day[day_of_week_menu]["Dinner"].append(meal_info)
 
     # Define the subfolder name
@@ -271,8 +271,8 @@ def main():
                     23  # Oerlikon
                     ]
     
-    valid_after = '2023-11-27'
-    valid_before = '2023-12-04'
+    valid_after = '2023-12-04'
+    valid_before = '2023-12-11'
     language = "de"
     
     for facility_id in facility_ids:
