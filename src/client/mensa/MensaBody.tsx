@@ -1,11 +1,12 @@
 import "./MensaBody.css";
 import { useLocation } from "react-router-dom";
-import { ReactNode, useEffect, useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar, faShareSquare } from '@fortawesome/free-solid-svg-icons';
+import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar, faShareSquare } from "@fortawesome/free-solid-svg-icons";
 
 function MensaBody() {
   const mensaMapping = new Map<string, string>([
+    // these are the facility IDs for the menus in german
     ["archimedes", "8"],
     ["clausiusbar", "3"],
     ["dozentenfoyer", "5"],
@@ -25,22 +26,40 @@ function MensaBody() {
     ["fusion-coffee", "21"],
     ["rice-up", "22"],
     ["octavo", "23"],
-    ["uzh-untere-mensa-lunch", "505"],
-    ["uzh-untere-mensa-dinner", "506"],
-    ["uzh-obere-mensa", "507"],
-    ["lichthof-rondell", "508"],
-    ["raemi-59", "509"],
-    ["platte-14", "520"],
-    ["irchel", "180"],
-    ["cafeteria-irchel-atrium", "512"],
-    ["cafeteria-irchel-seerose-lunch", "513"],
-    ["cafeteria-irchel-seerose-dinner", "514"],
-    ["binzmuehle", "515"],
-    ["cafeteria-cityport", "516"],
-    ["cafeteria-zentrum-fuer-zahnmedizin", "517"],
-    ["cafeteria-tierspital", "518"],
-    ["cafeteria-botanischer-garten", "519"],
-    ["cafeteria-plattenstrasse", "520"],
+    ["uzh-untere-mensa-lunch", "147"],
+    ["uzh-untere-mensa-dinner", "149"],
+    ["uzh-obere-mensa", "148"],
+    ["lichthof-rondell", "150"],
+    ["raemi-59", "346"],
+    ["platte-14", "143"],
+    ["irchel", "142"],
+    ["cafeteria-irchel-atrium", "176"],
+    ["cafeteria-irchel-seerose-lunch", "241"],
+    ["cafeteria-irchel-seerose-dinner", "256"],
+    ["binzmuehle", "184"],
+    ["cafeteria-cityport", "391"],
+    ["cafeteria-zentrum-fuer-zahnmedizin", "151"],
+    ["cafeteria-tierspital", "146"],
+    ["cafeteria-botanischer-garten", "144"],
+    ["cafeteria-plattenstrasse", "143"],
+
+    // these are the facility IDs for the menus in english
+    // ["uzh-untere-mensa-lunch", "505"],
+    // ["uzh-untere-mensa-dinner", "506"],
+    // ["uzh-obere-mensa", "507"],
+    // ["lichthof-rondell", "508"],
+    // ["raemi-59", "509"],
+    // ["platte-14", "520"],
+    // ["irchel", "180"],
+    // ["cafeteria-irchel-atrium", "512"],
+    // ["cafeteria-irchel-seerose-lunch", "513"],
+    // ["cafeteria-irchel-seerose-dinner", "514"],
+    // ["binzmuehle", "515"],
+    // ["cafeteria-cityport", "516"],
+    // ["cafeteria-zentrum-fuer-zahnmedizin", "517"],
+    // ["cafeteria-tierspital", "518"],
+    // ["cafeteria-botanischer-garten", "519"],
+    // ["cafeteria-plattenstrasse", "520"],
   ]);
 
   const getFacilityID = (mensaName: string) => {
@@ -71,10 +90,16 @@ function MensaBody() {
           "Saturday",
         ];
         const currentDate = new Date();
-        const currentDay = "Monday"; //daysOfWeek[currentDate.getDay()] as string;
+        const currentDay = daysOfWeek[currentDate.getDay()] as string;
 
         if (mealsData[currentDay]) {
-          setCurrentDayMeals(mealsData[currentDay].Lunch);
+          if (mealsData[currentDay].Lunch.length === 0) {
+            setCurrentDayMeals(mealsData[currentDay].Dinner);
+          } else if (mealsData[currentDay].Dinner.length === 0) {
+            setCurrentDayMeals(mealsData[currentDay].Lunch);
+          } else {
+            // here I would add the logic if there is no menu available for the current day
+          }
         } else {
           setCurrentDayMeals([]);
         }
@@ -115,18 +140,16 @@ function MensaBody() {
       .join(" "); // Join the words back into a string, separated by spaces
   }
 
-
-
   function getPrice(meal: any, priceCategory: string): string {
     let amount = meal.price_info.external;
     if (priceCategory == "student") {
       amount = meal.price_info.students;
     } else if (priceCategory == "internal") {
       amount = meal.price_info.internal;
-    } 
-    return amount.toLocaleString('en-US', {
-      style: 'currency',
-      currency: 'CHF', // Change the currency code as needed
+    }
+    return amount.toLocaleString("en-US", {
+      style: "currency",
+      currency: "CHF", // Change the currency code as needed
       minimumFractionDigits: 2, // Set the minimum number of digits after the decimal point
     });
   }
@@ -137,22 +160,27 @@ function MensaBody() {
         <div>
           <h2>{changeName(mensaName)}</h2>
           <div className="mensa-infos">
-            <p className="location-tag"> UZH Zentrum </p> 
-            <p className="open-closed-tag"> Open </p> {/* change later: make it mensa-dependent*/}
+            <p className="location-tag"> UZH Zentrum </p>
+            <p className="open-closed-tag"> Open </p>{" "}
+            {/* change later: make it mensa-dependent*/}
           </div>
           <ul>
             {currentDayMeals.map((meal, index) => (
               <li key={index} className="bordered-component">
-                <h3> 
-                  <p>{meal.line_name.toUpperCase()}</p> 
+                <h3>
+                  <p>{meal.line_name.toUpperCase()}</p>
                   <p>{getPrice(meal, "external")}</p>
-                </h3>   {/* change later: priceCategory should be retrieved from user preference */}
+                </h3>{" "}
+                {/* change later: priceCategory should be retrieved from user preference */}
                 <p>{meal.meal_name}</p>
                 <p className="menu-name">{meal.meal_description}</p>
                 <p>{meal.allergens}</p>
                 <p className="icons">
-                  <FontAwesomeIcon icon={faStar} style={{ fontSize: '2em' }}/>
-                  <FontAwesomeIcon icon={faShareSquare} style={{ fontSize: '2em' }}/>
+                  <FontAwesomeIcon icon={faStar} style={{ fontSize: "2em" }} />
+                  <FontAwesomeIcon
+                    icon={faShareSquare}
+                    style={{ fontSize: "2em" }}
+                  />
                 </p>
               </li>
             ))}
