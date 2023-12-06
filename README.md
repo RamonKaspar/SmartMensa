@@ -82,7 +82,7 @@ Document here the major milestones of your code and future planned steps.\
   - [x] Create react skeleton (all react components) and implement routes for BrowserRouter: #1 !1
   - [x] Implement and style the login- and homepage #4 !4
   - [x] Implement and style the mensa page #7 !8
-  - [ ] Refine mensa styling
+  - [x] Refine mensa styling and make it functional #9 !10
   - [ ] Hardcode all static mensa information (name, open hours etc.) in footer
 
 - [ ] Milestone 2: Make frontend functional (dynamic)
@@ -93,7 +93,7 @@ Document here the major milestones of your code and future planned steps.\
 - [ ] Milestone 3: Use webscraping to get the latest menus
   - [x] Get the menus for ETH mensas: #2 !2
   - [x] Get the menus for UZH mensas: #3 !3
-  - [ ] Run python scripts weekly in backend to fetch the new menus and store them as JSON files
+  - [x] Run python scripts weekly in backend to fetch the new menus and store them as JSON files #8 !9
 
 - [ ] Milestone 4: Personalize the web-app
   - [ ] Add login functionality
