@@ -41,6 +41,16 @@ build_webapp:
       --dockerfile "${CI_PROJECT_DIR}/Dockerfile"
       --destination "${IMAGE_NAME}-webapp:latest"
 
+install_python_dependencies:
+  stage: build
+  image: python:3.11.6 # Choose the Python version you need
+  script:
+    - apt-get update && apt-get install -y python3-pip # Update package lists and install pip
+    - pip install -r requirements.txt # Install dependencies from requirements.txt
+  artifacts:
+    paths:
+      - . # Include all files generated in this job
+
 deploy_app:
   stage: deploy
   rules:
@@ -48,16 +58,16 @@ deploy_app:
     name: alpine/helm:3.11.1
     entrypoint: [""]
   script:
-  - >-
-    helm --namespace $k8s_namespace
-    --kube-context $k8s_context
-    upgrade $(echo ${CI_PROJECT_NAME} | tr _ -) ${CI_PROJECT_DIR}/helm
-    --install
-    --history-max 5
-    --set image.host=${ci_registry}
-    --set image.name=${IMAGE_NAME}
-    --set image.tag=latest
-    --set build.job_id=${CI_JOB_ID}
-    --set build.commit=${CI_COMMIT_SHA}
-  - >-
-    echo "webapp URL: http://$(echo ${CI_PROJECT_NAME} | tr _ -).course-fwe-2023.isginf.ch"
+    - >-
+      helm --namespace $k8s_namespace
+      --kube-context $k8s_context
+      upgrade $(echo ${CI_PROJECT_NAME} | tr _ -) ${CI_PROJECT_DIR}/helm
+      --install
+      --history-max 5
+      --set image.host=${ci_registry}
+      --set image.name=${IMAGE_NAME}
+      --set image.tag=latest
+      --set build.job_id=${CI_JOB_ID}
+      --set build.commit=${CI_COMMIT_SHA}
+    - >-
+      echo "webapp URL: http://$(echo ${CI_PROJECT_NAME} | tr _ -).course-fwe-2023.isginf.ch"
