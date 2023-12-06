@@ -16,6 +16,7 @@ cron.schedule(
   "*/5 * * * *", // For testing purposes, run every 5 minutes
   () => {
     console.log("Fetching new UZH menus...");
+    console.error("Fetching new UZH menus...");
 
     // Spawn a new python process to run the menu scraper script for UZH
     const pythonProcess_uzh = spawn("python", [pythonScriptPathUZH]);
