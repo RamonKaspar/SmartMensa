@@ -5,44 +5,46 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faShareSquare } from "@fortawesome/free-solid-svg-icons";
 import { BsHeartFill } from "react-icons/bs";
 import { RiExternalLinkFill } from "react-icons/ri";
-import mensaData from "./mensa-infos-static.json"; /* IMPORTED FOR NOW: WILL BE IN BACKEND LATER!!!!! */
 
-type staticInfos = {
-  name: string;
-  facility_id: string;
-  name_display: string;
-  location: string;
-  opening_time_start: number;
-  opening_time_end: number;
-  dining_time_start: number;
-  dining_time_end: number;
-  building: string;
-  street: string;
-  city: string;
-  google_maps_link: string;
-  homepage: string;
-};
+async function fetchMensaStaticInfos() {
+  try {
+    const response = await fetch(`/mensa-info`);
+    if (!response.ok) {
+      throw new Error("Failed to fetch mensa static infos");
+    }
+    const mensaInfo = await response.json();
+    return mensaInfo;
+  } catch (error) {
+    console.error(error);
+  }
+}
 
 /* Returns the data for the given mensa */
-const getMensaStaticInfos = (mensaName: string): staticInfos => {
-  for (const mensa of mensaData.mensas) {
-    if (mensa.name === mensaName) {
-      return mensa;
+const getSpecificMensaStaticInfos = async (mensaName: string) => {
+  try {
+    const mensaInfos = await fetchMensaStaticInfos();
+    for (const mensa of mensaInfos.mensas) {
+      if (mensa.name === mensaName) {
+        return mensa;
+      }
     }
+  } catch (error) {
+    console.error(error);
   }
-  throw new Error("Mensa not found.");
 };
 
 function MensaBody() {
   const location = useLocation();
   const mensaName = location.pathname.replace("/", "");
   const [currentDayMeals, setCurrentDayMeals] = useState<any[]>([]);
-  const myMensa: staticInfos = getMensaStaticInfos(mensaName);
+  const [myMensa, setMyMensa] = useState<any>({});
 
   useEffect(() => {
     async function fetchMeals() {
       try {
-        const response = await fetch(`/menus/${myMensa.facility_id}`);
+        const mensa = await getSpecificMensaStaticInfos(mensaName);
+        setMyMensa(mensa);
+        const response = await fetch(`/menus/${mensa.facility_id}`);
         if (!response.ok) {
           throw new Error("Failed to fetch meals");
         }
@@ -63,16 +65,16 @@ function MensaBody() {
         // Logic to determine if dinner or lunch
         if (mealsData[currentDay]) {
           if (
-            (mealsData[currentDay].Lunch.length > 0 &&
-              mensaName.includes("lunch")) ||
-            (mealsData[currentDay].Lunch.length > 0 &&
-              mealsData[currentDay].Dinner.length === 0)
+            mealsData[currentDay].Lunch.length > 0 &&
+            !mensaName.includes("dinner")
           ) {
             setCurrentDayMeals(mealsData[currentDay].Lunch);
-          } else if (mealsData[currentDay].Dinner.length > 0) {
+          } else if (
+            mealsData[currentDay].Dinner.length > 0 &&
+            !mensaName.includes("lunch")
+          ) {
             setCurrentDayMeals(mealsData[currentDay].Dinner);
           } else {
-            // here I would add the logic if there is no menu available for the current day
             setCurrentDayMeals([]);
           }
         } else {
@@ -139,34 +141,36 @@ function MensaBody() {
           {currentDayMeals.length === 0 && (
             <div className="banner-no-menues-available">No menus available</div>
           )}
-          <div className="footer-container">
-            {/* ALL INFORMATIONS HARDCODED FOR NOW */}
-            <div className="footer-times">
-              <h3>Opening Times</h3>
-              <div>
-                {formatedTimes(
-                  myMensa.opening_time_start,
-                  myMensa.opening_time_end
-                )}
+          {Object.keys(myMensa).length > 0 && (
+            <div className="footer-container">
+              {/* ALL INFORMATIONS HARDCODED FOR NOW */}
+              <div className="footer-times">
+                <h3>Opening Times</h3>
+                <div>
+                  {formatedTimes(
+                    myMensa.opening_time_start,
+                    myMensa.opening_time_end
+                  )}
+                </div>
+                <h3>Dining Times</h3>
+                <div>
+                  {formatedTimes(
+                    myMensa.dining_time_start,
+                    myMensa.dining_time_end
+                  )}
+                </div>
               </div>
-              <h3>Dining Times</h3>
-              <div>
-                {formatedTimes(
-                  myMensa.dining_time_start,
-                  myMensa.dining_time_end
-                )}
+              <div className="footer-location">
+                <h3> Location </h3>
+                <div>{myMensa.building}</div>
+                <div>{myMensa.street}</div>
+                <div>{myMensa.city}</div>
+                <div className="footer-maps-link">
+                  <a href={myMensa.google_maps_link}>Show in Google Maps</a>
+                </div>
               </div>
             </div>
-            <div className="footer-location">
-              <h3> Location </h3>
-              <div>{myMensa.building}</div>
-              <div>{myMensa.street}</div>
-              <div>{myMensa.city}</div>
-              <div className="footer-maps-link">
-                <a href={myMensa.google_maps_link}>Show in Google Maps</a>
-              </div>
-            </div>
-          </div>
+          )}
           {/* LINK HARDCODED FOR NOW */}
           <div
             className="visit-website"
