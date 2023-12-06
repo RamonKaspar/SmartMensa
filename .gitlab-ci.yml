@@ -43,7 +43,7 @@ build_webapp:
 
 install_python_dependencies:
   stage: build
-  image: python:3.11.6 # Choose the Python version you need
+  image: python:3.11 # Choose the Python version you need
   script:
     - apt-get update && apt-get install -y python3-pip # Update package lists and install pip
     - pip install -r requirements.txt # Install dependencies from requirements.txt
