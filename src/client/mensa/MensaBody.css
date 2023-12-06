@@ -1,48 +1,82 @@
-.mensa-body-container {
+.row-one-title {
+  display: flex;
+  justify-content: center;
+
+  & h2 {
+    color: #000000;
+  }
+}
+
+.second-row-tags {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.menu-container {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  justify-content: space-between;
-  padding: 0 var(--space);
-  max-height: calc(100dvh - (40px + 300px));
-  overflow-y: auto;
-}
+  margin-left: 10px;
+  margin-right: 10px;
+  align-items: stretch; /* Ensures that children stretch to fill the container */
 
-.bordered-component {
-  border: 2px solid #333; /* Adjust color and thickness as needed */
-  padding: 10px; /* Optional: Add padding for space inside the border */
-  border-radius: 16.5px;
-  list-style-type: none; /* remove bullet point */
-  background-color: rgb(29, 157, 208);
-  margin-bottom: 20px;
-  
-}
+  & .menu-component {
+    padding: 15px;
+    background: var(
+      --greenish-color-background
+    ); /* Light grey background, change as needed */
+    border-radius: 25px; /* Rounded corners */
+    border: 1px solid black; /* Slight black border */
+    margin-bottom: 10px; /* Add space between buttons  */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Simple box shadow for depth */
 
-.menu-name {
-  font-size: 20px;
-}
+    & .menu-title-and-price {
+      display: flex;
+      justify-content: space-between;
+      margin: 0; /* Reset margin */
+      padding: 0; /* Reset padding */
+    }
 
-h3 {
-  display: flex;
-  justify-content: space-between;
-}
+    & .ingredients-component {
+      margin-top: 10px;
+      font-size: large;
+    }
 
-.icons {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
+    & .allergies-component {
+      margin-top: 10px;
+    }
 
-h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.mensa-infos {
-  display: flex;
-  justify-content: center;
-  & p:first-child {
-    margin-right: 30px;
+    & .last-row-actions {
+      display: flex;
+      justify-content: space-around;
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-top: 15px;
+    }
   }
+}
+
+.banner-no-menues-available {
+  font-size: x-large;
+  text-align: center;
+  font-style: italic;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 30px;
+  padding: 15px;
+  text-align: center;
+
+  & .footer-maps-link {
+    margin-top: 20px;
+  }
+}
+
+.visit-website {
+  text-align: center;
+  margin-bottom: 20px;
 }

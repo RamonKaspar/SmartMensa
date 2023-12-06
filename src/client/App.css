@@ -11,6 +11,7 @@
   --yellow-color: #ecd04c;
   --green-color: #63915c;
   --red-color: #a95855;
+  --greenish-color-background: #e5f9ee;
 }
 
 body {
@@ -25,5 +26,5 @@ body {
   height: 100dvh;
   background-color: var(--background-color);
   color: var(--text-color-dark);
-  justify-content: space-between;
+  justify-content: flex-start;
 }
