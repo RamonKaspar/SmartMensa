@@ -101,6 +101,9 @@ Document here the major milestones of your code and future planned steps.\
   - [ ] Add favourite mensas functionality
   - [ ] Add personalized setting (allergens etc.)
 
+- [ ] Milestone 5: Use gitlap pipeline to run python in backend
+  - [ ] Install chrome-driver, chromium-browser and python with all the necessary packages
+
 Create a list subtask.\
 Open an issue for each subtask. Once you create a subtask, link the corresponding issue.\
 Create a merge request (with corresponding branch) from each issue.\
