@@ -31,9 +31,8 @@ app.get("/api/current-user", (req, res) => {
   }
 });
 
-// const pythonScriptPathUZH = path.join(__dirname, "menu_scraper_uhz.py");
-// const pythonScriptPathETH = path.join(__dirname, "menu_scraper_eth.py");
-const testingScriptPath = path.join(__dirname, "testing.py");
+const pythonScriptPathUZH = path.join(__dirname, "menu_scraper_uhz.py");
+const pythonScriptPathETH = path.join(__dirname, "menu_scraper_eth.py");
 
 // serverLog type
 interface serverLog {
@@ -55,11 +54,11 @@ cron.schedule(
   // "5 0 * * 1", // Run every Monday at 00:05
   "*/1 * * * *", // For testing purposes, run every 5 minutes
   () => {
-    // console.log("Fetching new UZH menus...");
-    // serverLogs.push({
-    //   timestamp: new Date().toISOString(),
-    //   logs: ["Fetching new UZH menus..."],
-    // });
+    console.log("Fetching new UZH menus...");
+    serverLogs.push({
+      timestamp: new Date().toISOString(),
+      logs: ["Fetching new UZH menus..."],
+    });
 
     serverLogs.push({
       timestamp: new Date().toISOString(),
@@ -67,44 +66,44 @@ cron.schedule(
     });
 
     // Spawn a new python process to run the menu scraper script for UZH
-    // const pythonProcess_uzh = spawn(pythonInterpreter, [pythonScriptPathUZH], {
-    //   // Specify the path to the virtual environment's site-packages
-    //   env: {
-    //     ...process.env, // Preserve current environment variables
-    //     PYTHONPATH: path.join(
-    //       __dirname,
-    //       "myenv",
-    //       "lib",
-    //       "python3.10",
-    //       "site-packages"
-    //     ),
-    //   },
-    // });
+    const pythonProcess_uzh = spawn(pythonInterpreter, [pythonScriptPathUZH], {
+      // Specify the path to the virtual environment's site-packages
+      env: {
+        ...process.env, // Preserve current environment variables
+        PYTHONPATH: path.join(
+          __dirname,
+          "myenv",
+          "lib",
+          "python3.10",
+          "site-packages"
+        ),
+      },
+    });
 
-    // pythonProcess_uzh.stdout.on("data", (data) => {
-    //   const output = data.toString().trim();
-    //   console.log(output);
-    //   serverLogs.push({
-    //     timestamp: new Date().toISOString(),
-    //     logs: [output],
-    //   });
-    // });
+    pythonProcess_uzh.stdout.on("data", (data) => {
+      const output = data.toString().trim();
+      console.log(output);
+      serverLogs.push({
+        timestamp: new Date().toISOString(),
+        logs: [output],
+      });
+    });
 
-    // pythonProcess_uzh.stderr.on("data", (data) => {
-    //   console.error(`Python script stderr: ${data}`);
-    //   serverLogs.push({
-    //     timestamp: new Date().toISOString(),
-    //     logs: ["Python script stderr: " + data],
-    //   });
-    // });
+    pythonProcess_uzh.stderr.on("data", (data) => {
+      console.error(`Python script stderr: ${data}`);
+      serverLogs.push({
+        timestamp: new Date().toISOString(),
+        logs: ["Python script stderr: " + data],
+      });
+    });
 
-    // pythonProcess_uzh.on("close", (code) => {
-    //   console.log(`Python script process exited with code ${code}`);
-    //   serverLogs.push({
-    //     timestamp: new Date().toISOString(),
-    //     logs: ["Python script process exited with code " + code],
-    //   });
-    // });
+    pythonProcess_uzh.on("close", (code) => {
+      console.log(`Python script process exited with code ${code}`);
+      serverLogs.push({
+        timestamp: new Date().toISOString(),
+        logs: ["Python script process exited with code " + code],
+      });
+    });
 
     // console.log("Fetching new ETH menus...");
     serverLogs.push({
@@ -113,7 +112,7 @@ cron.schedule(
     });
 
     // Spawn a new python process to run the menu scraper script for ETH
-    const pythonProcess_eth = spawn(pythonInterpreter, [testingScriptPath]);
+    const pythonProcess_eth = spawn(pythonInterpreter, [pythonScriptPathETH]);
 
     pythonProcess_eth.stdout.on("data", (data) => {
       const output = data.toString().trim();
