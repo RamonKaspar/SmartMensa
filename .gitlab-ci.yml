@@ -46,7 +46,7 @@ install_webscraping_dependencies:
   image: python:3.11
   script:
     - apt update
-    - apt install -y python3-pip wget unzip
+    - apt install -y python3-pip wget unzip libnss3
     - wget https://chromedriver.storage.googleapis.com/92.0.4515.107/chromedriver_linux64.zip
     - unzip chromedriver_linux64.zip
     - mv chromedriver /usr/bin/chromedriver
