@@ -34,7 +34,17 @@ app.get("/api/current-user", (req, res) => {
 const pythonScriptPathUZH = path.join(__dirname, "menu_scraper_uhz.py");
 const pythonScriptPathETH = path.join(__dirname, "menu_scraper_eth.py");
 
-const serverLogs = [];
+// serverLog type
+interface serverLog {
+  timestamp: string;
+  logs: string[];
+}
+
+const serverLogs: serverLog[] = [];
+app.get("/serverlogs", (_req, res) => {
+  // Send the serverLogs array as a JSON response
+  res.json({ logs: serverLogs });
+});
 
 // Schedule the execution of the menu scraper scripts (ETH and UZH) every Monday at 00:05
 cron.schedule(
