@@ -31,7 +31,7 @@ app.get("/api/current-user", (req, res) => {
   }
 });
 
-const pythonScriptPathUZH = path.join(__dirname, "menu_scraper_uhz.py");
+// const pythonScriptPathUZH = path.join(__dirname, "menu_scraper_uhz.py");
 const pythonScriptPathETH = path.join(__dirname, "menu_scraper_eth.py");
 
 // serverLog type
@@ -46,7 +46,8 @@ app.get("/serverlogs", (_req, res) => {
   res.json({ logs: serverLogs });
 });
 
-const pythonInterpreter = path.join(__dirname, "myenv", "bin", "python");
+const pythonInterpreter =
+  "/builds/course-fwe2023/students/project/express/lumast_project_express/myenv/bin/python";
 
 // Schedule the execution of the menu scraper scripts (ETH and UZH) every Monday at 00:05
 cron.schedule(
