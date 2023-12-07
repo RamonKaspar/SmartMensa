@@ -1,13 +1,8 @@
-# from __future__ import annotations
+from __future__ import annotations
 import os
 import sys
 
 print(sys.path)
-
-# Add the path to the desired package location
-# package_location = '/usr/local/lib/python3.10/dist-packages'
-# if package_location not in sys.path:
-#     sys.path.append(package_location)
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
