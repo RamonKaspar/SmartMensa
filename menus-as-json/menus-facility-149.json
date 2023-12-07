@@ -1,0 +1,185 @@
+{
+    "Monday": {
+        "Lunch": [],
+        "Dinner": [
+            {
+                "line_name": "garden",
+                "price_info": {
+                    "students": 6.1,
+                    "internal": 9.0,
+                    "external": 13.0
+                },
+                "meal_description": "Orecchiette mit Erbsenpesto\nMenüsalat oder Apfelmus",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Hartschalenobst (Nüsse)",
+                    "Schwefeldioxid und Sulfite"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "internal": 10.5,
+                    "external": 15.0
+                },
+                "meal_description": "Poulet Schenkel aus dem Ofen\nBaked Potato\nJoghurtsauce\nOfen Auberginen\nFleisch; Poulet, CH",
+                "allergens": [
+                    "Milch",
+                    "Sellerie",
+                    "Schwefeldioxid und Sulfite"
+                ]
+            }
+        ]
+    },
+    "Tuesday": {
+        "Lunch": [],
+        "Dinner": [
+            {
+                "line_name": "garden",
+                "price_info": {
+                    "students": 6.1,
+                    "internal": 9.0,
+                    "external": 13.0
+                },
+                "meal_description": "Zucchetti Piccata \nTomaten-Risotto mit Basilikum \nMenüsalat oder Apfelmus",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Eier",
+                    "Soja",
+                    "Milch",
+                    "Sellerie",
+                    "Schwefeldioxid und Sulfite",
+                    "Lupine"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "internal": 10.5,
+                    "external": 15.0
+                },
+                "meal_description": "Schwein Ragout mit Wurzelgemüse\nSpätzli\nBroccoli\nFleisch; Schwein, CH",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Eier",
+                    "Milch",
+                    "Sellerie"
+                ]
+            }
+        ]
+    },
+    "Wednesday": {
+        "Lunch": [],
+        "Dinner": [
+            {
+                "line_name": "garden",
+                "price_info": {
+                    "students": 6.1,
+                    "internal": 9.0,
+                    "external": 13.0
+                },
+                "meal_description": "Kartoffel Knödel\nVegane Pilz-Rahmsauce\nApfel-Rotkraut",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Soja",
+                    "Sellerie",
+                    "Schwefeldioxid und Sulfite"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "internal": 10.5,
+                    "external": 15.0
+                },
+                "meal_description": "Rindfleisch Lasagne\nKräutergarnitur\nMenüsalat oder Apfelmus\nFleisch; Rind, CH",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Eier",
+                    "Milch",
+                    "Sellerie",
+                    "Schwefeldioxid und Sulfite"
+                ]
+            }
+        ]
+    },
+    "Thursday": {
+        "Lunch": [],
+        "Dinner": [
+            {
+                "line_name": "garden",
+                "price_info": {
+                    "students": 6.1,
+                    "internal": 9.0,
+                    "external": 13.0
+                },
+                "meal_description": "Penne Napoli mit Soja Hackbällchen\nNussparmesan\nMenüsalat oder Apfelmus",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Soja",
+                    "Hartschalenobst (Nüsse)"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "internal": 10.5,
+                    "external": 15.0
+                },
+                "meal_description": "Cervelat mit Käse und Speck\nSenfsauce\nBratkartoffeln mit Zwiebeln\nMenüsalat oder Apfelmus",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Milch",
+                    "Sellerie",
+                    "Senf",
+                    "Schwefeldioxid und Sulfite"
+                ]
+            }
+        ]
+    },
+    "Friday": {
+        "Lunch": [],
+        "Dinner": [
+            {
+                "line_name": "garden",
+                "price_info": {
+                    "students": 6.1,
+                    "internal": 9.0,
+                    "external": 13.0
+                },
+                "meal_description": "Veganes paniertes Schnitzel \nKetchup\nPommes frites\nMenüsalat oder Apfelmus",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Soja",
+                    "Schwefeldioxid und Sulfite"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "internal": 10.5,
+                    "external": 15.0
+                },
+                "meal_description": "Schweinsgeschnetzeltes Zürcher Art\nPasta\nFenchelgemüse\nFleisch; Schwein, CH",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Milch",
+                    "Schwefeldioxid und Sulfite"
+                ]
+            }
+        ]
+    },
+    "Saturday": {
+        "Lunch": [],
+        "Dinner": []
+    },
+    "Sunday": {
+        "Lunch": [],
+        "Dinner": []
+    }
+}

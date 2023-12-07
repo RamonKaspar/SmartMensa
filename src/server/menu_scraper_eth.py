@@ -17,14 +17,15 @@ ua = UserAgent()
 
 # Set up Selenium Chrome options
 chrome_options = Options()
-chrome_options.binary_location = '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser'
+# chrome_options.binary_location = '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser'
 chrome_options.add_argument("--headless")  # Run in headless mode (without opening browser window)
 chrome_options.add_argument('--disable-blink-features=AutomationControlled')
 # Set the path for the ChromeDriver
-chrome_driver_path = '/opt/homebrew/bin/chromedriver'
+# chrome_driver_path = '/opt/homebrew/bin/chromedriver'
 
 # Set up service
-service = Service(chrome_driver_path)
+# service = Service(chrome_driver_path)
+service = webdriver.ChromeService()
 
 # Create a Chrome webdriver instance
 driver = webdriver.Chrome(service=service, options=chrome_options)
@@ -134,6 +135,28 @@ class Model(BaseModel):
 
 ##############################################################################################################################
 
+# Define a function to translate the day of the week from German to English
+
+def translate_day_of_week(day_of_week):
+    if day_of_week == 'Montag':
+        return 'Monday'
+    elif day_of_week == 'Dienstag':
+        return 'Tuesday'
+    elif day_of_week == 'Mittwoch':
+        return 'Wednesday'
+    elif day_of_week == 'Donnerstag':
+        return 'Thursday'
+    elif day_of_week == 'Freitag':
+        return 'Friday'
+    elif day_of_week == 'Samstag':
+        return 'Saturday'
+    elif day_of_week == 'Sonntag':
+        return 'Sunday'
+    else:
+        return day_of_week
+    
+##############################################################################################################################
+
 # Define a function to parse the JSON data to a dictionary and save it as a JSON file
 
 def parseToJson(url):
@@ -153,7 +176,7 @@ def parseToJson(url):
     for weekly_rota in parsed_data.weekly_rota_array:
         facility_id = weekly_rota.facility_id
         for day_of_week in weekly_rota.day_of_week_array:
-            day_of_week_menu = day_of_week.day_of_week_desc
+            day_of_week_menu = translate_day_of_week(day_of_week.day_of_week_desc)
             menu_details_per_day[day_of_week_menu] = {"Lunch": [], "Dinner": []}  # Initialize Lunch and Dinner lists for the day
             
             for opening_hour in day_of_week.opening_hour_array or []:
@@ -191,14 +214,14 @@ def parseToJson(url):
                         price_info = {}
                         if hasattr(line, 'meal') and line.meal:
                             for price_item in line.meal.meal_price_array:
-                                if price_item.customer_group_desc.lower() == 'students':
+                                if price_item.customer_group_desc.lower() == 'students' or 'studierende' in price_item.customer_group_desc.lower():
                                     price_info['students'] = price_item.price
-                                elif price_item.customer_group_desc.lower() == 'internal':
+                                elif price_item.customer_group_desc.lower() == 'internal' or 'interne' in price_item.customer_group_desc.lower():
                                     price_info['internal'] = price_item.price
-                                elif price_item.customer_group_desc.lower() == 'external':
+                                elif price_item.customer_group_desc.lower() == 'external' or 'extern' in price_item.customer_group_desc.lower():
                                     price_info['external'] = price_item.price
-                                elif price_item.customer_group_desc.lower() == 'all visitors':
-                                    price_info['all visitors'] = price_item.price
+                                elif price_item.customer_group_desc.lower() == 'all visitors' or 'alle besucher' in price_item.customer_group_desc.lower():
+                                    price_info['all_visitors'] = price_item.price
 
                         meal_info = {
                             "line_name": line.name,
@@ -213,9 +236,9 @@ def parseToJson(url):
                         
                         # Categorize meals into Lunch and Dinner based on meal-time-array.name
                         meal_time_name = meal_time.name
-                        if "lunch" in meal_time_name.lower():
+                        if "lunch" in meal_time_name.lower() or "mittagessen" in meal_time_name.lower() or "mittag" in meal_time_name.lower():
                             menu_details_per_day[day_of_week_menu]["Lunch"].append(meal_info)
-                        elif "dinner" in meal_time_name.lower():
+                        else:
                             menu_details_per_day[day_of_week_menu]["Dinner"].append(meal_info)
 
     # Define the subfolder name
@@ -239,8 +262,8 @@ def parseToJson(url):
 
 def main():
     # Generate the URL for the current week for each facility
-    def generate_url(facility_id, valid_after, valid_before):
-        return f'https://idapps.ethz.ch/cookpit-pub-services/v1/weeklyrotas/?client-id=ethz-wcms&lang=en&rs-first=0&rs-size=50&valid-after={valid_after}&valid-before={valid_before}&facility={facility_id}'
+    def generate_url(facility_id, valid_after, valid_before, language):
+        return f'https://idapps.ethz.ch/cookpit-pub-services/v1/weeklyrotas/?client-id=ethz-wcms&lang={language}&rs-first=0&rs-size=50&valid-after={valid_after}&valid-before={valid_before}&facility={facility_id}'
     
     # Define the facility IDs for the different ETHZ facilities, for more information see facility-ids.md
     facility_ids = [ 3, 5, 7, 8, 9, 10, 11,  # Zentrum
@@ -248,19 +271,20 @@ def main():
                     23  # Oerlikon
                     ]
     
-    valid_after = '2023-11-27'
-    valid_before = '2023-12-04'
+    valid_after = '2023-12-04'
+    valid_before = '2023-12-11'
+    language = "de"
     
     for facility_id in facility_ids:
         user_agent = ua.random
         print(f'{"USER AGENT:":<15} {user_agent}')
         chrome_options.add_argument(f'--user-agent={user_agent}')
         print(f'{ "FACILITY ID:":<15} Processing facility {facility_id}...')
-        url = generate_url(facility_id, valid_after, valid_before)
+        url = generate_url(facility_id, valid_after, valid_before, language)
         parseToJson(url)
-        sleep(1)
+        sleep(0.1)
         
-    print(f'{"STATUS:":<15} All menus successfully stored!')
+    print(f'{"STATUS:":<15} All ETH menus successfully stored!')
 
 if __name__ == "__main__":
     main()

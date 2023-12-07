@@ -1,0 +1,190 @@
+{
+  "Monday": {
+    "Lunch": [
+      {
+        "line_name": "CHILI SIN CARNE",
+        "meal_name": "CHILI SIN CARNE",
+        "meal_description": "Sojahack | Trockenreis | Texmex\nGemüse | Menusalat",
+        "allergens": [],
+        "meal_class": [
+          "Vegan"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      },
+      {
+        "line_name": "Wähe ",
+        "meal_name": "Wähe",
+        "meal_description": "salzige Wähe | Menusalat",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.7,
+          "internal": 7.7,
+          "external": 8.4
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Tuesday": {
+    "Lunch": [
+      {
+        "line_name": "FOODLAB BURGER",
+        "meal_name": "FOODLAB BURGER",
+        "meal_description": "Brioche Bun | Rindsfleisch |\nZwiebel Chutney | Cocktailsauce |\nEi",
+        "allergens": [],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 0.0,
+          "internal": 0.0,
+          "external": 0.0
+        }
+      },
+      {
+        "line_name": "Wähe ",
+        "meal_name": "Wähe",
+        "meal_description": "salzige Wähe | Menusalat",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.7,
+          "internal": 7.7,
+          "external": 8.4
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Wednesday": {
+    "Lunch": [
+      {
+        "line_name": "East",
+        "meal_name": "SPÄTZLI PFANNE",
+        "meal_description": "Bechamel Käse | Markt Gemüse |\nRöstzwiebeln",
+        "allergens": [],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      },
+      {
+        "line_name": "West",
+        "meal_name": "Wähe",
+        "meal_description": "salzige Wähe | Menusalat",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.7,
+          "internal": 7.7,
+          "external": 8.4
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Thursday": {
+    "Lunch": [
+      {
+        "line_name": "SPÄTZLI PFANNE",
+        "meal_name": "SÜSSKARTOFFEL CURRY",
+        "meal_description": "Thai Nudeln | Chinakohl | Lattich",
+        "allergens": [],
+        "meal_class": [
+          "Vegan"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 0.0,
+          "internal": 0.0,
+          "external": 0.0
+        }
+      },
+      {
+        "line_name": "Wähe",
+        "meal_name": "Wähe",
+        "meal_description": "salzige Wähe | Menusalat",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.7,
+          "internal": 7.7,
+          "external": 8.4
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Friday": {
+    "Lunch": [
+      {
+        "line_name": "DORSCH KNUSPERLI",
+        "meal_name": "DORSCH KNUSPERLI",
+        "meal_description": "Spinat | Salzkartoffel |\nRemouladensauce",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 11.9,
+          "external": 13.9
+        }
+      },
+      {
+        "line_name": "Wähe ",
+        "meal_name": "Wähe",
+        "meal_description": "salzige Wähe | Menusalat",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.7,
+          "internal": 7.7,
+          "external": 8.4
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Saturday": {
+    "Lunch": [],
+    "Dinner": []
+  },
+  "Sunday": {
+    "Lunch": [],
+    "Dinner": []
+  }
+}

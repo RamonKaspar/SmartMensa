@@ -1,0 +1,401 @@
+{
+  "Monday": {
+    "Lunch": [
+      {
+        "line_name": "Chefs World",
+        "meal_name": "Gebratenes Quornschnitzel",
+        "meal_description": "Pfeffersauce | Schupfnudeln | Mohn | Rosenkohl | Karottenbrunoise",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Milch, Laktose"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "all_visitors": 18.5
+        }
+      },
+      {
+        "line_name": "Vitality",
+        "meal_name": "Hörnli und Soja G'Hackets",
+        "meal_description": "Ofengemüse | Röstzwiebeln | Reibkäse | Apfelmus",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Soja",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "all_visitors": 14.9
+        }
+      },
+      {
+        "line_name": "Favorite",
+        "meal_name": "Turkey",
+        "meal_description": "Trutengeschnetzeltes |\nIndisches Curry |\nJasminreis |\nFederkohl mit Sesamöl und Chili | pro 100gr.",
+        "allergens": [
+          "Ei",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Truthahn",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "all_visitors": 3.2
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Tuesday": {
+    "Lunch": [
+      {
+        "line_name": "Chefs World",
+        "meal_name": "Lammrack am Stück gegart",
+        "meal_description": "Rotweinsauce | Rosmarinkartoffeln | geröstete Kefen",
+        "allergens": [
+          "Milch, Laktose",
+          "Sellerie",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Lamm",
+            "origin": [
+              "Irland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "all_visitors": 21.5
+        }
+      },
+      {
+        "line_name": "Vitality",
+        "meal_name": "Gebratene Servietten-Knödel",
+        "meal_description": "Kürbissauce | Wirz | Kümmel ",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Milch, Laktose",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "all_visitors": 14.9
+        }
+      },
+      {
+        "line_name": "Favorite",
+        "meal_name": "Gebratenes Baramundifilet",
+        "meal_description": "rote Linsen | gedünsteter Lattich | Kokosraspeln | Sesamvinaigrette | pro 100gr.",
+        "allergens": [
+          "Gluten",
+          "Fisch",
+          "Soja",
+          "Milch, Laktose",
+          "Schalenfrüchte",
+          "Sesam",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Fisch"
+        ],
+        "meat_info": [],
+        "fish_info": [
+          {
+            "desc": "Zucht",
+            "origin": [
+              "Vietnam"
+            ]
+          }
+        ],
+        "price_info": {
+          "all_visitors": 3.2
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Wednesday": {
+    "Lunch": [
+      {
+        "line_name": "Chefs World",
+        "meal_name": "Crevetten Sweet and Sour",
+        "meal_description": "Basmatireis | asiatisches Mischgemüse",
+        "allergens": [
+          "Gluten",
+          "Krebstiere",
+          "Soja"
+        ],
+        "meal_class": [
+          "Fisch"
+        ],
+        "meat_info": [],
+        "fish_info": [
+          {
+            "desc": "Zucht",
+            "origin": [
+              "Vietnam"
+            ]
+          }
+        ],
+        "price_info": {
+          "all_visitors": 19.5
+        }
+      },
+      {
+        "line_name": "Vitality",
+        "meal_name": "Halloumi aus dem Ofen",
+        "meal_description": "Minze-Joghurtdip | Couscous | Datteln | Ratatouille | Kräuter",
+        "allergens": [
+          "Gluten",
+          "Milch, Laktose",
+          "Senf"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "all_visitors": 14.9
+        }
+      },
+      {
+        "line_name": "Favorite",
+        "meal_name": "Papet vaudoise",
+        "meal_description": "Waadtländer Saucisson | gedünsteter Lauch | Salzkartoffeln | Weissweinrahmsauce | pro 100gr.",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Milch, Laktose",
+          "Sellerie",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Schwein",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "all_visitors": 3.2
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Thursday": {
+    "Lunch": [
+      {
+        "line_name": "Chefs World",
+        "meal_name": "Black Angus Burger",
+        "meal_description": "Speck | Eisbergsalat | Tomaten | Gurken | Cocktailsauce | Countrycuts | Ofengemüse",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Fisch",
+          "Milch, Laktose",
+          "Sesam",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "all_visitors": 20.5
+        }
+      },
+      {
+        "line_name": "Vitality",
+        "meal_name": "Trüffel Ravioloni",
+        "meal_description": "Thymian-Weissweinsauce | karamellisierter Kürbis | konfierte Cherrytomaten",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Milch, Laktose",
+          "Sellerie",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "all_visitors": 14.9
+        }
+      },
+      {
+        "line_name": "Favorite",
+        "meal_name": "SATAY",
+        "meal_description": "Trutenragout |\nSatay Sauce |\nQuinoareis |\nKürbis | Curry | Ingwer ",
+        "allergens": [
+          "Gluten",
+          "Erdnüsse",
+          "Milch, Laktose",
+          "Sesam"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Truthahn",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "all_visitors": 3.2
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Friday": {
+    "Lunch": [
+      {
+        "line_name": "Chefs World",
+        "meal_name": "Forellenfilet",
+        "meal_description": "Kafir-Limettensauce | Quinoa tricolore\n| gebratener Fenchel",
+        "allergens": [
+          "Gluten",
+          "Fisch",
+          "Milch, Laktose",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Fisch"
+        ],
+        "meat_info": [],
+        "fish_info": [
+          {
+            "desc": "Zucht",
+            "origin": [
+              "Italien"
+            ]
+          }
+        ],
+        "price_info": {
+          "all_visitors": 20.5
+        }
+      },
+      {
+        "line_name": "Vitality",
+        "meal_name": "SEOUL",
+        "meal_description": "Nudeln - Korea Style |\nKimchi | Peperoni | Blumenkohl | \nSpinat | Kaset (Soja) | \nSesam | Frühlingsrollen",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sellerie",
+          "Sesam",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Vegan"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "all_visitors": 14.9
+        }
+      },
+      {
+        "line_name": "Favorite",
+        "meal_name": "Biff Lindström",
+        "meal_description": "Hackfleisch-Randentätschli | Kräuterjus | Kartoffelpüree\n| glasierte Karotten | pro 100gr.",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Soja",
+          "Milch, Laktose",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          },
+          {
+            "type": "Kalb",
+            "origin": [
+              "Schweiz"
+            ]
+          },
+          {
+            "type": "Schwein",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "all_visitors": 3.2
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Saturday": {
+    "Lunch": [],
+    "Dinner": []
+  },
+  "Sunday": {
+    "Lunch": [],
+    "Dinner": []
+  }
+}
