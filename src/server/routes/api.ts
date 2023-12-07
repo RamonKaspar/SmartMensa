@@ -62,8 +62,6 @@ router.post("/users", (req: Request, res: Response) => {
   res.status(200).json({ message: "User added", newUser });
 });
 
-// In your Express router file
-
 // POST route for /api/authenticate
 router.post("/authenticate", (req, res) => {
   const { username, password } = req.body;
