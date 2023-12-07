@@ -58,7 +58,7 @@ cron.schedule(
     });
 
     // Spawn a new python process to run the menu scraper script for UZH
-    const pythonProcess_uzh = spawn("python", [pythonScriptPathUZH]);
+    const pythonProcess_uzh = spawn("python3", [pythonScriptPathUZH]);
 
     pythonProcess_uzh.stdout.on("data", (data) => {
       const output = data.toString().trim();
@@ -80,7 +80,7 @@ cron.schedule(
     });
 
     // Spawn a new python process to run the menu scraper script for ETH
-    const pythonProcess_eth = spawn("python", [pythonScriptPathETH]);
+    const pythonProcess_eth = spawn("python3", [pythonScriptPathETH]);
 
     pythonProcess_eth.stdout.on("data", (data) => {
       const output = data.toString().trim();
