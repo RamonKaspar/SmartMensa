@@ -112,19 +112,7 @@ cron.schedule(
     });
 
     // Spawn a new python process to run the menu scraper script for ETH
-    const pythonProcess_eth = spawn(pythonInterpreter, [pythonScriptPathETH], {
-      // Specify the path to the virtual environment's site-packages
-      env: {
-        ...process.env, // Preserve current environment variables
-        PYTHONPATH: path.join(
-          __dirname,
-          "myenv",
-          "lib",
-          "python3.10",
-          "site-packages"
-        ),
-      },
-    });
+    const pythonProcess_eth = spawn(pythonInterpreter, [pythonScriptPathETH]);
 
     pythonProcess_eth.stdout.on("data", (data) => {
       const output = data.toString().trim();
