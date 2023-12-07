@@ -32,7 +32,8 @@ app.get("/api/current-user", (req, res) => {
 });
 
 // const pythonScriptPathUZH = path.join(__dirname, "menu_scraper_uhz.py");
-const pythonScriptPathETH = path.join(__dirname, "menu_scraper_eth.py");
+// const pythonScriptPathETH = path.join(__dirname, "menu_scraper_eth.py");
+const testingScriptPath = path.join(__dirname, "testing.py");
 
 // serverLog type
 interface serverLog {
@@ -112,7 +113,7 @@ cron.schedule(
     });
 
     // Spawn a new python process to run the menu scraper script for ETH
-    const pythonProcess_eth = spawn(pythonInterpreter, [pythonScriptPathETH]);
+    const pythonProcess_eth = spawn(pythonInterpreter, [testingScriptPath]);
 
     pythonProcess_eth.stdout.on("data", (data) => {
       const output = data.toString().trim();
