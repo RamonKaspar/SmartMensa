@@ -43,14 +43,10 @@ build_webapp:
 
 install_webscraping_dependencies:
   stage: build
-  image: python:3.11
+  image: python:3.11 # Choose the Python version you need
   script:
     - apt update
-    - apt install -y python3-pip wget
-    - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-    - dpkg -i google-chrome-stable_current_amd64.deb
-    - apt-get install -f
-    - google-chrome --version
+    - apt install -y python3-pip wget unzip
     - CHROME_VERSION=$(google-chrome --version | grep -oP "(?<=Google Chrome )[\d\.]+")
     - CHROMEDRIVER_VERSION=$(echo $CHROME_VERSION | cut -d'.' -f1)
     - wget https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION.0.4515.107/chromedriver_linux64.zip
@@ -59,10 +55,10 @@ install_webscraping_dependencies:
     - chown root:root /usr/bin/chromedriver
     - chmod +x /usr/bin/chromedriver
     - pip install -r requirements.txt
-    - chromedriver --url-base=/wd/hub
+    - chromedriver --url-base=/wd/hub # Test Chromedriver installation
   artifacts:
     paths:
-      - .
+      - . # Include all files generated in this job
 
 deploy_app:
   stage: deploy
