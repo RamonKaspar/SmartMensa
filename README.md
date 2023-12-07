@@ -96,7 +96,7 @@ Document here the major milestones of your code and future planned steps.\
   - [x] Run python scripts weekly in backend to fetch the new menus and store them as JSON files #8 !9
 
 - [ ] Milestone 4: Personalize the web-app
-  - [ ] Add login functionality
+  - [x] Add login functionality #5 !12
   - [ ] Add favourite menus functionality
   - [ ] Add favourite mensas functionality
   - [ ] Add personalized setting (allergens etc.)
@@ -124,9 +124,4 @@ We will evaluate your code every week, based on the corresponding version.
 
 Tags:
 - Week 1: [v1.1.1](https://gitlab.inf.ethz.ch/course-fwe2023/students/project/express/lumast_project_express/-/tags/v1.1.1)
-- Week 2: [v1.2.0](https://gitlab.inf.ethz.ch/course-fwe2023/students/project/express/lumast_project_express/-/tags/v1.2.0)
-- Milestone 3: ...
-- ...
-
-
-
+- Week 2: [v1.3.0](https://gitlab.inf.ethz.ch/course-fwe2023/students/project/express/lumast_project_express/-/tags/v1.3.0)
