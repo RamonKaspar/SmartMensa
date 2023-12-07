@@ -6,5 +6,13 @@
     "email": "alex@alex.com",
     "password": "Alex1234!",
     "favMenus": []
+  },
+  {
+    "id": 2,
+    "name": "a",
+    "username": "a",
+    "email": "a@a.ch",
+    "password": "a",
+    "favMenus": []
   }
 ]
