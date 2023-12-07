@@ -30,12 +30,11 @@ function LoginBody() {
     navigate("/register");
   };
 
-  // TAKE USERNAME FROM HERE WHEN WE HAVE USER MANAGEMENT
   const [username, setUsername] = useState("");
   const handleUsernameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setUsername(event.target.value);
   };
-  // TAKE PASSWORD FROM HERE WHEN WE HAVE USER MANAGEMENT
+
   const [password, setPassword] = useState("");
   const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setPassword(event.target.value);
@@ -46,16 +45,20 @@ function LoginBody() {
       <input
         className="username-input"
         type="text"
+        name="username"
         value={username}
         onChange={handleUsernameChange}
         placeholder="Username"
+        autoComplete="given-name"
       />
       <input
         className="password-input"
         type="password"
+        name="password"
         value={password}
         onChange={handlePasswordChange}
         placeholder="Password"
+        autoComplete="current-password"
       />
       <button onClick={handleSubmitClick}>Submit</button>
       <div className="register">
