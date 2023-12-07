@@ -92,23 +92,29 @@ function RegisterBody() {
       <input
         className="name-input"
         type="text"
+        name="name"
         value={name}
         onChange={handleNameChange}
         placeholder="Full Name"
+        autoComplete="name"
       />
       <input
         className="username-input"
         type="text"
+        name="username"
         value={username}
         onChange={handleUsernameChange}
         placeholder="Username"
+        autoComplete="username"
       />
       <input
         className="email-input"
         type="email"
+        name="email"
         value={email}
         onChange={handleEmailChange}
         placeholder="Email"
+        autoComplete="email"
       />
       <div id="emailIndicator">
         {isEmailValid === false && (
@@ -118,9 +124,11 @@ function RegisterBody() {
       <input
         className="password-input"
         type="password"
+        name="password"
         value={password}
         onChange={handlePasswordChange}
         placeholder="Password"
+        autoComplete="new-password"
       />
       <div id="passwordIndicator">
         {isPasswordValid === false && (
