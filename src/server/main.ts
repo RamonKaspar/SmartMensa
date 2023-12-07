@@ -63,14 +63,26 @@ cron.schedule(
     pythonProcess_uzh.stdout.on("data", (data) => {
       const output = data.toString().trim();
       console.log(output);
+      serverLogs.push({
+        timestamp: new Date().toISOString(),
+        logs: [output],
+      });
     });
 
     pythonProcess_uzh.stderr.on("data", (data) => {
       console.error(`Python script stderr: ${data}`);
+      serverLogs.push({
+        timestamp: new Date().toISOString(),
+        logs: ["Python script stderr: " + data],
+      });
     });
 
     pythonProcess_uzh.on("close", (code) => {
       console.log(`Python script process exited with code ${code}`);
+      serverLogs.push({
+        timestamp: new Date().toISOString(),
+        logs: ["Python script process exited with code " + code],
+      });
     });
 
     // console.log("Fetching new ETH menus...");
@@ -85,14 +97,31 @@ cron.schedule(
     pythonProcess_eth.stdout.on("data", (data) => {
       const output = data.toString().trim();
       console.log(output);
+      serverLogs.push({
+        timestamp: new Date().toISOString(),
+        logs: [output],
+      });
     });
 
     pythonProcess_eth.stderr.on("data", (data) => {
       console.error(`Python script stderr: ${data}`);
+      serverLogs.push({
+        timestamp: new Date().toISOString(),
+        logs: ["Python script stderr: " + data],
+      });
     });
 
     pythonProcess_eth.on("close", (code) => {
       console.log(`Python script process exited with code ${code}`);
+      serverLogs.push({
+        timestamp: new Date().toISOString(),
+        logs: ["Python script process exited with code " + code],
+      });
+    });
+
+    serverLogs.push({
+      timestamp: new Date().toISOString(),
+      logs: ["######## FINISHED FETCHING MENUS ########"],
     });
   },
   {
