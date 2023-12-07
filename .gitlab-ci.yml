@@ -54,7 +54,7 @@ install_webscraping_dependencies:
     - pip install -r requirements.txt
     - pip list
     - pip show selenium
-    - which python
+    - which python3
     - chromedriver --version
   artifacts:
     paths:
