@@ -56,10 +56,10 @@ cron.schedule(
   "*/1 * * * *", // For testing purposes, run every 5 minutes
   () => {
     // console.log("Fetching new UZH menus...");
-    serverLogs.push({
-      timestamp: new Date().toISOString(),
-      logs: ["Fetching new UZH menus..."],
-    });
+    // serverLogs.push({
+    //   timestamp: new Date().toISOString(),
+    //   logs: ["Fetching new UZH menus..."],
+    // });
 
     serverLogs.push({
       timestamp: new Date().toISOString(),
