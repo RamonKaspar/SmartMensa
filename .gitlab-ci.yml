@@ -55,6 +55,7 @@ install_webscraping_dependencies:
     - source myenv/bin/activate
     - pip install -r requirements.txt
     - pip list
+    - pip show selenium
     - chromedriver --version
   artifacts:
     paths:
