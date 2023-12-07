@@ -46,8 +46,8 @@ app.get("/serverlogs", (_req, res) => {
   res.json({ logs: serverLogs });
 });
 
-const pythonInterpreter =
-  "/builds/course-fwe2023/students/project/express/lumast_project_express/myenv/bin/python";
+// const pythonInterpreter = "/builds/course-fwe2023/students/project/express/lumast_project_express/myenv/bin/python";
+const pythonInterpreter = "python3";
 
 // Schedule the execution of the menu scraper scripts (ETH and UZH) every Monday at 00:05
 cron.schedule(
