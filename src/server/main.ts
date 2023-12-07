@@ -65,44 +65,44 @@ cron.schedule(
     });
 
     // Spawn a new python process to run the menu scraper script for UZH
-    const pythonProcess_uzh = spawn(pythonInterpreter, [pythonScriptPathUZH], {
-      // Specify the path to the virtual environment's site-packages
-      env: {
-        ...process.env, // Preserve current environment variables
-        PYTHONPATH: path.join(
-          __dirname,
-          "myenv",
-          "lib",
-          "python3.10",
-          "site-packages"
-        ),
-      },
-    });
+    // const pythonProcess_uzh = spawn(pythonInterpreter, [pythonScriptPathUZH], {
+    //   // Specify the path to the virtual environment's site-packages
+    //   env: {
+    //     ...process.env, // Preserve current environment variables
+    //     PYTHONPATH: path.join(
+    //       __dirname,
+    //       "myenv",
+    //       "lib",
+    //       "python3.10",
+    //       "site-packages"
+    //     ),
+    //   },
+    // });
 
-    pythonProcess_uzh.stdout.on("data", (data) => {
-      const output = data.toString().trim();
-      console.log(output);
-      serverLogs.push({
-        timestamp: new Date().toISOString(),
-        logs: [output],
-      });
-    });
+    // pythonProcess_uzh.stdout.on("data", (data) => {
+    //   const output = data.toString().trim();
+    //   console.log(output);
+    //   serverLogs.push({
+    //     timestamp: new Date().toISOString(),
+    //     logs: [output],
+    //   });
+    // });
 
-    pythonProcess_uzh.stderr.on("data", (data) => {
-      console.error(`Python script stderr: ${data}`);
-      serverLogs.push({
-        timestamp: new Date().toISOString(),
-        logs: ["Python script stderr: " + data],
-      });
-    });
+    // pythonProcess_uzh.stderr.on("data", (data) => {
+    //   console.error(`Python script stderr: ${data}`);
+    //   serverLogs.push({
+    //     timestamp: new Date().toISOString(),
+    //     logs: ["Python script stderr: " + data],
+    //   });
+    // });
 
-    pythonProcess_uzh.on("close", (code) => {
-      console.log(`Python script process exited with code ${code}`);
-      serverLogs.push({
-        timestamp: new Date().toISOString(),
-        logs: ["Python script process exited with code " + code],
-      });
-    });
+    // pythonProcess_uzh.on("close", (code) => {
+    //   console.log(`Python script process exited with code ${code}`);
+    //   serverLogs.push({
+    //     timestamp: new Date().toISOString(),
+    //     logs: ["Python script process exited with code " + code],
+    //   });
+    // });
 
     // console.log("Fetching new ETH menus...");
     serverLogs.push({
