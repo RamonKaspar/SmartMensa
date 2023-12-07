@@ -49,7 +49,7 @@ app.get("/serverlogs", (_req, res) => {
 // Schedule the execution of the menu scraper scripts (ETH and UZH) every Monday at 00:05
 cron.schedule(
   // "5 0 * * 1", // Run every Monday at 00:05
-  "*/5 * * * *", // For testing purposes, run every 5 minutes
+  "*/1 * * * *", // For testing purposes, run every 5 minutes
   () => {
     // console.log("Fetching new UZH menus...");
     serverLogs.push({
