@@ -5,7 +5,6 @@ function Register() {
   return (
     <>
       <Layout>
-        <div></div>
         <RegisterBody />
       </Layout>
     </>
