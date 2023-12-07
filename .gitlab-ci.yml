@@ -57,7 +57,9 @@ install_webscraping_dependencies:
     - chromedriver --version
   artifacts:
     paths:
-      - .
+      - venv/
+      - /usr/bin/chromedriver
+      - requirements.txt
 
 deploy_app:
   stage: deploy
