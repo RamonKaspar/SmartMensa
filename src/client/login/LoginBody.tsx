@@ -23,7 +23,6 @@ function LoginBody() {
         alert(data.message || "Login failed");
       }
     } catch (error) {
-      console.error("Error during login:", error);
       alert("Error handling login");
     }
   };
