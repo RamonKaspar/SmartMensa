@@ -4,28 +4,27 @@ import { useState } from "react";
 
 function RegisterBody() {
   const navigate = useNavigate();
-  const handleClick = async () => {
+  const handleRegisterClick = async () => {
     try {
-      const response = await fetch('http://localhost:5173/api/users', {
-        method: 'POST',
+      const response = await fetch("/api/users", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json'
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify({ name, username, email, password })
+        body: JSON.stringify({ name, username, email, password }),
       });
-      
-      if(!isValidEmail(email)){
+
+      if (!isValidEmail(email)) {
         alert("Enter a valid email");
         return;
       }
       if (!response.ok) {
         const resBody = await response.text();
         // Check for specific error messages related to duplicates
-        if (resBody.includes('Username already exists')) {
-          alert('Username already exists');
-        }
-        else if(resBody.includes('Email already exists')){
-          alert('Email already exists');
+        if (resBody.includes("Username already exists")) {
+          alert("Username already exists");
+        } else if (resBody.includes("Email already exists")) {
+          alert("Email already exists");
         }
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
@@ -33,18 +32,19 @@ function RegisterBody() {
       // Navigate to home on successful submission
       navigate("/login");
     } catch (error) {
-
-      console.error('Error:', error);
-      // Handle the error (e.g., show an error message)
+      console.error("Error:", error);
     }
   };
-  const handleClick2 = async () => {
+
+  const handleRegisterEduClick = async () => {
     //To be implemented
     navigate("/home");
   };
-  const handleClick3 = async () => {
-    navigate('/login');
-  }
+
+  const handleLoginClick = async () => {
+    navigate("/login");
+  };
+
   function isValidEmail(email: string) {
     const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     return regex.test(email);
@@ -55,7 +55,7 @@ function RegisterBody() {
     const hasLowerCase = /[a-z]/.test(password);
     const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
     const isLongEnough = password.length >= 8;
-  
+
     return hasUpperCase && hasLowerCase && hasSpecialChar && isLongEnough;
   }
 
@@ -111,7 +111,9 @@ function RegisterBody() {
         placeholder="Email"
       />
       <div id="emailIndicator">
-        {isEmailValid === false && <span className="email-invalid">Invalid email</span>}
+        {isEmailValid === false && (
+          <span className="email-invalid">Invalid email</span>
+        )}
       </div>
       <input
         className="password-input"
@@ -121,14 +123,16 @@ function RegisterBody() {
         placeholder="Password"
       />
       <div id="passwordIndicator">
-        {isPasswordValid === false && 
-        <span className="password-invalid">
-          Password must contain at least one uppercase letter, one lowercase letter, one special character, and be at least 8 characters long.
-        </span>}
+        {isPasswordValid === false && (
+          <span className="password-invalid">
+            Password must contain at least one uppercase letter, one lowercase
+            letter, one special character, and be at least 8 characters long.
+          </span>
+        )}
       </div>
-      <button onClick={handleClick}>Register</button>
-      <button onClick={handleClick2}>Register with eduSWITCH</button>
-      <button onClick={handleClick3}>Back to login</button>
+      <button onClick={handleRegisterClick}>Register</button>
+      <button onClick={handleRegisterEduClick}>Register with eduSWITCH</button>
+      <button onClick={handleLoginClick}>Back to login</button>
 
       <img src="./logo.png" alt="SmartMensa" className="logo" />
     </main>
