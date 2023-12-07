@@ -117,11 +117,12 @@ cron.schedule(
         timestamp: new Date().toISOString(),
         logs: ["Python script process exited with code " + code],
       });
-    });
-
-    serverLogs.push({
-      timestamp: new Date().toISOString(),
-      logs: ["######## FINISHED FETCHING MENUS ########"],
+      if (code === 0) {
+        serverLogs.push({
+          timestamp: new Date().toISOString(),
+          logs: ["######## SUCCESSFULLY FETCHED MENUS ########"],
+        });
+      }
     });
   },
   {
