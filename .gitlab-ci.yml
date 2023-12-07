@@ -53,8 +53,8 @@ install_webscraping_dependencies:
     - chmod +x /usr/bin/chromedriver
     - python3 -m venv myenv
     - source myenv/bin/activate
-    - pip3 install -r requirements.txt
-    - pip3 show -f $(cat requirements.txt | grep -v "^#" | grep -v "^\s*$")
+    - pip install -r requirements.txt
+    - pip list
     - chromedriver --version
   artifacts:
     paths:
