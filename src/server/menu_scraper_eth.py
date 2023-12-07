@@ -1,13 +1,4 @@
-#!/builds/course-fwe2023/students/project/express/lumast_project_express/myenv/bin/python
 from __future__ import annotations
-import os
-import sys
-
-# Add the path to the desired package location
-package_location = '/builds/course-fwe2023/students/project/express/lumast_project_express/myenv/lib/python3.10/site-packages'
-if package_location not in sys.path:
-    sys.path.append(package_location)
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
@@ -17,13 +8,11 @@ from selenium.webdriver.support import expected_conditions as EC
 from fake_useragent import UserAgent
 import json
 from time import sleep
+import os
 
 from typing import List, Optional
 from pydantic import BaseModel, Field
 ua = UserAgent()
-
-print("BEFORE OPTIONS")
-sleep(300)
 
 # Set up Selenium Chrome options
 chrome_options = Options()
