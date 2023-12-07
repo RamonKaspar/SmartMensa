@@ -45,19 +45,19 @@ install_webscraping_dependencies:
   stage: build
   image: python:3.11
   script:
-    - sudo apt update
-    - sudo apt install -y python3-pip wget
+    - apt update
+    - apt install -y python3-pip wget
     - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-    - sudo dpkg -i google-chrome-stable_current_amd64.deb
-    - sudo apt-get install -f
+    - dpkg -i google-chrome-stable_current_amd64.deb
+    - apt-get install -f
     - google-chrome --version
     - CHROME_VERSION=$(google-chrome --version | grep -oP "(?<=Google Chrome )[\d\.]+")
     - CHROMEDRIVER_VERSION=$(echo $CHROME_VERSION | cut -d'.' -f1)
     - wget https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION.0.4515.107/chromedriver_linux64.zip
     - unzip chromedriver_linux64.zip
-    - sudo mv chromedriver /usr/bin/chromedriver
-    - sudo chown root:root /usr/bin/chromedriver
-    - sudo chmod +x /usr/bin/chromedriver
+    - mv chromedriver /usr/bin/chromedriver
+    - chown root:root /usr/bin/chromedriver
+    - chmod +x /usr/bin/chromedriver
     - pip install -r requirements.txt
     - chromedriver --url-base=/wd/hub
   artifacts:
