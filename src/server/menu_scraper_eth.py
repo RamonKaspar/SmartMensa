@@ -15,6 +15,9 @@ from typing import List, Optional
 from pydantic import BaseModel, Field
 ua = UserAgent()
 
+print("BEFORE OPTIONS")
+sleep(300)
+
 # Set up Selenium Chrome options
 chrome_options = Options()
 # chrome_options.binary_location = '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser'
