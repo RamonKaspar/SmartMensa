@@ -3,6 +3,16 @@ import "./LoginBody.css";
 import { useState } from "react";
 
 function LoginBody() {
+  const [username, setUsername] = useState("");
+  const handleUsernameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setUsername(event.target.value);
+  };
+
+  const [password, setPassword] = useState("");
+  const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setPassword(event.target.value);
+  };
+
   const navigate = useNavigate();
   const handleSubmitClick = async () => {
     try {
@@ -28,16 +38,6 @@ function LoginBody() {
   };
   const handleRegisterClick = () => {
     navigate("/register");
-  };
-
-  const [username, setUsername] = useState("");
-  const handleUsernameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setUsername(event.target.value);
-  };
-
-  const [password, setPassword] = useState("");
-  const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setPassword(event.target.value);
   };
 
   return (
