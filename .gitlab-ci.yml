@@ -54,8 +54,8 @@ install_webscraping_dependencies:
     - mv chromedriver /usr/bin/chromedriver
     - chown root:root /usr/bin/chromedriver
     - chmod +x /usr/bin/chromedriver
-    - pip3 install -r requirements.txt
-    - pip3 install selenium # Explicitly install Selenium
+    - pip install -r requirements.txt
+    - pip install selenium # Explicitly install Selenium
     - chromedriver --version # Check Chromedriver version
   artifacts:
     paths:
