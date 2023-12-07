@@ -1,0 +1,64 @@
+/* Here goes the CSS for the LoginBody component */
+.register-body-container {
+    height: 100%;
+    width: 100%;
+    background-color: #E5F9EE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+
+    & input {
+        border-radius: 20px;
+        margin-top: 20px;
+        height: 20px;
+        text-align: center;
+        border: black;
+    }
+
+    & button {
+        border-radius: 20px;
+        margin-top: 20px;
+        height: 35px;
+        text-align: center;
+        border: black;
+        width: 100px;
+        background-color: #656363;
+        color: white;
+        font-size: 0.8em;
+        cursor: pointer;
+    }
+
+    & button:hover {
+        background-color: #e0e0e0; /* Light grey background on hover */
+        /* Other hover effects (e.g., change in color or border) */
+    }
+
+    & div{
+        margin-top: 5px;
+          
+        .email-invalid {
+            color: red;
+            font-size: 14px; /* Adjust the font size as needed */
+        }
+    }
+}
+
+.register {
+    width: 160px;
+    margin-top: 20px;
+    font-size: 0.8em;
+    text-align: center;
+    font-style: italic;
+}
+
+.logo {
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+}
+
+.password-invalid {
+    color: red;
+    font-size: 14px; /* Adjust as needed */
+  }

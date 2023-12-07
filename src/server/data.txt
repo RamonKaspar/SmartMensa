@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "name": "alex",
+    "username": "alex",
+    "email": "alex@alex.com",
+    "password": "Alex1234!",
+    "favMenus": []
+  }
+]

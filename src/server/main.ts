@@ -2,7 +2,7 @@ import express from "express";
 import ViteExpress from "vite-express";
 import path from "path";
 import fs from "fs/promises";
-// import apiRoutes from "./routes/api";
+import apiRoutes from "./routes/api";
 import session from "express-session";
 // import { spawn } from "child_process";
 // import cron from "node-cron";
@@ -21,15 +21,15 @@ app.use(
   })
 );
 
-// app.use("/api", apiRoutes);
+app.use("/api", apiRoutes);
 
-// app.get("/api/current-user", (req, res) => {
-//   if (req.session && req.session.userId) {
-//     res.json({ userId: req.session.userId });
-//   } else {
-//     res.status(401).json({ message: "No user logged in" });
-//   }
-// });
+app.get("/api/current-user", (req, res) => {
+  if (req.session && req.session.userId) {
+    res.json({ userId: req.session.userId });
+  } else {
+    res.status(401).json({ message: "No user logged in" });
+  }
+});
 
 // const pythonScriptPathUZH = path.join(__dirname, "menu_scraper_uhz.py");
 // const pythonScriptPathETH = path.join(__dirname, "menu_scraper_eth.py");
