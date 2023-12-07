@@ -43,10 +43,9 @@ build_webapp:
 
 install_webscraping_dependencies:
   stage: build
-  image: python:3.11
   script:
     - apt update
-    - apt install -y python3-pip python3-venv wget unzip libnss3
+    - apt install -y python3 python3-pip python3-venv wget unzip libnss3
     - python3 -m venv venv
     - source venv/bin/activate
     - wget https://chromedriver.storage.googleapis.com/92.0.4515.107/chromedriver_linux64.zip
@@ -54,9 +53,8 @@ install_webscraping_dependencies:
     - mv chromedriver /usr/bin/chromedriver
     - chown root:root /usr/bin/chromedriver
     - chmod +x /usr/bin/chromedriver
-    - pip install -r requirements.txt
-    - pip install selenium # Explicitly install Selenium
-    - chromedriver --version # Check Chromedriver version
+    - pip3 install -r requirements.txt
+    - chromedriver --version
   artifacts:
     paths:
       - .
