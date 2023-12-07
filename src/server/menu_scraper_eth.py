@@ -11,7 +11,12 @@ from fake_useragent import UserAgent
 import json
 from time import sleep
 import os
+import sys
 
+# Add the path to the desired package location
+package_location = '/builds/course-fwe2023/students/project/express/lumast_project_express/myenv/lib/python3.10/site-packages'
+if package_location not in sys.path:
+    sys.path.append(package_location)
 
 from typing import List, Optional
 from pydantic import BaseModel, Field
