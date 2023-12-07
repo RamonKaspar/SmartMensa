@@ -46,7 +46,7 @@ app.get("/serverlogs", (_req, res) => {
   res.json({ logs: serverLogs });
 });
 
-const pythonInterpreter = path.join(__dirname, "myenv", "bin", "python3");
+// const pythonInterpreter = path.join(__dirname, "myenv", "bin", "python3");
 
 // Schedule the execution of the menu scraper scripts (ETH and UZH) every Monday at 00:05
 cron.schedule(
@@ -60,7 +60,7 @@ cron.schedule(
     });
 
     // Spawn a new python process to run the menu scraper script for UZH
-    const pythonProcess_uzh = spawn(pythonInterpreter, [pythonScriptPathUZH], {
+    const pythonProcess_uzh = spawn("python3", [pythonScriptPathUZH], {
       // Specify the path to the virtual environment's site-packages
       env: {
         ...process.env, // Preserve current environment variables
@@ -106,7 +106,7 @@ cron.schedule(
     });
 
     // Spawn a new python process to run the menu scraper script for ETH
-    const pythonProcess_eth = spawn(pythonInterpreter, [pythonScriptPathETH], {
+    const pythonProcess_eth = spawn("python3", [pythonScriptPathETH], {
       // Specify the path to the virtual environment's site-packages
       env: {
         ...process.env, // Preserve current environment variables
