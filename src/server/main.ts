@@ -46,8 +46,8 @@ app.get("/serverlogs", (_req, res) => {
   res.json({ logs: serverLogs });
 });
 
-// const pythonInterpreter = "/builds/course-fwe2023/students/project/express/lumast_project_express/myenv/bin/python";
-const pythonInterpreter = "python3";
+const pythonInterpreterUZH = "/usr/bin/python3";
+const pythonInterpreterETH = "python3";
 
 // Schedule the execution of the menu scraper scripts (ETH and UZH) every Monday at 00:05
 cron.schedule(
@@ -66,19 +66,18 @@ cron.schedule(
     });
 
     // Spawn a new python process to run the menu scraper script for UZH
-    const pythonProcess_uzh = spawn(pythonInterpreter, [pythonScriptPathUZH], {
-      // Specify the path to the virtual environment's site-packages
-      env: {
-        ...process.env, // Preserve current environment variables
-        PYTHONPATH: path.join(
-          __dirname,
-          "myenv",
-          "lib",
-          "python3.10",
-          "site-packages"
-        ),
-      },
-    });
+
+    // Set the PYTHONPATH before executing the Python scripts
+    const pythonProcess_uzh = spawn(
+      pythonInterpreterUZH,
+      [pythonScriptPathUZH],
+      {
+        env: {
+          ...process.env,
+          PYTHONPATH: "/usr/local/lib/python3.10/dist-packages",
+        },
+      }
+    );
 
     pythonProcess_uzh.stdout.on("data", (data) => {
       const output = data.toString().trim();
@@ -112,7 +111,9 @@ cron.schedule(
     });
 
     // Spawn a new python process to run the menu scraper script for ETH
-    const pythonProcess_eth = spawn(pythonInterpreter, [pythonScriptPathETH]);
+    const pythonProcess_eth = spawn(pythonInterpreterETH, [
+      pythonScriptPathETH,
+    ]);
 
     pythonProcess_eth.stdout.on("data", (data) => {
       const output = data.toString().trim();
