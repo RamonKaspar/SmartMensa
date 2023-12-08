@@ -49,8 +49,7 @@ const pythonInterpreter = "/usr/bin/python3";
 
 // Schedule the execution of the menu scraper scripts (ETH and UZH) every Monday at 00:05
 cron.schedule(
-  // "5 0 * * 1", // Run every Monday at 00:05
-  "*/1 * * * *", // For testing purposes, run every 5 minutes
+  "5 0 * * *", // Run every day at 00:05
   () => {
     console.log("Fetching new UZH menus...");
     serverLogs.push({
@@ -59,7 +58,6 @@ cron.schedule(
     });
 
     // Spawn a new python process to run the menu scraper script for UZH
-
     const pythonProcess_uzh = spawn(pythonInterpreter, [pythonScriptPathUZH]);
 
     pythonProcess_uzh.stdout.on("data", (data) => {
@@ -87,19 +85,13 @@ cron.schedule(
       });
     });
 
-    // console.log("Fetching new ETH menus...");
     serverLogs.push({
       timestamp: new Date().toISOString(),
       logs: ["Fetching new ETH menus..."],
     });
 
     // Spawn a new python process to run the menu scraper script for ETH
-    const pythonProcess_eth = spawn(pythonInterpreter, [pythonScriptPathETH], {
-      env: {
-        ...process.env,
-        PYTHONPATH: "/usr/local/lib/python3.10/dist-packages",
-      },
-    });
+    const pythonProcess_eth = spawn(pythonInterpreter, [pythonScriptPathETH]);
 
     pythonProcess_eth.stdout.on("data", (data) => {
       const output = data.toString().trim();
