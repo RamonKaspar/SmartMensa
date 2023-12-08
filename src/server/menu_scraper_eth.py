@@ -2,13 +2,12 @@ from __future__ import annotations
 import os
 import sys
 
-print("PATH:" + sys.path)
 print("CWD:" + os.getcwd())
 print("PYTHONPATH:" + os.environ.get('PYTHONPATH', ''))
 
 # print all directories in /usr/local/lib/python3.10/dist-packages
 for d in os.listdir('/usr/local/lib/python3.10/dist-packages'):
-    print(d)
+    print("Modules installed:" + d)
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
