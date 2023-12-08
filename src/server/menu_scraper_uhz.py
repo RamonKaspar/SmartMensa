@@ -1,10 +1,11 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from fake_useragent import UserAgent
+# from selenium import webdriver
+# from selenium.webdriver.common.by import By
+# from selenium.webdriver.chrome.service import Service
+# from selenium.webdriver.chrome.options import Options
+# from selenium.webdriver.support.ui import WebDriverWait
+# from selenium.webdriver.support import expected_conditions as EC
+# from fake_useragent import UserAgent
+import requests
 from bs4 import BeautifulSoup
 from time import sleep
 import json
@@ -13,43 +14,53 @@ import re
 
 # Set up Selenium webdriver
 
-chrome_options = Options()
+# chrome_options = Options()
 # chrome_options.binary_location = '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser'
-chrome_options.add_argument("--headless")  # Run in headless mode (without opening browser window)
-chrome_options.add_argument('--disable-blink-features=AutomationControlled')
+# chrome_options.add_argument("--headless")  # Run in headless mode (without opening browser window)
+# chrome_options.add_argument('--disable-blink-features=AutomationControlled')
 # Set the path for the ChromeDriver
 # chrome_driver_path = '/opt/homebrew/bin/chromedriver'
 
 # Set up fake user agent
-ua = UserAgent()
+# ua = UserAgent()
 
 # Set up service
 # service = Service(chrome_driver_path)
-service = webdriver.ChromeService()
+# service = webdriver.ChromeService()
 
 # Create a Chrome webdriver instance
-driver = webdriver.Chrome(service=service, options=chrome_options)
+# driver = webdriver.Chrome(service=service, options=chrome_options)
 
-# Set waiting time for webdriver
-wait = WebDriverWait(driver, 10)
+# # Set waiting time for webdriver
+# wait = WebDriverWait(driver, 10)
 
 ##############################################################################################################################
 
 # Get the XML data to parse from the page using Selenium
 
+# def getXMLData(url):
+#     # Open the webpage
+#     driver.get(url)
+#     wait.until(EC.presence_of_element_located((By.TAG_NAME, 'pre')))
+#     print(f'{"STATUS:":<15} Page successfully accessed!')
+
+#     # Parse the data to a dictionary using Pydantic models
+#     xml_data = driver.find_element(By.TAG_NAME, 'pre').text
+
+#     print(f'{"STATUS:":<15} Page source successfully parsed!')
+#     print("")
+
+#     return xml_data
+
 def getXMLData(url):
-    # Open the webpage
-    driver.get(url)
-    wait.until(EC.presence_of_element_located((By.TAG_NAME, 'pre')))
-    print(f'{"STATUS:":<15} Page successfully accessed!')
-
-    # Parse the data to a dictionary using Pydantic models
-    xml_data = driver.find_element(By.TAG_NAME, 'pre').text
-
-    print(f'{"STATUS:":<15} Page source successfully parsed!')
-    print("")
-
-    return xml_data
+    # Fetch the webpage content
+    response = requests.get(url)
+    if response.status_code == 200:
+        print(f'{"STATUS:":<15} Page successfully accessed!')
+        return response.content
+    else:
+        print("Failed to fetch the webpage.")
+        return None
 
 ##############################################################################################################################
 
@@ -205,9 +216,9 @@ def main():
                         "Sunday": {"Lunch": [], "Dinner": []}
                         }
         for day in days:
-            user_agent = ua.random
-            print(f'{"USER AGENT:":<15} {user_agent}')
-            chrome_options.add_argument(f'--user-agent={user_agent}')
+            # user_agent = ua.random
+            # print(f'{"USER AGENT:":<15} {user_agent}')
+            # chrome_options.add_argument(f'--user-agent={user_agent}')
 
             print(f'{ "FACILITY ID:":<15} Processing {day} of facility {facility_id}...')
             url = generate_url(facility_id, days.index(day)+1, language)
@@ -226,4 +237,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-    driver.quit()
+    # driver.quit()

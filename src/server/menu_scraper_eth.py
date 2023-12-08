@@ -1,11 +1,13 @@
-from __future__ import annotations
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+# from __future__ import annotations
+# from selenium import webdriver
+# from selenium.webdriver.common.by import By
+# from selenium.webdriver.chrome.service import Service
+# from selenium.webdriver.chrome.options import Options
+# from selenium.webdriver.support.ui import WebDriverWait
+# from selenium.webdriver.support import expected_conditions as EC
 # from fake_useragent import UserAgent
+import requests
+from bs4 import BeautifulSoup
 import os
 import json
 from time import sleep
@@ -15,11 +17,11 @@ from pydantic import BaseModel, Field
 # ua = UserAgent()
 
 # Set up Selenium Chrome options
-chrome_options = Options()
+# chrome_options = Options()
 # chrome_options.binary_location = '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser'
-chrome_options.add_argument("--headless")  # Run in headless mode (without opening browser window)
-chrome_options.add_argument('--disable-blink-features=AutomationControlled')
-# Set the path for the ChromeDriver
+# chrome_options.add_argument("--headless")  # Run in headless mode (without opening browser window)
+# chrome_options.add_argument('--disable-blink-features=AutomationControlled')
+# # Set the path for the ChromeDriver
 # chrome_driver_path = '/opt/homebrew/bin/chromedriver'
 
 # Set up service
@@ -27,10 +29,10 @@ chrome_options.add_argument('--disable-blink-features=AutomationControlled')
 # service = webdriver.Chrome()
 
 # Create a Chrome webdriver instance
-driver = webdriver.Chrome(options=chrome_options)
+# driver = webdriver.Chrome(options=chrome_options)
 
-# Set waiting time for webdriver
-wait = WebDriverWait(driver, 10)
+# # Set waiting time for webdriver
+# wait = WebDriverWait(driver, 10)
 
 ##############################################################################################################################
 
@@ -159,14 +161,14 @@ def translate_day_of_week(day_of_week):
 # Define a function to parse the JSON data to a dictionary and save it as a JSON file
 
 def parseToJson(url):
-    # Open the webpage
-    driver.get(url)
-    wait.until(EC.presence_of_element_located((By.TAG_NAME, 'pre')))
-    print(f'{"STATUS:":<15} Page successfully accessed!')
-
-    # Parse the data to a dictionary using Pydantic models
-    json_data = driver.find_element(By.TAG_NAME, 'pre').text
-    parsed_data = Model(**json.loads(json_data))
+    # Fetch the webpage content
+    response = requests.get(url)
+    if response.status_code == 200:
+        print(f'{"STATUS:":<15} Page successfully accessed!')
+    else:
+        print("Failed to fetch the webpage.")
+        return None
+    parsed_data = Model(**json.loads(response.content))
 
     # Initialize an empty dictionary to store the extracted data
     menu_details_per_day = {}
@@ -287,4 +289,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-    driver.quit()
+    # driver.quit()
