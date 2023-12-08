@@ -41,27 +41,25 @@ build_webapp:
       --dockerfile "${CI_PROJECT_DIR}/Dockerfile"
       --destination "${IMAGE_NAME}-webapp:latest"
 
-install_webscraping_dependencies:
-  stage: build
-  script:
-    - cd ${CI_PROJECT_DIR}/app
-    - mkdir python_modules
-    - apt update
-    - apt install -y python3 python3-pip wget unzip libnss3 libglib2.0-0
-    - wget https://chromedriver.storage.googleapis.com/92.0.4515.107/chromedriver_linux64.zip
-    - unzip chromedriver_linux64.zip
-    - chmod +x ${CI_PROJECT_DIR}/app/chromedriver
-    - export PATH=${CI_PROJECT_DIR}/app:$PATH
-    - export PYTHONPATH=${CI_PROJECT_DIR}/app/python_modules:$PYTHONPATH
-    - pip3 install -r requirements.txt -t ${CI_PROJECT_DIR}/app/python_modules
-    - pip3 list
-    - pip3 show selenium
-    - which python3
-    - chromedriver --version
-  artifacts:
-    paths:
-      - .
-      - chromedriver
+# install_webscraping_dependencies:
+#   stage: build
+#   script:
+#     - apt update
+#     - apt install -y python3 python3-pip wget unzip libnss3 libglib2.0-0
+#     - wget https://chromedriver.storage.googleapis.com/92.0.4515.107/chromedriver_linux64.zip
+#     - unzip chromedriver_linux64.zip
+#     - mv chromedriver /usr/bin/chromedriver
+#     - chown root:root /usr/bin/chromedriver
+#     - chmod +x /usr/bin/chromedriver
+#     - export PYTHONPATH=/usr/local/lib/python3.10/dist-packages:$PYTHONPATH
+#     - pip3 install -r requirements.txt
+#     - pip3 list
+#     - pip3 show selenium
+#     - which python3
+#     - chromedriver --version
+#   artifacts:
+#     paths:
+#       - .
 
 deploy_app:
   stage: deploy
