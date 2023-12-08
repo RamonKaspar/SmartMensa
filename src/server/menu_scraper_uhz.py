@@ -5,11 +5,11 @@ import json
 import os
 import re
 
-def getXMLData(url):
+def getXMLData(url, day):
     # Fetch the webpage content
     response = requests.get(url)
     if response.status_code == 200:
-        print(f'{"STATUS:":<15} Page successfully accessed!')
+        print(f'{"STATUS:":<15} Page of {day} successfully accessed!')
         return response.content
     else:
         print("Failed to fetch the webpage.")
@@ -161,7 +161,7 @@ def main():
                         }
         for day in days:
             url = generate_url(facility_id, days.index(day)+1, language)
-            xml_data = getXMLData(url)
+            xml_data = getXMLData(url, day)
             day_time = "Dinner" if (facility_id == 506 or facility_id == 514 or facility_id == 149 or facility_id == 256) else "Lunch"
             json_data = parseXMLToJSON(xml_data, day_time)
             facility_menus[day][day_time].extend(json_data[0][day_time])
