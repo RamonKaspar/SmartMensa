@@ -18,8 +18,9 @@ RUN apt-get update && \
 COPY requirements.txt .
 
 # Install Python modules system-wide
-RUN pip3 install -r requirements.txt
+# RUN pip3 install -r requirements.txt
 
+RUN apt install -y python3-selenium
 
 # # Give execute permissions to the shell script
 # RUN chmod +x install_python_modules.sh
