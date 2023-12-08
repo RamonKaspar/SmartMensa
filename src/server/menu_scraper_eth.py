@@ -27,7 +27,7 @@ chrome_options.add_argument('--disable-blink-features=AutomationControlled')
 # service = webdriver.Chrome()
 
 # Create a Chrome webdriver instance
-driver = webdriver.Chrome(options=chrome_options, executable_path="../../chromedriver")
+driver = webdriver.Chrome(options=chrome_options)
 
 # Set waiting time for webdriver
 wait = WebDriverWait(driver, 10)
