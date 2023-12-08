@@ -1,14 +1,4 @@
 from __future__ import annotations
-import os
-import sys
-
-print("CWD:" + os.getcwd())
-print("PYTHONPATH:" + os.environ.get('PYTHONPATH', ''))
-
-# print all directories in /usr/local/lib/python3.10/dist-packages
-for d in os.listdir('/app'):
-    print("Modules installed:" + d)
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
@@ -16,6 +6,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 # from fake_useragent import UserAgent
+import os
 import json
 from time import sleep
 
@@ -33,10 +24,10 @@ chrome_options.add_argument('--disable-blink-features=AutomationControlled')
 
 # Set up service
 # service = Service(chrome_driver_path)
-service = webdriver.ChromeService()
+# service = webdriver.Chrome()
 
 # Create a Chrome webdriver instance
-driver = webdriver.Chrome(service=service, options=chrome_options)
+driver = webdriver.Chrome(options=chrome_options)
 
 # Set waiting time for webdriver
 wait = WebDriverWait(driver, 10)
