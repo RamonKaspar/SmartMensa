@@ -11,17 +11,21 @@ COPY package.json .
 RUN apt-get update && \
     apt-get install -y python3 python3-pip
 
-# Copy the shell script to the container
-COPY install_python_modules.sh .
+# # Copy the shell script to the container
+# COPY install_python_modules.sh .
 
-# Copy requirements.txt to the working directory
+# Copy the requirements file
 COPY requirements.txt .
 
-# Give execute permissions to the shell script
-RUN chmod +x install_python_modules.sh
+# Install Python modules system-wide
+RUN pip3 install -r requirements.txt
 
-# Run the shell script to install Python modules from requirements.txt
-RUN ./install_python_modules.sh
+
+# # Give execute permissions to the shell script
+# RUN chmod +x install_python_modules.sh
+
+# # Run the shell script to install Python modules from requirements.txt
+# RUN ./install_python_modules.sh
 
 # Download and install ChromeDriver
 RUN apt-get update && \
