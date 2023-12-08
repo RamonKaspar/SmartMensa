@@ -11,7 +11,7 @@ COPY package.json .
 RUN apt-get update && \
     apt-get install -y python3 python3-pip
 
-RUN apt install -y python3-selenium python3-bs4 python3-jsonschema python3-pydantic
+RUN apt install -y python3-selenium python3-bs4 python3-jsonschema python3-pydantic python3-requests
 
 # Copy the rest of the application files to the working directory
 COPY . .
