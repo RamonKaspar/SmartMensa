@@ -67,12 +67,7 @@ cron.schedule(
     // Spawn a new python process to run the menu scraper script for UZH
 
     // Set the PYTHONPATH before executing the Python scripts
-    const pythonProcess_uzh = spawn(pythonInterpreter, [pythonScriptPathUZH], {
-      env: {
-        ...process.env,
-        PYTHONPATH: "/usr/local/lib/python3.10/dist-packages",
-      },
-    });
+    const pythonProcess_uzh = spawn(pythonInterpreter, [pythonScriptPathUZH]);
 
     pythonProcess_uzh.stdout.on("data", (data) => {
       const output = data.toString().trim();
