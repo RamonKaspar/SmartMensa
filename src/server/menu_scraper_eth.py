@@ -1,38 +1,10 @@
-# from __future__ import annotations
-# from selenium import webdriver
-# from selenium.webdriver.common.by import By
-# from selenium.webdriver.chrome.service import Service
-# from selenium.webdriver.chrome.options import Options
-# from selenium.webdriver.support.ui import WebDriverWait
-# from selenium.webdriver.support import expected_conditions as EC
-# from fake_useragent import UserAgent
 import requests
 from bs4 import BeautifulSoup
 import os
 import json
 from time import sleep
-
 from typing import List, Optional
 from pydantic import BaseModel, Field
-# ua = UserAgent()
-
-# Set up Selenium Chrome options
-# chrome_options = Options()
-# chrome_options.binary_location = '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser'
-# chrome_options.add_argument("--headless")  # Run in headless mode (without opening browser window)
-# chrome_options.add_argument('--disable-blink-features=AutomationControlled')
-# # Set the path for the ChromeDriver
-# chrome_driver_path = '/opt/homebrew/bin/chromedriver'
-
-# Set up service
-# service = Service(chrome_driver_path)
-# service = webdriver.Chrome()
-
-# Create a Chrome webdriver instance
-# driver = webdriver.Chrome(options=chrome_options)
-
-# # Set waiting time for webdriver
-# wait = WebDriverWait(driver, 10)
 
 ##############################################################################################################################
 
@@ -242,6 +214,8 @@ def parseToJson(url):
                         else:
                             menu_details_per_day[day_of_week_menu]["Dinner"].append(meal_info)
 
+    print(f'{"STATUS:":<15} Menus of facility {facility_id} successfully crawled!')
+
     # Define the subfolder name
     subfolder = 'menus-as-json'
 
@@ -257,7 +231,6 @@ def parseToJson(url):
         json.dump(menu_details_per_day, json_file, indent=2, ensure_ascii=False)
 
     print(f'{"STATUS:":<15} menus-facility-{facility_id}.json successfully stored!')
-    print("")
 
 ##############################################################################################################################
 
@@ -277,9 +250,6 @@ def main():
     language = "de"
     
     for facility_id in facility_ids:
-        # user_agent = ua.random
-        # print(f'{"USER AGENT:":<15} {user_agent}')
-        # chrome_options.add_argument(f'--user-agent={user_agent}')
         print(f'{ "FACILITY ID:":<15} Processing facility {facility_id}...')
         url = generate_url(facility_id, valid_after, valid_before, language)
         parseToJson(url)
@@ -289,4 +259,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    # driver.quit()
