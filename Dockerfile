@@ -21,7 +21,7 @@ COPY requirements.txt .
 RUN chmod +x install_python_modules.sh
 
 # Run the shell script to install Python modules from requirements.txt
-RUN ./install_from_requirements.sh
+RUN ./install_python_modules.sh
 
 # Download and install ChromeDriver
 RUN apt-get update && \
