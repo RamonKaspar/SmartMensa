@@ -29,15 +29,15 @@ RUN apt install -y python3-selenium
 # RUN ./install_python_modules.sh
 
 # Download and install ChromeDriver
-RUN apt-get update && \
-    apt-get install -y wget unzip && \
-    CHROME_DRIVER_VERSION=$(curl -s https://chromedriver.storage.googleapis.com/LATEST_RELEASE) && \
-    wget -q -O /tmp/chromedriver.zip https://chromedriver.storage.googleapis.com/$CHROME_DRIVER_VERSION/chromedriver_linux64.zip && \
-    unzip /tmp/chromedriver.zip -d /usr/bin && \
-    chmod +x /usr/bin/chromedriver
+# RUN apt-get update && \
+#     apt-get install -y wget unzip && \
+#     CHROME_DRIVER_VERSION=$(curl -s https://chromedriver.storage.googleapis.com/LATEST_RELEASE) && \
+#     wget -q -O /tmp/chromedriver.zip https://chromedriver.storage.googleapis.com/$CHROME_DRIVER_VERSION/chromedriver_linux64.zip && \
+#     unzip /tmp/chromedriver.zip -d /usr/bin && \
+#     chmod +x /usr/bin/chromedriver
 
-# Set an environment variable for ChromeDriver (optional)
-ENV CHROME_DRIVER_PATH=/usr/bin/chromedriver
+# # Set an environment variable for ChromeDriver (optional)
+# ENV CHROME_DRIVER_PATH=/usr/bin/chromedriver
 
 # Copy the rest of the application files to the working directory
 COPY . .
