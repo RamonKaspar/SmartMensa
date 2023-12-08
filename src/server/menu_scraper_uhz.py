@@ -1,56 +1,9 @@
-# from selenium import webdriver
-# from selenium.webdriver.common.by import By
-# from selenium.webdriver.chrome.service import Service
-# from selenium.webdriver.chrome.options import Options
-# from selenium.webdriver.support.ui import WebDriverWait
-# from selenium.webdriver.support import expected_conditions as EC
-# from fake_useragent import UserAgent
 import requests
 from bs4 import BeautifulSoup
 from time import sleep
 import json
 import os
 import re
-
-# Set up Selenium webdriver
-
-# chrome_options = Options()
-# chrome_options.binary_location = '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser'
-# chrome_options.add_argument("--headless")  # Run in headless mode (without opening browser window)
-# chrome_options.add_argument('--disable-blink-features=AutomationControlled')
-# Set the path for the ChromeDriver
-# chrome_driver_path = '/opt/homebrew/bin/chromedriver'
-
-# Set up fake user agent
-# ua = UserAgent()
-
-# Set up service
-# service = Service(chrome_driver_path)
-# service = webdriver.ChromeService()
-
-# Create a Chrome webdriver instance
-# driver = webdriver.Chrome(service=service, options=chrome_options)
-
-# # Set waiting time for webdriver
-# wait = WebDriverWait(driver, 10)
-
-##############################################################################################################################
-
-# Get the XML data to parse from the page using Selenium
-
-# def getXMLData(url):
-#     # Open the webpage
-#     driver.get(url)
-#     wait.until(EC.presence_of_element_located((By.TAG_NAME, 'pre')))
-#     print(f'{"STATUS:":<15} Page successfully accessed!')
-
-#     # Parse the data to a dictionary using Pydantic models
-#     xml_data = driver.find_element(By.TAG_NAME, 'pre').text
-
-#     print(f'{"STATUS:":<15} Page source successfully parsed!')
-#     print("")
-
-#     return xml_data
 
 def getXMLData(url):
     # Fetch the webpage content
@@ -111,15 +64,6 @@ def parseXMLToJSON(xml_data, day_time):
                         allergens = [allergen.strip() for allergen in allergens if allergen.strip()]
                         if allergens:
                             current_item['allergens'] = allergens
-                # Commented out because the nutrition information is not needed
-                # elif item.name == 'table':
-                #     nutrition = {}
-                #     rows = item.find_all('tr')
-                #     for row in rows:
-                #         columns = row.find_all('td')
-                #         if len(columns) == 2:
-                #             nutrition[columns[0].text.strip()] = columns[1].text.strip()
-                #     current_item['nutrition'] = nutrition
 
             if current_item:
                 menu_info[day_time].append(current_item)
@@ -182,7 +126,6 @@ def saveJSON(json_data_string, directory, facility_id):
         json_file.write(json_data_string)
 
     print(f'{"STATUS:":<15} menus-facility-{facility_id}.json successfully stored!')
-    print("")
 
 ##############################################################################################################################
 
@@ -206,6 +149,7 @@ def main():
     days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
     
     for facility_id in facility_ids_german:
+        print(f'{ "FACILITY ID:":<15} Processing facility {facility_id}...')
         facility_menus = {
                         "Monday": {"Lunch": [], "Dinner": []},
                         "Tuesday": {"Lunch": [], "Dinner": []},
@@ -216,11 +160,6 @@ def main():
                         "Sunday": {"Lunch": [], "Dinner": []}
                         }
         for day in days:
-            # user_agent = ua.random
-            # print(f'{"USER AGENT:":<15} {user_agent}')
-            # chrome_options.add_argument(f'--user-agent={user_agent}')
-
-            print(f'{ "FACILITY ID:":<15} Processing {day} of facility {facility_id}...')
             url = generate_url(facility_id, days.index(day)+1, language)
             xml_data = getXMLData(url)
             day_time = "Dinner" if (facility_id == 506 or facility_id == 514 or facility_id == 149 or facility_id == 256) else "Lunch"
@@ -228,13 +167,13 @@ def main():
             facility_menus[day][day_time].extend(json_data[0][day_time])
             sleep(0.1)
         
+        print(f'{"STATUS:":<15} Menus of facility {facility_id} successfully crawled!')
         json_data_string = convertToJsonString(facility_menus)
         directory = 'menus-as-json'
         saveJSON(json_data_string, directory, facility_id)
-        sleep(1)
+        sleep(0.1)
     
     print(f'{"STATUS:":<15} All UZH menus successfully stored!')
 
 if __name__ == "__main__":
     main()
-    # driver.quit()
