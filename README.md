@@ -93,7 +93,7 @@ Document here the major milestones of your code and future planned steps.\
 - [ ] Milestone 3: Use webscraping to get the latest menus
   - [x] Get the menus for ETH mensas: #2 !2
   - [x] Get the menus for UZH mensas: #3 !3
-  - [x] Run python scripts weekly in backend to fetch the new menus and store them as JSON files #8 !9
+  - [x] Run python scripts daily in backend to fetch the new menus and store them as JSON files #8 !9
 
 - [ ] Milestone 4: Personalize the web-app
   - [x] Add login functionality #5 !12
@@ -116,7 +116,9 @@ This will help you have a clearer overview of what you are currently doing, trac
 Write here a short summary with weekly progress, including challanges and open questions.\
 We will use this to understand what your struggles and where did the weekly effort go to.
 
-Week 1: In the first week, we focused on getting the menus with help of webscraping and built the basic frontend for our app. We noticed that for the mensa card component, the footer is too large, so will change that in the next week and we will also create a json file, in which we will sotore the hardcoded mensa information like opening times and location for the footer. Additionally, we will try to incorporate the login functionality into our app. 
+Week 1: In the first week, we focused on getting the menus with help of webscraping and built the basic frontend for our app. We noticed that for the mensa card component, the footer is too large, so will change that in the next week and we will also create a json file, in which we will sotore the hardcoded mensa information like opening times and location for the footer. Additionally, we will try to incorporate the login functionality into our app.
+
+Week 2: In the second week, we manished to schedule the python script daily at 00:05 to fetch new menus by modifying the Dockerfile and installing python to the base [Node](https://hub.docker.com/_/node/) image together with the needed python packages. This took many commits to the main branch as there was no other way to test the deployment and as we are using an Express backend, in order to run the python scripts we had to spawn child processes. As we have no possibility to check errors on the VM in the kubernetes cluster, we added [serverlogs](http://lumast-project-express.course-fwe-2023.isginf.ch/serverlogs). We also improved the frontend and moved much of the hardcoded mensa information to a JSON file in the backend to store this data more centralized which makes it easier to change. We also added the user login functionality (this will allow us to store favourite menus and personalized settings per user). 
 
 ## Versioning
 Create stable versions of your code each week by using gitlab tags.\
@@ -127,4 +129,4 @@ We will evaluate your code every week, based on the corresponding version.
 
 Tags:
 - Week 1: [v1.1.1](https://gitlab.inf.ethz.ch/course-fwe2023/students/project/express/lumast_project_express/-/tags/v1.1.1)
-- Week 2: [v1.3.0](https://gitlab.inf.ethz.ch/course-fwe2023/students/project/express/lumast_project_express/-/tags/v1.3.0)
+- Week 2: [v1.4.0](https://gitlab.inf.ethz.ch/course-fwe2023/students/project/express/lumast_project_express/-/tags/v1.4.0)
