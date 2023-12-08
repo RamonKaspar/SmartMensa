@@ -5,6 +5,7 @@ import json
 from time import sleep
 from typing import List, Optional
 from pydantic import BaseModel, Field
+from datetime import datetime, timedelta
 
 ##############################################################################################################################
 
@@ -234,6 +235,26 @@ def parseToJson(url):
 
 ##############################################################################################################################
 
+# Compute the date range for the current week
+def compute_date_range():
+    # Get today's date
+    today = datetime.today()
+
+    # Calculate the difference between today and the previous Monday
+    days_since_monday = today.weekday()
+    days_to_previous_monday = (7 + days_since_monday) % 7
+    previous_monday = today - timedelta(days=days_to_previous_monday)
+
+    # Calculate the next Monday
+    next_monday = previous_monday + timedelta(weeks=1)
+
+    # Format the dates
+    valid_after = previous_monday.strftime("%Y-%m-%d")
+    valid_before = next_monday.strftime("%Y-%m-%d")
+    return valid_after, valid_before
+
+##############################################################################################################################
+
 def main():
     # Generate the URL for the current week for each facility
     def generate_url(facility_id, valid_after, valid_before, language):
@@ -241,12 +262,12 @@ def main():
     
     # Define the facility IDs for the different ETHZ facilities, for more information see facility-ids.md
     facility_ids = [ 3, 5, 7, 8, 9, 10, 11,  # Zentrum
-                    14, 14, 16, 17, 18, 19, 18, 20, 21, 22,  # Hönggerberg
+                    14, 16, 17, 18, 19, 20, 21, 22,  # Hönggerberg
                     23  # Oerlikon
                     ]
     
-    valid_after = '2023-12-04'
-    valid_before = '2023-12-11'
+    valid_after, valid_before = compute_date_range()
+
     language = "de"
     
     for facility_id in facility_ids:
