@@ -6,7 +6,7 @@ print("CWD:" + os.getcwd())
 print("PYTHONPATH:" + os.environ.get('PYTHONPATH', ''))
 
 # print all directories in /usr/local/lib/python3.10/dist-packages
-for d in os.listdir('/usr/local/lib/python3.10/dist-packages'):
+for d in os.listdir('/app'):
     print("Modules installed:" + d)
 
 from selenium import webdriver
