@@ -15,13 +15,13 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from fake_useragent import UserAgent
+# from fake_useragent import UserAgent
 import json
 from time import sleep
 
 from typing import List, Optional
 from pydantic import BaseModel, Field
-ua = UserAgent()
+# ua = UserAgent()
 
 # Set up Selenium Chrome options
 chrome_options = Options()
@@ -284,9 +284,9 @@ def main():
     language = "de"
     
     for facility_id in facility_ids:
-        user_agent = ua.random
-        print(f'{"USER AGENT:":<15} {user_agent}')
-        chrome_options.add_argument(f'--user-agent={user_agent}')
+        # user_agent = ua.random
+        # print(f'{"USER AGENT:":<15} {user_agent}')
+        # chrome_options.add_argument(f'--user-agent={user_agent}')
         print(f'{ "FACILITY ID:":<15} Processing facility {facility_id}...')
         url = generate_url(facility_id, valid_after, valid_before, language)
         parseToJson(url)
