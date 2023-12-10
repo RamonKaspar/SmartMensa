@@ -106,7 +106,7 @@ function MensaBody() {
       <main className="mensa-body-container">
         <div className="row-one-title">
           <h2>{myMensa.name_display}</h2>
-          <p className="mark-as-favorite">
+          <p className="mark-as-favorite-menu">
             <BsHeartFill size={20} />
           </p>
         </div>
@@ -139,45 +139,46 @@ function MensaBody() {
             </div>
           ))}
           {currentDayMeals.length === 0 && (
-            <div className="banner-no-menues-available">No menus available</div>
+            <div className="banner-no-menus-available">No menus available</div>
           )}
-          {Object.keys(myMensa).length > 0 && (
-            <div className="footer-container">
-              {/* ALL INFORMATIONS HARDCODED FOR NOW */}
-              <div className="footer-times">
-                <h3>Opening Times</h3>
-                <div>
-                  {formatedTimes(
-                    myMensa.opening_time_start,
-                    myMensa.opening_time_end
-                  )}
+          <div className="footer">
+            {Object.keys(myMensa).length > 0 && (
+              <div className="footer-container">
+                {/* ALL INFORMATIONS HARDCODED FOR NOW */}
+                <div className="footer-times">
+                  <h3>Opening Times</h3>
+                  <div>
+                    {formatedTimes(
+                      myMensa.opening_time_start,
+                      myMensa.opening_time_end
+                    )}
+                  </div>
+                  <h3>Dining Times</h3>
+                  <div>
+                    {formatedTimes(
+                      myMensa.dining_time_start,
+                      myMensa.dining_time_end
+                    )}
+                  </div>
                 </div>
-                <h3>Dining Times</h3>
-                <div>
-                  {formatedTimes(
-                    myMensa.dining_time_start,
-                    myMensa.dining_time_end
-                  )}
+                <div className="footer-location">
+                  <h3> Location </h3>
+                  <div>{myMensa.building}</div>
+                  <div>{myMensa.street}</div>
+                  <div>{myMensa.city}</div>
+                  <div className="footer-maps-link">
+                    <a href={myMensa.google_maps_link}>Show in Google Maps</a>
+                  </div>
                 </div>
               </div>
-              <div className="footer-location">
-                <h3> Location </h3>
-                <div>{myMensa.building}</div>
-                <div>{myMensa.street}</div>
-                <div>{myMensa.city}</div>
-                <div className="footer-maps-link">
-                  <a href={myMensa.google_maps_link}>Show in Google Maps</a>
-                </div>
-              </div>
+            )}
+            <div
+              className="visit-website"
+              onClick={() => window.open(myMensa.homepage)}
+            >
+              <RiExternalLinkFill style={{ fontSize: "2em" }} />
+              <div>Visit Homepage</div>
             </div>
-          )}
-          {/* LINK HARDCODED FOR NOW */}
-          <div
-            className="visit-website"
-            onClick={() => window.open(myMensa.homepage)}
-          >
-            <RiExternalLinkFill style={{ fontSize: "2em" }} />
-            <div>Visit Homepage</div>
           </div>
         </div>
       </main>

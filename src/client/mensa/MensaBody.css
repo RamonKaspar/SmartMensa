@@ -1,82 +1,107 @@
-.row-one-title {
-  display: flex;
-  justify-content: center;
-
-  & h2 {
-    color: #000000;
-  }
-}
-
-.second-row-tags {
-  display: flex;
-  margin-bottom: 20px;
-  justify-content: center;
-}
-
-.menu-container {
+.mensa-body-container {
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
-  margin-right: 10px;
-  align-items: stretch; /* Ensures that children stretch to fill the container */
+  align-items: center;
+  flex: 1; /* Ensures that the container stretches to fill the screen */
 
-  & .menu-component {
-    padding: 15px;
-    background: var(
-      --greenish-color-background
-    ); /* Light grey background, change as needed */
-    border-radius: 25px; /* Rounded corners */
-    border: 1px solid black; /* Slight black border */
-    margin-bottom: 10px; /* Add space between buttons  */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Simple box shadow for depth */
+  .row-one-title {
+    display: flex;
+    justify-content: center;
 
-    & .menu-title-and-price {
+    .mark-as-favorite-menu {
       display: flex;
-      justify-content: space-between;
-      margin: 0; /* Reset margin */
-      padding: 0; /* Reset padding */
+      justify-content: center;
+      align-items: center;
+      padding-left: 10px;
     }
 
-    & .ingredients-component {
-      margin-top: 10px;
-      font-size: large;
-    }
-
-    & .allergies-component {
-      margin-top: 10px;
-    }
-
-    & .last-row-actions {
-      display: flex;
-      justify-content: space-around;
-      margin-left: 50px;
-      margin-right: 50px;
-      margin-top: 15px;
+    & h2 {
+      color: #000000;
     }
   }
-}
 
-.banner-no-menues-available {
-  font-size: x-large;
-  text-align: center;
-  font-style: italic;
-  margin-top: 15px;
-  margin-bottom: 30px;
-}
-
-.footer-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 30px;
-  padding: 15px;
-  text-align: center;
-
-  & .footer-maps-link {
-    margin-top: 20px;
+  .second-row-tags {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
   }
-}
 
-.visit-website {
-  text-align: center;
-  margin-bottom: 20px;
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex: 1; /* Ensures that the container stretches to fill the screen */
+    justify-content: space-between;
+
+    & .menu-component {
+      padding: 15px;
+      background: var(
+        --greenish-color-background
+      ); /* Light grey background, change as needed */
+      border-radius: 25px; /* Rounded corners */
+      border: 1px solid black; /* Slight black border */
+      margin-bottom: 10px; /* Add space between buttons  */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Simple box shadow for depth */
+
+      & .menu-title-and-price {
+        display: flex;
+        justify-content: space-between;
+        margin: 0; /* Reset margin */
+        padding: 0; /* Reset padding */
+      }
+
+      & .ingredients-component {
+        margin-top: 10px;
+        font-size: large;
+      }
+
+      & .allergies-component {
+        margin-top: 10px;
+      }
+
+      & .last-row-actions {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .banner-no-menus-available {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    text-align: center;
+    font-style: italic;
+    /* margin-top: 100px; */
+    /* margin-bottom: 30px; */
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .footer-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 10px;
+      padding: 15px;
+      text-align: center;
+
+      & .footer-maps-link {
+        margin-top: 20px;
+      }
+    }
+
+    .visit-website {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
 }
