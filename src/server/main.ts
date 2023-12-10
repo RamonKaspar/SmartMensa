@@ -43,7 +43,7 @@ app.get("/serverlogs", (_req, res) => {
   res.json({ logs: serverLogs });
 });
 
-const pythonScriptPathUZH = path.join(__dirname, "menu_scraper_uhz.py");
+const pythonScriptPathUZH = path.join(__dirname, "menu_scraper_uzh.py");
 const pythonScriptPathETH = path.join(__dirname, "menu_scraper_eth.py");
 const pythonInterpreter = "/usr/bin/python3";
 
