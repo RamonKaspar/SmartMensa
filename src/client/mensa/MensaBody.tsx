@@ -88,19 +88,6 @@ function MensaBody() {
     fetchMeals();
   }, [mensaName]);
 
-  /* Function that returns either "Open" or "Closed", depending on current time */
-  const handleOpenTag = () => {
-    const now = new Date();
-    const nowAsNumber = now.getHours() + now.getMinutes() / 100;
-    if (
-      nowAsNumber < myMensa.opening_time_start ||
-      nowAsNumber > myMensa.opening_time_end
-    ) {
-      return "Closed";
-    }
-    return "Open";
-  };
-
   return (
     <>
       <main className="mensa-body-container">
