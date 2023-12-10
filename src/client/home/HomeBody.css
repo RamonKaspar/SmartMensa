@@ -7,6 +7,12 @@
   }
 }
 
+/* Blurr the whole main component if we are in the filter menu */
+.blurred {
+  filter: blur(3px);
+  overflow: hidden; /* This will disable scrolling */
+}
+
 .mensa-buttons-container {
   display: flex;
   margin-left: 10px;
@@ -58,11 +64,16 @@
   color: #ffffff;
   margin-top: 5px;
   margin-left: 10px;
+  text-align: center;
+}
+
+& .closed {
+  background: #a20a0a;
+  opacity: 65%;
 }
 
 .location-tag {
-  display: flex;
-  align-items: center;
+  text-align: center;
   background: #656363;
   padding: 5px 10px;
   border-radius: 15px;
