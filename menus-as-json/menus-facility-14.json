@@ -1,0 +1,820 @@
+{
+  "Monday": {
+    "Lunch": [
+      {
+        "line_name": "Budet Pot",
+        "meal_name": "G`HACKTES MIT HÖRNLI",
+        "meal_description": "Rindsgehacktes oder Sojagehacktes\n| Hörnli | Petersilie | Apfelmus | Extrahartkäse",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Soja",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Fleisch",
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 10.5,
+          "external": 12.5
+        }
+      },
+      {
+        "line_name": "Classic Pot",
+        "meal_name": "BAKED POTATOES MEXICANA",
+        "meal_description": "Chili con carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
+        "allergens": [
+          "Gluten",
+          "Milch, Laktose",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      },
+      {
+        "line_name": "World Pot",
+        "meal_name": "DUMPLINGS MIT SOJASAUCE",
+        "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sesam"
+        ],
+        "meal_class": [
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 11.9
+        }
+      }
+    ],
+    "Dinner": [
+      {
+        "line_name": "Classic Pot Abend",
+        "meal_name": "BAKED POTATOES MEXICANA",
+        "meal_description": "Chili con carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
+        "allergens": [
+          "Gluten",
+          "Milch, Laktose",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      },
+      {
+        "line_name": "World Pot Abend",
+        "meal_name": "DUMPLINGS MIT SOJASAUCE",
+        "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sesam"
+        ],
+        "meal_class": [
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 11.9
+        }
+      },
+      {
+        "line_name": "Budget Pot Abend",
+        "meal_name": "G`HACKTES MIT HÖRNLI",
+        "meal_description": "Rindsgehacktes oder Sojagehacktes\n| Hörnli | Petersilie | Apfelmus | Extrahartkäse",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Soja",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Fleisch",
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 10.5,
+          "external": 12.5
+        }
+      }
+    ]
+  },
+  "Tuesday": {
+    "Lunch": [
+      {
+        "line_name": "Budet Pot",
+        "meal_name": "G`HACKTES MIT HÖRNLI",
+        "meal_description": "Rindsgehacktes oder Sojagehacktes\n| Hörnli | Petersilie | Apfelmus | Extrahartkäse",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Soja",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Fleisch",
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 10.5,
+          "external": 12.5
+        }
+      },
+      {
+        "line_name": "Classic Pot",
+        "meal_name": "BAKED POTATOES MEXICANA",
+        "meal_description": "Chili con carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
+        "allergens": [
+          "Gluten",
+          "Milch, Laktose",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      },
+      {
+        "line_name": "World Pot",
+        "meal_name": "DUMPLINGS MIT SOJASAUCE",
+        "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sesam"
+        ],
+        "meal_class": [
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 11.9
+        }
+      }
+    ],
+    "Dinner": [
+      {
+        "line_name": "Classic Pot Abend",
+        "meal_name": "BAKED POTATOES MEXICANA",
+        "meal_description": "Chili con carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
+        "allergens": [
+          "Gluten",
+          "Milch, Laktose",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      },
+      {
+        "line_name": "World Pot Abend",
+        "meal_name": "DUMPLINGS MIT SOJASAUCE",
+        "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sesam"
+        ],
+        "meal_class": [
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 11.9
+        }
+      },
+      {
+        "line_name": "Budget Pot Abend",
+        "meal_name": "G`HACKTES MIT HÖRNLI",
+        "meal_description": "Rindsgehacktes oder Sojagehacktes\n| Hörnli | Petersilie | Apfelmus | Extrahartkäse",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Soja",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Fleisch",
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 10.5,
+          "external": 12.5
+        }
+      }
+    ]
+  },
+  "Wednesday": {
+    "Lunch": [
+      {
+        "line_name": "Budet Pot",
+        "meal_name": "G`HACKTES MIT HÖRNLI",
+        "meal_description": "Rindsgehacktes oder Sojagehacktes\n| Hörnli | Petersilie | Apfelmus | Extrahartkäse",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Soja",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Fleisch",
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 10.5,
+          "external": 12.5
+        }
+      },
+      {
+        "line_name": "Classic Pot",
+        "meal_name": "BAKED POTATOES MEXICANA",
+        "meal_description": "Chili con carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
+        "allergens": [
+          "Gluten",
+          "Milch, Laktose",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      },
+      {
+        "line_name": "World Pot",
+        "meal_name": "DUMPLINGS MIT SOJASAUCE",
+        "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sesam"
+        ],
+        "meal_class": [
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 11.9
+        }
+      }
+    ],
+    "Dinner": [
+      {
+        "line_name": "Classic Pot Abend",
+        "meal_name": "BAKED POTATOES MEXICANA",
+        "meal_description": "Chili con carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
+        "allergens": [
+          "Gluten",
+          "Milch, Laktose",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      },
+      {
+        "line_name": "World Pot Abend",
+        "meal_name": "DUMPLINGS MIT SOJASAUCE",
+        "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sesam"
+        ],
+        "meal_class": [
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 11.9
+        }
+      },
+      {
+        "line_name": "Budget Pot Abend",
+        "meal_name": "G`HACKTES MIT HÖRNLI",
+        "meal_description": "Rindsgehacktes oder Sojagehacktes\n| Hörnli | Petersilie | Apfelmus | Extrahartkäse",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Soja",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Fleisch",
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 10.5,
+          "external": 12.5
+        }
+      }
+    ]
+  },
+  "Thursday": {
+    "Lunch": [
+      {
+        "line_name": "Budet Pot",
+        "meal_name": "G`HACKTES MIT HÖRNLI",
+        "meal_description": "Rindsgehacktes oder Sojagehacktes\n| Hörnli | Petersilie | Apfelmus | Extrahartkäse",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Soja",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Fleisch",
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 10.5,
+          "external": 12.5
+        }
+      },
+      {
+        "line_name": "Classic Pot",
+        "meal_name": "BAKED POTATOES MEXICANA",
+        "meal_description": "Chili con carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
+        "allergens": [
+          "Gluten",
+          "Milch, Laktose",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      },
+      {
+        "line_name": "World Pot",
+        "meal_name": "DUMPLINGS MIT SOJASAUCE",
+        "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sesam"
+        ],
+        "meal_class": [
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 11.9
+        }
+      }
+    ],
+    "Dinner": [
+      {
+        "line_name": "Classic Pot Abend",
+        "meal_name": "BAKED POTATOES MEXICANA",
+        "meal_description": "Chili con carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
+        "allergens": [
+          "Gluten",
+          "Milch, Laktose",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      },
+      {
+        "line_name": "World Pot Abend",
+        "meal_name": "DUMPLINGS MIT SOJASAUCE",
+        "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sesam"
+        ],
+        "meal_class": [
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 11.9
+        }
+      },
+      {
+        "line_name": "Budget Pot Abend",
+        "meal_name": "G`HACKTES MIT HÖRNLI",
+        "meal_description": "Rindsgehacktes oder Sojagehacktes\n| Hörnli | Petersilie | Apfelmus | Extrahartkäse",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Soja",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Fleisch",
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 10.5,
+          "external": 12.5
+        }
+      }
+    ]
+  },
+  "Friday": {
+    "Lunch": [
+      {
+        "line_name": "Budet Pot",
+        "meal_name": "G`HACKTES MIT HÖRNLI",
+        "meal_description": "Rindsgehacktes oder Sojagehacktes\n| Hörnli | Petersilie | Apfelmus | Extrahartkäse",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Soja",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Fleisch",
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 10.5,
+          "external": 12.5
+        }
+      },
+      {
+        "line_name": "Classic Pot",
+        "meal_name": "BAKED POTATOES MEXICANA",
+        "meal_description": "Chili con carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
+        "allergens": [
+          "Gluten",
+          "Milch, Laktose",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      },
+      {
+        "line_name": "World Pot",
+        "meal_name": "DUMPLINGS MIT SOJASAUCE",
+        "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sesam"
+        ],
+        "meal_class": [
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 11.9
+        }
+      }
+    ],
+    "Dinner": [
+      {
+        "line_name": "Classic Pot Abend",
+        "meal_name": "BAKED POTATOES MEXICANA",
+        "meal_description": "Chili con carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
+        "allergens": [
+          "Gluten",
+          "Milch, Laktose",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      },
+      {
+        "line_name": "World Pot Abend",
+        "meal_name": "DUMPLINGS MIT SOJASAUCE",
+        "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sesam"
+        ],
+        "meal_class": [
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 11.9
+        }
+      },
+      {
+        "line_name": "Budget Pot Abend",
+        "meal_name": "G`HACKTES MIT HÖRNLI",
+        "meal_description": "Rindsgehacktes oder Sojagehacktes\n| Hörnli | Petersilie | Apfelmus | Extrahartkäse",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Soja",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Fleisch",
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.5,
+          "internal": 10.5,
+          "external": 12.5
+        }
+      }
+    ]
+  },
+  "Saturday": {
+    "Lunch": [],
+    "Dinner": []
+  },
+  "Sunday": {
+    "Lunch": [],
+    "Dinner": []
+  }
+}

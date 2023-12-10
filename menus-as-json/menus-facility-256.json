@@ -1,0 +1,169 @@
+{
+    "Monday": {
+        "Lunch": [],
+        "Dinner": [
+            {
+                "line_name": "farm",
+                "price_info": {
+                    "students": 6.1,
+                    "internal": 9.0,
+                    "external": 13.0
+                },
+                "meal_description": "Gemüsestrudel \nTomatensugo",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Sellerie",
+                    "Schwefeldioxid und Sulfite"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "internal": 10.5,
+                    "external": 15.0
+                },
+                "meal_description": "Rindshackbällchen\nCurrysauce \nTagesbeilage \nTagesgemüse\nFleisch, Rind, Schweiz",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Fisch",
+                    "Milch",
+                    "Senf"
+                ]
+            }
+        ]
+    },
+    "Tuesday": {
+        "Lunch": [],
+        "Dinner": [
+            {
+                "line_name": "farm",
+                "price_info": {
+                    "students": 6.1,
+                    "internal": 9.0,
+                    "external": 13.0
+                },
+                "meal_description": "Gemüse-Tofu Curry \nTagesbeilage \nTagesgemüse",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Soja",
+                    "Milch",
+                    "Sellerie"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "internal": 10.5,
+                    "external": 15.0
+                },
+                "meal_description": "Mit Honig glasierter Trutenschinken\nBratensauce\nTagesbeilage \nTagesgemüse\nFleisch, Schwein, Schweiz",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Milch",
+                    "Sellerie"
+                ]
+            }
+        ]
+    },
+    "Wednesday": {
+        "Lunch": [],
+        "Dinner": [
+            {
+                "line_name": "farm",
+                "price_info": {
+                    "students": 6.1,
+                    "internal": 9.0,
+                    "external": 13.0
+                },
+                "meal_description": "Ravioli Gemüse mit Linsen \nRahmsauce mit Pesto",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Eier",
+                    "Soja",
+                    "Milch",
+                    "Hartschalenobst (Nüsse)",
+                    "Sellerie"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "internal": 10.5,
+                    "external": 15.0
+                },
+                "meal_description": "Pouletragout mit Pilzen\nTagesbeilage \nTagesgemüse",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Milch"
+                ]
+            }
+        ]
+    },
+    "Thursday": {
+        "Lunch": [],
+        "Dinner": [
+            {
+                "line_name": "farm",
+                "price_info": {
+                    "students": 6.1,
+                    "internal": 9.0,
+                    "external": 13.0
+                },
+                "meal_description": "Fried Rice Vegan\nmit Chili, Zwiebeln & Pilzen",
+                "allergens": [
+                    "Soja",
+                    "Sellerie"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "internal": 10.5,
+                    "external": 15.0
+                },
+                "meal_description": "Pasta al Carbonara\nReibkäse\nFleisch, Schwein, Schweiz",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Milch"
+                ]
+            }
+        ]
+    },
+    "Friday": {
+        "Lunch": [],
+        "Dinner": [
+            {
+                "line_name": "farm",
+                "price_info": {
+                    "students": 6.1,
+                    "internal": 9.0,
+                    "external": 13.0
+                },
+                "meal_description": "s'foifer Buffet",
+                "allergens": []
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "internal": 10.5,
+                    "external": 15.0
+                },
+                "meal_description": "s'foifer Buffet",
+                "allergens": []
+            }
+        ]
+    },
+    "Saturday": {
+        "Lunch": [],
+        "Dinner": []
+    },
+    "Sunday": {
+        "Lunch": [],
+        "Dinner": []
+    }
+}

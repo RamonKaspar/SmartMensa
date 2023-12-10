@@ -1,0 +1,792 @@
+{
+  "Monday": {
+    "Lunch": [
+      {
+        "line_name": "Curry | Fleisch",
+        "meal_name": "Poulet oder Schweinefleisch Curry",
+        "meal_description": "Poulet Erdnuss Curry | oder | Schweinefleisch Tomaten Curry | Gemüse | Basmati Reis",
+        "allergens": [
+          "Gluten",
+          "Erdnüsse",
+          "Soja",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Schwein",
+            "origin": [
+              "Schweiz"
+            ]
+          },
+          {
+            "type": "Huhn",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 11.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Curry | Vegi",
+        "meal_name": "Kichererbsen oder Pilz Curry",
+        "meal_description": "Kichererbsen-Tomaten Curry | oder | Pilz Curry | Gemüse | Basmati Reis",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 13.5
+        }
+      },
+      {
+        "line_name": "Hit Curry Gericht ",
+        "meal_name": "Eiernudeln mit Rindfleisch",
+        "meal_description": "Eiernudeln mit Rindfleisch | Gemüse | Koriander | Chili ",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Erdnüsse",
+          "Soja",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 11.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Green | Wraps",
+        "meal_name": "Wraps",
+        "meal_description": "Verschiedene Wraps Fleisch & Vegi ",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.3,
+          "internal": 9.3,
+          "external": 10.9
+        }
+      },
+      {
+        "line_name": "Green | Salate",
+        "meal_name": "Salate",
+        "meal_description": "Verschiedene Take Away Salate",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.5,
+          "internal": 10.5,
+          "external": 11.5
+        }
+      },
+      {
+        "line_name": "Green | Gyros Panini",
+        "meal_name": "Gyros Sandwich",
+        "meal_description": "Hot Gyros Sandwich mit Fleisch ",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 9.9,
+          "external": 11.5
+        }
+      },
+      {
+        "line_name": "Green | Hot Panini",
+        "meal_name": "Hot Panini",
+        "meal_description": "Verschiedene warme Sandwich Fleisch oder Vegi ",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.9,
+          "internal": 7.9,
+          "external": 9.5
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Tuesday": {
+    "Lunch": [
+      {
+        "line_name": "Curry | Fleisch",
+        "meal_name": "Lamm oder Kalbs Curry",
+        "meal_description": "Lamm Jaipur Curry | oder | Kalbshack Kokos Curry | Gemüse | Basmati Reis",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Kalb",
+            "origin": [
+              "Schweiz"
+            ]
+          },
+          {
+            "type": "Lamm",
+            "origin": [
+              "Irland"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 11.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Curry | Vegi",
+        "meal_name": "Kartoffel oder Blumenkohl Curry",
+        "meal_description": "Kartoffel Tamarinden Curry | oder | Blumenkohl Curry | Gemüse | Basmati Reis",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 13.5
+        }
+      },
+      {
+        "line_name": "Hit Curry Gericht ",
+        "meal_name": "Curry Reis",
+        "meal_description": "Schweinefleisch | Eierstreifen | Gemüse | Koriander | Chili",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Soja",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Schwein",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 11.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Green | Wraps",
+        "meal_name": "Wraps",
+        "meal_description": "Verschiedene Wraps Fleisch & Vegi ",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.3,
+          "internal": 9.3,
+          "external": 10.9
+        }
+      },
+      {
+        "line_name": "Green | Salate",
+        "meal_name": "Salate",
+        "meal_description": "Verschiedene Take Away Salate",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.5,
+          "internal": 10.5,
+          "external": 11.5
+        }
+      },
+      {
+        "line_name": "Green | Gyros Panini",
+        "meal_name": "Gyros Sandwich",
+        "meal_description": "Hot Gyros Sandwich mit Fleisch ",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 9.9,
+          "external": 11.5
+        }
+      },
+      {
+        "line_name": "Green | Hot Panini",
+        "meal_name": "Hot Panini",
+        "meal_description": "Verschiedene warme Sandwich Fleisch oder Vegi ",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.9,
+          "internal": 7.9,
+          "external": 9.5
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Wednesday": {
+    "Lunch": [
+      {
+        "line_name": "Curry | Fleisch",
+        "meal_name": "Rinds oder Fisch Curry",
+        "meal_description": "Rindfleisch Delhi Curry | oder | Fisch Curry (Hokkiwürfel) | Gemüse | Basmati Reis",
+        "allergens": [
+          "Gluten",
+          "Fisch",
+          "Soja",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Fisch",
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [
+          {
+            "desc": "Binnenfischerei",
+            "origin": [
+              "Niederlande"
+            ]
+          }
+        ],
+        "price_info": {
+          "students": 9.9,
+          "internal": 11.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Curry | Vegi",
+        "meal_name": "Linsen oder Tofu",
+        "meal_description": "Linsen Früchte Curry | oder | Tofu Spinat Curry | Gemüse | Basmati Reis",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 13.5
+        }
+      },
+      {
+        "line_name": "Hit Curry Gericht ",
+        "meal_name": "Poulet Tandoori",
+        "meal_description": "Gemüse | Basmati Reis",
+        "allergens": [
+          "Gluten",
+          "Krebstiere",
+          "Ei",
+          "Soja",
+          "Milch, Laktose",
+          "Schalenfrüchte",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Huhn",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 11.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Green | Wraps",
+        "meal_name": "Wraps",
+        "meal_description": "Verschiedene Wraps Fleisch & Vegi ",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.3,
+          "internal": 9.3,
+          "external": 10.9
+        }
+      },
+      {
+        "line_name": "Green | Salate",
+        "meal_name": "Salate",
+        "meal_description": "Verschiedene Take Away Salate",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.5,
+          "internal": 10.5,
+          "external": 11.5
+        }
+      },
+      {
+        "line_name": "Green | Gyros Panini",
+        "meal_name": "Gyros Sandwich",
+        "meal_description": "Hot Gyros Sandwich mit Fleisch ",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 9.9,
+          "external": 11.5
+        }
+      },
+      {
+        "line_name": "Green | Hot Panini",
+        "meal_name": "Hot Panini",
+        "meal_description": "Verschiedene warme Sandwich Fleisch oder Vegi ",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.9,
+          "internal": 7.9,
+          "external": 9.5
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Thursday": {
+    "Lunch": [
+      {
+        "line_name": "Curry | Fleisch",
+        "meal_name": "Schweins oder Poulet Curry",
+        "meal_description": "Schweinefleisch Auberginen Curry | oder | Poulet Spinat Curry | Gemüse | Basmati Reis",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Schwein",
+            "origin": [
+              "Schweiz"
+            ]
+          },
+          {
+            "type": "Huhn",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 11.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Curry | Vegi",
+        "meal_name": "Kürbis oder Soja Flaks Curry",
+        "meal_description": "Kürbis Curry | oder | Soja Flaks Mango-Kokos Curry | Gemüse | Basmati Reis",
+        "allergens": [
+          "Gluten",
+          "Erdnüsse",
+          "Soja",
+          "Milch, Laktose",
+          "Schalenfrüchte",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 13.5
+        }
+      },
+      {
+        "line_name": "Hit Curry Gericht ",
+        "meal_name": "Gebratene Glasnudeln",
+        "meal_description": "Kalbshackfleisch | Pilze | Gemüse | Koriander",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Soja",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Kalb",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 11.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Green | Wraps",
+        "meal_name": "Wraps",
+        "meal_description": "Verschiedene Wraps Fleisch & Vegi ",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.3,
+          "internal": 9.3,
+          "external": 10.9
+        }
+      },
+      {
+        "line_name": "Green | Salate",
+        "meal_name": "Salate",
+        "meal_description": "Verschiedene Take Away Salate",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.5,
+          "internal": 10.5,
+          "external": 11.5
+        }
+      },
+      {
+        "line_name": "Green | Gyros Panini",
+        "meal_name": "Gyros Sandwich",
+        "meal_description": "Hot Gyros Sandwich mit Fleisch ",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 9.9,
+          "external": 11.5
+        }
+      },
+      {
+        "line_name": "Green | Hot Panini",
+        "meal_name": "Hot Panini",
+        "meal_description": "Verschiedene warme Sandwich Fleisch oder Vegi ",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.9,
+          "internal": 7.9,
+          "external": 9.5
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Friday": {
+    "Lunch": [
+      {
+        "line_name": "Curry | Fleisch",
+        "meal_name": "Poulet oder Rinds Curry",
+        "meal_description": "Poulet Balls Curry | oder | Rindfleisch Nuss Curry | Gemüse | Basmati Reis",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Erdnüsse",
+          "Soja",
+          "Milch, Laktose",
+          "Schalenfrüchte",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          },
+          {
+            "type": "Huhn",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 11.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Curry | Vegi",
+        "meal_name": "Bratkäse oder Süsskartoffel Curry",
+        "meal_description": "Bratkäse-Gemüse Curry | oder | Süsskartoffel Curry | Gemüse | Basmati Reis",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.9,
+          "internal": 9.9,
+          "external": 13.5
+        }
+      },
+      {
+        "line_name": "Hit Curry Gericht ",
+        "meal_name": "Curry-Reisnudeln",
+        "meal_description": "Schweinefleisch | Gemüse | Koriander | Erdnüsse | Chili",
+        "allergens": [
+          "Gluten",
+          "Erdnüsse",
+          "Soja",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf",
+          "Sulfite",
+          "Lupinen"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Schwein",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.9,
+          "internal": 11.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "Green | Wraps",
+        "meal_name": "Wraps",
+        "meal_description": "Verschiedene Wraps Fleisch & Vegi ",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.3,
+          "internal": 9.3,
+          "external": 10.9
+        }
+      },
+      {
+        "line_name": "Green | Salate",
+        "meal_name": "Salate",
+        "meal_description": "Verschiedene Take Away Salate",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.5,
+          "internal": 10.5,
+          "external": 11.5
+        }
+      },
+      {
+        "line_name": "Green | Gyros Panini",
+        "meal_name": "Gyros Sandwich",
+        "meal_description": "Hot Gyros Sandwich mit Fleisch ",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 9.9,
+          "external": 11.5
+        }
+      },
+      {
+        "line_name": "Green | Hot Panini",
+        "meal_name": "Hot Panini",
+        "meal_description": "Verschiedene warme Sandwich Fleisch oder Vegi ",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.9,
+          "internal": 7.9,
+          "external": 9.5
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Saturday": {
+    "Lunch": [],
+    "Dinner": []
+  },
+  "Sunday": {
+    "Lunch": [],
+    "Dinner": []
+  }
+}

@@ -1,0 +1,311 @@
+{
+    "Monday": {
+        "Lunch": [
+            {
+                "line_name": "farm",
+                "price_info": {
+                    "students": 6.1,
+                    "internal": 9.0,
+                    "external": 13.0
+                },
+                "meal_description": "Afrikanischer Erdnusseintopf \nmit Gemüse und Chili\nJasmin Reis\nMenüsalat",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Erdnüsse",
+                    "Soja",
+                    "Hartschalenobst (Nüsse)",
+                    "Sellerie"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "internal": 10.5,
+                    "external": 15.0
+                },
+                "meal_description": "Fleischkäse \nSenf\nKartoffelsalat\nMenüsalat",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Eier",
+                    "Soja",
+                    "Milch",
+                    "Sellerie",
+                    "Senf",
+                    "Schwefeldioxid und Sulfite"
+                ]
+            },
+            {
+                "line_name": "Tagessuppe",
+                "price_info": {
+                    "students": 1.4,
+                    "internal": 1.5,
+                    "external": 1.8
+                },
+                "meal_description": "Pastinakensuppe",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Milch"
+                ]
+            },
+            {
+                "line_name": "News",
+                "price_info": {
+                    "students": "",
+                    "internal": "",
+                    "external": ""
+                },
+                "meal_description": "Desserts: Montag:Tobleronemousse\nDienstag:  Orangen-Tiramisu\nMittwoch: Biberli\nDonnerstag: Schwarzwälderschnitte\nFreitag: Apfel-Zimt-Mousse",
+                "allergens": []
+            }
+        ],
+        "Dinner": []
+    },
+    "Tuesday": {
+        "Lunch": [
+            {
+                "line_name": "farm",
+                "price_info": {
+                    "students": 6.1,
+                    "internal": 9.0,
+                    "external": 13.0
+                },
+                "meal_description": "Quinoa-Spinat-Tortelloni \nPeperonicremesauce\nZucchettigemüse\nMenüsalat",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Soja",
+                    "Milch",
+                    "Sellerie"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "internal": 10.5,
+                    "external": 15.0
+                },
+                "meal_description": "Schirin polo\nmit Poulet, Linsen, \nDörrobst und Gemüse\nJoghurt-Pistazien-Dip\nApfel",
+                "allergens": [
+                    "Soja",
+                    "Milch",
+                    "Hartschalenobst (Nüsse)",
+                    "Sellerie",
+                    "Schwefeldioxid und Sulfite"
+                ]
+            },
+            {
+                "line_name": "Tagessuppe",
+                "price_info": {
+                    "students": 1.4,
+                    "internal": 1.5,
+                    "external": 1.8
+                },
+                "meal_description": "Bauernsuppe",
+                "allergens": [
+                    "Soja",
+                    "Milch",
+                    "Sellerie"
+                ]
+            },
+            {
+                "line_name": "News",
+                "price_info": {
+                    "students": "",
+                    "internal": "",
+                    "external": ""
+                },
+                "meal_description": "Desserts: Montag:Tobleronemousse\nDienstag:  Orangen-Tiramisu\nMittwoch: Biberli\nDonnerstag: Schwarzwälderschnitte\nFreitag: Apfel-Zimt-Mousse",
+                "allergens": []
+            }
+        ],
+        "Dinner": []
+    },
+    "Wednesday": {
+        "Lunch": [
+            {
+                "line_name": "farm",
+                "price_info": {
+                    "students": 6.1,
+                    "internal": 9.0,
+                    "external": 13.0
+                },
+                "meal_description": "«Winter Eintopf»\nmit weissen Bohnen, Karotten,\nLauch & Schwarzwurzeln\nWildreis Mix\nRöstzwiebeln\nMenüsalat",
+                "allergens": [
+                    "Soja",
+                    "Sellerie"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "internal": 10.5,
+                    "external": 15.0
+                },
+                "meal_description": "«Currywurst»\nKalbsbratwurst \nCurry-Ketchup\nRosmarin Wedges\nErbsen und Rüebli",
+                "allergens": [
+                    "Soja",
+                    "Milch",
+                    "Sellerie"
+                ]
+            },
+            {
+                "line_name": "Tagessuppe",
+                "price_info": {
+                    "students": 1.4,
+                    "internal": 1.5,
+                    "external": 1.8
+                },
+                "meal_description": "Emmentaler Käse Suppe",
+                "allergens": [
+                    "Milch",
+                    "Sellerie"
+                ]
+            },
+            {
+                "line_name": "News",
+                "price_info": {
+                    "students": "",
+                    "internal": "",
+                    "external": ""
+                },
+                "meal_description": "Desserts: Montag:Tobleronemousse\nDienstag:  Orangen-Tiramisu\nMittwoch: Biberli\nDonnerstag: Schwarzwälderschnitte\nFreitag: Apfel-Zimt-Mousse",
+                "allergens": []
+            }
+        ],
+        "Dinner": []
+    },
+    "Thursday": {
+        "Lunch": [
+            {
+                "line_name": "farm",
+                "price_info": {
+                    "students": 6.1,
+                    "internal": 9.0,
+                    "external": 13.0
+                },
+                "meal_description": "Kürbis-Krautstielragout\nmit Estragon\nGnocchi\nTortillachips\nMenüsalat",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Eier",
+                    "Soja",
+                    "Milch",
+                    "Sellerie",
+                    "Schwefeldioxid und Sulfite"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "internal": 10.5,
+                    "external": 15.0
+                },
+                "meal_description": "Coq au vin Poulet\nBratenjus \nPolenta \nBroccoli",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Eier",
+                    "Soja",
+                    "Milch",
+                    "Sellerie",
+                    "Senf",
+                    "Sesam"
+                ]
+            },
+            {
+                "line_name": "Tagessuppe",
+                "price_info": {
+                    "students": 1.4,
+                    "internal": 1.5,
+                    "external": 1.8
+                },
+                "meal_description": "Schwarzwurzelcreme Suppe mit Äpfeln und Speck",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Milch",
+                    "Sellerie"
+                ]
+            },
+            {
+                "line_name": "News",
+                "price_info": {
+                    "students": "",
+                    "internal": "",
+                    "external": ""
+                },
+                "meal_description": "Desserts: Montag:Tobleronemousse\nDienstag:  Orangen-Tiramisu\nMittwoch: Biberli\nDonnerstag: Schwarzwälderschnitte\nFreitag: Apfel-Zimt-Mousse",
+                "allergens": []
+            }
+        ],
+        "Dinner": []
+    },
+    "Friday": {
+        "Lunch": [
+            {
+                "line_name": "farm",
+                "price_info": {
+                    "students": 6.1,
+                    "internal": 9.0,
+                    "external": 13.0
+                },
+                "meal_description": "Gemüse-Ecken\nSoja-Joghurt\nBratkartoffeln\nApfel-Fenchel",
+                "allergens": [
+                    "Soja",
+                    "Sellerie",
+                    "Senf",
+                    "Schwefeldioxid und Sulfite"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "internal": 10.5,
+                    "external": 15.0
+                },
+                "meal_description": "Spaghetti Carbonara \nmit Petersilie\nund Reibkäse\nMenüsalat",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Soja",
+                    "Milch",
+                    "Sellerie",
+                    "Sesam"
+                ]
+            },
+            {
+                "line_name": "Tagessuppe",
+                "price_info": {
+                    "students": 1.4,
+                    "internal": 1.5,
+                    "external": 1.8
+                },
+                "meal_description": "Tomatencremesuppe",
+                "allergens": [
+                    "Soja",
+                    "Milch",
+                    "Sellerie"
+                ]
+            },
+            {
+                "line_name": "News",
+                "price_info": {
+                    "students": "",
+                    "internal": "",
+                    "external": ""
+                },
+                "meal_description": "Desserts: Montag:Tobleronemousse\nDienstag:  Orangen-Tiramisu\nMittwoch: Biberli\nDonnerstag: Schwarzwälderschnitte\nFreitag: Apfel-Zimt-Mousse",
+                "allergens": []
+            }
+        ],
+        "Dinner": []
+    },
+    "Saturday": {
+        "Lunch": [],
+        "Dinner": []
+    },
+    "Sunday": {
+        "Lunch": [],
+        "Dinner": []
+    }
+}
