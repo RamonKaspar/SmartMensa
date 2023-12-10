@@ -3,7 +3,6 @@ import "./HomeBody.css";
 import { BsHeartFill } from "react-icons/bs";
 import { MdArrowForwardIos } from "react-icons/md";
 import { useState, useEffect } from "react";
-import Filter from "./Filter";
 
 async function fetchMensaStaticInfos() {
   try {
@@ -22,14 +21,7 @@ interface FavoritesState {
   [key: string]: boolean;
 }
 
-// Here comes some implementation for the filter function
-
-// Type for the showFilter state
-interface HomeBodyProps {
-  showFilter: boolean;
-}
-
-function HomeBody({ showFilter }: HomeBodyProps) {
+function HomeBody({ showFilter, appliedFilters }: any) {
   const [mensaInfos, setMensaInfos] = useState<any>([]);
 
   useEffect(() => {
@@ -59,6 +51,23 @@ function HomeBody({ showFilter }: HomeBodyProps) {
         console.error("Error fetching current user ID:", error)
       );
   }, []);
+
+  const noFiltersApplied = Object.values(appliedFilters).every(
+    (value) => !value
+  );
+  const filteredMensas = noFiltersApplied
+    ? mensaInfos
+    : mensaInfos.filter((mensa: any) => {
+        if (appliedFilters.Zentrum_ETH && mensa.location === "Zentrum (ETH)")
+          return true;
+        if (appliedFilters.Zentrum_UZH && mensa.location === "Zentrum (UZH)")
+          return true;
+        if (appliedFilters.Irchel && mensa.location === "Irchel") return true;
+        if (appliedFilters.Höngg && mensa.location === "Höngg") return true;
+        if (appliedFilters.Oerlikon && mensa.location === "Oerlikon")
+          return true;
+        return false;
+      });
 
   useEffect(() => {
     console.log(showFilter);
@@ -97,7 +106,7 @@ function HomeBody({ showFilter }: HomeBodyProps) {
         </div>
         <h2>Mensas</h2>
         <div className="mensa-buttons-container">
-          {mensaInfos.map((mensa: any, index: any) => (
+          {filteredMensas.map((mensa: any, index: any) => (
             <div className="mensas" key={index}>
               <button className="mensa-component" key={index}>
                 <div className="first-row">
@@ -135,8 +144,6 @@ function HomeBody({ showFilter }: HomeBodyProps) {
           ))}
         </div>
       </main>
-      {/* HERE, the filter is implemented */}
-      <div>{showFilter && <Filter />}</div>
     </>
   );
 }

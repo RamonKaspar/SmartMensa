@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import "./Filter.css";
 
 type appliedFiltersType = {
@@ -6,28 +6,12 @@ type appliedFiltersType = {
   Zentrum_UZH: boolean;
   Irchel: boolean;
   Höngg: boolean;
+  Oerlikon: boolean;
   Currently_Open: boolean;
   Favorites: boolean;
 };
 
-const appliedFiltersDefault: appliedFiltersType = {
-  Zentrum_ETH: false,
-  Zentrum_UZH: false,
-  Irchel: false,
-  Höngg: false,
-  Currently_Open: false,
-  Favorites: false,
-};
-
-function Filter() {
-  /* State for handling the applied filters */
-  const [appliedFilters, setAppliedFilters] = useState<appliedFiltersType>(
-    () => {
-      const savedFilters = localStorage.getItem("appliedFilters");
-      return savedFilters ? JSON.parse(savedFilters) : appliedFiltersDefault;
-    }
-  );
-
+function Filter({ appliedFilters, setAppliedFilters }: any) {
   /*  Save State to Local Storage */
   useEffect(() => {
     localStorage.setItem("appliedFilters", JSON.stringify(appliedFilters));
@@ -75,6 +59,14 @@ function Filter() {
             onClick={() => toggleFilter("Höngg")}
           >
             Höngg
+          </div>
+          <div
+            className={`filter-button ${
+              appliedFilters.Oerlikon ? "applied" : ""
+            }`}
+            onClick={() => toggleFilter("Oerlikon")}
+          >
+            Oerlikon
           </div>
         </div>
         <h3>Other:</h3>
