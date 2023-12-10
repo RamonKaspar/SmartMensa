@@ -40,14 +40,16 @@ function HomeBody() {
   const [currentUserId, setCurrentUserId] = useState(null);
 
   useEffect(() => {
-    fetch('/api/current-user')
-      .then(response => response.json())
-      .then(data => {
+    fetch("/api/current-user")
+      .then((response) => response.json())
+      .then((data) => {
         if (data.userId) {
           setCurrentUserId(data.userId);
         }
       })
-      .catch(error => console.error('Error fetching current user ID:', error));
+      .catch((error) =>
+        console.error("Error fetching current user ID:", error)
+      );
   }, []);
 
   // Handles if one clicks on a heart (for now, only the color changes)
@@ -87,7 +89,7 @@ function HomeBody() {
             <button className="mensa-component" key={index}>
               <div className="first-row">
                 <div className="mensa-title">{mensa.name_display}</div>
-                <div className="mark-as-favorite">
+                <div className="mark-as-favorite-mensa">
                   <BsHeartFill
                     size={20}
                     onClick={(e) => handleFavoriteClick(mensa.name_display, e)}
