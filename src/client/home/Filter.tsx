@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Filter.css";
 
 type appliedFiltersType = {
@@ -20,10 +20,21 @@ const appliedFiltersDefault: appliedFiltersType = {
 };
 
 function Filter() {
-  const [appliedFilters, setAppliedFilters] = useState(appliedFiltersDefault);
+  /* State for handling the applied filters */
+  const [appliedFilters, setAppliedFilters] = useState<appliedFiltersType>(
+    () => {
+      const savedFilters = localStorage.getItem("appliedFilters");
+      return savedFilters ? JSON.parse(savedFilters) : appliedFiltersDefault;
+    }
+  );
+
+  /*  Save State to Local Storage */
+  useEffect(() => {
+    localStorage.setItem("appliedFilters", JSON.stringify(appliedFilters));
+  }, [appliedFilters]);
 
   const toggleFilter = (filterKey: keyof appliedFiltersType) => {
-    setAppliedFilters((prevFilters) => ({
+    setAppliedFilters((prevFilters: appliedFiltersType) => ({
       ...prevFilters,
       [filterKey]: !prevFilters[filterKey],
     }));
