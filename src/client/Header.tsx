@@ -4,11 +4,12 @@ import { FaGear } from "react-icons/fa6";
 import { useLocation, useNavigate } from "react-router-dom";
 import { MdArrowBackIos } from "react-icons/md";
 
-function Header() {
+interface HeaderProps {
+  onFilterClick: () => void;
+}
+
+function Header({ onFilterClick }: HeaderProps) {
   const navigate = useNavigate();
-  const handleFilterClick = () => {
-    console.log("This click would trigger the filter menu!");
-  };
 
   const handleBackClick = () => {
     navigate("/home");
@@ -26,7 +27,7 @@ function Header() {
       <header>
         {isHomeRoute ? (
           <div id="filter-button">
-            <ImFilter size={30} onClick={() => handleFilterClick()} />
+            <ImFilter size={30} onClick={onFilterClick} />
           </div>
         ) : (
           <div id="back-button">
