@@ -112,8 +112,13 @@ function MensaBody() {
         </div>
         <div className="second-row-tags">
           <div className="location-tag">{myMensa.location}</div>
-          <div className="open-closed-tag">{handleOpenTag()}</div>
-          {/* HARDCODED FOR NOW!!!! */}
+          <div
+            className={`open-closed-tag ${
+              currentlyOpen(myMensa) ? "open" : "closed"
+            }`}
+          >
+            {currentlyOpen(myMensa) ? "Open" : "Closed"}
+          </div>
         </div>
         <div className="menu-container">
           {/* Create for each menu a component */}
@@ -234,3 +239,16 @@ function formatedTimes(start: number, end: number): string {
 }
 
 export default MensaBody;
+
+/* Function that returns either "Open" or "Closed", depending on current time */
+function currentlyOpen(mensa: any): boolean {
+  const now = new Date();
+  const nowAsNumber = now.getHours() + now.getMinutes() / 100;
+  if (
+    nowAsNumber < mensa.opening_time_start ||
+    nowAsNumber > mensa.opening_time_end
+  ) {
+    return false;
+  }
+  return true;
+}
