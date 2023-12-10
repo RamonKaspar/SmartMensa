@@ -93,3 +93,15 @@
   justify-content: flex-end; /* Aligns the icon to the right */
   cursor: pointer; /* Changes the cursor to indicate it can be clicked */
 }
+
+/* CSS should ensure the overlay covers the entire screen and has a higher 
+z-index than the main content but lower than the filter menu */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10; /* Adjust the z-index as needed */
+}

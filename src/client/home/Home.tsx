@@ -31,7 +31,11 @@ function Home() {
     <>
       <Layout>
         <Header onFilterClick={() => setShowFilter(!showFilter)} />
-        <HomeBody showFilter={showFilter} appliedFilters={appliedFilters} />
+        <HomeBody
+          showFilter={showFilter}
+          setShowFilter={setShowFilter}
+          appliedFilters={appliedFilters}
+        />
         <div>
           {showFilter && (
             <Filter
