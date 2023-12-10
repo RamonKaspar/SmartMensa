@@ -104,7 +104,7 @@ function HomeBody({ showFilter, appliedFilters }: any) {
           )}
           {/* ... rest of your component */}
         </div>
-        <h2>Mensas</h2>
+        <h2>Mensas ({filteredMensas.length})</h2>
         <div className="mensa-buttons-container">
           {filteredMensas.map((mensa: any, index: any) => (
             <div className="mensas" key={index}>
