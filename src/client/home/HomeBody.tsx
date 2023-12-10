@@ -52,26 +52,32 @@ function HomeBody({ showFilter, appliedFilters }: any) {
       );
   }, []);
 
+  /* Filter functionality */
   const noFiltersApplied = Object.values(appliedFilters).every(
     (value) => !value
   );
   const filteredMensas = noFiltersApplied
     ? mensaInfos
     : mensaInfos.filter((mensa: any) => {
+        let matchesFilter = false;
         if (appliedFilters.Zentrum_ETH && mensa.location === "Zentrum (ETH)")
-          return true;
+          matchesFilter = true;
         if (appliedFilters.Zentrum_UZH && mensa.location === "Zentrum (UZH)")
-          return true;
-        if (appliedFilters.Irchel && mensa.location === "Irchel") return true;
-        if (appliedFilters.Höngg && mensa.location === "Höngg") return true;
+          matchesFilter = true;
+        if (appliedFilters.Irchel && mensa.location === "Irchel")
+          matchesFilter = true;
+        if (appliedFilters.Höngg && mensa.location === "Höngg")
+          matchesFilter = true;
         if (appliedFilters.Oerlikon && mensa.location === "Oerlikon")
-          return true;
-        return false;
-      });
+          matchesFilter = true;
 
-  useEffect(() => {
-    console.log(showFilter);
-  }, [showFilter]);
+        // If 'Currently Open' filter is active, further filter by open status
+        if (appliedFilters.Currently_Open) {
+          matchesFilter = matchesFilter && currentlyOpen(mensa);
+        }
+
+        return matchesFilter;
+      });
 
   // Handles if one clicks on a heart (for now, only the color changes)
   const handleFavoriteClick = (

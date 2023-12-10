@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import "./Filter.css";
 
 type appliedFiltersType = {
@@ -12,11 +11,6 @@ type appliedFiltersType = {
 };
 
 function Filter({ appliedFilters, setAppliedFilters }: any) {
-  /*  Save State to Local Storage */
-  useEffect(() => {
-    localStorage.setItem("appliedFilters", JSON.stringify(appliedFilters));
-  }, [appliedFilters]);
-
   const toggleFilter = (filterKey: keyof appliedFiltersType) => {
     setAppliedFilters((prevFilters: appliedFiltersType) => ({
       ...prevFilters,
