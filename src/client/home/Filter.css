@@ -1,0 +1,49 @@
+.filter-component {
+  position: fixed; /* Positioning relative to the viewport */
+  top: 100%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Compensate for the dimensions of the element */
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+  background-color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 25px;
+  z-index: 1000; /* Ensure it sits above other elements */
+  color: white;
+  box-sizing: border-box; /* Ensure padding is included in width */
+
+  & h2 {
+    text-align: center;
+  }
+
+  & h3 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: medium;
+  }
+
+  & .filter-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Adjust space between buttons */
+
+    & .filter-button {
+      align-items: center;
+      background: #656363;
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-size: 1em;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    & .applied {
+      background: white;
+      color: black;
+    }
+  }
+}
