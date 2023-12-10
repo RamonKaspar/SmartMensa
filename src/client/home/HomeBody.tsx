@@ -21,7 +21,7 @@ interface FavoritesState {
   [key: string]: boolean;
 }
 
-function HomeBody() {
+function HomeBody({ showFilter, appliedFilters }: any) {
   const [mensaInfos, setMensaInfos] = useState<any>([]);
 
   useEffect(() => {
@@ -52,6 +52,33 @@ function HomeBody() {
       );
   }, []);
 
+  /* Filter functionality */
+  const noFiltersApplied = Object.values(appliedFilters).every(
+    (value) => !value
+  );
+  const filteredMensas = noFiltersApplied
+    ? mensaInfos
+    : mensaInfos.filter((mensa: any) => {
+        let matchesFilter = false;
+        if (appliedFilters.Zentrum_ETH && mensa.location === "Zentrum (ETH)")
+          matchesFilter = true;
+        if (appliedFilters.Zentrum_UZH && mensa.location === "Zentrum (UZH)")
+          matchesFilter = true;
+        if (appliedFilters.Irchel && mensa.location === "Irchel")
+          matchesFilter = true;
+        if (appliedFilters.Höngg && mensa.location === "Höngg")
+          matchesFilter = true;
+        if (appliedFilters.Oerlikon && mensa.location === "Oerlikon")
+          matchesFilter = true;
+
+        // If 'Currently Open' filter is active, further filter by open status
+        if (appliedFilters.Currently_Open) {
+          matchesFilter = matchesFilter && currentlyOpen(mensa);
+        }
+
+        return matchesFilter;
+      });
+
   // Handles if one clicks on a heart (for now, only the color changes)
   const handleFavoriteClick = (
     locationName: string,
@@ -71,50 +98,73 @@ function HomeBody() {
   };
 
   return (
-    <main className="home-body-container">
-      <h2>Your favorite menus today</h2>
-      <div className="favorite-meus-container">
-        {/* Implement this in a later stage when we have user management */}
-        {currentUserId ? (
-          <div>Welcome, User ID: {currentUserId}</div>
-        ) : (
-          <div>Loading or no user logged in...</div>
-        )}
-        {/* ... rest of your component */}
-      </div>
-      <h2>Mensas</h2>
-      <div className="mensa-buttons-container">
-        {mensaInfos.map((mensa: any, index: any) => (
-          <div className="mensas" key={index}>
-            <button className="mensa-component" key={index}>
-              <div className="first-row">
-                <div className="mensa-title">{mensa.name_display}</div>
-                <div className="mark-as-favorite-mensa">
-                  <BsHeartFill
-                    size={20}
-                    onClick={(e) => handleFavoriteClick(mensa.name_display, e)}
-                    style={{
-                      fill: favorites[mensa.name_display] ? "red" : "gray",
-                    }}
-                  />
+    <>
+      <main className={`home-body-container ${showFilter ? "blurred" : ""}`}>
+        <h2>Your favorite menus today</h2>
+        <div className="favorite-meus-container">
+          {/* Implement this in a later stage when we have user management */}
+          {currentUserId ? (
+            <div>Welcome, User ID: {currentUserId}</div>
+          ) : (
+            <div>Loading or no user logged in...</div>
+          )}
+          {/* ... rest of your component */}
+        </div>
+        <h2>Mensas ({filteredMensas.length})</h2>
+        <div className="mensa-buttons-container">
+          {filteredMensas.map((mensa: any, index: any) => (
+            <div className="mensas" key={index}>
+              <button className="mensa-component" key={index}>
+                <div className="first-row">
+                  <div className="mensa-title">{mensa.name_display}</div>
+                  <div className="mark-as-favorite-mensa">
+                    <BsHeartFill
+                      size={20}
+                      onClick={(e) =>
+                        handleFavoriteClick(mensa.name_display, e)
+                      }
+                      style={{
+                        fill: favorites[mensa.name_display] ? "red" : "gray",
+                      }}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="second-row">
-                <div className="location-tag">{mensa.location}</div>
-                <div className="open-closed-tag">Open</div>
-                <div
-                  className="goTo"
-                  onClick={() => handleClickAndNavigate(mensa.name)}
-                >
-                  <MdArrowForwardIos size={20} />
+                <div className="second-row">
+                  <div className="location-tag">{mensa.location}</div>
+                  <div
+                    className={`open-closed-tag ${
+                      currentlyOpen(mensa) ? "open" : "closed"
+                    }`}
+                  >
+                    {currentlyOpen(mensa) ? "Open" : "Closed"}
+                  </div>
+                  <div
+                    className="goTo"
+                    onClick={() => handleClickAndNavigate(mensa.name)}
+                  >
+                    <MdArrowForwardIos size={20} />
+                  </div>
                 </div>
-              </div>
-            </button>
-          </div>
-        ))}
-      </div>
-    </main>
+              </button>
+            </div>
+          ))}
+        </div>
+      </main>
+    </>
   );
 }
 
 export default HomeBody;
+
+/* Function that returns either "Open" or "Closed", depending on current time */
+function currentlyOpen(mensa: any): boolean {
+  const now = new Date();
+  const nowAsNumber = now.getHours() + now.getMinutes() / 100;
+  if (
+    nowAsNumber < mensa.opening_time_start ||
+    nowAsNumber > mensa.opening_time_end
+  ) {
+    return false;
+  }
+  return true;
+}
