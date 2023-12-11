@@ -197,6 +197,9 @@ def parseToJson(url, facility_id):
                                     price_info['internal'] = price_item.price
                                     price_info['external'] = price_item.price
 
+                        # Replace \n with " "
+                        meal_description = meal_description.replace('\n', ' ')
+
                         meal_info = {
                             "line_name": line.name,
                             "meal_name": meal_name,
@@ -278,7 +281,7 @@ def main():
         print(f'{ "FACILITY ID:":<15} Processing facility {facility_id}...')
         url = generate_url(facility_id, valid_after, valid_before, language)
         parseToJson(url, facility_id)
-        sleep(0.1)
+        sleep(1)
         
     print(f'{"STATUS:":<15} All ETH menus successfully stored!')
 
