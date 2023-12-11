@@ -280,6 +280,7 @@ def main():
     for facility_id in facility_ids:
         print(f'{ "FACILITY ID:":<15} Processing facility {facility_id}...')
         url = generate_url(facility_id, valid_after, valid_before, language)
+        print(f'{"URL:":<15} {url}')
         parseToJson(url, facility_id)
         sleep(1)
         
