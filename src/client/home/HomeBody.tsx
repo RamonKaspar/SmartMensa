@@ -72,8 +72,14 @@ function HomeBody({ showFilter, setShowFilter, appliedFilters }: any) {
           matchesFilter = true;
 
         // If 'Currently Open' filter is active, further filter by open status
-        if (appliedFilters.Currently_Open) {
-          matchesFilter = matchesFilter && currentlyOpen(mensa);
+        if (!matchesFilter) {
+          if (appliedFilters.Currently_Open) {
+            matchesFilter = currentlyOpen(mensa);
+          }
+        } else {
+          if (appliedFilters.Currently_Open) {
+            matchesFilter = matchesFilter && currentlyOpen(mensa);
+          }
         }
 
         return matchesFilter;
