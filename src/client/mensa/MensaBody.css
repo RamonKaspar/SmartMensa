@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   flex: 1; /* Ensures that the container stretches to fill the screen */
+  max-width: 100vw;
 
   .row-one-title {
     display: flex;
@@ -33,6 +34,9 @@
     margin-right: 10px;
     flex: 1; /* Ensures that the container stretches to fill the screen */
     justify-content: space-between;
+    min-width: calc(
+      100vw - 20px
+    ); /* Ensures that the container stretches to fill the screen */
 
     & .menu-component {
       padding: 15px;
@@ -56,7 +60,7 @@
         font-size: large;
       }
 
-      & .allergies-component {
+      & .allergens-component {
         margin-top: 10px;
       }
 
