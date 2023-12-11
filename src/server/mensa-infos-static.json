@@ -376,9 +376,9 @@
       "homepage": "https://www.mensa.uzh.ch/de/menueplaene/platte-14.html"
     },
     {
-      "name": "irchel",
+      "name": "uzh-irchel",
       "facility_id": "142",
-      "name_display": "Irchel",
+      "name_display": "UZH Irchel",
       "location": "Irchel",
       "opening_time_start": 11,
       "opening_time_end": 14,
@@ -389,21 +389,6 @@
       "city": "8057 Zürich",
       "google_maps_link": "https://maps.app.goo.gl/1HT1PJEXDs9DqtWu8",
       "homepage": "https://www.mensa.uzh.ch/de/menueplaene/mensa-uzh-irchel.html"
-    },
-    {
-      "name": "green-kitchen-lab",
-      "facility_id": "176",
-      "name_display": "Green Kitchen Lab",
-      "location": "Irchel",
-      "opening_time_start": 8.3,
-      "opening_time_end": 16,
-      "dining_time_start": 11.0,
-      "dining_time_end": 14.0,
-      "building": "Y05 G37",
-      "street": "Winterthurerstrasse 190",
-      "city": "8057 Zürich",
-      "google_maps_link": "https://maps.app.goo.gl/1HT1PJEXDs9DqtWu8",
-      "homepage": "https://www.mensa.uzh.ch/de/menueplaene/irchel-green-kitchen-lab.html"
     },
     {
       "name": "cafeteria-irchel-seerose-lunch",
