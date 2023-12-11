@@ -96,7 +96,19 @@ def parseXMLToJSON(xml_data, day_time):
         for item in data[0][day_time]:
             # Use regular expression to replace whitespace after \n
             item['meal_description'] = re.sub(r'(\n)\s+', r'\1', item['meal_description'])
-
+            # Use regular expression to replace whitespace before \n
+            item['meal_description'] = re.sub(r'\s+(\n)', r'\1', item['meal_description'])
+            # Use regular expression to replace \n if the word after \n is "mit" or "with" or "," or ", " or "und" or "and" or "in" or "im" or "&"
+            item['meal_description'] = re.sub(r'(\n)(mit|with|,|, |und|and|in|im|&)', r' \2', item['meal_description'])
+            # Reverse meal_description
+            item['meal_description'] = item['meal_description'][::-1]
+            # Use regular expression to replace \n if the word after \n is "," or " ," or "tim"
+            item['meal_description'] = re.sub(r'(\n)(,| ,|tim)', r' \2', item['meal_description'])
+            # Reverse meal_description
+            item['meal_description'] = item['meal_description'][::-1]
+            # Use regular expression to replace \n with " | "
+            item['meal_description'] = re.sub(r'(\n)', r' | ', item['meal_description'])
+            
     # Clean the meal descriptions
     clean_meal_descriptions(menus)
 
@@ -143,7 +155,7 @@ def main():
     #                 180, 512, 513, 514,            # Irchel
     #                 515, 516, 517, 518, 519, 520   # Other
 
-    facility_ids_german = [142, 143, 144, 146, 147, 148, 149, 150, 151, 176, 184, 241, 256, 346, 391]
+    facility_ids_german = [142, 143, 144, 146, 147, 148, 149, 150, 151, 184, 241, 256, 346, 391] # 176 removed (Irchel Atrium Mensa closed)
     language = "de"
 
     days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
@@ -165,13 +177,13 @@ def main():
             day_time = "Dinner" if (facility_id == 506 or facility_id == 514 or facility_id == 149 or facility_id == 256) else "Lunch"
             json_data = parseXMLToJSON(xml_data, day_time)
             facility_menus[day][day_time].extend(json_data[0][day_time])
-            sleep(0.1)
+            sleep(1)
         
         print(f'{"STATUS:":<15} Menus of facility {facility_id} successfully crawled!')
         json_data_string = convertToJsonString(facility_menus)
         directory = 'menus-as-json'
         saveJSON(json_data_string, directory, facility_id)
-        sleep(0.1)
+        sleep(1)
     
     print(f'{"STATUS:":<15} All UZH menus successfully stored!')
 
