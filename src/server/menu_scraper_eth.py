@@ -133,7 +133,7 @@ def translate_day_of_week(day_of_week):
 
 # Define a function to parse the JSON data to a dictionary and save it as a JSON file
 
-def parseToJson(url):
+def parseToJson(url, facility_id):
     # Fetch the webpage content
     response = requests.get(url)
     if response.status_code == 200:
@@ -148,7 +148,6 @@ def parseToJson(url):
 
     # Loop through the parsed data to extract menu names and their meal details per weekday
     for weekly_rota in parsed_data.weekly_rota_array:
-        facility_id = weekly_rota.facility_id
         for day_of_week in weekly_rota.day_of_week_array:
             day_of_week_menu = translate_day_of_week(day_of_week.day_of_week_desc)
             menu_details_per_day[day_of_week_menu] = {"Lunch": [], "Dinner": []}  # Initialize Lunch and Dinner lists for the day
@@ -237,13 +236,18 @@ def parseToJson(url):
 
 # Compute the date range for the current week
 def compute_date_range():
-    # Get today's date
-    today = datetime.today()
+    # Get today's date and time in UTC
+    today_utc = datetime.utcnow()
 
-    # Calculate the difference between today and the previous Monday
-    days_since_monday = today.weekday()
+    # Shift UTC time to UTC+01:00 for Europe/Zurich
+    utc_offset = timedelta(hours=1)
+    today_zurich = today_utc + utc_offset
+    print(utc_offset)
+
+    # Calculate the difference between today in Zurich and the previous Monday
+    days_since_monday = today_zurich.weekday()
     days_to_previous_monday = (7 + days_since_monday) % 7
-    previous_monday = today - timedelta(days=days_to_previous_monday)
+    previous_monday = today_zurich - timedelta(days=days_to_previous_monday)
 
     # Calculate the next Monday
     next_monday = previous_monday + timedelta(weeks=1)
@@ -260,7 +264,7 @@ def main():
     def generate_url(facility_id, valid_after, valid_before, language):
         return f'https://idapps.ethz.ch/cookpit-pub-services/v1/weeklyrotas/?client-id=ethz-wcms&lang={language}&rs-first=0&rs-size=50&valid-after={valid_after}&valid-before={valid_before}&facility={facility_id}'
     
-    # Define the facility IDs for the different ETHZ facilities, for more information see facility-ids.md
+    # Define the facility IDs for the different ETHZ facilities
     facility_ids = [ 3, 5, 7, 8, 9, 10, 11,  # Zentrum
                     14, 16, 17, 18, 19, 20, 21, 22,  # Hönggerberg
                     23  # Oerlikon
@@ -273,7 +277,7 @@ def main():
     for facility_id in facility_ids:
         print(f'{ "FACILITY ID:":<15} Processing facility {facility_id}...')
         url = generate_url(facility_id, valid_after, valid_before, language)
-        parseToJson(url)
+        parseToJson(url, facility_id)
         sleep(0.1)
         
     print(f'{"STATUS:":<15} All ETH menus successfully stored!')
