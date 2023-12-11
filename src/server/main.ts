@@ -49,7 +49,7 @@ const pythonInterpreter = "/usr/bin/python3";
 
 // Schedule the execution of the menu scraper scripts (ETH and UZH) every Monday at 00:05
 cron.schedule(
-  "5 0 * * *", // Run every day at 00:05
+  "5 1 * * *", // Run every day at 01:05 (UTC+01:00)
   () => {
     console.log("Fetching new UZH menus...");
     serverLogs.push({
