@@ -120,7 +120,9 @@ function MensaBody() {
               <div className="ingredients-component">
                 {meal.meal_description}
               </div>
-              <div className="allergies-component">{meal.allergens}</div>
+              <div className="allergens-component">
+                {displayAllergens(meal.allergens)}
+              </div>
               <div className="last-row-actions">
                 <FontAwesomeIcon icon={faStar} style={{ fontSize: "2em" }} />
                 <FontAwesomeIcon
@@ -203,6 +205,14 @@ function getPrice(meal: any, priceCategory: string): string {
     currency: "CHF", // Change the currency code as needed
     minimumFractionDigits: 2, // Set the minimum number of digits after the decimal point
   });
+}
+
+function displayAllergens(allergens: any[]): string {
+  let allergensString = "";
+  for (const allergen of allergens) {
+    allergensString += allergen + ", ";
+  }
+  return allergensString.slice(0, -2);
 }
 
 /* Makes the first char of every word to uppercase */
