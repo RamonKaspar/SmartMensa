@@ -1,5 +1,4 @@
 import requests
-from bs4 import BeautifulSoup
 import os
 import json
 from time import sleep
@@ -194,7 +193,9 @@ def parseToJson(url, facility_id):
                                 elif price_item.customer_group_desc.lower() == 'external' or 'extern' in price_item.customer_group_desc.lower():
                                     price_info['external'] = price_item.price
                                 elif price_item.customer_group_desc.lower() == 'all visitors' or 'alle besucher' in price_item.customer_group_desc.lower():
-                                    price_info['all_visitors'] = price_item.price
+                                    price_info['students'] = price_item.price
+                                    price_info['internal'] = price_item.price
+                                    price_info['external'] = price_item.price
 
                         meal_info = {
                             "line_name": line.name,
