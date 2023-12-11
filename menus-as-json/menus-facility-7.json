@@ -2,12 +2,12 @@
   "Monday": {
     "Lunch": [
       {
-        "line_name": "CHILI SIN CARNE",
-        "meal_name": "CHILI SIN CARNE",
-        "meal_description": "Sojahack | Trockenreis | Texmex\nGemüse | Menusalat",
+        "line_name": "East",
+        "meal_name": "FREGOLA SARDA",
+        "meal_description": "Oliven | Peperoni rot | Frischkäse | Feta",
         "allergens": [],
         "meal_class": [
-          "Vegan"
+          "Vegetarisch"
         ],
         "meat_info": [],
         "fish_info": [],
@@ -18,7 +18,7 @@
         }
       },
       {
-        "line_name": "Wähe ",
+        "line_name": "West",
         "meal_name": "Wähe",
         "meal_description": "salzige Wähe | Menusalat",
         "allergens": [],
@@ -37,9 +37,9 @@
   "Tuesday": {
     "Lunch": [
       {
-        "line_name": "FOODLAB BURGER",
+        "line_name": "East",
         "meal_name": "FOODLAB BURGER",
-        "meal_description": "Brioche Bun | Rindsfleisch |\nZwiebel Chutney | Cocktailsauce |\nEi",
+        "meal_description": "Brioche Bun | Rindsfleisch | Zwiebel Chutney | Cocktailsauce | Ei",
         "allergens": [],
         "meal_class": [
           "Fleisch"
@@ -54,13 +54,13 @@
         ],
         "fish_info": [],
         "price_info": {
-          "students": 0.0,
-          "internal": 0.0,
-          "external": 0.0
+          "students": 11.9,
+          "internal": 13.9,
+          "external": 15.9
         }
       },
       {
-        "line_name": "Wähe ",
+        "line_name": "West",
         "meal_name": "Wähe",
         "meal_description": "salzige Wähe | Menusalat",
         "allergens": [],
@@ -80,8 +80,8 @@
     "Lunch": [
       {
         "line_name": "East",
-        "meal_name": "SPÄTZLI PFANNE",
-        "meal_description": "Bechamel Käse | Markt Gemüse |\nRöstzwiebeln",
+        "meal_name": "GRATINIERTE CANNELLONI",
+        "meal_description": "Ricotta | Spinat | Tomatensugo | Käse | Blattsalat",
         "allergens": [],
         "meal_class": [
           "Vegetarisch"
@@ -114,17 +114,17 @@
   "Thursday": {
     "Lunch": [
       {
-        "line_name": "East",
-        "meal_name": "S Ü S S K A R T O F F E L C U R R Y",
-        "meal_description": "Thai Nudeln | Chinakohl | Lattich",
+        "line_name": "East ",
+        "meal_name": "SCHEINS-CORDON BLUE",
+        "meal_description": "Bratkartoffeln | Herbstliches Mischgemüse",
         "allergens": [],
         "meal_class": [],
         "meat_info": [],
         "fish_info": [],
         "price_info": {
-          "students": 8.9,
-          "internal": 10.9,
-          "external": 12.9
+          "students": 9.9,
+          "internal": 11.9,
+          "external": 13.9
         }
       },
       {
@@ -147,9 +147,9 @@
   "Friday": {
     "Lunch": [
       {
-        "line_name": "DORSCH KNUSPERLI",
-        "meal_name": "DORSCH KNUSPERLI",
-        "meal_description": "Spinat | Salzkartoffel |\nRemouladensauce",
+        "line_name": "East",
+        "meal_name": "POCHIERTER LACHS",
+        "meal_description": "Safran Sauce | Nudeln | Blattspinat",
         "allergens": [],
         "meal_class": [],
         "meat_info": [],
@@ -161,7 +161,7 @@
         }
       },
       {
-        "line_name": "Wähe ",
+        "line_name": "West",
         "meal_name": "Wähe",
         "meal_description": "salzige Wähe | Menusalat",
         "allergens": [],

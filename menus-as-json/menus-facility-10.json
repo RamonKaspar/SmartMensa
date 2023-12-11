@@ -3,13 +3,12 @@
     "Lunch": [
       {
         "line_name": "Verde",
-        "meal_name": "Zuppa di Zuca all'Arancia",
-        "meal_description": "Kürbis-Orangensuppe | Brot",
+        "meal_name": "Zuppa di broccoli",
+        "meal_description": "Broccolisuppe | Rahm | Croutons | Brötli",
         "allergens": [
           "Gluten",
           "Milch, Laktose",
-          "Sellerie",
-          "Sulfite"
+          "Sellerie"
         ],
         "meal_class": [
           "Suppe",
@@ -18,18 +17,17 @@
         "meat_info": [],
         "fish_info": [],
         "price_info": {
-          "students": 7.9,
-          "internal": 9.9,
-          "external": 12.9
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 13.9
         }
       },
       {
         "line_name": "Pasta",
-        "meal_name": "Pasta ai Broccoli",
-        "meal_description": "Broccoli | Rahmsauce | bunte Tomaten | Oliven | Reibkäse",
+        "meal_name": "Farfalle \"Santo Stefano\"",
+        "meal_description": "Farfalle | Artischocken | Oliven | Rucola | Tomatenwürfeln",
         "allergens": [
-          "Gluten",
-          "Milch, Laktose"
+          "Gluten"
         ],
         "meal_class": [
           "Pasta",
@@ -38,23 +36,31 @@
         "meat_info": [],
         "fish_info": [],
         "price_info": {
-          "students": 9.9,
-          "internal": 11.9,
-          "external": 14.9
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 13.9
         }
       },
       {
         "line_name": "Al Forno",
-        "meal_name": "Pizza Quattro Formaggi",
-        "meal_description": "Tomatensauce | Mozzarella | Gorgonzola | Parmigiano Reggiano | Pecorino",
+        "meal_name": "Pizza Piccante",
+        "meal_description": "Tomatensauce | Mozzarella | scharfer Salami | Rucola",
         "allergens": [
-          "Gluten"
+          "Gluten",
+          "Milch, Laktose"
         ],
         "meal_class": [
-          "Pizza",
-          "Vegetarisch"
+          "Fleisch",
+          "Pizza"
         ],
-        "meat_info": [],
+        "meat_info": [
+          {
+            "type": "Schwein",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
         "fish_info": [],
         "price_info": {
           "students": 10.9,
@@ -99,14 +105,11 @@
       },
       {
         "line_name": "Pasta",
-        "meal_name": "Strozzapreti Mascarpone e Pancetta",
-        "meal_description": "Mascarpone | Speck | Peperoncini |\nSonnenblumenkerne | Basilikum",
+        "meal_name": "Fusilli alle mandorle",
+        "meal_description": "Fussili | Olivenöl | Mandeln | Spinat | Tomaten | Speck",
         "allergens": [
           "Gluten",
-          "Ei",
-          "Milch, Laktose",
-          "Sellerie",
-          "Sulfite"
+          "Schalenfrüchte"
         ],
         "meal_class": [
           "Fleisch",
@@ -129,8 +132,8 @@
       },
       {
         "line_name": "Al Forno",
-        "meal_name": "Pizza Greca",
-        "meal_description": "Tomatensauce | Mozzarella | Feta | Kalamata Oliven | Tomaten | Oregano",
+        "meal_name": "Pizza Antipasti",
+        "meal_description": "Tomatensauce | Mozzarella | grillierte Peperoni | Zucchetti | Auberginen",
         "allergens": [
           "Gluten",
           "Milch, Laktose"
@@ -154,12 +157,11 @@
     "Lunch": [
       {
         "line_name": "Verde",
-        "meal_name": "Zuppa di Cipolle",
-        "meal_description": "Zwiebelsuppe | Brot",
+        "meal_name": "Zuppa alla contadina",
+        "meal_description": "Gemüse Suppe | Lauch | Wirz | Fideli | Sbrinz | Brot",
         "allergens": [
           "Gluten",
-          "Milch, Laktose",
-          "Sulfite"
+          "Milch, Laktose"
         ],
         "meal_class": [
           "Suppe",
@@ -168,18 +170,20 @@
         "meat_info": [],
         "fish_info": [],
         "price_info": {
-          "students": 7.9,
-          "internal": 9.9,
-          "external": 12.9
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 13.9
         }
       },
       {
         "line_name": "Pasta",
-        "meal_name": "Spaghetti Bolognese con lenticchia",
-        "meal_description": "Spaghetti | Linsen-Bolognese | Peterli | Reibkäse",
+        "meal_name": "Penne alla Genovese",
+        "meal_description": "Penne | Olivenöl | Kartoffeln | grünen Bohne | Basilikumpesto",
         "allergens": [
           "Gluten",
-          "Sulfite"
+          "Ei",
+          "Milch, Laktose",
+          "Schalenfrüchte"
         ],
         "meal_class": [
           "Pasta",
@@ -188,37 +192,29 @@
         "meat_info": [],
         "fish_info": [],
         "price_info": {
-          "students": 9.9,
-          "internal": 11.9,
-          "external": 14.9
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 13.9
         }
       },
       {
         "line_name": "Al Forno",
-        "meal_name": "Brizza con Chorizo e Feta",
-        "meal_description": "Laugenpizza | Cremefraiche | Ajvar | Chorizo | Feta | Basilikum | Zwiebeln",
+        "meal_name": "Pizza con zucchétto e taleggio",
+        "meal_description": "Tomaten | Mozzarella | Zucchetti | Taleggio-Käse",
         "allergens": [
           "Gluten",
-          "Ei",
           "Milch, Laktose"
         ],
         "meal_class": [
-          "Fleisch",
-          "Pizza"
+          "Pizza",
+          "Vegetarisch"
         ],
-        "meat_info": [
-          {
-            "type": "Schwein",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
+        "meat_info": [],
         "fish_info": [],
         "price_info": {
-          "students": 11.5,
-          "internal": 13.5,
-          "external": 16.5
+          "students": 9.9,
+          "internal": 11.9,
+          "external": 14.9
         }
       }
     ],
@@ -259,23 +255,19 @@
       },
       {
         "line_name": "Pasta",
-        "meal_name": "Farfalle con Brasato alla Genovese",
-        "meal_description": "Kalbshackfleisch | Blumenkohl | Cherrytomaten |\nSalbei | Basilikum | Grana Padano",
+        "meal_name": "\"Bolognese\"",
+        "meal_description": "Tagliatelle | Bolognese-Rahmsauce ",
         "allergens": [
           "Gluten",
-          "Ei",
-          "Soja",
           "Milch, Laktose",
-          "Sellerie",
-          "Sulfite"
+          "Sellerie"
         ],
         "meal_class": [
-          "Fleisch",
-          "Pasta"
+          "Fleisch"
         ],
         "meat_info": [
           {
-            "type": "Kalb",
+            "type": "Rind",
             "origin": [
               "Schweiz"
             ]
@@ -283,21 +275,19 @@
         ],
         "fish_info": [],
         "price_info": {
-          "students": 11.9,
-          "internal": 13.9,
-          "external": 16.9
+          "students": 10.9,
+          "internal": 12.9,
+          "external": 15.9
         }
       },
       {
         "line_name": "Al Forno",
-        "meal_name": "Pizza Polpette sin Carne",
-        "meal_description": "Tomatensauce | Gemüsehackbällchen | Basilikumpesto | Mozzarella",
+        "meal_name": "Pizza Bruschetta",
+        "meal_description": "Tomaten | Mozzarella | Knoblauch | Basilikum | Balsamico Glace",
         "allergens": [
           "Gluten",
-          "Ei",
-          "Soja",
           "Milch, Laktose",
-          "Schalenfrüchte"
+          "Sulfite"
         ],
         "meal_class": [
           "Pizza",
@@ -306,9 +296,9 @@
         "meat_info": [],
         "fish_info": [],
         "price_info": {
-          "students": 10.5,
-          "internal": 12.5,
-          "external": 15.5
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 13.9
         }
       }
     ],
@@ -318,31 +308,42 @@
     "Lunch": [
       {
         "line_name": "Verde",
-        "meal_name": "zuppa di lenticchie",
-        "meal_description": "Linsensuppe mit Gemüsewürfel | Brot",
+        "meal_name": "Minestrone",
+        "meal_description": "Italienische Nationalsuppe | Brot",
         "allergens": [
           "Gluten",
-          "Milch, Laktose"
+          "Ei",
+          "Milch, Laktose",
+          "Schalenfrüchte",
+          "Sellerie",
+          "Sulfite"
         ],
         "meal_class": [
-          "Suppe",
-          "Vegetarisch"
+          "Fleisch",
+          "Suppe"
         ],
-        "meat_info": [],
+        "meat_info": [
+          {
+            "type": "Schwein",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
         "fish_info": [],
         "price_info": {
-          "students": 9.0,
-          "internal": 11.0,
-          "external": 14.0
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 13.9
         }
       },
       {
         "line_name": "Pasta",
-        "meal_name": "Fusili Integrale",
-        "meal_description": "Volkornfusili | Federkohlpesto | Kürbiskerne | gelbe Randen",
+        "meal_name": "Orechiette Caponata",
+        "meal_description": "Olivenöl | Auberginen | Peperoni | Kapern | Oliven | Grana Padano",
         "allergens": [
           "Gluten",
-          "Schalenfrüchte"
+          "Sellerie"
         ],
         "meal_class": [
           "Pasta",
@@ -358,29 +359,23 @@
       },
       {
         "line_name": "Al Forno",
-        "meal_name": "Pizza Prosciutto Salami",
-        "meal_description": "Tomatensauce | Mozzarella | Prosciutto | Salami",
+        "meal_name": "Brizza",
+        "meal_description": "Laugenpizza | Birne | Obazda | Käse | Rucola | Preiselbeeren",
         "allergens": [
           "Gluten",
-          "Milch, Laktose"
+          "Milch, Laktose",
+          "Senf"
         ],
         "meal_class": [
-          "Fleisch",
-          "Pizza"
+          "Pizza",
+          "Vegetarisch"
         ],
-        "meat_info": [
-          {
-            "type": "Schwein",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
+        "meat_info": [],
         "fish_info": [],
         "price_info": {
-          "students": 11.5,
-          "internal": 13.5,
-          "external": 16.5
+          "students": 11.9,
+          "internal": 13.9,
+          "external": 16.9
         }
       }
     ],

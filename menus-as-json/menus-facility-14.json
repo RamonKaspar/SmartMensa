@@ -2,9 +2,59 @@
   "Monday": {
     "Lunch": [
       {
-        "line_name": "Budet Pot",
-        "meal_name": "G`HACKTES MIT HÖRNLI",
-        "meal_description": "Rindsgehacktes oder Sojagehacktes\n| Hörnli | Petersilie | Apfelmus | Extrahartkäse",
+        "line_name": "Classic Pot",
+        "meal_name": "Burrito Barbacoa",
+        "meal_description": "Pulled Beef | Cheddar | Hot Tomatillo Sauce | Karotten | Kabis | Lauch | Nacho Chips | Sour Cream | Salsa",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.0,
+          "internal": 11.0,
+          "external": 13.0
+        }
+      },
+      {
+        "line_name": "World Pot",
+        "meal_name": "Kimchi Dumplings mit Sojasauce",
+        "meal_description": "Schnittlauch | Sesam | Sojasauce",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sesam"
+        ],
+        "meal_class": [
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      },
+      {
+        "line_name": "Budget Pot",
+        "meal_name": "G'Hackets und Hörnli",
+        "meal_description": "Rindsgehacktes oder Sojagehacktes | Hörnli | Petersilie | Apfelmus | Extrahartkäse",
         "allergens": [
           "Gluten",
           "Ei",
@@ -13,6 +63,7 @@
         ],
         "meal_class": [
           "Fleisch",
+          "Pasta",
           "Vegan",
           "Vegetarisch"
         ],
@@ -30,65 +81,19 @@
           "internal": 10.5,
           "external": 12.5
         }
-      },
-      {
-        "line_name": "Classic Pot",
-        "meal_name": "BAKED POTATOES MEXICANA",
-        "meal_description": "Chili con carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
-        "allergens": [
-          "Gluten",
-          "Milch, Laktose",
-          "Sellerie"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Rind",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 8.9,
-          "internal": 10.9,
-          "external": 12.9
-        }
-      },
-      {
-        "line_name": "World Pot",
-        "meal_name": "DUMPLINGS MIT SOJASAUCE",
-        "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
-        "allergens": [
-          "Gluten",
-          "Soja",
-          "Sesam"
-        ],
-        "meal_class": [
-          "Vegan",
-          "Vegetarisch"
-        ],
-        "meat_info": [],
-        "fish_info": [],
-        "price_info": {
-          "students": 7.9,
-          "internal": 9.9,
-          "external": 11.9
-        }
       }
     ],
     "Dinner": [
       {
         "line_name": "Classic Pot Abend",
-        "meal_name": "BAKED POTATOES MEXICANA",
-        "meal_description": "Chili con carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
+        "meal_name": "Burrito Barbacoa",
+        "meal_description": "Pulled Beef | Cheddar | Hot Tomatillo Sauce | Karotten | Kabis | Lauch | Nacho Chips | Sour Cream | Salsa",
         "allergens": [
           "Gluten",
+          "Soja",
           "Milch, Laktose",
-          "Sellerie"
+          "Sellerie",
+          "Senf"
         ],
         "meal_class": [
           "Fleisch"
@@ -103,15 +108,15 @@
         ],
         "fish_info": [],
         "price_info": {
-          "students": 8.9,
-          "internal": 10.9,
-          "external": 12.9
+          "students": 9.0,
+          "internal": 11.0,
+          "external": 13.0
         }
       },
       {
         "line_name": "World Pot Abend",
-        "meal_name": "DUMPLINGS MIT SOJASAUCE",
-        "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
+        "meal_name": "Kimchi Dumplings mit Sojasauce",
+        "meal_description": "Schnittlauch | Sesam | Sojasauce",
         "allergens": [
           "Gluten",
           "Soja",
@@ -124,15 +129,15 @@
         "meat_info": [],
         "fish_info": [],
         "price_info": {
-          "students": 7.9,
-          "internal": 9.9,
-          "external": 11.9
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
         }
       },
       {
         "line_name": "Budget Pot Abend",
-        "meal_name": "G`HACKTES MIT HÖRNLI",
-        "meal_description": "Rindsgehacktes oder Sojagehacktes\n| Hörnli | Petersilie | Apfelmus | Extrahartkäse",
+        "meal_name": "G'Hackets und Hörnli",
+        "meal_description": "Rindsgehacktes oder Sojagehacktes | Hörnli | Petersilie | Apfelmus | Extrahartkäse",
         "allergens": [
           "Gluten",
           "Ei",
@@ -141,6 +146,7 @@
         ],
         "meal_class": [
           "Fleisch",
+          "Pasta",
           "Vegan",
           "Vegetarisch"
         ],
@@ -164,9 +170,59 @@
   "Tuesday": {
     "Lunch": [
       {
-        "line_name": "Budet Pot",
-        "meal_name": "G`HACKTES MIT HÖRNLI",
-        "meal_description": "Rindsgehacktes oder Sojagehacktes\n| Hörnli | Petersilie | Apfelmus | Extrahartkäse",
+        "line_name": "Classic Pot",
+        "meal_name": "Burrito Barbacoa",
+        "meal_description": "Pulled Beef | Cheddar | Hot Tomatillo Sauce | Karotten | Kabis | Lauch | Nacho Chips | Sour Cream | Salsa",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.0,
+          "internal": 11.0,
+          "external": 13.0
+        }
+      },
+      {
+        "line_name": "World Pot",
+        "meal_name": "Kimchi Dumplings mit Sojasauce",
+        "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sesam"
+        ],
+        "meal_class": [
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      },
+      {
+        "line_name": "Budget Pot",
+        "meal_name": "G'Hackets und Hörnli",
+        "meal_description": "Rindsgehacktes oder Sojagehacktes | Hörnli | Petersilie | Apfelmus | Extrahartkäse",
         "allergens": [
           "Gluten",
           "Ei",
@@ -175,6 +231,7 @@
         ],
         "meal_class": [
           "Fleisch",
+          "Pasta",
           "Vegan",
           "Vegetarisch"
         ],
@@ -192,65 +249,19 @@
           "internal": 10.5,
           "external": 12.5
         }
-      },
-      {
-        "line_name": "Classic Pot",
-        "meal_name": "BAKED POTATOES MEXICANA",
-        "meal_description": "Chili con carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
-        "allergens": [
-          "Gluten",
-          "Milch, Laktose",
-          "Sellerie"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Rind",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 8.9,
-          "internal": 10.9,
-          "external": 12.9
-        }
-      },
-      {
-        "line_name": "World Pot",
-        "meal_name": "DUMPLINGS MIT SOJASAUCE",
-        "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
-        "allergens": [
-          "Gluten",
-          "Soja",
-          "Sesam"
-        ],
-        "meal_class": [
-          "Vegan",
-          "Vegetarisch"
-        ],
-        "meat_info": [],
-        "fish_info": [],
-        "price_info": {
-          "students": 7.9,
-          "internal": 9.9,
-          "external": 11.9
-        }
       }
     ],
     "Dinner": [
       {
         "line_name": "Classic Pot Abend",
-        "meal_name": "BAKED POTATOES MEXICANA",
-        "meal_description": "Chili con carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
+        "meal_name": "Burrito Barbacoa",
+        "meal_description": "Pulled Beef | Cheddar | Hot Tomatillo Sauce | Karotten | Kabis | Lauch | Nacho Chips | Sour Cream | Salsa",
         "allergens": [
           "Gluten",
+          "Soja",
           "Milch, Laktose",
-          "Sellerie"
+          "Sellerie",
+          "Senf"
         ],
         "meal_class": [
           "Fleisch"
@@ -265,14 +276,14 @@
         ],
         "fish_info": [],
         "price_info": {
-          "students": 8.9,
-          "internal": 10.9,
-          "external": 12.9
+          "students": 9.0,
+          "internal": 11.0,
+          "external": 13.0
         }
       },
       {
         "line_name": "World Pot Abend",
-        "meal_name": "DUMPLINGS MIT SOJASAUCE",
+        "meal_name": "Kimchi Dumplings mit Sojasauce",
         "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
         "allergens": [
           "Gluten",
@@ -286,15 +297,15 @@
         "meat_info": [],
         "fish_info": [],
         "price_info": {
-          "students": 7.9,
-          "internal": 9.9,
-          "external": 11.9
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
         }
       },
       {
         "line_name": "Budget Pot Abend",
-        "meal_name": "G`HACKTES MIT HÖRNLI",
-        "meal_description": "Rindsgehacktes oder Sojagehacktes\n| Hörnli | Petersilie | Apfelmus | Extrahartkäse",
+        "meal_name": "G'Hackets und Hörnli",
+        "meal_description": "Rindsgehacktes oder Sojagehacktes | Hörnli | Petersilie | Apfelmus | Extrahartkäse",
         "allergens": [
           "Gluten",
           "Ei",
@@ -303,6 +314,7 @@
         ],
         "meal_class": [
           "Fleisch",
+          "Pasta",
           "Vegan",
           "Vegetarisch"
         ],
@@ -326,9 +338,59 @@
   "Wednesday": {
     "Lunch": [
       {
-        "line_name": "Budet Pot",
-        "meal_name": "G`HACKTES MIT HÖRNLI",
-        "meal_description": "Rindsgehacktes oder Sojagehacktes\n| Hörnli | Petersilie | Apfelmus | Extrahartkäse",
+        "line_name": "Classic Pot",
+        "meal_name": "Burrito Barbacoa",
+        "meal_description": "Pulled Beef | Cheddar | Hot Tomatillo Sauce | Karotten | Kabis | Lauch | Nacho Chips | Sour Cream | Salsa",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.0,
+          "internal": 11.0,
+          "external": 13.0
+        }
+      },
+      {
+        "line_name": "World Pot",
+        "meal_name": "Kimchi Dumplings mit Sojasauce",
+        "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sesam"
+        ],
+        "meal_class": [
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      },
+      {
+        "line_name": "Budget Pot",
+        "meal_name": "G'Hackets und Hörnli",
+        "meal_description": "Rindsgehacktes oder Sojagehacktes | Hörnli | Petersilie | Apfelmus | Extrahartkäse",
         "allergens": [
           "Gluten",
           "Ei",
@@ -337,6 +399,7 @@
         ],
         "meal_class": [
           "Fleisch",
+          "Pasta",
           "Vegan",
           "Vegetarisch"
         ],
@@ -354,65 +417,19 @@
           "internal": 10.5,
           "external": 12.5
         }
-      },
-      {
-        "line_name": "Classic Pot",
-        "meal_name": "BAKED POTATOES MEXICANA",
-        "meal_description": "Chili con carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
-        "allergens": [
-          "Gluten",
-          "Milch, Laktose",
-          "Sellerie"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Rind",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 8.9,
-          "internal": 10.9,
-          "external": 12.9
-        }
-      },
-      {
-        "line_name": "World Pot",
-        "meal_name": "DUMPLINGS MIT SOJASAUCE",
-        "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
-        "allergens": [
-          "Gluten",
-          "Soja",
-          "Sesam"
-        ],
-        "meal_class": [
-          "Vegan",
-          "Vegetarisch"
-        ],
-        "meat_info": [],
-        "fish_info": [],
-        "price_info": {
-          "students": 7.9,
-          "internal": 9.9,
-          "external": 11.9
-        }
       }
     ],
     "Dinner": [
       {
         "line_name": "Classic Pot Abend",
-        "meal_name": "BAKED POTATOES MEXICANA",
-        "meal_description": "Chili con carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
+        "meal_name": "Burrito Barbacoa",
+        "meal_description": "Pulled Beef | Cheddar | Hot Tomatillo Sauce | Karotten | Kabis | Lauch | Nacho Chips | Sour Cream | Salsa",
         "allergens": [
           "Gluten",
+          "Soja",
           "Milch, Laktose",
-          "Sellerie"
+          "Sellerie",
+          "Senf"
         ],
         "meal_class": [
           "Fleisch"
@@ -427,14 +444,14 @@
         ],
         "fish_info": [],
         "price_info": {
-          "students": 8.9,
-          "internal": 10.9,
-          "external": 12.9
+          "students": 9.0,
+          "internal": 11.0,
+          "external": 13.0
         }
       },
       {
         "line_name": "World Pot Abend",
-        "meal_name": "DUMPLINGS MIT SOJASAUCE",
+        "meal_name": "Kimchi Dumplings mit Sojasauce",
         "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
         "allergens": [
           "Gluten",
@@ -448,15 +465,15 @@
         "meat_info": [],
         "fish_info": [],
         "price_info": {
-          "students": 7.9,
-          "internal": 9.9,
-          "external": 11.9
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
         }
       },
       {
         "line_name": "Budget Pot Abend",
-        "meal_name": "G`HACKTES MIT HÖRNLI",
-        "meal_description": "Rindsgehacktes oder Sojagehacktes\n| Hörnli | Petersilie | Apfelmus | Extrahartkäse",
+        "meal_name": "G'Hackets und Hörnli",
+        "meal_description": "Rindsgehacktes oder Sojagehacktes | Hörnli | Petersilie | Apfelmus | Extrahartkäse",
         "allergens": [
           "Gluten",
           "Ei",
@@ -465,6 +482,7 @@
         ],
         "meal_class": [
           "Fleisch",
+          "Pasta",
           "Vegan",
           "Vegetarisch"
         ],
@@ -488,9 +506,59 @@
   "Thursday": {
     "Lunch": [
       {
-        "line_name": "Budet Pot",
-        "meal_name": "G`HACKTES MIT HÖRNLI",
-        "meal_description": "Rindsgehacktes oder Sojagehacktes\n| Hörnli | Petersilie | Apfelmus | Extrahartkäse",
+        "line_name": "Classic Pot",
+        "meal_name": "Burrito Barbacoa",
+        "meal_description": "Pulled Beef | Cheddar | Hot Tomatillo Sauce | Karotten | Kabis | Lauch | Nacho Chips | Sour Cream | Salsa",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.0,
+          "internal": 11.0,
+          "external": 13.0
+        }
+      },
+      {
+        "line_name": "World Pot",
+        "meal_name": "Kimchi Dumplings mit Sojasauce",
+        "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sesam"
+        ],
+        "meal_class": [
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      },
+      {
+        "line_name": "Budget Pot",
+        "meal_name": "G'Hackets und Hörnli",
+        "meal_description": "Rindsgehacktes oder Sojagehacktes | Hörnli | Petersilie | Apfelmus | Extrahartkäse",
         "allergens": [
           "Gluten",
           "Ei",
@@ -499,6 +567,7 @@
         ],
         "meal_class": [
           "Fleisch",
+          "Pasta",
           "Vegan",
           "Vegetarisch"
         ],
@@ -516,65 +585,19 @@
           "internal": 10.5,
           "external": 12.5
         }
-      },
-      {
-        "line_name": "Classic Pot",
-        "meal_name": "BAKED POTATOES MEXICANA",
-        "meal_description": "Chili con carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
-        "allergens": [
-          "Gluten",
-          "Milch, Laktose",
-          "Sellerie"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Rind",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 8.9,
-          "internal": 10.9,
-          "external": 12.9
-        }
-      },
-      {
-        "line_name": "World Pot",
-        "meal_name": "DUMPLINGS MIT SOJASAUCE",
-        "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
-        "allergens": [
-          "Gluten",
-          "Soja",
-          "Sesam"
-        ],
-        "meal_class": [
-          "Vegan",
-          "Vegetarisch"
-        ],
-        "meat_info": [],
-        "fish_info": [],
-        "price_info": {
-          "students": 7.9,
-          "internal": 9.9,
-          "external": 11.9
-        }
       }
     ],
     "Dinner": [
       {
         "line_name": "Classic Pot Abend",
-        "meal_name": "BAKED POTATOES MEXICANA",
-        "meal_description": "Chili con carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
+        "meal_name": "Burrito Barbacoa",
+        "meal_description": "Pulled Beef | Cheddar | Hot Tomatillo Sauce | Karotten | Kabis | Lauch | Nacho Chips | Sour Cream | Salsa",
         "allergens": [
           "Gluten",
+          "Soja",
           "Milch, Laktose",
-          "Sellerie"
+          "Sellerie",
+          "Senf"
         ],
         "meal_class": [
           "Fleisch"
@@ -589,14 +612,14 @@
         ],
         "fish_info": [],
         "price_info": {
-          "students": 8.9,
-          "internal": 10.9,
-          "external": 12.9
+          "students": 9.0,
+          "internal": 11.0,
+          "external": 13.0
         }
       },
       {
         "line_name": "World Pot Abend",
-        "meal_name": "DUMPLINGS MIT SOJASAUCE",
+        "meal_name": "Kimchi Dumplings mit Sojasauce",
         "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
         "allergens": [
           "Gluten",
@@ -610,15 +633,15 @@
         "meat_info": [],
         "fish_info": [],
         "price_info": {
-          "students": 7.9,
-          "internal": 9.9,
-          "external": 11.9
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
         }
       },
       {
         "line_name": "Budget Pot Abend",
-        "meal_name": "G`HACKTES MIT HÖRNLI",
-        "meal_description": "Rindsgehacktes oder Sojagehacktes\n| Hörnli | Petersilie | Apfelmus | Extrahartkäse",
+        "meal_name": "G'Hackets und Hörnli",
+        "meal_description": "Rindsgehacktes oder Sojagehacktes | Hörnli | Petersilie | Apfelmus | Extrahartkäse",
         "allergens": [
           "Gluten",
           "Ei",
@@ -627,6 +650,7 @@
         ],
         "meal_class": [
           "Fleisch",
+          "Pasta",
           "Vegan",
           "Vegetarisch"
         ],
@@ -650,9 +674,59 @@
   "Friday": {
     "Lunch": [
       {
-        "line_name": "Budet Pot",
-        "meal_name": "G`HACKTES MIT HÖRNLI",
-        "meal_description": "Rindsgehacktes oder Sojagehacktes\n| Hörnli | Petersilie | Apfelmus | Extrahartkäse",
+        "line_name": "Classic Pot",
+        "meal_name": "Burrito Barbacoa",
+        "meal_description": "Pulled Beef | Cheddar | Hot Tomatillo Sauce | Karotten | Kabis | Lauch | Nacho Chips | Sour Cream | Salsa",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.0,
+          "internal": 11.0,
+          "external": 13.0
+        }
+      },
+      {
+        "line_name": "World Pot",
+        "meal_name": "Kimchi Dumplings mit Sojasauce",
+        "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sesam"
+        ],
+        "meal_class": [
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
+        }
+      },
+      {
+        "line_name": "Budget Pot",
+        "meal_name": "G'Hackets und Hörnli",
+        "meal_description": "Rindsgehacktes oder Sojagehacktes | Hörnli | Petersilie | Apfelmus | Extrahartkäse",
         "allergens": [
           "Gluten",
           "Ei",
@@ -661,6 +735,7 @@
         ],
         "meal_class": [
           "Fleisch",
+          "Pasta",
           "Vegan",
           "Vegetarisch"
         ],
@@ -678,65 +753,19 @@
           "internal": 10.5,
           "external": 12.5
         }
-      },
-      {
-        "line_name": "Classic Pot",
-        "meal_name": "BAKED POTATOES MEXICANA",
-        "meal_description": "Chili con carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
-        "allergens": [
-          "Gluten",
-          "Milch, Laktose",
-          "Sellerie"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Rind",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 8.9,
-          "internal": 10.9,
-          "external": 12.9
-        }
-      },
-      {
-        "line_name": "World Pot",
-        "meal_name": "DUMPLINGS MIT SOJASAUCE",
-        "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
-        "allergens": [
-          "Gluten",
-          "Soja",
-          "Sesam"
-        ],
-        "meal_class": [
-          "Vegan",
-          "Vegetarisch"
-        ],
-        "meat_info": [],
-        "fish_info": [],
-        "price_info": {
-          "students": 7.9,
-          "internal": 9.9,
-          "external": 11.9
-        }
       }
     ],
     "Dinner": [
       {
         "line_name": "Classic Pot Abend",
-        "meal_name": "BAKED POTATOES MEXICANA",
-        "meal_description": "Chili con carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
+        "meal_name": "Burrito Barbacoa",
+        "meal_description": "Pulled Beef | Cheddar | Hot Tomatillo Sauce | Karotten | Kabis | Lauch | Nacho Chips | Sour Cream | Salsa",
         "allergens": [
           "Gluten",
+          "Soja",
           "Milch, Laktose",
-          "Sellerie"
+          "Sellerie",
+          "Senf"
         ],
         "meal_class": [
           "Fleisch"
@@ -751,14 +780,14 @@
         ],
         "fish_info": [],
         "price_info": {
-          "students": 8.9,
-          "internal": 10.9,
-          "external": 12.9
+          "students": 9.0,
+          "internal": 11.0,
+          "external": 13.0
         }
       },
       {
         "line_name": "World Pot Abend",
-        "meal_name": "DUMPLINGS MIT SOJASAUCE",
+        "meal_name": "Kimchi Dumplings mit Sojasauce",
         "meal_description": "Frühlingszwiebeln | Sesam | Sojasauce",
         "allergens": [
           "Gluten",
@@ -772,15 +801,15 @@
         "meat_info": [],
         "fish_info": [],
         "price_info": {
-          "students": 7.9,
-          "internal": 9.9,
-          "external": 11.9
+          "students": 8.9,
+          "internal": 10.9,
+          "external": 12.9
         }
       },
       {
         "line_name": "Budget Pot Abend",
-        "meal_name": "G`HACKTES MIT HÖRNLI",
-        "meal_description": "Rindsgehacktes oder Sojagehacktes\n| Hörnli | Petersilie | Apfelmus | Extrahartkäse",
+        "meal_name": "G'Hackets und Hörnli",
+        "meal_description": "Rindsgehacktes oder Sojagehacktes | Hörnli | Petersilie | Apfelmus | Extrahartkäse",
         "allergens": [
           "Gluten",
           "Ei",
@@ -789,6 +818,7 @@
         ],
         "meal_class": [
           "Fleisch",
+          "Pasta",
           "Vegan",
           "Vegetarisch"
         ],

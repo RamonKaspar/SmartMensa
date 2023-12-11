@@ -3,18 +3,19 @@
     "Lunch": [
       {
         "line_name": "World",
-        "meal_name": "GRILLED CHICKEN BURRITO",
-        "meal_description": "Poulet | Grillgemüse | Cipolotte | Cheddar | Peperoni Nacho Chips | Sour Cream | Salsa",
+        "meal_name": "BAKED POTATOES TOSCANA",
+        "meal_description": "Tomatensauce | Mozzarella | Prosciutto | Oliven | Basilikumpesto | Rucola",
         "allergens": [
-          "Gluten",
-          "Milch, Laktose"
+          "Ei",
+          "Milch, Laktose",
+          "Schalenfrüchte"
         ],
         "meal_class": [
           "Fleisch"
         ],
         "meat_info": [
           {
-            "type": "Huhn",
+            "type": "Schwein",
             "origin": [
               "Schweiz"
             ]
@@ -29,15 +30,14 @@
       },
       {
         "line_name": "Green",
-        "meal_name": "Quesadillas",
-        "meal_description": "Paneer | Grillgemüse | Cipolotte | Cheddar | Peperoni | Nacho Chips | Sour Cream | Salsa",
+        "meal_name": "BAKED POTATOES TOSCANA",
+        "meal_description": "Tomatensauce | Mozzarella | Grana Padano | Oliven | Basilikumpesto | Rucola",
         "allergens": [
-          "Gluten",
-          "Milch, Laktose"
+          "Ei",
+          "Milch, Laktose",
+          "Schalenfrüchte"
         ],
-        "meal_class": [
-          "Vegetarisch"
-        ],
+        "meal_class": [],
         "meat_info": [],
         "fish_info": [],
         "price_info": {
@@ -53,18 +53,19 @@
     "Lunch": [
       {
         "line_name": "World",
-        "meal_name": "Grilled Chicken Burrito",
-        "meal_description": "Paneer | Grillgemüse | Cheddar | Peperoni | Nacho Chips | Sour Cream | Salsa",
+        "meal_name": "BAKED POTATOES TOSCANA",
+        "meal_description": "Tomatensauce | Mozzarella | Prosciutto | Oliven | Basilikumpesto | Rucola",
         "allergens": [
-          "Gluten",
-          "Milch, Laktose"
+          "Ei",
+          "Milch, Laktose",
+          "Schalenfrüchte"
         ],
         "meal_class": [
           "Fleisch"
         ],
         "meat_info": [
           {
-            "type": "Huhn",
+            "type": "Schwein",
             "origin": [
               "Schweiz"
             ]
@@ -79,15 +80,14 @@
       },
       {
         "line_name": "Green",
-        "meal_name": "Quesadillas",
-        "meal_description": "Paneer | Grillgemüse | Cipolotte | Cheddar | Peperoni | Nacho Chips | Sour Cream | Salsa",
+        "meal_name": "BAKED POTATOES TOSCANA",
+        "meal_description": "Tomatensauce | Mozzarella | Grana Padano | Oliven | Basilikumpesto | Rucola",
         "allergens": [
-          "Gluten",
-          "Milch, Laktose"
+          "Ei",
+          "Milch, Laktose",
+          "Schalenfrüchte"
         ],
-        "meal_class": [
-          "Vegetarisch"
-        ],
+        "meal_class": [],
         "meat_info": [],
         "fish_info": [],
         "price_info": {
@@ -103,14 +103,12 @@
     "Lunch": [
       {
         "line_name": "World",
-        "meal_name": "Burrito Barbacoa",
-        "meal_description": "Pulled Beef  | Cheddar | Hot Tomatillo Sauce | Karotten | Kabis | Lauch | Nacho Chips | Sour Cream | Salsa",
+        "meal_name": "BAKED POTATOES MEXICANA",
+        "meal_description": "Chili con carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
         "allergens": [
           "Gluten",
-          "Soja",
           "Milch, Laktose",
-          "Sellerie",
-          "Senf"
+          "Sellerie"
         ],
         "meal_class": [
           "Fleisch"
@@ -132,12 +130,13 @@
       },
       {
         "line_name": "Green",
-        "meal_name": "Quesadillas",
-        "meal_description": "Tofu | Cheddar | Hot Tomatillo Sauce | Karotten | Kabis | Lauch | Nacho Chips | Sour Cream | Salsa",
+        "meal_name": "BAKED POTATOES MEXICANA",
+        "meal_description": "Chili sin carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
         "allergens": [
-          "Gluten",
           "Soja",
-          "Milch, Laktose"
+          "Milch, Laktose",
+          "Senf",
+          "Sesam"
         ],
         "meal_class": [
           "Vegetarisch"
@@ -157,14 +156,12 @@
     "Lunch": [
       {
         "line_name": "World",
-        "meal_name": "Burrito Barbacoa",
-        "meal_description": "Pulled Beef  | Cheddar | Hot Tomatillo Sauce | Karotten | Kabis | Lauch | Nacho Chips | Sour Cream | Salsa",
+        "meal_name": "BAKED POTATOES MEXICANA",
+        "meal_description": "Chili con carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
         "allergens": [
           "Gluten",
-          "Soja",
           "Milch, Laktose",
-          "Sellerie",
-          "Senf"
+          "Sellerie"
         ],
         "meal_class": [
           "Fleisch"
@@ -186,12 +183,13 @@
       },
       {
         "line_name": "Green",
-        "meal_name": "Quesadillas",
-        "meal_description": "Tofu | Cheddar | Hot Tomatillo Sauce | Karotten | Kabis | Lauch | Nacho Chips | Sour Cream | Salsa",
+        "meal_name": "BAKED POTATOES MEXICANA",
+        "meal_description": "Chili con carne | Cheddar | Guacamole | Jalapenos | Koriander | Nachos",
         "allergens": [
-          "Gluten",
           "Soja",
-          "Milch, Laktose"
+          "Milch, Laktose",
+          "Senf",
+          "Sesam"
         ],
         "meal_class": [
           "Vegetarisch"
@@ -211,20 +209,18 @@
     "Lunch": [
       {
         "line_name": "World",
-        "meal_name": "Pinnacle Beef Burrito",
-        "meal_description": "Rindfleisch | Sauerrahm | Cheddar | Mais | Frühlingszwiebeln | Nacho Chips | Sour Cream | Salsa",
+        "meal_name": "ELSÄSSER POTATOES",
+        "meal_description": "Creme Fraiche | Speck | Röstzwiebeln | Schnittlauch",
         "allergens": [
           "Gluten",
-          "Milch, Laktose",
-          "Sellerie",
-          "Sulfite"
+          "Milch, Laktose"
         ],
         "meal_class": [
           "Fleisch"
         ],
         "meat_info": [
           {
-            "type": "Rind",
+            "type": "Schwein",
             "origin": [
               "Schweiz"
             ]
@@ -239,12 +235,12 @@
       },
       {
         "line_name": "Green",
-        "meal_name": "Quesadillas",
-        "meal_description": "Ratotouille | Sauerrahm | Cheddar | Mais | Frühlingszwiebeln | Nacho Chips | Sour Cream | Salsa",
+        "meal_name": "ELSÄSSER POTATOES",
+        "meal_description": "Creme Fraiche | No-Bacon | Röstzwiebeln | Schnittlauch",
         "allergens": [
           "Gluten",
-          "Milch, Laktose",
-          "Sulfite"
+          "Soja",
+          "Milch, Laktose"
         ],
         "meal_class": [
           "Vegetarisch"

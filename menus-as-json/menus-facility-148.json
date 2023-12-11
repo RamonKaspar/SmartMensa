@@ -8,10 +8,14 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Shakshuka mit pochiertem Ei und Pita Brot \nMenüsalat oder Apfelmus",
+                "meal_description": "Frühlingsrollen auf Fried Rice mit Sweet Chili Sauce | Menüsalat oder Apfelmus",
                 "allergens": [
                     "Glutenhaltiges Getreide",
-                    "Eier"
+                    "Eier",
+                    "Erdnüsse",
+                    "Soja",
+                    "Sesam",
+                    "Schwefeldioxid und Sulfite"
                 ]
             },
             {
@@ -21,26 +25,26 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Tortellini mit Rindfleisch\nRucola \nTomatensauce\nMenüsalat oder Apfelmus\nFleisch; Rind, CH",
+                "meal_description": "G`Hackets mit Hörnli | Reibkäse | Menüsalat oder Apfelmus | Fleisch; Rind, CH",
                 "allergens": [
                     "Glutenhaltiges Getreide",
-                    "Eier",
-                    "Sellerie"
+                    "Milch",
+                    "Sellerie",
+                    "Schwefeldioxid und Sulfite"
                 ]
             },
             {
                 "line_name": "voll anders",
                 "price_info": {
-                    "students": 14.0,
-                    "internal": 16.0,
-                    "external": 18.0
+                    "students": 17.0,
+                    "internal": 18.0,
+                    "external": 19.0
                 },
-                "meal_description": "Schweins Braten vom Nierstück\nPortwein-Rahmsauce\nRöstikroketten \nOfen Kürbis\nFleisch; Schwein, CH",
+                "meal_description": "200g Schweins Cordon bleu | Pommes frites | Ketchup | Gemüsespiess | Fleisch; Schwein, CH",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Eier",
                     "Milch",
-                    "Sellerie",
                     "Schwefeldioxid und Sulfite"
                 ]
             }
@@ -56,11 +60,9 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Pasta Gratin mit Gemüse und Käse überbacken\nMenüsalat oder Apfelmus",
+                "meal_description": "Spaghetti aglio olio e peperoncino | Menüsalat oder Apfelmus",
                 "allergens": [
-                    "Glutenhaltiges Getreide",
-                    "Milch",
-                    "Sellerie"
+                    "Glutenhaltiges Getreide"
                 ]
             },
             {
@@ -70,7 +72,7 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Kalbs Adrio an Rotwein-Rosmarinsauce\nReis\nMischgemüse\nFleisch; Kalb/Schwein, CH",
+                "meal_description": "Gersten Suppe mit Geflügel Wienerli | Menüsalat oder Apfelmus | Fleisch; Geflügel, CH",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Milch",
@@ -81,16 +83,15 @@
             {
                 "line_name": "voll anders",
                 "price_info": {
-                    "students": 14.0,
-                    "internal": 16.0,
-                    "external": 18.0
+                    "students": 17.0,
+                    "internal": 18.0,
+                    "external": 19.0
                 },
-                "meal_description": "Schweins Braten vom Nierstück\nPortwein-Rahmsauce\nRöstikroketten \nOfen Kürbis\nFleisch; Schwein, CH",
+                "meal_description": "200g Schweins Cordon bleu | Pommes frites | Ketchup | Gemüsespiess | Fleisch; Schwein, CH",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Eier",
                     "Milch",
-                    "Sellerie",
                     "Schwefeldioxid und Sulfite"
                 ]
             }
@@ -106,11 +107,10 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Linsen-Feta Bratling mit Dill\nJoghurtdip\nErbsen-Reis\nMenüsalat oder Apfelmus",
+                "meal_description": "Vegi Jambalaya mit Cajun, Ananas und Gemüse | Menüsalat oder Apfelmus",
                 "allergens": [
-                    "Glutenhaltiges Getreide",
-                    "Eier",
-                    "Milch"
+                    "Sellerie",
+                    "Schwefeldioxid und Sulfite"
                 ]
             },
             {
@@ -120,28 +120,24 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Schweinshals Braten mit Zwetschgen \nJus\nKartoffelstock \nGlasierte Karotten\nFleisch; Schwein, CH",
+                "meal_description": "Fleischkäse | Kartoffelgratin | Glasierter Lauch | Fleisch; Schwein, CH",
                 "allergens": [
                     "Glutenhaltiges Getreide",
-                    "Milch",
-                    "Sellerie",
-                    "Senf",
-                    "Schwefeldioxid und Sulfite"
+                    "Milch"
                 ]
             },
             {
                 "line_name": "voll anders",
                 "price_info": {
-                    "students": 14.0,
-                    "internal": 16.0,
-                    "external": 18.0
+                    "students": 17.0,
+                    "internal": 18.0,
+                    "external": 19.0
                 },
-                "meal_description": "Schweins Braten vom Nierstück\nPortwein-Rahmsauce\nRöstikroketten \nOfen Kürbis\nFleisch; Schwein, CH",
+                "meal_description": "200g Schweins Cordon bleu | Pommes frites | Ketchup | Gemüsespiess | Fleisch; Schwein, CH",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Eier",
                     "Milch",
-                    "Sellerie",
                     "Schwefeldioxid und Sulfite"
                 ]
             }
@@ -157,13 +153,10 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Paniertes Quorn Schnitzel \nRote Currysauce \nReisnudeln\nPak Choi",
+                "meal_description": "Älpler Magronen mit Röstzwiebeln | Röstzwiebeln | Menüsalat oder Apfelmus",
                 "allergens": [
                     "Glutenhaltiges Getreide",
-                    "Eier",
-                    "Soja",
-                    "Milch",
-                    "Sellerie"
+                    "Milch"
                 ]
             },
             {
@@ -173,27 +166,27 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Poulet Meatballs an Rahmsauce\nSchupfnudeln \nRosenkohl\nFleisch; Poulet, CH",
-                "allergens": [
-                    "Glutenhaltiges Getreide",
-                    "Eier",
-                    "Milch",
-                    "Sellerie"
-                ]
-            },
-            {
-                "line_name": "voll anders",
-                "price_info": {
-                    "students": 14.0,
-                    "internal": 16.0,
-                    "external": 18.0
-                },
-                "meal_description": "Schweins Braten vom Nierstück\nPortwein-Rahmsauce\nRöstikroketten \nOfen Kürbis\nFleisch; Schwein, CH",
+                "meal_description": "Kalbs Brätkügeli mit Champignonssauce | Blätterteig Pastetli | Reis mit Karotten und Erbsen | Fleisch; Kalb, CH",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Eier",
                     "Milch",
                     "Sellerie",
+                    "Schwefeldioxid und Sulfite"
+                ]
+            },
+            {
+                "line_name": "voll anders",
+                "price_info": {
+                    "students": 17.0,
+                    "internal": 18.0,
+                    "external": 19.0
+                },
+                "meal_description": "200g Schweins Cordon bleu | Pommes frites | Ketchup | Gemüsespiess | Fleisch; Schwein, CH",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Eier",
+                    "Milch",
                     "Schwefeldioxid und Sulfite"
                 ]
             }
@@ -209,11 +202,12 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Omelette gefüllt mit Brie und Tomate auf Rahmlauch\nMenüsalat oder Apfelmus",
+                "meal_description": "Paniertes Gemüseschnitzel | Lauwarmer Kartoffelsalat | Menüsalat oder Apfelmus",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Eier",
-                    "Milch"
+                    "Milch",
+                    "Sellerie"
                 ]
             },
             {
@@ -223,27 +217,26 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Rinds Stroganoff \nBramata Polenta\nMenüsalat oder Apfelmus\nFleisch, Rind, CH",
+                "meal_description": "Rind Gulasch Szegediner Art | Spätzli | Grüne Bohnen | Fleisch; Rind, CH",
                 "allergens": [
                     "Glutenhaltiges Getreide",
+                    "Eier",
                     "Milch",
-                    "Sellerie",
-                    "Schwefeldioxid und Sulfite"
+                    "Sellerie"
                 ]
             },
             {
                 "line_name": "voll anders",
                 "price_info": {
-                    "students": 14.0,
-                    "internal": 16.0,
-                    "external": 18.0
+                    "students": 17.0,
+                    "internal": 18.0,
+                    "external": 19.0
                 },
-                "meal_description": "Schweins Braten vom Nierstück\nPortwein-Rahmsauce\nRöstikroketten \nOfen Kürbis\nFleisch; Schwein, CH",
+                "meal_description": "200g Schweins Cordon bleu | Pommes frites | Ketchup | Gemüsespiess | Fleisch; Schwein, CH",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Eier",
                     "Milch",
-                    "Sellerie",
                     "Schwefeldioxid und Sulfite"
                 ]
             }

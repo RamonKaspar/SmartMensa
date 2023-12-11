@@ -8,8 +8,10 @@
                     "internal": 3.0,
                     "external": ""
                 },
-                "meal_description": "Bauernsuppe",
+                "meal_description": "Bündner Gersten Suppe | Fleisch; Rind; Schweiz",
                 "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Milch",
                     "Sellerie"
                 ]
             }
@@ -25,12 +27,8 @@
                     "internal": 3.0,
                     "external": ""
                 },
-                "meal_description": "Emmentaler Käse Suppe",
-                "allergens": [
-                    "Milch",
-                    "Sellerie",
-                    "Schwefeldioxid und Sulfite"
-                ]
+                "meal_description": "Kartoffelcremesuppe mit Oregano",
+                "allergens": []
             }
         ],
         "Dinner": []
@@ -44,11 +42,8 @@
                     "internal": 3.0,
                     "external": ""
                 },
-                "meal_description": "Schwarzwurzelcreme Suppe mit Äpfeln und Speck\nFleisch, Schwein, Schweiz",
-                "allergens": [
-                    "Milch",
-                    "Schwefeldioxid und Sulfite"
-                ]
+                "meal_description": "Lauchsuppe",
+                "allergens": []
             }
         ],
         "Dinner": []
@@ -62,7 +57,7 @@
                     "internal": 3.0,
                     "external": ""
                 },
-                "meal_description": "Tomatencremesuppe",
+                "meal_description": "Zwiebelsuppe",
                 "allergens": []
             }
         ],
@@ -77,8 +72,10 @@
                     "internal": 3.0,
                     "external": ""
                 },
-                "meal_description": "Kürbissuppe",
-                "allergens": []
+                "meal_description": "Rüeblisuppe",
+                "allergens": [
+                    "Milch"
+                ]
             }
         ],
         "Dinner": []

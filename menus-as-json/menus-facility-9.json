@@ -3,571 +3,11 @@
     "Lunch": [
       {
         "line_name": "STREET",
-        "meal_name": "SCHNITZELJAGD",
-        "meal_description": "Paniertes Schweineschnitzel | Tartarsauce | Pommes frites | Bohnen | Onion ring | Zitronenschnitz",
+        "meal_name": "CURRYWURST",
+        "meal_description": "Pikante Currysauce | Pommes Frites",
         "allergens": [
-          "Gluten",
-          "Ei",
           "Milch, Laktose",
-          "Senf",
-          "Sulfite"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Schwein",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 12.5,
-          "internal": 14.5,
-          "external": 18.5
-        }
-      },
-      {
-        "line_name": "GARDEN",
-        "meal_name": "LIBANESISCHES BADINGAL",
-        "meal_description": "Kichererbsen | Auberginen | Tomaten | Zimt | Couscous | Jogurt mit Pfefferminze",
-        "allergens": [
-          "Gluten",
-          "Milch, Laktose"
-        ],
-        "meal_class": [
-          "Vegetarisch"
-        ],
-        "meat_info": [],
-        "fish_info": [],
-        "price_info": {
-          "students": 6.5,
-          "internal": 9.9,
-          "external": 14.5
-        }
-      },
-      {
-        "line_name": "HOME",
-        "meal_name": "CHICKEN BOLOGNESE BIANCO",
-        "meal_description": "Poulet | Rahmsauce | Basilikum | Penne | Reibkäse | Salat",
-        "allergens": [
-          "Gluten",
-          "Milch, Laktose",
-          "Sellerie"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Huhn",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 7.5,
-          "internal": 10.9,
-          "external": 15.5
-        }
-      },
-      {
-        "line_name": "VEGAN",
-        "meal_name": "KIMCHI NOODLE SOUP & DUMPLINGS",
-        "meal_description": "Shiitake-Pilzen | Pak choi | Chinakohl | Sesam",
-        "allergens": [
-          "Gluten",
-          "Soja",
-          "Sellerie",
-          "Sesam"
-        ],
-        "meal_class": [
-          "Vegan",
-          "Vegetarisch"
-        ],
-        "meat_info": [],
-        "fish_info": [],
-        "price_info": {
-          "students": 10.5,
-          "internal": 13.9,
-          "external": 18.5
-        }
-      },
-      {
-        "line_name": "Hot & Cold Buffet",
-        "meal_name": "Hot & Cold Buffet",
-        "meal_description": "Reichhaltiges Salatbuffet und zusätzlich warme Kompnenten - Gesund und Lecker!\n",
-        "allergens": [],
-        "meal_class": [],
-        "meat_info": [],
-        "fish_info": [],
-        "price_info": {
-          "students": 2.0,
-          "internal": 2.2,
-          "external": 3.2
-        }
-      }
-    ],
-    "Dinner": [
-      {
-        "line_name": "HOME ABEND",
-        "meal_name": "HÖRNLI GRATIN",
-        "meal_description": "Speckwürfel | Lauch | Geröstete Zwiebelstreifen | Tagessalat",
-        "allergens": [
-          "Gluten",
-          "Ei",
-          "Milch, Laktose"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Schwein",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 7.5,
-          "internal": 10.9,
-          "external": 15.5
-        }
-      },
-      {
-        "line_name": "GARDEN ABEND",
-        "meal_name": "HÖRNLI GRATIN",
-        "meal_description": "Gemüsewürfel | Lauch | Geröstete Zwiebelstreifen | Tagessalat",
-        "allergens": [
-          "Gluten",
-          "Ei",
-          "Milch, Laktose",
-          "Sellerie"
-        ],
-        "meal_class": [
-          "Vegetarisch"
-        ],
-        "meat_info": [],
-        "fish_info": [],
-        "price_info": {
-          "students": 6.5,
-          "internal": 9.9,
-          "external": 14.5
-        }
-      },
-      {
-        "line_name": "STEET ABEND",
-        "meal_name": "TANDOORI CHICKEN",
-        "meal_description": "Poulet | Tandoorisauce | Reis | Sojasprossen | Koriander | Papadam",
-        "allergens": [
-          "Ei",
-          "Soja",
-          "Milch, Laktose",
-          "Schalenfrüchte",
-          "Sellerie",
-          "Senf",
-          "Sesam"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Huhn",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 9.9,
-          "internal": 11.9,
-          "external": 15.9
-        }
-      }
-    ]
-  },
-  "Tuesday": {
-    "Lunch": [
-      {
-        "line_name": "STREET",
-        "meal_name": "CHICKEN BURRITO",
-        "meal_description": "Poulet | Junky Salsa | Maiskörner | Black Beans | Cheddar | Nacho Chips | Sour Cream | Salsa",
-        "allergens": [
-          "Gluten",
-          "Milch, Laktose",
-          "Sellerie"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Huhn",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 11.5,
-          "internal": 13.5,
-          "external": 17.5
-        }
-      },
-      {
-        "line_name": "GARDEN",
-        "meal_name": "PANEER JALFREZI",
-        "meal_description": "Paneer | Garam Masala Sauce | Broccoli | Karotten | Pulao Rice | Erbsen | Röstzwiebeln",
-        "allergens": [
-          "Gluten",
-          "Milch, Laktose",
-          "Schalenfrüchte",
-          "Sulfite"
-        ],
-        "meal_class": [
-          "Vegetarisch"
-        ],
-        "meat_info": [],
-        "fish_info": [],
-        "price_info": {
-          "students": 6.5,
-          "internal": 9.9,
-          "external": 14.5
-        }
-      },
-      {
-        "line_name": "HOME",
-        "meal_name": "BEEF KÖFTE",
-        "meal_description": "Erbsen-Minzentaboulé | Tomatenhummus | Pitabrot",
-        "allergens": [
-          "Gluten",
-          "Ei",
-          "Soja",
-          "Sellerie",
-          "Sesam",
-          "Sulfite"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Rind",
-            "origin": [
-              "Schweiz"
-            ]
-          },
-          {
-            "type": "Lamm",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 7.5,
-          "internal": 10.9,
-          "external": 15.5
-        }
-      },
-      {
-        "line_name": "VEGAN",
-        "meal_name": "VEGAN DAY",
-        "meal_description": "Rösti | Champignoncremesauce | Lauch | Glasierten Karotten",
-        "allergens": [
-          "Gluten",
-          "Soja"
-        ],
-        "meal_class": [
-          "Vegan",
-          "Vegetarisch"
-        ],
-        "meat_info": [],
-        "fish_info": [],
-        "price_info": {
-          "students": 6.5,
-          "internal": 9.9,
-          "external": 14.5
-        }
-      },
-      {
-        "line_name": "Hot & Cold Buffet",
-        "meal_name": "Hot & Cold Buffet",
-        "meal_description": "Reichhaltiges Salatbuffet und zusätzlich warme Kompnenten - Gesund und Lecker!\n",
-        "allergens": [],
-        "meal_class": [],
-        "meat_info": [],
-        "fish_info": [],
-        "price_info": {
-          "students": 2.0,
-          "internal": 2.2,
-          "external": 3.2
-        }
-      },
-      {
-        "line_name": "LOCAL",
-        "meal_name": "PASTA BUFALA E POMODORO",
-        "meal_description": "Pasta | Tomatensauce | Büffelmozzarella | Bunte Sprossen",
-        "allergens": [
-          "Gluten",
-          "Ei"
-        ],
-        "meal_class": [],
-        "meat_info": [],
-        "fish_info": [],
-        "price_info": {
-          "students": 9.5,
-          "internal": 11.5,
-          "external": 15.5
-        }
-      }
-    ],
-    "Dinner": [
-      {
-        "line_name": "HOME ABEND",
-        "meal_name": "MEXICAN MEATBALLS",
-        "meal_description": "Rindshackbällchen | Hot Salsa | Couscous mit Mais | Peperonigemüse",
-        "allergens": [
-          "Gluten",
-          "Sellerie"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Rind",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 7.5,
-          "internal": 10.9,
-          "external": 15.5
-        }
-      },
-      {
-        "line_name": "GARDEN ABEND",
-        "meal_name": "MEXIKANISCHE GEMÜSEBÄLLCHEN",
-        "meal_description": "Hot Salsa | Couscous mit Mais | Peperonigemüse",
-        "allergens": [
-          "Gluten",
-          "Soja"
-        ],
-        "meal_class": [
-          "Vegetarisch"
-        ],
-        "meat_info": [],
-        "fish_info": [],
-        "price_info": {
-          "students": 6.5,
-          "internal": 9.9,
-          "external": 14.5
-        }
-      },
-      {
-        "line_name": "STEET ABEND",
-        "meal_name": "SCHNITZELJAGD",
-        "meal_description": "Paniertes Schweinsschnitzel | Tartarsauce | BBQ-Kartoffeln\n| Zitronenschnitz",
-        "allergens": [
-          "Gluten",
-          "Ei",
-          "Milch, Laktose",
-          "Senf",
-          "Sulfite"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Schwein",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 11.5,
-          "internal": 13.5,
-          "external": 17.5
-        }
-      }
-    ]
-  },
-  "Wednesday": {
-    "Lunch": [
-      {
-        "line_name": "STREET",
-        "meal_name": "THE SMOKY BACON BURGER",
-        "meal_description": "Rind oder Vegi-Grillburger | Brioche Bun | Cheddar Käse | Bacon | Smoky Relish | Lattich | Country cuts",
-        "allergens": [
-          "Gluten",
-          "Ei",
-          "Milch, Laktose",
-          "Sellerie",
           "Senf"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Rind",
-            "origin": [
-              "Schweiz"
-            ]
-          },
-          {
-            "type": "Schwein",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 12.9,
-          "internal": 14.9,
-          "external": 18.9
-        }
-      },
-      {
-        "line_name": "GARDEN",
-        "meal_name": "FREGOLA VERDE",
-        "meal_description": "Sardinische Pasta | Erbsen | Cime di Rapa | Romanesco | Mascarpone | Reibkäse | Tomatenpesto",
-        "allergens": [
-          "Gluten",
-          "Soja",
-          "Milch, Laktose"
-        ],
-        "meal_class": [
-          "Vegetarisch"
-        ],
-        "meat_info": [],
-        "fish_info": [],
-        "price_info": {
-          "students": 6.5,
-          "internal": 9.9,
-          "external": 14.5
-        }
-      },
-      {
-        "line_name": "HOME",
-        "meal_name": "POULET FRÜHLINGSROLLEN",
-        "meal_description": "Sweet-Chili Sauce | Gebratener Reis",
-        "allergens": [
-          "Gluten",
-          "Ei",
-          "Soja",
-          "Sellerie",
-          "Senf",
-          "Sesam"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Huhn",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 7.5,
-          "internal": 10.9,
-          "external": 15.5
-        }
-      },
-      {
-        "line_name": "VEGAN",
-        "meal_name": "OFENFRISCHES GEMÜSESPIESSLI",
-        "meal_description": "Pikante Tomatensauce | 5-Korn Spaghetti | Veganer Reibkäse",
-        "allergens": [
-          "Gluten",
-          "Sulfite"
-        ],
-        "meal_class": [
-          "Vegan",
-          "Vegetarisch"
-        ],
-        "meat_info": [],
-        "fish_info": [],
-        "price_info": {
-          "students": 6.5,
-          "internal": 9.9,
-          "external": 14.5
-        }
-      },
-      {
-        "line_name": "Hot & Cold Buffet",
-        "meal_name": "Hot & Cold Buffet",
-        "meal_description": "Reichhaltiges Salatbuffet und zusätzlich warme Kompnenten - Gesund und Lecker!\n",
-        "allergens": [],
-        "meal_class": [],
-        "meat_info": [],
-        "fish_info": [],
-        "price_info": {
-          "students": 2.0,
-          "internal": 2.2,
-          "external": 3.2
-        }
-      },
-      {
-        "line_name": "LOCAL",
-        "meal_name": "NÜRNBERGER BRATWÜRSTE",
-        "meal_description": "Senf | Sauerkraut | Kartoffelstampf | Rote Zwiebeln | Petersilie",
-        "allergens": [
-          "Gluten",
-          "Milch, Laktose",
-          "Senf",
-          "Sulfite"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Schwein",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 10.9,
-          "internal": 12.9,
-          "external": 16.9
-        }
-      }
-    ],
-    "Dinner": [
-      {
-        "line_name": "HOME ABEND",
-        "meal_name": "FESTBRATWURST",
-        "meal_description": "Schweinsbratwurst | Zwiebelsauce | Ofen Kartoffeln | Karotten-Rotkabis Salat",
-        "allergens": [
-          "Milch, Laktose",
-          "Sulfite"
         ],
         "meal_class": [
           "Fleisch"
@@ -588,20 +28,22 @@
         ],
         "fish_info": [],
         "price_info": {
-          "students": 7.5,
-          "internal": 10.9,
-          "external": 15.5
+          "students": 10.5,
+          "internal": 12.5,
+          "external": 16.5
         }
       },
       {
-        "line_name": "GARDEN ABEND",
-        "meal_name": "BEYOND BRATWURST",
-        "meal_description": "Zwiebelsauce | Ofen Kartoffeln | Karotten-Rotkabis Salat",
+        "line_name": "GARDEN",
+        "meal_name": "CHILI SIN CARNE",
+        "meal_description": "Sojahack | Maiskörner | Peperoni | Bohnen | Trockenreis | Menusalat",
         "allergens": [
           "Soja",
-          "Sulfite"
+          "Senf",
+          "Sesam"
         ],
         "meal_class": [
+          "Vegan",
           "Vegetarisch"
         ],
         "meat_info": [],
@@ -613,14 +55,12 @@
         }
       },
       {
-        "line_name": "STEET ABEND",
-        "meal_name": "LASAGNE EMILIANA",
-        "meal_description": "Rindshackfleisch | Bechamel | Tomaten | Basilikumpesto",
+        "line_name": "HOME",
+        "meal_name": "ROASTED BEEF & VEGETABLE MOUSSAKA",
+        "meal_description": "Rindfleisch | Auberginen | Zucchetti | Kartoffeln | Tomaten | Bechamel | Feta | Tzatzikisalat | Gurken",
         "allergens": [
           "Gluten",
-          "Ei",
           "Milch, Laktose",
-          "Schalenfrüchte",
           "Sellerie",
           "Sulfite"
         ],
@@ -637,20 +77,86 @@
         ],
         "fish_info": [],
         "price_info": {
-          "students": 9.5,
-          "internal": 11.5,
+          "students": 7.5,
+          "internal": 10.9,
           "external": 15.5
         }
-      }
-    ]
-  },
-  "Thursday": {
-    "Lunch": [
+      },
       {
-        "line_name": "STREET",
-        "meal_name": "BUTTER CHICKEN",
-        "meal_description": "Poulet | Basmatireis | Wok-Gemüse | Ingwer Gurken Raita mit Koriander",
+        "line_name": "VEGAN",
+        "meal_name": "ASIA",
+        "meal_description": "Udonnudeln | Erdnusssauce | Frühlingsrollen | Asia Gemüse | Kokosranden",
         "allergens": [
+          "Gluten",
+          "Erdnüsse",
+          "Soja",
+          "Schalenfrüchte",
+          "Sellerie",
+          "Sesam",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.5,
+          "internal": 12.9,
+          "external": 17.5
+        }
+      },
+      {
+        "line_name": "Hot & Cold Buffet",
+        "meal_name": "Hot & Cold Buffet",
+        "meal_description": "Reichhaltiges Salatbuffet und zusätzlich warme Kompnenten - Gesund und Lecker! ",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 2.0,
+          "internal": 2.2,
+          "external": 3.2
+        }
+      },
+      {
+        "line_name": "LOCAL",
+        "meal_name": "RACLETTE",
+        "meal_description": "Gschwellti | Silberzwiebeln | Maiskolben | Cornichons",
+        "allergens": [
+          "Senf",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Fleisch",
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Schwein",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 10.5,
+          "internal": 12.5,
+          "external": 16.5
+        }
+      }
+    ],
+    "Dinner": [
+      {
+        "line_name": "HOME ABEND",
+        "meal_name": "ROASTED BEEF & VEGETABLE MOUSSAKA",
+        "meal_description": "Rindfleisch | Auberginen | Zucchetti | Kartoffeln | Tomaten | Bechamel",
+        "allergens": [
+          "Gluten",
           "Milch, Laktose",
           "Sellerie",
           "Sulfite"
@@ -660,7 +166,7 @@
         ],
         "meat_info": [
           {
-            "type": "Huhn",
+            "type": "Rind",
             "origin": [
               "Schweiz"
             ]
@@ -668,20 +174,20 @@
         ],
         "fish_info": [],
         "price_info": {
-          "students": 9.9,
-          "internal": 11.9,
-          "external": 15.9
+          "students": 7.5,
+          "internal": 10.9,
+          "external": 15.5
         }
       },
       {
-        "line_name": "GARDEN",
-        "meal_name": "MIDSOMMAR KÖTBULLAR",
-        "meal_description": "Vegetarische Köttbullar | Pilzrahmsauce | Ofen\nKartoffeln | Gurkensalat mit Dill",
+        "line_name": "GARDEN ABEND",
+        "meal_name": "ÄLPLER MAKKARONI",
+        "meal_description": "Wurzelgemüse | Rahm | Bergkäse | Apfelmus",
         "allergens": [
           "Gluten",
           "Ei",
           "Milch, Laktose",
-          "Senf",
+          "Sellerie",
           "Sulfite"
         ],
         "meal_class": [
@@ -696,13 +202,96 @@
         }
       },
       {
-        "line_name": "HOME",
-        "meal_name": "PASTA ALLA BOSCAIOLA",
-        "meal_description": "Speck | Tomatensugo | Champignons | Rahm | Basilikum | Reibkäse | Blattsalat",
+        "line_name": "STEET ABEND",
+        "meal_name": "HOISIN PULLED BEEF",
+        "meal_description": "gebratenem Reis | Mandeln | Granatapfel | Ingwer Raita",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Soja",
+          "Milch, Laktose",
+          "Schalenfrüchte",
+          "Sellerie",
+          "Sesam"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 11.5,
+          "internal": 13.5,
+          "external": 17.5
+        }
+      }
+    ]
+  },
+  "Tuesday": {
+    "Lunch": [
+      {
+        "line_name": "STREET",
+        "meal_name": "CHICKEN KATSU BOWL",
+        "meal_description": "Crispy Chicken | Tonkatsu Sauce | Edamame | Mango | Karotten | Kabis | Jasminreis | Sesam",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Soja",
+          "Sesam"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Huhn",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 12.5,
+          "internal": 14.5,
+          "external": 18.5
+        }
+      },
+      {
+        "line_name": "GARDEN",
+        "meal_name": "PASTA CON RATATOUILLE",
+        "meal_description": "Tomatenrahmsauce | Reibkäse",
         "allergens": [
           "Gluten",
           "Ei",
           "Milch, Laktose"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.5,
+          "internal": 9.9,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "HOME",
+        "meal_name": "GESCHMORTE SCHWEINS HAXE",
+        "meal_description": "Kräuterjus | Polenta | Sbrinz | Rosenkohl",
+        "allergens": [
+          "Milch, Laktose",
+          "Sellerie",
+          "Sulfite"
         ],
         "meal_class": [
           "Fleisch"
@@ -724,12 +313,10 @@
       },
       {
         "line_name": "VEGAN",
-        "meal_name": "PUMPKIN MASSAMAN CURRY",
-        "meal_description": "Kürbis | Kartoffeln | Broccoli | Basmatireis | Erdnüsse | Papadam",
+        "meal_name": "GEMÜSE KROKETTEN",
+        "meal_description": "Rüeblisauce | Trockenreis | Linsen | Spinat | Kichererbsen",
         "allergens": [
-          "Erdnüsse",
-          "Schalenfrüchte",
-          "Sellerie",
+          "Gluten",
           "Sulfite"
         ],
         "meal_class": [
@@ -739,15 +326,15 @@
         "meat_info": [],
         "fish_info": [],
         "price_info": {
-          "students": 7.5,
-          "internal": 10.9,
-          "external": 15.5
+          "students": 6.5,
+          "internal": 9.9,
+          "external": 14.5
         }
       },
       {
         "line_name": "Hot & Cold Buffet",
         "meal_name": "Hot & Cold Buffet",
-        "meal_description": "Reichhaltiges Salatbuffet und zusätzlich warme Kompnenten - Gesund und Lecker!\n",
+        "meal_description": "Reichhaltiges Salatbuffet und zusätzlich warme Kompnenten - Gesund und Lecker! ",
         "allergens": [],
         "meal_class": [],
         "meat_info": [],
@@ -760,12 +347,131 @@
       },
       {
         "line_name": "LOCAL",
-        "meal_name": "BEEF CALVADOS",
-        "meal_description": "Rindfleisch | Calvadossauce | Knöpfli | Gerösteter Rosenkohl | Silberzwiebeln | Croutons | Speck",
+        "meal_name": "RACLETTE",
+        "meal_description": "Gschwellti | Silberzwiebeln | Maiskolben | Cornichons",
+        "allergens": [
+          "Senf",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Fleisch",
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Schwein",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 10.5,
+          "internal": 12.5,
+          "external": 16.5
+        }
+      }
+    ],
+    "Dinner": [
+      {
+        "line_name": "HOME ABEND",
+        "meal_name": "HARISSA MEATBALLS",
+        "meal_description": "Lammhackbällchen | Tahina-Dip | Couscous | Mini-Maiskolben | Zaatar",
         "allergens": [
           "Gluten",
           "Ei",
           "Milch, Laktose",
+          "Senf",
+          "Sesam",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Lamm",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.5,
+          "internal": 10.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "GARDEN ABEND",
+        "meal_name": "GEBACKENE FALAFEL",
+        "meal_description": "Tahina-Dip | Couscous | Mini-Maiskolben | Zaatar",
+        "allergens": [
+          "Gluten",
+          "Milch, Laktose",
+          "Sesam",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.5,
+          "internal": 9.9,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "STEET ABEND",
+        "meal_name": "CURRYWURST",
+        "meal_description": "Pikante Currysauce | Pommes Frites",
+        "allergens": [
+          "Milch, Laktose",
+          "Senf"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Kalb",
+            "origin": [
+              "Schweiz"
+            ]
+          },
+          {
+            "type": "Schwein",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 10.5,
+          "internal": 12.5,
+          "external": 16.5
+        }
+      }
+    ]
+  },
+  "Wednesday": {
+    "Lunch": [
+      {
+        "line_name": "STREET",
+        "meal_name": "THE DELUXE BURGER",
+        "meal_description": "Beefburger oder Gemüseburger | Sesambun | Cheddar | Speck | Eisberg | Tomaten | Gurken | Country Cuts",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Milch, Laktose",
+          "Sellerie",
+          "Sesam",
           "Sulfite"
         ],
         "meal_class": [
@@ -787,23 +493,41 @@
         ],
         "fish_info": [],
         "price_info": {
-          "students": 11.5,
-          "internal": 13.5,
-          "external": 17.5
+          "students": 12.5,
+          "internal": 14.5,
+          "external": 18.5
         }
-      }
-    ],
-    "Dinner": [
+      },
       {
-        "line_name": "HOME ABEND",
-        "meal_name": "NASI GORENG",
-        "meal_description": "Poulet | Reis | Gemüse | Ei | Sprossen | Curry | Soja",
+        "line_name": "GARDEN",
+        "meal_name": "CHANA MASALA",
+        "meal_description": "Kichererbsen Curry | Peperoncini | Koriander | Sesam | Basmatireis | Sojasprossen",
         "allergens": [
           "Gluten",
-          "Ei",
           "Soja",
-          "Sellerie",
-          "Sesam"
+          "Senf",
+          "Sesam",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.5,
+          "internal": 9.9,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "HOME",
+        "meal_name": "POULET PIZZAIOLA",
+        "meal_description": "Tomatensugo | Basilikum | Artischocken | Gnocchi | Mozzarella",
+        "allergens": [
+          "Gluten",
+          "Milch, Laktose"
         ],
         "meal_class": [
           "Fleisch"
@@ -824,35 +548,48 @@
         }
       },
       {
-        "line_name": "GARDEN ABEND",
-        "meal_name": "NASI GORENG",
-        "meal_description": "Planted Chunks | Gemüse | Ei | Sprossen | Curry | Soja",
+        "line_name": "VEGAN",
+        "meal_name": "SPICY VEGAN BALLS",
+        "meal_description": "Salsa Chimichurri | Kartoffelstampf | Maiskölbchen | Peperoni",
         "allergens": [
           "Gluten",
-          "Ei",
           "Soja",
-          "Sellerie",
-          "Sesam"
+          "Sulfite"
         ],
         "meal_class": [
+          "Vegan",
           "Vegetarisch"
         ],
         "meat_info": [],
         "fish_info": [],
         "price_info": {
-          "students": 6.5,
-          "internal": 9.9,
-          "external": 14.5
+          "students": 9.5,
+          "internal": 12.9,
+          "external": 17.5
         }
       },
       {
-        "line_name": "STEET ABEND",
-        "meal_name": "CHICKEN NUGGETS",
-        "meal_description": "Cocktailsauce | Pommes frites | Tagessalat",
+        "line_name": "Hot & Cold Buffet",
+        "meal_name": "Hot & Cold Buffet",
+        "meal_description": "Reichhaltiges Salatbuffet und zusätzlich warme Kompnenten - Gesund und Lecker! ",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 2.0,
+          "internal": 2.2,
+          "external": 3.2
+        }
+      },
+      {
+        "line_name": "LOCAL",
+        "meal_name": "CASARECCE CON POLLO E FUNGHI",
+        "meal_description": "Pasta | Poulet | Champignons | Rahmsauce | Dill | Reibkäse | Saisonsalat",
         "allergens": [
           "Gluten",
           "Ei",
-          "Senf"
+          "Milch, Laktose"
         ],
         "meal_class": [
           "Fleisch"
@@ -867,6 +604,76 @@
         ],
         "fish_info": [],
         "price_info": {
+          "students": 9.5,
+          "internal": 11.5,
+          "external": 15.5
+        }
+      }
+    ],
+    "Dinner": [
+      {
+        "line_name": "HOME ABEND",
+        "meal_name": "YELLOW THAI CURRY",
+        "meal_description": "Rindsgehacktem | Wok Gemüse | Thai Nudeln | Sojasprossen",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sellerie",
+          "Senf"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.5,
+          "internal": 10.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "GARDEN ABEND",
+        "meal_name": "YELLOW THAI CURRY",
+        "meal_description": "Sojagehacktem | Wok Gemüse | Thai Nudeln | Sojasprossen",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sellerie",
+          "Senf"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.5,
+          "internal": 9.9,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "STEET ABEND",
+        "meal_name": "CANNELLONI DELLA NONNA",
+        "meal_description": "Ricotta | Spinat | Tomatenpesto | Rucola",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Milch, Laktose",
+          "Schalenfrüchte"
+        ],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
           "students": 9.9,
           "internal": 11.9,
           "external": 15.9
@@ -874,16 +681,221 @@
       }
     ]
   },
-  "Friday": {
+  "Thursday": {
     "Lunch": [
       {
         "line_name": "STREET",
-        "meal_name": "Poulet Cordon bleu",
-        "meal_description": "Cocktailsauce | Pommes frites",
+        "meal_name": "ROYAL DÖNER PLATTE",
+        "meal_description": "Kebabfleisch | Dönersauce | Fladenbrot | Kabis | Karotten | roten Zwiebeln | Djuvec Reis",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Milch, Laktose",
+          "Senf"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          },
+          {
+            "type": "Kalb",
+            "origin": [
+              "Schweiz"
+            ]
+          },
+          {
+            "type": "Huhn",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 11.5,
+          "internal": 13.5,
+          "external": 17.5
+        }
+      },
+      {
+        "line_name": "GARDEN",
+        "meal_name": "SPÄTZLI GEMÜSEPFANNE",
+        "meal_description": "Käse | Röstzwiebeln | Mischsalat",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Milch, Laktose",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.5,
+          "internal": 9.9,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "HOME",
+        "meal_name": "SPAGHETTI & SPICY MEATBALLS",
+        "meal_description": "Rindshackbällchen | Scharfe Tomatensauce | Spaghetti | Reibkäse",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.5,
+          "internal": 10.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "VEGAN",
+        "meal_name": "CHICKERIKI STROGANOFF",
+        "meal_description": "Planted Chunks | Paprikasauce | Champignons | Zwiebeln | Orecchiette | Crème fraîche alternative",
+        "allergens": [
+          "Gluten",
+          "Schalenfrüchte",
+          "Senf",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.5,
+          "internal": 9.9,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "Hot & Cold Buffet",
+        "meal_name": "Hot & Cold Buffet",
+        "meal_description": "Reichhaltiges Salatbuffet und zusätzlich warme Kompnenten - Gesund und Lecker! ",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 2.0,
+          "internal": 2.2,
+          "external": 3.2
+        }
+      },
+      {
+        "line_name": "LOCAL",
+        "meal_name": "ALASKA SEELACHS NUGGETS",
+        "meal_description": "Tartarsauce | Pommes Rissoles | Zitroneschnitz | Blattspinat",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Fisch",
+          "Milch, Laktose",
+          "Senf"
+        ],
+        "meal_class": [
+          "Fisch"
+        ],
+        "meat_info": [],
+        "fish_info": [
+          {
+            "desc": "Wildfang",
+            "origin": [
+              "Pazifik, Nordwesten"
+            ]
+          }
+        ],
+        "price_info": {
+          "students": 9.5,
+          "internal": 11.5,
+          "external": 15.5
+        }
+      }
+    ],
+    "Dinner": [
+      {
+        "line_name": "HOME ABEND",
+        "meal_name": "SZEGEDINER GULASCH",
+        "meal_description": "Schweinsvoressen | Sauerkraut | Paprikasauce | Spätzli",
         "allergens": [
           "Gluten",
           "Ei",
           "Milch, Laktose"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Schwein",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.5,
+          "internal": 10.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "GARDEN ABEND",
+        "meal_name": "GERÖSTETES RAGOUT AUS UR-KARTOFFELN",
+        "meal_description": "Paprikasauce | Röstzwiebeln | Sauerrahm | Spätzli",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Milch, Laktose",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.5,
+          "internal": 9.9,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "STEET ABEND",
+        "meal_name": "POULET CORDON BLEU",
+        "meal_description": "Tartarsauce | Zitronenschnitz | Ofenkartoffeln | Coleslaw",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Milch, Laktose",
+          "Senf",
+          "Sulfite"
         ],
         "meal_class": [
           "Fleisch"
@@ -904,20 +916,58 @@
         ],
         "fish_info": [],
         "price_info": {
-          "students": 9.9,
-          "internal": 11.9,
-          "external": 15.9
+          "students": 10.5,
+          "internal": 12.5,
+          "external": 16.5
         }
-      },
+      }
+    ]
+  },
+  "Friday": {
+    "Lunch": [
       {
-        "line_name": "GARDEN",
-        "meal_name": "QUORN SCHLEMMER",
-        "meal_description": "Quorn | Kräuterrahmsauce | Vitaminreis | Blumenkohl mit Kurkuma",
+        "line_name": "STREET",
+        "meal_name": "POULET CORDON BLEU",
+        "meal_description": "Tartarsauce | Zitronenschnitz | Pommes frites | Ofen Broccoli | Röstzwiebeln",
         "allergens": [
           "Gluten",
           "Ei",
           "Milch, Laktose",
-          "Sellerie"
+          "Senf"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Huhn",
+            "origin": [
+              "Schweiz"
+            ]
+          },
+          {
+            "type": "Truthahn",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 11.5,
+          "internal": 13.5,
+          "external": 17.5
+        }
+      },
+      {
+        "line_name": "GARDEN",
+        "meal_name": "FUSILLI PESTO",
+        "meal_description": "Reibkäse | Rucola | Salat",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Milch, Laktose",
+          "Schalenfrüchte"
         ],
         "meal_class": [
           "Vegetarisch"
@@ -932,24 +982,27 @@
       },
       {
         "line_name": "HOME",
-        "meal_name": "SCHLEMMER FILET BORDELAISE",
-        "meal_description": "Ofenkartoffeln | Blattspinat | Zitronenschnitz",
+        "meal_name": "SCHWEINSBRATWURST",
+        "meal_description": "Preiselbeeren Jus | Knöpfli | Gemüse Gröstl | Zitronenzeste",
         "allergens": [
           "Gluten",
-          "Fisch"
+          "Ei",
+          "Milch, Laktose",
+          "Sellerie",
+          "Sulfite"
         ],
         "meal_class": [
-          "Fisch"
+          "Fleisch"
         ],
-        "meat_info": [],
-        "fish_info": [
+        "meat_info": [
           {
-            "desc": "Wildfang",
+            "type": "Schwein",
             "origin": [
-              "Pazifik, Nordosten"
+              "Schweiz"
             ]
           }
         ],
+        "fish_info": [],
         "price_info": {
           "students": 7.5,
           "internal": 10.9,
@@ -958,12 +1011,13 @@
       },
       {
         "line_name": "VEGAN",
-        "meal_name": "PULLED BBQ PLANTED CANADIAN STYLE",
-        "meal_description": "Pommes frites | Pulled Planted | Coleslaw | Rote Zwiebeln | BBQ Cocktail Sauce",
+        "meal_name": "GREEN THAI CURRY",
+        "meal_description": "Smoked Tofu | Asiagemüse | Basmatireis | Edamame | Schwarze Sesam",
         "allergens": [
-          "Gluten",
+          "Soja",
+          "Sellerie",
           "Senf",
-          "Sulfite"
+          "Sesam"
         ],
         "meal_class": [
           "Vegan",
@@ -972,15 +1026,15 @@
         "meat_info": [],
         "fish_info": [],
         "price_info": {
-          "students": 9.9,
-          "internal": 13.3,
-          "external": 17.9
+          "students": 6.5,
+          "internal": 9.9,
+          "external": 14.5
         }
       },
       {
         "line_name": "Hot & Cold Buffet",
         "meal_name": "Hot & Cold Buffet",
-        "meal_description": "Reichhaltiges Salatbuffet und zusätzlich warme Kompnenten - Gesund und Lecker!\n",
+        "meal_description": "Reichhaltiges Salatbuffet und zusätzlich warme Kompnenten - Gesund und Lecker! ",
         "allergens": [],
         "meal_class": [],
         "meat_info": [],

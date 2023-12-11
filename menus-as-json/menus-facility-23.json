@@ -3,13 +3,12 @@
     "Lunch": [
       {
         "line_name": "Eins",
-        "meal_name": "Hirsch Saltimbocca",
-        "meal_description": "Wildrahmsauce | Salzkartoffeln | Rotkraut | Beilagensala",
+        "meal_name": "Wildschwein Entrecôte",
+        "meal_description": "Pfefferrahmsauce | Spätzli | Rosenkohl | Speck (CH) | Beilagensalat",
         "allergens": [
           "Gluten",
-          "Soja",
+          "Ei",
           "Milch, Laktose",
-          "Sellerie",
           "Sulfite"
         ],
         "meal_class": [
@@ -31,148 +30,19 @@
         ],
         "fish_info": [],
         "price_info": {
-          "students": 16.5,
-          "external": 18.5
-        }
-      },
-      {
-        "line_name": "Zwei",
-        "meal_name": "Crevetten Japan Style",
-        "meal_description": "Wasabi Sojasauce | Ramen noodles | Edamame Salat | Beilagensalat",
-        "allergens": [
-          "Gluten",
-          "Krebstiere",
-          "Soja",
-          "Senf",
-          "Sulfite"
-        ],
-        "meal_class": [
-          "Fisch"
-        ],
-        "meat_info": [],
-        "fish_info": [
-          {
-            "desc": "Zucht",
-            "origin": [
-              "Vietnam"
-            ]
-          }
-        ],
-        "price_info": {
-          "students": 12.9,
-          "external": 14.9
-        }
-      },
-      {
-        "line_name": "Drei",
-        "meal_name": "Cappelletti | Pilz Füllung",
-        "meal_description": "Petersilie-Sauce | Gebackenen Kürbis | Beilagensalat",
-        "allergens": [
-          "Gluten",
-          "Ei",
-          "Milch, Laktose"
-        ],
-        "meal_class": [
-          "Vegetarisch"
-        ],
-        "meat_info": [],
-        "fish_info": [],
-        "price_info": {
-          "students": 12.9,
-          "external": 14.9
-        }
-      },
-      {
-        "line_name": "Vier",
-        "meal_name": "Market Buffet",
-        "meal_description": "Täglich wechselndes Angebot\nvom Market Buffet | Kalt | Warm",
-        "allergens": [],
-        "meal_class": [],
-        "meat_info": [
-          {
-            "type": "Rind",
-            "origin": [
-              "Schweiz"
-            ]
-          },
-          {
-            "type": "Schwein",
-            "origin": [
-              "Schweiz"
-            ]
-          },
-          {
-            "type": "Huhn",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 3.2,
-          "external": 3.8
-        }
-      },
-      {
-        "line_name": "5uppe",
-        "meal_name": "Tagessuppe",
-        "meal_description": "Karotten Kürbiscremesuppe",
-        "allergens": [
-          "Milch, Laktose",
-          "Sulfite"
-        ],
-        "meal_class": [
-          "Vegetarisch"
-        ],
-        "meat_info": [],
-        "fish_info": [],
-        "price_info": {
-          "students": 3.5,
-          "external": 4.5
-        }
-      }
-    ],
-    "Dinner": []
-  },
-  "Tuesday": {
-    "Lunch": [
-      {
-        "line_name": "Eins",
-        "meal_name": "Rind Pulled Beef Burger",
-        "meal_description": "Brioche Bun | BBQ Sauce | Pommes Frites | Kabissalat | Tomate | Kresse | Beilagensalat",
-        "allergens": [
-          "Gluten",
-          "Soja",
-          "Milch, Laktose",
-          "Sellerie",
-          "Senf",
-          "Sulfite"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Rind",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
           "students": 17.5,
           "external": 19.5
         }
       },
       {
         "line_name": "Zwei",
-        "meal_name": "Rinds Hackbraten",
-        "meal_description": "Pilzrahmsauce | Kartoffelstock | Erbsen | Karotten | Beilagensalat",
+        "meal_name": "Fleischkäse Cordon bleu",
+        "meal_description": "Schwein | Pfeffer Rahm Sauce | Urdinkel Spiralen | Karotten | Beilagensalat",
         "allergens": [
           "Gluten",
+          "Ei",
           "Milch, Laktose",
+          "Senf",
           "Sulfite"
         ],
         "meal_class": [
@@ -180,7 +50,7 @@
         ],
         "meat_info": [
           {
-            "type": "Rind",
+            "type": "Schwein",
             "origin": [
               "Schweiz"
             ]
@@ -188,18 +58,17 @@
         ],
         "fish_info": [],
         "price_info": {
-          "students": 13.0,
-          "external": 15.0
+          "students": 12.9,
+          "external": 14.9
         }
       },
       {
         "line_name": "Drei",
-        "meal_name": "Gemüse Chop Suey",
-        "meal_description": "Shitake | Zucchetti | Knoblauch | Sesam | Basmatireis | Beilagensaalat",
+        "meal_name": "Vegane Gyoza",
+        "meal_description": "Jasmin Reis | Wokgemüse | Beilagensalat",
         "allergens": [
           "Gluten",
           "Soja",
-          "Senf",
           "Sesam"
         ],
         "meal_class": [
@@ -215,7 +84,7 @@
       {
         "line_name": "Vier",
         "meal_name": "Market Buffet",
-        "meal_description": "Täglich wechselndes Angebot\nvom Market Buffet | Kalt | Warm",
+        "meal_description": "Täglich wechselndes Angebot vom Market Buffet | Kalt | Warm",
         "allergens": [],
         "meal_class": [],
         "meat_info": [
@@ -247,13 +116,143 @@
       {
         "line_name": "5uppe",
         "meal_name": "Tagessuppe",
-        "meal_description": "Gemüse-Kokossuppe",
+        "meal_description": "Vegane Pilzrahmsuppe",
         "allergens": [
+          "Soja",
+          "Sellerie",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Vegan"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 3.5,
+          "external": 4.5
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Tuesday": {
+    "Lunch": [
+      {
+        "line_name": "Eins",
+        "meal_name": "Flanksteak",
+        "meal_description": "Butterkartoffeln | Bohnen | Kräuterbutter | Beilagensalat",
+        "allergens": [
+          "Gluten",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 17.8,
+          "external": 19.8
+        }
+      },
+      {
+        "line_name": "Zwei",
+        "meal_name": "Hirschbratwurst",
+        "meal_description": "Wildsauce | Salbei Spätzli | Rotkraut | Beilagensalat",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Sellerie",
+          "Senf",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Schwein",
+            "origin": [
+              "Schweiz"
+            ]
+          },
+          {
+            "type": "Wild",
+            "origin": [
+              "Europäische Union"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 12.9,
+          "external": 14.9
+        }
+      },
+      {
+        "line_name": "Drei",
+        "meal_name": "Trüffel Raviolini",
+        "meal_description": "Spinat | Kirschtomaten | Beilagensalat | Kresse",
+        "allergens": [
+          "Gluten",
+          "Ei",
           "Milch, Laktose"
         ],
         "meal_class": [
           "Vegetarisch"
         ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 14.5,
+          "external": 16.5
+        }
+      },
+      {
+        "line_name": "Vier",
+        "meal_name": "Market Buffet",
+        "meal_description": "Täglich wechselndes Angebot vom Market Buffet | Kalt | Warm",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          },
+          {
+            "type": "Schwein",
+            "origin": [
+              "Schweiz"
+            ]
+          },
+          {
+            "type": "Huhn",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 3.2,
+          "external": 3.8
+        }
+      },
+      {
+        "line_name": "5uppe",
+        "meal_name": "Tagessuppe",
+        "meal_description": "Tagessuppe lt. Chef",
+        "allergens": [],
+        "meal_class": [],
         "meat_info": [],
         "fish_info": [],
         "price_info": {
@@ -268,55 +267,38 @@
     "Lunch": [
       {
         "line_name": "Eins",
-        "meal_name": "Saibling",
-        "meal_description": "Erbsenrahmsauce | Randen Risotto | Ofenranden | Beilagensalat",
+        "meal_name": "Momos 4 Stk.",
+        "meal_description": "Sojasauce | Jasminreis | Wokgemüse | Beilagensalat",
         "allergens": [
-          "Fisch",
-          "Milch, Laktose",
-          "Sulfite"
+          "Gluten",
+          "Soja"
         ],
         "meal_class": [
-          "Fisch"
+          "Vegan"
         ],
         "meat_info": [],
-        "fish_info": [
-          {
-            "desc": "Zucht",
-            "origin": [
-              "Island"
-            ]
-          }
-        ],
+        "fish_info": [],
         "price_info": {
-          "students": 17.5,
-          "external": 19.5
+          "students": 15.5,
+          "external": 17.5
         }
       },
       {
         "line_name": "Zwei",
-        "meal_name": "Pasta",
-        "meal_description": "Rindsbolognese (CH) | Pesto | Carbonara (CH) | Tomatensauce (Vegan)\nBeilagensalat",
+        "meal_name": "\"Zürcher\" Pouletgeschnetzeltes",
+        "meal_description": "Nudeln | Karotten | Beilagensalat",
         "allergens": [
           "Gluten",
           "Ei",
           "Milch, Laktose",
-          "Schalenfrüchte",
-          "Sellerie",
           "Sulfite"
         ],
         "meal_class": [
-          "Fleisch",
-          "Vegan"
+          "Fleisch"
         ],
         "meat_info": [
           {
-            "type": "Rind",
-            "origin": [
-              "Schweiz"
-            ]
-          },
-          {
-            "type": "Schwein",
+            "type": "Huhn",
             "origin": [
               "Schweiz"
             ]
@@ -330,16 +312,16 @@
       },
       {
         "line_name": "Drei",
-        "meal_name": "Käse Spätzli",
-        "meal_description": "Röstzwiebeln | Beilagensalat",
+        "meal_name": "Süsskartoffel Curry",
+        "meal_description": "Thai Nudeln | Chinakohl | Lattich | Beilagensalat",
         "allergens": [
           "Gluten",
-          "Ei",
-          "Milch, Laktose",
-          "Sulfite"
+          "Soja",
+          "Sellerie",
+          "Senf"
         ],
         "meal_class": [
-          "Vegetarisch"
+          "Vegan"
         ],
         "meat_info": [],
         "fish_info": [],
@@ -351,7 +333,7 @@
       {
         "line_name": "Vier",
         "meal_name": "Market Buffet",
-        "meal_description": "Täglich wechselndes Angebot\nvom Market Buffet | Kalt | Warm",
+        "meal_description": "Täglich wechselndes Angebot vom Market Buffet | Kalt | Warm",
         "allergens": [],
         "meal_class": [],
         "meat_info": [
@@ -383,15 +365,9 @@
       {
         "line_name": "5uppe",
         "meal_name": "Tagessuppe",
-        "meal_description": "Karotten-Kürbiscremesuppe",
-        "allergens": [
-          "Milch, Laktose",
-          "Sellerie",
-          "Sulfite"
-        ],
-        "meal_class": [
-          "Vegetarisch"
-        ],
+        "meal_description": "Tagessuppe lt. Chef",
+        "allergens": [],
+        "meal_class": [],
         "meat_info": [],
         "fish_info": [],
         "price_info": {
@@ -406,13 +382,138 @@
     "Lunch": [
       {
         "line_name": "Eins",
-        "meal_name": "Paniertes Schweineschnitzel",
-        "meal_description": "veganes Schnitzel + 1.50 CHF |\nLauwarmer Kartoffelsalat | Preiselbeeren | Zitrone\nBeilagensalat",
+        "meal_name": "Yellow Chicken Curry",
+        "meal_description": "Thai Currysauce | Basmatireis | Broccoli | Sesam | Beilagensalat",
+        "allergens": [
+          "Soja",
+          "Sesam",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Huhn",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 12.9,
+          "external": 14.9
+        }
+      },
+      {
+        "line_name": "Zwei",
+        "meal_name": "Pasta",
+        "meal_description": "Bolognese (CH)| Pesto | Salsa alla puttanesca (ES)  | vegane Tomatensauce Beilagensalat",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Fisch",
+          "Milch, Laktose",
+          "Schalenfrüchte",
+          "Sellerie",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 12.9,
+          "external": 14.9
+        }
+      },
+      {
+        "line_name": "Drei",
+        "meal_name": "Cheese Nuggets",
+        "meal_description": "Tomaten Salsa Mexico | Jeera Aloo Kartoffeln | Bohnensalat | Tagessuppe ",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Erdnüsse",
+          "Schalenfrüchte",
+          "Senf",
+          "Sulfite"
+        ],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 13.9,
+          "external": 15.9
+        }
+      },
+      {
+        "line_name": "Vier",
+        "meal_name": "Market Buffet",
+        "meal_description": "Täglich wechselndes Angebot vom Market Buffet | Kalt | Warm",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          },
+          {
+            "type": "Schwein",
+            "origin": [
+              "Schweiz"
+            ]
+          },
+          {
+            "type": "Huhn",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 3.2,
+          "external": 3.8
+        }
+      },
+      {
+        "line_name": "5uppe",
+        "meal_name": "Tagessuppe",
+        "meal_description": "Tagessuppe lt. Chef",
+        "allergens": [],
+        "meal_class": [],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 3.5,
+          "external": 4.5
+        }
+      }
+    ],
+    "Dinner": []
+  },
+  "Friday": {
+    "Lunch": [
+      {
+        "line_name": "Eins",
+        "meal_name": "Piadina",
+        "meal_description": "Fladenbrot | Parmaschinken (Schwein | CH) | Käse | Tomate Beilagensalat",
         "allergens": [
           "Gluten",
           "Ei",
           "Milch, Laktose",
-          "Senf",
           "Sulfite"
         ],
         "meal_class": [
@@ -434,13 +535,14 @@
       },
       {
         "line_name": "Zwei",
-        "meal_name": "Alaska Seelachs Nuggets ",
-        "meal_description": "Kräuter Dip | Reis | Peperonata | Beilagensalat",
+        "meal_name": "Calamares im Backteig",
+        "meal_description": "Wasabi-Mayonnaise | Ebly | Blattspinat | Beilagensalat",
         "allergens": [
           "Gluten",
+          "Ei",
           "Fisch",
-          "Milch, Laktose",
-          "Schalenfrüchte"
+          "Soja",
+          "Weichtiere"
         ],
         "meal_class": [
           "Fisch"
@@ -450,7 +552,7 @@
           {
             "desc": "Wildfang",
             "origin": [
-              "Pazifik, Nordwesten"
+              "Pazifik, Südost"
             ]
           }
         ],
@@ -461,139 +563,11 @@
       },
       {
         "line_name": "Drei",
-        "meal_name": "Bio Okara Bällchen",
-        "meal_description": "Warmer Kübris Quinoasalat | Ofenkabis | Dip | Beilagensalat",
-        "allergens": [
-          "Soja",
-          "Schalenfrüchte"
-        ],
-        "meal_class": [
-          "Vegan"
-        ],
-        "meat_info": [],
-        "fish_info": [],
-        "price_info": {
-          "students": 12.9,
-          "external": 14.9
-        }
-      },
-      {
-        "line_name": "Vier",
-        "meal_name": "Market Buffet",
-        "meal_description": "Täglich wechselndes Angebot\nvom Market Buffet | Kalt | Warm",
-        "allergens": [],
-        "meal_class": [],
-        "meat_info": [
-          {
-            "type": "Rind",
-            "origin": [
-              "Schweiz"
-            ]
-          },
-          {
-            "type": "Schwein",
-            "origin": [
-              "Schweiz"
-            ]
-          },
-          {
-            "type": "Huhn",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 3.2,
-          "external": 3.8
-        }
-      },
-      {
-        "line_name": "5uppe",
-        "meal_name": "Tagessuppe",
-        "meal_description": "Erbsencremesuppe",
-        "allergens": [
-          "Milch, Laktose",
-          "Sellerie"
-        ],
-        "meal_class": [
-          "Vegetarisch"
-        ],
-        "meat_info": [],
-        "fish_info": [],
-        "price_info": {
-          "students": 3.5,
-          "external": 4.5
-        }
-      }
-    ],
-    "Dinner": []
-  },
-  "Friday": {
-    "Lunch": [
-      {
-        "line_name": "Eins",
-        "meal_name": "Stroganoff Rind Geschnetzeltes",
-        "meal_description": "Spätzli | Broccoli | Beilagensalat",
+        "meal_name": "Gemüseschnitzel",
+        "meal_description": "Kartoffelsalat | Erbsen | Preiselbeeren | Zitrone | Beilagensalat",
         "allergens": [
           "Gluten",
-          "Ei",
-          "Soja",
-          "Milch, Laktose",
-          "Sulfite"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Rind",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 17.0,
-          "external": 19.0
-        }
-      },
-      {
-        "line_name": "Zwei",
-        "meal_name": "1/2 Pinsa Picante",
-        "meal_description": "Chorizo | Bufala Mozzarella | Tomatensalat | Tagessuppe",
-        "allergens": [
-          "Gluten",
-          "Soja",
-          "Milch, Laktose",
-          "Sulfite"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Schwein",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 12.9,
-          "external": 14.9
-        }
-      },
-      {
-        "line_name": "Drei",
-        "meal_name": "Chana Masala",
-        "meal_description": "Kichererbsen | Tomaten | Basmatireis | Beilagensalat",
-        "allergens": [
           "Senf",
-          "Sesam",
           "Sulfite"
         ],
         "meal_class": [
@@ -609,7 +583,7 @@
       {
         "line_name": "Vier",
         "meal_name": "Market Buffet",
-        "meal_description": "Täglich wechselndes Angebot\nvom Market Buffet | Kalt | Warm",
+        "meal_description": "Täglich wechselndes Angebot vom Market Buffet | Kalt | Warm",
         "allergens": [],
         "meal_class": [],
         "meat_info": [
@@ -641,14 +615,9 @@
       {
         "line_name": "5uppe",
         "meal_name": "Tagessuppe",
-        "meal_description": "Vegane Kabis-Cremesuppe",
-        "allergens": [
-          "Sellerie",
-          "Sulfite"
-        ],
-        "meal_class": [
-          "Vegan"
-        ],
+        "meal_description": "Tagessuppe lt. Chef",
+        "allergens": [],
+        "meal_class": [],
         "meat_info": [],
         "fish_info": [],
         "price_info": {

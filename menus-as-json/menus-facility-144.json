@@ -8,12 +8,11 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Vegi Cordon Bleu\nPeperonisauce\nSpiralen Pasta\nErbsen",
+                "meal_description": "«Nasi Goreng» | Indonesisches Reis | Gericht mit Gemüse, Planted, Röstzwiebeln | Cashewkerne & Sprossen | Menüsalat",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Soja",
-                    "Milch",
-                    "Sellerie"
+                    "Schwefeldioxid und Sulfite"
                 ]
             },
             {
@@ -23,7 +22,7 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Fleischkäse \nSenf\nKartoffelsalat\nMenüsalat\nFleisch: Schwein, CH",
+                "meal_description": "Rindsgeschnetzeltes mit Pilzen | Rösti | Pfälzer-Rüebli | Fleisch: Rind, CH",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Eier",
@@ -31,7 +30,7 @@
                     "Milch",
                     "Sellerie",
                     "Senf",
-                    "Schwefeldioxid und Sulfite"
+                    "Sesam"
                 ]
             }
         ],
@@ -46,10 +45,12 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Kartoffeltortilla mit Stangensellerie, \nBohnen und Broccoli\nTomatensauce\nMenüsalat",
+                "meal_description": "Quorn-Tex-Mex mit BBQ Sauce | Baked Potato | Cole Slaw",
                 "allergens": [
                     "Eier",
-                    "Milch"
+                    "Sellerie",
+                    "Senf",
+                    "Schwefeldioxid und Sulfite"
                 ]
             },
             {
@@ -59,12 +60,14 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Schirin polo\nmit Poulet, Linsen, \nDörrobst und Gemüse\nJoghurt-Pistazien-Dip\nApfelmus hausgemacht\nFleisch: Poulet, CH",
+                "meal_description": "«Stroganoff» | Rindsgeschnetzeltes mit Champignons und Sauerrahm | Schupfnudeln | Menüsalat | Fleisch: Rind, CH",
                 "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Eier",
                     "Soja",
                     "Milch",
-                    "Hartschalenobst (Nüsse)",
                     "Sellerie",
+                    "Senf",
                     "Schwefeldioxid und Sulfite"
                 ]
             }
@@ -80,11 +83,12 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Appenzeller Käsehörnli\nmit Zwiebeln, Rahm \nund Käse\nMenüsalat",
+                "meal_description": "«Panaeng Curry» Veganes Gemüsecurry mit Erdnüssen, Auberginen und Bohnen | Hirse | Menüsalat",
                 "allergens": [
                     "Glutenhaltiges Getreide",
-                    "Eier",
-                    "Milch"
+                    "Erdnüsse",
+                    "Soja",
+                    "Sellerie"
                 ]
             },
             {
@@ -94,11 +98,15 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "«Currywurst»\nKalbsbratwurst \nCurry-Ketchup\nRosmarin Wedges\nErbsen und Rüebli\nFleisch: Schwein & Kalb, CH",
+                "meal_description": "Schweinshalsbraten | Champigonrahmsauce | Tagliatelle | Blattspinat | Fleisch: Schwein, CH",
                 "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Eier",
                     "Soja",
                     "Milch",
-                    "Sellerie"
+                    "Hartschalenobst (Nüsse)",
+                    "Sellerie",
+                    "Senf"
                 ]
             }
         ],
@@ -113,14 +121,15 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Kürbis-Krautstielragout\nmit Estragon\nGnocchi\nTortillachips\nApfelmus hausgemacht",
+                "meal_description": "Tortellini Ricotta Spinat | Peperonatarahmsauce | Apfelmus hausgemacht",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Eier",
                     "Soja",
                     "Milch",
                     "Sellerie",
-                    "Schwefeldioxid und Sulfite"
+                    "Senf",
+                    "Sesam"
                 ]
             },
             {
@@ -130,14 +139,9 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Coq au vin Poulet\nBratenjus \nPolenta \nBroccoli\nFleisch: Poulet, CH",
+                "meal_description": "Pouletbrust «Korean-Style» mit Sesam, Ingwer und Sojasauce | Glasnudeln | Wok Gemüse | Fleisch: Poulet, CH",
                 "allergens": [
-                    "Glutenhaltiges Getreide",
-                    "Eier",
                     "Soja",
-                    "Milch",
-                    "Sellerie",
-                    "Senf",
                     "Sesam"
                 ]
             }
@@ -153,15 +157,14 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Pilz Stroganoff\nmit Preiselbeeren\nSpätzli \nRosenkohl",
+                "meal_description": "Festlicher Nussbraten | Bratensauce | Spätzli | Mischgemüse",
                 "allergens": [
                     "Glutenhaltiges Getreide",
-                    "Eier",
                     "Soja",
                     "Milch",
+                    "Hartschalenobst (Nüsse)",
                     "Sellerie",
-                    "Senf",
-                    "Schwefeldioxid und Sulfite"
+                    "Sesam"
                 ]
             },
             {
@@ -171,13 +174,13 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Spaghetti Carbonara \nmit Petersilie\nund Reibkäse\nMenüsalat\nFleisch: Schwein, CH",
+                "meal_description": "Bratwurst mit Zwiebelsauce | Hausgemachte Rösti | Menüsalat | Fleisch: Schwein & Kalb, CH",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Soja",
                     "Milch",
                     "Sellerie",
-                    "Sesam"
+                    "Senf"
                 ]
             }
         ],

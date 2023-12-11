@@ -9,10 +9,10 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Gemüsestrudel \nTomatensugo",
+                "meal_description": "Kichererbsen-Pilzragout | Preiselbeere Confit | Reis | Rosenkohl",
                 "allergens": [
-                    "Glutenhaltiges Getreide",
-                    "Sellerie",
+                    "Soja",
+                    "Milch",
                     "Schwefeldioxid und Sulfite"
                 ]
             },
@@ -23,12 +23,14 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Rindshackbällchen\nCurrysauce \nTagesbeilage \nTagesgemüse\nFleisch, Rind, Schweiz",
+                "meal_description": "Rinds Fleischvogel | Kartoffelstock | Erbsli und Rüebli | Fleisch; Rind & Schwein; Schweiz",
                 "allergens": [
                     "Glutenhaltiges Getreide",
-                    "Fisch",
+                    "Soja",
                     "Milch",
-                    "Senf"
+                    "Sellerie",
+                    "Senf",
+                    "Schwefeldioxid und Sulfite"
                 ]
             }
         ]
@@ -43,12 +45,12 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Gemüse-Tofu Curry \nTagesbeilage \nTagesgemüse",
+                "meal_description": "Gemüsestrudel | Tomatenragout | Tagesbeilage",
                 "allergens": [
                     "Glutenhaltiges Getreide",
-                    "Soja",
                     "Milch",
-                    "Sellerie"
+                    "Sellerie",
+                    "Schwefeldioxid und Sulfite"
                 ]
             },
             {
@@ -58,11 +60,10 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Mit Honig glasierter Trutenschinken\nBratensauce\nTagesbeilage \nTagesgemüse\nFleisch, Schwein, Schweiz",
+                "meal_description": "Poulet Burger Patty | Kräuterbutter | Ebly | Tagesgemüse | Fleisch; Poulet; Schweiz",
                 "allergens": [
                     "Glutenhaltiges Getreide",
-                    "Milch",
-                    "Sellerie"
+                    "Milch"
                 ]
             }
         ]
@@ -77,13 +78,11 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Ravioli Gemüse mit Linsen \nRahmsauce mit Pesto",
+                "meal_description": "Schupfnudeln Paprika Gratin",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Eier",
-                    "Soja",
                     "Milch",
-                    "Hartschalenobst (Nüsse)",
                     "Sellerie"
                 ]
             },
@@ -94,10 +93,12 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Pouletragout mit Pilzen\nTagesbeilage \nTagesgemüse",
+                "meal_description": "Bratwurst | Zwiebelsauce | Tagesbeilage | Mais | Fleisch; Kalb/Schwein, Schweiz",
                 "allergens": [
                     "Glutenhaltiges Getreide",
-                    "Milch"
+                    "Soja",
+                    "Milch",
+                    "Schwefeldioxid und Sulfite"
                 ]
             }
         ]
@@ -112,10 +113,11 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Fried Rice Vegan\nmit Chili, Zwiebeln & Pilzen",
+                "meal_description": "Grünes Curry mit Planted | Tagesbeilage | Tagesgemüse",
                 "allergens": [
-                    "Soja",
-                    "Sellerie"
+                    "Glutenhaltiges Getreide",
+                    "Milch",
+                    "Schwefeldioxid und Sulfite"
                 ]
             },
             {
@@ -125,10 +127,11 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Pasta al Carbonara\nReibkäse\nFleisch, Schwein, Schweiz",
+                "meal_description": "Schweins-Spiess | Mangochutney | Tagesbeilage | Tagesgemüse | Fleisch, Schwein, Schweiz",
                 "allergens": [
                     "Glutenhaltiges Getreide",
-                    "Milch"
+                    "Milch",
+                    "Schwefeldioxid und Sulfite"
                 ]
             }
         ]

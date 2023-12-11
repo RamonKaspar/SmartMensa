@@ -3,14 +3,14 @@
     "Lunch": [
       {
         "line_name": "green daily",
-        "meal_name": "MIDSOMMAR KÖTBULLAR",
-        "meal_description": "Vegetarische Köttbullar | Pilzrahmsauce | Frühlingskartoffeln | Gurkensalat | Dill",
+        "meal_name": "BIBIMBAP",
+        "meal_description": "Spiegelei | Langkornreis | Zucchetti | Ingwer-Karotten | Koriander | Sojasprossen | Sesam-Sojasauce",
         "allergens": [
           "Gluten",
           "Ei",
-          "Milch, Laktose",
+          "Soja",
           "Senf",
-          "Sulfite"
+          "Sesam"
         ],
         "meal_class": [
           "Vegetarisch"
@@ -46,16 +46,14 @@
     "Lunch": [
       {
         "line_name": "green daily",
-        "meal_name": "KNACKIGES ZUCKERSCHOTEN CURRY",
-        "meal_description": "Maiskölbchen | Bambusstreifen | Edamame | Wasserkastanien | Lotuswurzeln | Sojasprossen | Basmati",
+        "meal_name": "MOZZARELLINE",
+        "meal_description": "Gemüse-Kartoffelheu | Ratatouille | Basilikumpesto",
         "allergens": [
-          "Soja",
+          "Gluten",
+          "Milch, Laktose",
           "Sellerie"
         ],
-        "meal_class": [
-          "Vegan",
-          "Vegetarisch"
-        ],
+        "meal_class": [],
         "meat_info": [],
         "fish_info": [],
         "price_info": {
@@ -87,13 +85,11 @@
     "Lunch": [
       {
         "line_name": "green daily",
-        "meal_name": "LIBANESISCHES BADINGAL",
-        "meal_description": "Kichererbsen | Auberginen | Tomaten | Zimt | Couscous | Jogurt | Pfefferminze",
+        "meal_name": "CHANA MASALA",
+        "meal_description": "Kichererbsen Curry | Peperoncini | Koriander | Sesam | Basmatireis | Menusalat",
         "allergens": [
-          "Gluten",
-          "Soja",
-          "Milch, Laktose",
-          "Schalenfrüchte",
+          "Senf",
+          "Sesam",
           "Sulfite"
         ],
         "meal_class": [
@@ -131,14 +127,17 @@
     "Lunch": [
       {
         "line_name": "green daily",
-        "meal_name": "PARMIGIANA DI MELANZANE",
-        "meal_description": "Gemüseauflauf | Auberginen | Mozzarella | Parmesan | Insalata di Fregola | Cicorino Rosso | Baumnüssen ",
+        "meal_name": "GROSSMUTTER`S KÜCHE",
+        "meal_description": "Geröstetes Ragout | Ur-Kartoffeln | Sauerkraut | Paprikasauce | Röstzwiebeln | Sauerrahm | Spätzli",
         "allergens": [
           "Gluten",
+          "Ei",
           "Milch, Laktose",
-          "Schalenfrüchte"
+          "Sulfite"
         ],
-        "meal_class": [],
+        "meal_class": [
+          "Vegetarisch"
+        ],
         "meat_info": [],
         "fish_info": [],
         "price_info": {
@@ -170,16 +169,15 @@
     "Lunch": [
       {
         "line_name": "green daily",
-        "meal_name": "ROTES THAI CURRY",
-        "meal_description": "Tofu | Karotten | Broccoli | Peperoni | Erdnüssen | Basmatireis | Linsen | Quinoa",
+        "meal_name": "CHILI SIN CARNE",
+        "meal_description": "Vegane Hack | Rote Bohnen | Peperoni | Mexikanischer Reis | Nachos | Sour Cream",
         "allergens": [
-          "Gluten",
-          "Erdnüsse",
           "Soja",
-          "Sulfite"
+          "Schalenfrüchte",
+          "Senf",
+          "Sesam"
         ],
         "meal_class": [
-          "Vegan",
           "Vegetarisch"
         ],
         "meat_info": [],

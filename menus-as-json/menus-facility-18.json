@@ -3,14 +3,13 @@
     "Lunch": [
       {
         "line_name": "fire",
-        "meal_name": "ZATAR POULETSCHENKEL",
-        "meal_description": "Zimt | Kardamom | Basmatireis | Ras el Hanout | Mandeln",
+        "meal_name": "MAH MEH",
+        "meal_description": "Poulet | Lotuswurzeln | Kefen | Wasserkastanien | Sojasprossen",
         "allergens": [
+          "Gluten",
           "Ei",
-          "Schalenfrüchte",
-          "Sellerie",
-          "Senf",
-          "Sesam"
+          "Soja",
+          "Sellerie"
         ],
         "meal_class": [
           "Fleisch"
@@ -32,146 +31,8 @@
       },
       {
         "line_name": "grill",
-        "meal_name": "CRISPY SPICY PORK",
-        "meal_description": "Pommes frites | Gemüse | Limettenschnitz | Onion Ring | Wasabi Mayonnaise",
-        "allergens": [
-          "Gluten",
-          "Ei",
-          "Soja",
-          "Milch, Laktose",
-          "Senf",
-          "Sulfite"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Schwein",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 12.5,
-          "internal": 14.5,
-          "external": 18.5
-        }
-      }
-    ],
-    "Dinner": [
-      {
-        "line_name": "fire dinner",
-        "meal_name": "CORNETTI ALLA CONTADINA",
-        "meal_description": "Käserahmsauce | Kartoffelwürfel | Speck | Reibkäse ",
-        "allergens": [
-          "Gluten",
-          "Ei",
-          "Milch, Laktose",
-          "Sulfite"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Schwein",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 7.5,
-          "internal": 10.9,
-          "external": 15.5
-        }
-      },
-      {
-        "line_name": "green dinner",
-        "meal_name": "CORNETTI ALLA CONTADINA",
-        "meal_description": "Käserahmsauce | Kartoffelwürfel | veganem Speck | Reibkäse",
-        "allergens": [
-          "Gluten",
-          "Ei",
-          "Milch, Laktose",
-          "Sulfite"
-        ],
-        "meal_class": [],
-        "meat_info": [],
-        "fish_info": [],
-        "price_info": {
-          "students": 6.5,
-          "internal": 9.9,
-          "external": 14.5
-        }
-      },
-      {
-        "line_name": "grill dinner",
-        "meal_name": "TORPEDO SHRIMPS",
-        "meal_description": "Panierte Crevetten | süsssaures Gemüse | Zucchetti | Blumenkohl | Zwiebeln | Broccoli | Jasminreis",
-        "allergens": [
-          "Gluten",
-          "Krebstiere",
-          "Ei",
-          "Sellerie"
-        ],
-        "meal_class": [
-          "Fisch"
-        ],
-        "meat_info": [],
-        "fish_info": [
-          {
-            "desc": "Zucht",
-            "origin": [
-              "Vietnam"
-            ]
-          }
-        ],
-        "price_info": {
-          "students": 11.5,
-          "internal": 13.5,
-          "external": 17.5
-        }
-      }
-    ]
-  },
-  "Tuesday": {
-    "Lunch": [
-      {
-        "line_name": "fire",
-        "meal_name": "SZEGEDINER GULASCH",
-        "meal_description": "Schweinsvoressen | Sauerkraut | Paprikarahmsauce | Schupfnudeln",
-        "allergens": [
-          "Gluten",
-          "Ei",
-          "Milch, Laktose"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Schwein",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 7.5,
-          "internal": 10.9,
-          "external": 15.5
-        }
-      },
-      {
-        "line_name": "grill",
-        "meal_name": "FITNESSTELLER ETH",
-        "meal_description": "Pouletbrust vom Grill | Kräuterbutter | Blattsalat | Karotten | Gurken | Hüttenkäse | Randen | Croutons",
+        "meal_name": "SCHWEINS SCHNITZEL",
+        "meal_description": "Tartarsauce | Zitronenschnitz | Pommes frites | Broccoli mit Röstzwiebeln",
         "allergens": [
           "Gluten",
           "Ei",
@@ -183,7 +44,7 @@
         ],
         "meat_info": [
           {
-            "type": "Huhn",
+            "type": "Schwein",
             "origin": [
               "Schweiz"
             ]
@@ -191,38 +52,34 @@
         ],
         "fish_info": [],
         "price_info": {
-          "students": 12.9,
-          "internal": 14.9,
-          "external": 18.9
+          "students": 11.9,
+          "internal": 13.9,
+          "external": 17.9
         }
       }
     ],
     "Dinner": [
       {
         "line_name": "fire dinner",
-        "meal_name": "CALAMARES IM BACKTEIG",
-        "meal_description": "Mayonnaise | Zitronenschnitz | Trockenreis | Blattspinat",
+        "meal_name": "Spaghetti Bolognese",
+        "meal_description": "Rindsbolognese | Grana Padano | Tagessalat",
         "allergens": [
           "Gluten",
-          "Krebstiere",
-          "Ei",
-          "Fisch",
-          "Soja",
-          "Milch, Laktose",
-          "Weichtiere"
+          "Sellerie",
+          "Sulfite"
         ],
         "meal_class": [
-          "Fisch"
+          "Fleisch"
         ],
-        "meat_info": [],
-        "fish_info": [
+        "meat_info": [
           {
-            "desc": "Wildfang",
+            "type": "Rind",
             "origin": [
-              "Pazifik, Südost"
+              "Schweiz"
             ]
           }
         ],
+        "fish_info": [],
         "price_info": {
           "students": 7.5,
           "internal": 10.9,
@@ -231,12 +88,12 @@
       },
       {
         "line_name": "green dinner",
-        "meal_name": "GEMÜSE KNUSPERSTÄBCHEN",
-        "meal_description": "Wasabi-Mayonnaise | Zitronenschnitz | Trockenreis | Blattspinat",
+        "meal_name": "Spaghetti Bolognese",
+        "meal_description": "Plantbased Bolognese | Grana Padano | Tagessalat",
         "allergens": [
           "Gluten",
-          "Ei",
-          "Soja"
+          "Soja",
+          "Sulfite"
         ],
         "meal_class": [
           "Vegetarisch"
@@ -251,11 +108,43 @@
       },
       {
         "line_name": "grill dinner",
-        "meal_name": "KALBSBRATWURST",
-        "meal_description": "Dijonsenf | Pommes Frites | Karotten",
+        "meal_name": "Poulet Satay",
+        "meal_description": "Zucchetti | Blumenkohl | Broccoli | Peperoni | Jasminreis | Limette | Ingwer",
         "allergens": [
-          "Milch, Laktose",
+          "Erdnüsse",
+          "Soja",
           "Sellerie",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Huhn",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.5,
+          "internal": 11.5,
+          "external": 15.5
+        }
+      }
+    ]
+  },
+  "Tuesday": {
+    "Lunch": [
+      {
+        "line_name": "fire",
+        "meal_name": "BRATWURST MIT KÜRBIS",
+        "meal_description": "Honig-Senfsauce | Rösti | Kürbiskernen | Rotkraut",
+        "allergens": [
+          "Gluten",
+          "Milch, Laktose",
           "Senf",
           "Sulfite"
         ],
@@ -278,37 +167,6 @@
         ],
         "fish_info": [],
         "price_info": {
-          "students": 9.9,
-          "internal": 11.9,
-          "external": 15.9
-        }
-      }
-    ]
-  },
-  "Wednesday": {
-    "Lunch": [
-      {
-        "line_name": "fire",
-        "meal_name": "BÜNDNER GERSTENSUPPE",
-        "meal_description": "Knoblibrot",
-        "allergens": [
-          "Gluten",
-          "Milch, Laktose",
-          "Sellerie"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Rind",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
           "students": 7.5,
           "internal": 10.9,
           "external": 15.5
@@ -316,152 +174,11 @@
       },
       {
         "line_name": "grill",
-        "meal_name": "THE POSTMAN BURGER",
-        "meal_description": "Schweizer Rindfleisch | Sesambun | Gruyere Käse | Essiggurke | Zwiebeln | Ketchup | Senf | Pommes frites",
+        "meal_name": "POULETSPIESS INDIA STYLE",
+        "meal_description": "Linsencurry | Auberginen | Basmatireis | Papadam",
         "allergens": [
-          "Gluten",
-          "Milch, Laktose",
+          "Schalenfrüchte",
           "Sellerie",
-          "Senf",
-          "Sesam",
-          "Sulfite"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Rind",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 12.5,
-          "internal": 14.5,
-          "external": 18.5
-        }
-      }
-    ],
-    "Dinner": [
-      {
-        "line_name": "fire dinner",
-        "meal_name": "POULET FLEISCHKÄSE",
-        "meal_description": "Zwiebelsauce | Ofen Kartoffeln | Karotten-Rotkabissalat",
-        "allergens": [
-          "Milch, Laktose",
-          "Sellerie",
-          "Sulfite"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Huhn",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 7.5,
-          "internal": 10.9,
-          "external": 15.5
-        }
-      },
-      {
-        "line_name": "green dinner",
-        "meal_name": "PLANTBASED NO BRATWURST",
-        "meal_description": "Zwiebelsauce | Ofen Kartoffeln | Karotten-Rotkabissalat",
-        "allergens": [
-          "Soja",
-          "Sulfite"
-        ],
-        "meal_class": [
-          "Vegetarisch"
-        ],
-        "meat_info": [],
-        "fish_info": [],
-        "price_info": {
-          "students": 6.5,
-          "internal": 9.9,
-          "external": 14.5
-        }
-      },
-      {
-        "line_name": "grill dinner",
-        "meal_name": "TORTELLINI DI CARNE",
-        "meal_description": "Rindfleisch | Basilikumsauce | Reibkäse | Menusalat",
-        "allergens": [
-          "Gluten",
-          "Ei",
-          "Milch, Laktose"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Rind",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 9.5,
-          "internal": 11.5,
-          "external": 15.5
-        }
-      }
-    ]
-  },
-  "Thursday": {
-    "Lunch": [
-      {
-        "line_name": "fire",
-        "meal_name": "GRILL CHLÖPFER",
-        "meal_description": "Dijonsenf | | Hörnliauflauf mit Gemüse | Petersilie ",
-        "allergens": [
-          "Gluten",
-          "Ei",
-          "Milch, Laktose",
-          "Senf",
-          "Sulfite"
-        ],
-        "meal_class": [
-          "Fleisch"
-        ],
-        "meat_info": [
-          {
-            "type": "Schwein",
-            "origin": [
-              "Schweiz"
-            ]
-          }
-        ],
-        "fish_info": [],
-        "price_info": {
-          "students": 7.5,
-          "internal": 10.9,
-          "external": 15.5
-        }
-      },
-      {
-        "line_name": "grill",
-        "meal_name": "POULET FRÜHLINGSROLLEN",
-        "meal_description": "Sweet-Chili Sauce | gebratenes Reis",
-        "allergens": [
-          "Gluten",
-          "Ei",
-          "Soja",
-          "Sellerie",
-          "Senf",
           "Sesam"
         ],
         "meal_class": [
@@ -477,21 +194,164 @@
         ],
         "fish_info": [],
         "price_info": {
-          "students": 10.5,
-          "internal": 12.5,
-          "external": 16.5
+          "students": 11.5,
+          "internal": 13.5,
+          "external": 17.5
         }
       }
     ],
     "Dinner": [
       {
         "line_name": "fire dinner",
-        "meal_name": "GREEN THAI CURRY",
-        "meal_description": "Schweinestreifen | Wokgemüse | Sojasprossen | Koriander | Limette | Jasminreis",
+        "meal_name": "Poulet Szechuan",
+        "meal_description": "Mungobohnenkeimlingen | Kefen | Bambussprossen | Mu-Err-Pilz | Peperoni | Sojabohnen | Jasminreis",
         "allergens": [
+          "Gluten",
           "Soja",
           "Sellerie",
-          "Senf"
+          "Sesam"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Huhn",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.5,
+          "internal": 10.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "green dinner",
+        "meal_name": "Tofu Szechuan",
+        "meal_description": "Mungobohnenkeimlingen | Kefen | Bambussprossen | Mu-Err-Pilz | Peperoni | Sojabohnen  | Jasminreis",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sesam",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Vegan",
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.5,
+          "internal": 9.9,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "grill dinner",
+        "meal_name": "Pulled Pork Canadian Style",
+        "meal_description": "Pommes Frites | Pulled Pork | Cole slaw | roten Zwiebeln | BBQ-Sauce",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Milch, Laktose",
+          "Schalenfrüchte",
+          "Senf",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Schwein",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 11.5,
+          "internal": 13.5,
+          "external": 17.5
+        }
+      }
+    ]
+  },
+  "Wednesday": {
+    "Lunch": [
+      {
+        "line_name": "fire",
+        "meal_name": "NO-MEATBALLS",
+        "meal_description": "Tomatensauce | Gnocchi | Basilikum",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Soja"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.5,
+          "internal": 10.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "grill",
+        "meal_name": "THE SMOKY BACON BURGER",
+        "meal_description": "Schweizer Rindfleisch | Brioche Bun | Cheddar | Bacon | Cole slaw | Smoky Relish | Country cuts",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Milch, Laktose",
+          "Sellerie",
+          "Senf",
+          "Sesam",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          },
+          {
+            "type": "Schwein",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 12.9,
+          "internal": 14.9,
+          "external": 18.9
+        }
+      }
+    ],
+    "Dinner": [
+      {
+        "line_name": "fire dinner",
+        "meal_name": "Festbratwurst",
+        "meal_description": "Zwiebelsaucd | Rösti | Broccoli",
+        "allergens": [
+          "Gluten",
+          "Milch, Laktose",
+          "Sulfite"
         ],
         "meal_class": [
           "Fleisch"
@@ -513,15 +373,14 @@
       },
       {
         "line_name": "green dinner",
-        "meal_name": "GREEN THAI CURRY",
-        "meal_description": "Tofu | Wokgemüse | Sojasprossen | Koriander | Limette | Jasminreis",
+        "meal_name": "Quorn Zwiebelsauce",
+        "meal_description": "Rösti | Broccoli",
         "allergens": [
-          "Soja",
+          "Ei",
           "Sellerie",
-          "Senf"
+          "Sulfite"
         ],
         "meal_class": [
-          "Vegan",
           "Vegetarisch"
         ],
         "meat_info": [],
@@ -534,12 +393,139 @@
       },
       {
         "line_name": "grill dinner",
-        "meal_name": "HALBES POULET AUS DEM OFEN",
-        "meal_description": "Aiolisauce | Pommes frites",
+        "meal_name": "Safranrisotto & Burrata",
+        "meal_description": "mediterrane Gemüse | Cicorino rosso | Grana Padano + Salat ",
         "allergens": [
-          "Ei",
-          "Schalenfrüchte",
+          "Milch, Laktose",
           "Sulfite"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 9.5,
+          "internal": 11.5,
+          "external": 15.5
+        }
+      }
+    ]
+  },
+  "Thursday": {
+    "Lunch": [
+      {
+        "line_name": "fire",
+        "meal_name": "GEFÜLLTE PEPERONI MIT RINDFLEISCH",
+        "meal_description": "Rindsgehacktes | Feta | Tomatensugo | Kartoffelpüree | Peterli",
+        "allergens": [
+          "Milch, Laktose",
+          "Sellerie",
+          "Sulfite"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.5,
+          "internal": 10.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "grill",
+        "meal_name": "CHAR SIU",
+        "meal_description": "Schweinsbraten | Hoisinsauce | Jasmin-Reis | Kefen | Edamame | Sojasprossen",
+        "allergens": [
+          "Gluten",
+          "Soja",
+          "Sellerie",
+          "Sesam"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Schwein",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 11.5,
+          "internal": 13.5,
+          "external": 17.5
+        }
+      }
+    ],
+    "Dinner": [
+      {
+        "line_name": "fire dinner",
+        "meal_name": "Rindshackbraten",
+        "meal_description": "Tomatensauce | Zöpfli | Herbstgemüse",
+        "allergens": [
+          "Gluten",
+          "Ei"
+        ],
+        "meal_class": [
+          "Fleisch"
+        ],
+        "meat_info": [
+          {
+            "type": "Rind",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
+        "fish_info": [],
+        "price_info": {
+          "students": 7.5,
+          "internal": 10.9,
+          "external": 15.5
+        }
+      },
+      {
+        "line_name": "green dinner",
+        "meal_name": "Blumenkohl-Käse Medallions ",
+        "meal_description": "Tomatensauce | Zöpfli | Herbstgemüse",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Milch, Laktose",
+          "Sellerie"
+        ],
+        "meal_class": [
+          "Vegetarisch"
+        ],
+        "meat_info": [],
+        "fish_info": [],
+        "price_info": {
+          "students": 6.5,
+          "internal": 9.9,
+          "external": 14.5
+        }
+      },
+      {
+        "line_name": "grill dinner",
+        "meal_name": "Poulet Cordon bleu",
+        "meal_description": "Tartarsauce | Zitronenschnitz | Pommes frites | Ofen Broccoli | Röstzwiebeln",
+        "allergens": [
+          "Gluten",
+          "Ei",
+          "Milch, Laktose"
         ],
         "meal_class": [
           "Fleisch"
@@ -565,19 +551,26 @@
     "Lunch": [
       {
         "line_name": "fire",
-        "meal_name": "CHICKERIKI STROGANOFF",
-        "meal_description": "Planted Chunks | Paprikasauce | Champignons | Zwiebeln | Orecchiette | Crème fraîche alternative",
+        "meal_name": "NEW INDIA",
+        "meal_description": "Pork Jalfraizi | Pualo Rice",
         "allergens": [
           "Gluten",
+          "Milch, Laktose",
           "Schalenfrüchte",
           "Senf",
           "Sulfite"
         ],
         "meal_class": [
-          "Vegan",
-          "Vegetarisch"
+          "Fleisch"
         ],
-        "meat_info": [],
+        "meat_info": [
+          {
+            "type": "Schwein",
+            "origin": [
+              "Schweiz"
+            ]
+          }
+        ],
         "fish_info": [],
         "price_info": {
           "students": 7.5,
@@ -587,31 +580,16 @@
       },
       {
         "line_name": "grill",
-        "meal_name": "ROYAL DÖNER BURGER",
-        "meal_description": "Kebabfleisch | Dönersauce | Sesam Bun | Kabis | Tomaten | Rote Zwiebeln | Pommes frites",
+        "meal_name": "CHICKEN WESTERN WINGS",
+        "meal_description": "Avocado & Jalapenos Dip | Country Cuts | Mais | Peperoncici",
         "allergens": [
-          "Gluten",
           "Ei",
-          "Milch, Laktose",
-          "Senf",
-          "Sesam"
+          "Sulfite"
         ],
         "meal_class": [
           "Fleisch"
         ],
         "meat_info": [
-          {
-            "type": "Rind",
-            "origin": [
-              "Schweiz"
-            ]
-          },
-          {
-            "type": "Kalb",
-            "origin": [
-              "Schweiz"
-            ]
-          },
           {
             "type": "Huhn",
             "origin": [
@@ -621,9 +599,9 @@
         ],
         "fish_info": [],
         "price_info": {
-          "students": 11.5,
-          "internal": 13.5,
-          "external": 17.5
+          "students": 10.9,
+          "internal": 12.9,
+          "external": 16.9
         }
       }
     ],

@@ -8,7 +8,7 @@
                     "internal": 9.0,
                     "external": 13.5
                 },
-                "meal_description": "Kichererbsen Curry\nBohnen grün\nPastinaken\nBrötchen",
+                "meal_description": "Pikanter Seitan-gyros | Zwiebeln | Bulgur",
                 "allergens": []
             },
             {
@@ -18,7 +18,7 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Schweinsgeschnetzeltes Zürcher Art\nChampignons, Rahm\nPeterli\nReis\nFleisch: Schweiz",
+                "meal_description": "Bündner Gerstensuppe | Bürli | Fleisch: Schweiz",
                 "allergens": []
             }
         ],
@@ -33,7 +33,7 @@
                     "internal": 9.0,
                     "external": 13.5
                 },
-                "meal_description": "Aloo Palak\nKartoffel, Spinat\nNaan Brot",
+                "meal_description": "Tofu Satay | Pak Choi | Erdnüsse | Jasmin Reis",
                 "allergens": []
             },
             {
@@ -43,7 +43,7 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Spätzlipfanne\nKürbis\nChampignon\nRahm\nReibkäse",
+                "meal_description": "Tortellini Ricotta Spinat | Cherry Tomaten | Blattspinat | Mandeln geröstet",
                 "allergens": []
             }
         ],
@@ -58,7 +58,7 @@
                     "internal": 9.0,
                     "external": 13.5
                 },
-                "meal_description": "Gemüsecurry rot\nBohnen\nKefen\nPastinaken\nJasmin Reis",
+                "meal_description": "Gefüllte Ofenkartoffeln | Cherry Tomaten | Pilz, Spinat | Blattsalate | Sojajoghurt",
                 "allergens": []
             },
             {
@@ -68,7 +68,7 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Tagliatelle\nCarbonara Sauce \nPetersilie\nGruyère, Vollfettkäse, gerieben\nFleisch: Schweiz",
+                "meal_description": "Königsberger Klopse (Rind) | Pilzrahmsauce | Erbsen | Trockenreis | Fleisch: Schweiz",
                 "allergens": []
             }
         ],
@@ -83,7 +83,7 @@
                     "internal": 9.0,
                     "external": 13.5
                 },
-                "meal_description": "Penne\nKürbissauce  \nTofu Block\nZucchetti\nPetersilie\nPeperoni",
+                "meal_description": "Linsen Daal | Reis | Soja-Minz Dip",
                 "allergens": []
             },
             {
@@ -93,7 +93,7 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Phat Krapao\nBohnen grün, gelb\nJasmin Reis\nFleisch: SChweiz",
+                "meal_description": "Fleischkäse Cordon bleu | Ofengemüse-Kartoffeln | Harissa Mayo | Fleisch: Schweiz",
                 "allergens": []
             }
         ],
@@ -108,7 +108,7 @@
                     "internal": 9.0,
                     "external": 13.5
                 },
-                "meal_description": "Chilli Sin Carne (Gersten)\nKidney Bohnen; Mais Chilli\nSojajoghurt",
+                "meal_description": "Grünes Thai Curry Vegan | Broccoli, Kefen, Maiskolben | Mungosprossen | Fried Rice",
                 "allergens": []
             },
             {
@@ -118,7 +118,7 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Karotten Ingwer Suppe\nVollkornbrötchen",
+                "meal_description": "Samosa | Fried Rice | Sweet Chili Sauce",
                 "allergens": []
             }
         ],

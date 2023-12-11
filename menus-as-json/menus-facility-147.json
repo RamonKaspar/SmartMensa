@@ -8,8 +8,10 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Dahl mit Gemüse\nBasmati Reis\nMenüsalat oder Apfelmus",
+                "meal_description": "Green Mountain Hackbällchen an veganer Kapern-Rahmsauce | Salzkartoffeln | Blattspinat",
                 "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Soja",
                     "Sellerie"
                 ]
             },
@@ -20,9 +22,12 @@
                     "internal": 11.0,
                     "external": 15.0
                 },
-                "meal_description": "Butter Chicken\nKoriander\nBasmati Reis\nMenüsalat oder Apfelmus\nFleisch; Poulet, CH",
+                "meal_description": "Pork Belly | Edamame Gemüse | Kimchi | Menüsalat oder Apfelmus | Fleisch; Schwein, CH",
                 "allergens": [
-                    "Milch"
+                    "Glutenhaltiges Getreide",
+                    "Soja",
+                    "Sellerie",
+                    "Sesam"
                 ]
             },
             {
@@ -32,11 +37,11 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Tortellini mit Rindfleisch\nRucola \nTomatensauce\nMenüsalat oder Apfelmus\nFleisch; Rind, CH",
+                "meal_description": "G`Hackets mit Hörnli | Menüsalat oder Apfelmus",
                 "allergens": [
                     "Glutenhaltiges Getreide",
-                    "Eier",
-                    "Sellerie"
+                    "Sellerie",
+                    "Schwefeldioxid und Sulfite"
                 ]
             }
         ],
@@ -51,11 +56,11 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Soja-Gemüse Bolognaise\nVollkorn Spaghetti\nMenüsalat oder Apfelmus",
+                "meal_description": "Kichererbsen Curry | Basmati mit Sesam | Rotkabisschnitze",
                 "allergens": [
-                    "Glutenhaltiges Getreide",
-                    "Soja",
+                    "Hartschalenobst (Nüsse)",
                     "Sellerie",
+                    "Sesam",
                     "Schwefeldioxid und Sulfite"
                 ]
             },
@@ -66,9 +71,12 @@
                     "internal": 11.0,
                     "external": 15.0
                 },
-                "meal_description": "Butter Chicken\nKoriander\nBasmati Reis\nMenüsalat oder Apfelmus\nFleisch; Poulet, CH",
+                "meal_description": "Pork Belly | Edamame Gemüse | Kimchi | Menüsalat oder Apfelmus | Fleisch; Schwein, CH",
                 "allergens": [
-                    "Milch"
+                    "Glutenhaltiges Getreide",
+                    "Soja",
+                    "Sellerie",
+                    "Sesam"
                 ]
             },
             {
@@ -78,7 +86,7 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Kalbs Adrio an Rotwein-Rosmarinsauce\nReis\nMischgemüse\nFleisch; Kalb/Schwein, CH",
+                "meal_description": "Gersten Suppe mit Geflügel Wienerli | Menüsalat oder Apfelmus | Fleisch; Geflügel, CH",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Milch",
@@ -98,11 +106,14 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Falafel auf Gemüse-Couscous mit Granatapfelkernen\nTzatziki\nMenüsalat oder Apfelmus",
+                "meal_description": "Spätzlepfanne Vegan mit Pilzen und Kürbis | Apfel-Rotkraut",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Soja",
-                    "Sellerie"
+                    "Hartschalenobst (Nüsse)",
+                    "Sellerie",
+                    "Schwefeldioxid und Sulfite",
+                    "Lupine"
                 ]
             },
             {
@@ -112,9 +123,12 @@
                     "internal": 11.0,
                     "external": 15.0
                 },
-                "meal_description": "Butter Chicken\nKoriander\nBasmati Reis\nMenüsalat oder Apfelmus\nFleisch; Poulet, CH",
+                "meal_description": "Pork Belly | Edamame Gemüse | Kimchi | Menüsalat oder Apfelmus | Fleisch; Schwein, CH",
                 "allergens": [
-                    "Milch"
+                    "Glutenhaltiges Getreide",
+                    "Soja",
+                    "Sellerie",
+                    "Sesam"
                 ]
             },
             {
@@ -124,13 +138,10 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Schweinshals Braten mit Zwetschgen \nJus\nKartoffelstock \nGlasierte Karotten\nFleisch; Schwein, CH",
+                "meal_description": "Fleischkäse | Kartoffelgratin | Glasierter Lauch | Fleisch; Schwein, CH",
                 "allergens": [
                     "Glutenhaltiges Getreide",
-                    "Milch",
-                    "Sellerie",
-                    "Senf",
-                    "Schwefeldioxid und Sulfite"
+                    "Milch"
                 ]
             }
         ],
@@ -145,10 +156,9 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Pilzrisotto  \nRucola \nBalsamicoglace\nMenüsalat oder Apfelmus",
+                "meal_description": "Kräuter-Gnocchi mit Ratatouille | Rucola | Menüsalat oder Apfelmus",
                 "allergens": [
-                    "Sellerie",
-                    "Schwefeldioxid und Sulfite"
+                    "Glutenhaltiges Getreide"
                 ]
             },
             {
@@ -158,9 +168,12 @@
                     "internal": 11.0,
                     "external": 15.0
                 },
-                "meal_description": "Butter Chicken\nKoriander\nBasmati Reis\nMenüsalat oder Apfelmus\nFleisch; Poulet, CH",
+                "meal_description": "Pork Belly | Edamame Gemüse | Kimchi | Menüsalat oder Apfelmus | Fleisch; Schwein, CH",
                 "allergens": [
-                    "Milch"
+                    "Glutenhaltiges Getreide",
+                    "Soja",
+                    "Sellerie",
+                    "Sesam"
                 ]
             },
             {
@@ -170,12 +183,13 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Poulet Meatballs an Rahmsauce\nSchupfnudeln \nRosenkohl\nFleisch; Poulet, CH",
+                "meal_description": "Kalbs Brätkügeli mit Champignonssauce | Blätterteig Pastetli | Reis mit Karotten und Erbsen | Fleisch; Kalb, CH",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Eier",
                     "Milch",
-                    "Sellerie"
+                    "Sellerie",
+                    "Schwefeldioxid und Sulfite"
                 ]
             }
         ],
@@ -190,11 +204,10 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Tikka Masala mit Planted und Kichererbsen\nMie Nudeln \nKefen",
+                "meal_description": "Ocean Sticks | Aioli Dip | Dampfkartoffeln | Knackerbsen",
                 "allergens": [
                     "Glutenhaltiges Getreide",
-                    "Soja",
-                    "Schwefeldioxid und Sulfite"
+                    "Soja"
                 ]
             },
             {
@@ -204,9 +217,12 @@
                     "internal": 11.0,
                     "external": 15.0
                 },
-                "meal_description": "Butter Chicken\nKoriander\nBasmati Reis\nMenüsalat oder Apfelmus\nFleisch; Poulet, CH",
+                "meal_description": "Pork Belly | Edamame Gemüse | Kimchi | Menüsalat oder Apfelmus | Fleisch; Schwein, CH",
                 "allergens": [
-                    "Milch"
+                    "Glutenhaltiges Getreide",
+                    "Soja",
+                    "Sellerie",
+                    "Sesam"
                 ]
             },
             {
@@ -216,12 +232,12 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Rinds Stroganoff \nBramata\nMenüsalat oder Apfelmus\nFleisch, Rind, CH",
+                "meal_description": "Rind Gulasch Szegediner Art | Spätzli | Grüne Bohnen | Fleisch; Rind, CH",
                 "allergens": [
                     "Glutenhaltiges Getreide",
+                    "Eier",
                     "Milch",
-                    "Sellerie",
-                    "Schwefeldioxid und Sulfite"
+                    "Sellerie"
                 ]
             }
         ],

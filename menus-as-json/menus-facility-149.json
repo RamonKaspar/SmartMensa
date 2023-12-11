@@ -9,11 +9,11 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Orecchiette mit Erbsenpesto\nMenüsalat oder Apfelmus",
+                "meal_description": "Fritierte Zwiebel Ringe | BBQ Sauce | Gemüsereis",
                 "allergens": [
                     "Glutenhaltiges Getreide",
-                    "Hartschalenobst (Nüsse)",
-                    "Schwefeldioxid und Sulfite"
+                    "Eier",
+                    "Senf"
                 ]
             },
             {
@@ -23,10 +23,13 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Poulet Schenkel aus dem Ofen\nBaked Potato\nJoghurtsauce\nOfen Auberginen\nFleisch; Poulet, CH",
+                "meal_description": "Poulet Flügeli aus dem Ofen | Kräuter Baguette | Cole Slaw | Fleisch; Poulet, CH",
                 "allergens": [
-                    "Milch",
+                    "Glutenhaltiges Getreide",
+                    "Eier",
+                    "Soja",
                     "Sellerie",
+                    "Senf",
                     "Schwefeldioxid und Sulfite"
                 ]
             }
@@ -42,45 +45,7 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Zucchetti Piccata \nTomaten-Risotto mit Basilikum \nMenüsalat oder Apfelmus",
-                "allergens": [
-                    "Glutenhaltiges Getreide",
-                    "Eier",
-                    "Soja",
-                    "Milch",
-                    "Sellerie",
-                    "Schwefeldioxid und Sulfite",
-                    "Lupine"
-                ]
-            },
-            {
-                "line_name": "butcher",
-                "price_info": {
-                    "students": 7.5,
-                    "internal": 10.5,
-                    "external": 15.0
-                },
-                "meal_description": "Schwein Ragout mit Wurzelgemüse\nSpätzli\nBroccoli\nFleisch; Schwein, CH",
-                "allergens": [
-                    "Glutenhaltiges Getreide",
-                    "Eier",
-                    "Milch",
-                    "Sellerie"
-                ]
-            }
-        ]
-    },
-    "Wednesday": {
-        "Lunch": [],
-        "Dinner": [
-            {
-                "line_name": "garden",
-                "price_info": {
-                    "students": 6.1,
-                    "internal": 9.0,
-                    "external": 13.0
-                },
-                "meal_description": "Kartoffel Knödel\nVegane Pilz-Rahmsauce\nApfel-Rotkraut",
+                "meal_description": "Cevapcici | Ajvar Dip | Brätler | Zucchetti",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Soja",
@@ -95,10 +60,42 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Rindfleisch Lasagne\nKräutergarnitur\nMenüsalat oder Apfelmus\nFleisch; Rind, CH",
+                "meal_description": "Poulet Brust Saltimbocca | Zitronen-Thymian Risotto | Menüsalat oder Apfelmus",
+                "allergens": [
+                    "Milch",
+                    "Sellerie",
+                    "Schwefeldioxid und Sulfite"
+                ]
+            }
+        ]
+    },
+    "Wednesday": {
+        "Lunch": [],
+        "Dinner": [
+            {
+                "line_name": "garden",
+                "price_info": {
+                    "students": 6.1,
+                    "internal": 9.0,
+                    "external": 13.0
+                },
+                "meal_description": "Bami Goreng | Menüsalat oder Apfelmus",
                 "allergens": [
                     "Glutenhaltiges Getreide",
-                    "Eier",
+                    "Soja",
+                    "Sellerie"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "internal": 10.5,
+                    "external": 15.0
+                },
+                "meal_description": "Frikadellen | Kräuterjus | Kartoffelstock | Ofen Kürbis | Fleisch; Rind/Schwein, CH",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
                     "Milch",
                     "Sellerie",
                     "Schwefeldioxid und Sulfite"
@@ -116,11 +113,10 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Penne Napoli mit Soja Hackbällchen\nNussparmesan\nMenüsalat oder Apfelmus",
+                "meal_description": "Gefüllte Auberginen mit Sojahack | Bulgur | Menüsalat oder Apfelmus",
                 "allergens": [
                     "Glutenhaltiges Getreide",
-                    "Soja",
-                    "Hartschalenobst (Nüsse)"
+                    "Soja"
                 ]
             },
             {
@@ -130,13 +126,12 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Cervelat mit Käse und Speck\nSenfsauce\nBratkartoffeln mit Zwiebeln\nMenüsalat oder Apfelmus",
+                "meal_description": "Schweinsgeschnetzeltes an Senfsauce | Nudeln | Broccoli | Fleisch; Schwein, CH",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Milch",
                     "Sellerie",
-                    "Senf",
-                    "Schwefeldioxid und Sulfite"
+                    "Senf"
                 ]
             }
         ]
@@ -151,11 +146,12 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Veganes paniertes Schnitzel \nKetchup\nPommes frites\nMenüsalat oder Apfelmus",
+                "meal_description": "Gemüse-Ravioli | Basilikum Pesto | Cherrytomaten",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Soja",
-                    "Schwefeldioxid und Sulfite"
+                    "Hartschalenobst (Nüsse)",
+                    "Sellerie"
                 ]
             },
             {
@@ -165,10 +161,10 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Schweinsgeschnetzeltes Zürcher Art\nPasta\nFenchelgemüse\nFleisch; Schwein, CH",
+                "meal_description": "Currywurst | Pommes frites | Menüsalat oder Apfelmus | Fleisch; Schwein, CH",
                 "allergens": [
-                    "Glutenhaltiges Getreide",
                     "Milch",
+                    "Sellerie",
                     "Schwefeldioxid und Sulfite"
                 ]
             }

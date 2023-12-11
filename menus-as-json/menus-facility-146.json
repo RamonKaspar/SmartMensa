@@ -8,13 +8,11 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Afrikanischer Erdnusseintopf \nmit Gemüse und Chili\nJasmin Reis\nMenüsalat",
+                "meal_description": "«Nasi Goreng» | Indonesisches Reis | Gericht mit Gemüse, Planted, Röstzwiebeln | Cashewkerne & Sprossen | Menüsalat",
                 "allergens": [
                     "Glutenhaltiges Getreide",
-                    "Erdnüsse",
                     "Soja",
-                    "Hartschalenobst (Nüsse)",
-                    "Sellerie"
+                    "Schwefeldioxid und Sulfite"
                 ]
             },
             {
@@ -24,7 +22,7 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Fleischkäse \nSenf\nKartoffelsalat\nMenüsalat",
+                "meal_description": "Rindsgeschnetzeltes mit Pilzen | Rösti | Menüsalat",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Eier",
@@ -32,7 +30,7 @@
                     "Milch",
                     "Sellerie",
                     "Senf",
-                    "Schwefeldioxid und Sulfite"
+                    "Sesam"
                 ]
             },
             {
@@ -42,10 +40,10 @@
                     "internal": 1.5,
                     "external": 1.8
                 },
-                "meal_description": "Pastinakensuppe",
+                "meal_description": "Kürbissuppe",
                 "allergens": [
-                    "Glutenhaltiges Getreide",
-                    "Milch"
+                    "Soja",
+                    "Sellerie"
                 ]
             },
             {
@@ -55,7 +53,7 @@
                     "internal": "",
                     "external": ""
                 },
-                "meal_description": "Desserts: Montag:Tobleronemousse\nDienstag:  Orangen-Tiramisu\nMittwoch: Biberli\nDonnerstag: Schwarzwälderschnitte\nFreitag: Apfel-Zimt-Mousse",
+                "meal_description": "Desserts: Montag: Streuselkuchen mit Äpfel | Dienstag:  Zwetschgenmousse | Mittwoch: Schwarzwälderschnitte | Donnerstag: Kaiserschmarrn | Freitag: Weisses Tobleronemousse",
                 "allergens": []
             }
         ],
@@ -70,11 +68,10 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Quinoa-Spinat-Tortelloni \nPeperonicremesauce\nZucchettigemüse\nMenüsalat",
+                "meal_description": "Mediterraner Linseneintopf mit Federkohl, Kürbis und Tomaten | Couscous | Aioli Dip vegan | Menüsalat",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Soja",
-                    "Milch",
                     "Sellerie"
                 ]
             },
@@ -85,12 +82,14 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Schirin polo\nmit Poulet, Linsen, \nDörrobst und Gemüse\nJoghurt-Pistazien-Dip\nApfel",
+                "meal_description": "«Stroganoff» | Rindsgeschnetzeltes mit Champignons und Sauerrahm | Schupfnudeln | gebratene Zucchetti",
                 "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Eier",
                     "Soja",
                     "Milch",
-                    "Hartschalenobst (Nüsse)",
                     "Sellerie",
+                    "Senf",
                     "Schwefeldioxid und Sulfite"
                 ]
             },
@@ -101,11 +100,14 @@
                     "internal": 1.5,
                     "external": 1.8
                 },
-                "meal_description": "Bauernsuppe",
+                "meal_description": "Bündner Gersten Suppe",
                 "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Eier",
                     "Soja",
                     "Milch",
-                    "Sellerie"
+                    "Sellerie",
+                    "Sesam"
                 ]
             },
             {
@@ -115,7 +117,7 @@
                     "internal": "",
                     "external": ""
                 },
-                "meal_description": "Desserts: Montag:Tobleronemousse\nDienstag:  Orangen-Tiramisu\nMittwoch: Biberli\nDonnerstag: Schwarzwälderschnitte\nFreitag: Apfel-Zimt-Mousse",
+                "meal_description": "Desserts: Montag: Streuselkuchen mit Äpfel | Dienstag:  Zwetschgenmousse | Mittwoch: Schwarzwälderschnitte | Donnerstag: Kaiserschmarrn | Freitag: Weisses Tobleronemousse",
                 "allergens": []
             }
         ],
@@ -130,8 +132,10 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "«Winter Eintopf»\nmit weissen Bohnen, Karotten,\nLauch & Schwarzwurzeln\nWildreis Mix\nRöstzwiebeln\nMenüsalat",
+                "meal_description": "«Panaeng Curry» Veganes Gemüsecurry mit Erdnüssen, Auberginen und Bohnen | Hirse | Menüsalat",
                 "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Erdnüsse",
                     "Soja",
                     "Sellerie"
                 ]
@@ -143,11 +147,15 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "«Currywurst»\nKalbsbratwurst \nCurry-Ketchup\nRosmarin Wedges\nErbsen und Rüebli",
+                "meal_description": "Schweinshalsbraten | Champigonrahmsauce | Tagliatelle | Blattspinat",
                 "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Eier",
                     "Soja",
                     "Milch",
-                    "Sellerie"
+                    "Hartschalenobst (Nüsse)",
+                    "Sellerie",
+                    "Senf"
                 ]
             },
             {
@@ -157,8 +165,9 @@
                     "internal": 1.5,
                     "external": 1.8
                 },
-                "meal_description": "Emmentaler Käse Suppe",
+                "meal_description": "Kartoffelcremesuppe mit Oregano",
                 "allergens": [
+                    "Soja",
                     "Milch",
                     "Sellerie"
                 ]
@@ -170,7 +179,7 @@
                     "internal": "",
                     "external": ""
                 },
-                "meal_description": "Desserts: Montag:Tobleronemousse\nDienstag:  Orangen-Tiramisu\nMittwoch: Biberli\nDonnerstag: Schwarzwälderschnitte\nFreitag: Apfel-Zimt-Mousse",
+                "meal_description": "Desserts: Montag: Streuselkuchen mit Äpfel | Dienstag:  Zwetschgenmousse | Mittwoch: Schwarzwälderschnitte | Donnerstag: Kaiserschmarrn | Freitag: Weisses Tobleronemousse",
                 "allergens": []
             }
         ],
@@ -185,12 +194,12 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Kürbis-Krautstielragout\nmit Estragon\nGnocchi\nTortillachips\nMenüsalat",
+                "meal_description": "Tofu Casimir mit Apfel | Mandelreis | Broccoli",
                 "allergens": [
                     "Glutenhaltiges Getreide",
-                    "Eier",
                     "Soja",
                     "Milch",
+                    "Hartschalenobst (Nüsse)",
                     "Sellerie",
                     "Schwefeldioxid und Sulfite"
                 ]
@@ -202,14 +211,9 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Coq au vin Poulet\nBratenjus \nPolenta \nBroccoli",
+                "meal_description": "Pouletbrust «Korean-Style» mit Sesam, Ingwer und Sojasauce | Glasnudeln | Wok Gemüse",
                 "allergens": [
-                    "Glutenhaltiges Getreide",
-                    "Eier",
                     "Soja",
-                    "Milch",
-                    "Sellerie",
-                    "Senf",
                     "Sesam"
                 ]
             },
@@ -220,10 +224,9 @@
                     "internal": 1.5,
                     "external": 1.8
                 },
-                "meal_description": "Schwarzwurzelcreme Suppe mit Äpfeln und Speck",
+                "meal_description": "Lauchsuppe",
                 "allergens": [
-                    "Glutenhaltiges Getreide",
-                    "Milch",
+                    "Soja",
                     "Sellerie"
                 ]
             },
@@ -234,7 +237,7 @@
                     "internal": "",
                     "external": ""
                 },
-                "meal_description": "Desserts: Montag:Tobleronemousse\nDienstag:  Orangen-Tiramisu\nMittwoch: Biberli\nDonnerstag: Schwarzwälderschnitte\nFreitag: Apfel-Zimt-Mousse",
+                "meal_description": "Desserts: Montag: Streuselkuchen mit Äpfel | Dienstag:  Zwetschgenmousse | Mittwoch: Schwarzwälderschnitte | Donnerstag: Kaiserschmarrn | Freitag: Weisses Tobleronemousse",
                 "allergens": []
             }
         ],
@@ -249,12 +252,14 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Gemüse-Ecken\nSoja-Joghurt\nBratkartoffeln\nApfel-Fenchel",
+                "meal_description": "Festlicher Nussbraten | Bratensauce | Spätzli | Mischgemüse",
                 "allergens": [
+                    "Glutenhaltiges Getreide",
                     "Soja",
+                    "Milch",
+                    "Hartschalenobst (Nüsse)",
                     "Sellerie",
-                    "Senf",
-                    "Schwefeldioxid und Sulfite"
+                    "Sesam"
                 ]
             },
             {
@@ -264,13 +269,13 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Spaghetti Carbonara \nmit Petersilie\nund Reibkäse\nMenüsalat",
+                "meal_description": "Bratwurst mit Zwiebelsauce | Hausgemachte Rösti | Erbsen-Gemüse | Fleisch; Schwein & Kalb; Schweiz",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Soja",
                     "Milch",
                     "Sellerie",
-                    "Sesam"
+                    "Senf"
                 ]
             },
             {
@@ -280,10 +285,9 @@
                     "internal": 1.5,
                     "external": 1.8
                 },
-                "meal_description": "Tomatencremesuppe",
+                "meal_description": "Zwiebelsuppe",
                 "allergens": [
-                    "Soja",
-                    "Milch",
+                    "Glutenhaltiges Getreide",
                     "Sellerie"
                 ]
             },
@@ -294,7 +298,7 @@
                     "internal": "",
                     "external": ""
                 },
-                "meal_description": "Desserts: Montag:Tobleronemousse\nDienstag:  Orangen-Tiramisu\nMittwoch: Biberli\nDonnerstag: Schwarzwälderschnitte\nFreitag: Apfel-Zimt-Mousse",
+                "meal_description": "Desserts: Montag: Streuselkuchen mit Äpfel | Dienstag:  Zwetschgenmousse | Mittwoch: Schwarzwälderschnitte | Donnerstag: Kaiserschmarrn | Freitag: Weisses Tobleronemousse",
                 "allergens": []
             }
         ],

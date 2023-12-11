@@ -8,11 +8,10 @@
                     "internal": 9.0,
                     "external": 13.5
                 },
-                "meal_description": "Herbstliche Gnocchi-Pfanne mit Rosenkohl\nKürbis & Champignon-Rahmsauce\nFrischer Spinat",
+                "meal_description": "Indische Aubergine mit Tomatenpüree, Kurkuma, Koriander & Knoblauch | Couscous | Pfefferminz-Dip & Geröstete Cashewnüsse",
                 "allergens": [
                     "Glutenhaltiges Getreide",
-                    "Soja",
-                    "Schwefeldioxid und Sulfite"
+                    "Soja"
                 ]
             },
             {
@@ -22,11 +21,10 @@
                     "internal": 9.0,
                     "external": 13.5
                 },
-                "meal_description": "Linsen Daal mit Karotten & Kartoffeln\nBasmatireis\nKoriander-Dip",
+                "meal_description": "Grünes Thaicurry | Mit Gemüse & Kichererbsen | Basmati Reis | Mungosprossen & Koriander",
                 "allergens": [
                     "Soja",
-                    "Sellerie",
-                    "Sesam"
+                    "Schwefeldioxid und Sulfite"
                 ]
             }
         ],
@@ -41,11 +39,9 @@
                     "internal": 9.0,
                     "external": 13.5
                 },
-                "meal_description": "Pad Thai\nmit Reisnudeln, Sojasauce, Koriander, Thai-Basilikum & Gemüse\nGeröstete Erdnüsse & Limetten",
+                "meal_description": "Rote Linsen Suppe mit Zwiebeln, Karotten, Knoblauch & Kartoffeln | Indisches Naan Brot | Thai Basilikum",
                 "allergens": [
-                    "Glutenhaltiges Getreide",
-                    "Erdnüsse",
-                    "Soja"
+                    "Glutenhaltiges Getreide"
                 ]
             },
             {
@@ -55,12 +51,10 @@
                     "internal": 9.0,
                     "external": 13.5
                 },
-                "meal_description": "Seitan Gulasch Ungarische Art\nmit Peperoni, Kartoffeln, Zwiebeln & Tomaten\nVollkornbrötchen\nPetersilie",
+                "meal_description": "Süsskartoffel-Karottenstampf | Gebratener Blumenkohl mit Kurkuma und Kreuzkümmel | Kräuter-Zitronen-Tahina-Sauce",
                 "allergens": [
-                    "Glutenhaltiges Getreide",
                     "Soja",
-                    "Senf",
-                    "Schwefeldioxid und Sulfite"
+                    "Sesam"
                 ]
             }
         ],
@@ -75,11 +69,11 @@
                     "internal": 9.0,
                     "external": 13.5
                 },
-                "meal_description": "Blätterteig Pastetli\nmit Kichererbsen, Champignons & Sojabechamel\nTrockenreis\nErbsli & Rüebli",
+                "meal_description": "Spätzligratin mit Rüebli, Sellerie, Lauch & Zucchini | Vegane Käse-Alternative | Petersilie",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Soja",
-                    "Senf"
+                    "Sellerie"
                 ]
             },
             {
@@ -89,10 +83,11 @@
                     "internal": 9.0,
                     "external": 13.5
                 },
-                "meal_description": "Penne Pasta\nmit Kürbismandelpesto\nGeröstete Kürbiskernen & Rucola",
+                "meal_description": "\"Gallo Pinto\" | Gebratenes Reisgericht mit Bohnen, Avocado, grüne Peperoni und Chili | Salsa Lizano",
                 "allergens": [
                     "Glutenhaltiges Getreide",
-                    "Hartschalenobst (Nüsse)"
+                    "Senf",
+                    "Schwefeldioxid und Sulfite"
                 ]
             }
         ],
@@ -107,9 +102,8 @@
                     "internal": 9.0,
                     "external": 13.5
                 },
-                "meal_description": "Kartoffelgratin mit Tofu\nGrüne Bohnen mit Zwiebeln \nGebratene Cherrytomaten",
+                "meal_description": "Risotto Milanese mit Steinpilzen, Champignons & Safran | Frischem Blattspinat",
                 "allergens": [
-                    "Soja",
                     "Schwefeldioxid und Sulfite"
                 ]
             },
@@ -120,10 +114,10 @@
                     "internal": 9.0,
                     "external": 13.5
                 },
-                "meal_description": "Tikka Masala mit Planted und Kichererbsen\nJasmin Reis\nKoriander & Mungosprossen",
+                "meal_description": "Vegane Burrito-Bowl mit Koriander-Reis, Mais-Peperoni-Gemüse | Bohnenmus, Sojajoghurt-Guacamole",
                 "allergens": [
-                    "Hartschalenobst (Nüsse)",
-                    "Schwefeldioxid und Sulfite"
+                    "Glutenhaltiges Getreide",
+                    "Soja"
                 ]
             }
         ],
@@ -138,8 +132,11 @@
                     "internal": 9.0,
                     "external": 13.5
                 },
-                "meal_description": "Winter Ratatouille \nmit Pilzen, Karotten, Auberginen, Zucchini, Tomaten & Peperoni\nBramata Polenta & Rucola",
-                "allergens": []
+                "meal_description": "Tortelloni gefüllt mit Chili sin Carne | Pikante Peperoni-Tomatensauce | Geröstete Maiskörner, Koriander",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Schwefeldioxid und Sulfite"
+                ]
             },
             {
                 "line_name": "Global",
@@ -148,10 +145,9 @@
                     "internal": 9.0,
                     "external": 13.5
                 },
-                "meal_description": "Kubanisches Moro\nmit Reis, Bohnen & Avocado\nSojajogurth-Dip",
+                "meal_description": "Bunte Ofenpfanne mit Kartoffeln, Pfälzer-Karotten, Broccoli, Kürbis und Fenchel | Randen-Schnittlauch-Dip",
                 "allergens": [
-                    "Soja",
-                    "Schwefeldioxid und Sulfite"
+                    "Soja"
                 ]
             }
         ],

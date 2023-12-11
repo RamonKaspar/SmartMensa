@@ -8,8 +8,10 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Dahl mit Gemüse\nBasmati Reis\nMenüsalat",
+                "meal_description": "Green Mountain Hackbällchen an veganer Kapern-Rahmsauce | Salzkartoffeln | Blattspinat",
                 "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Soja",
                     "Sellerie"
                 ]
             }
@@ -25,11 +27,11 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Soja-Gemüse Bolognaise\nVollkorn Spaghetti\nMenüsalat",
+                "meal_description": "Kichererbsen Curry | Basmati mit Sesam | Rotkabisschnitze",
                 "allergens": [
-                    "Glutenhaltiges Getreide",
-                    "Soja",
+                    "Hartschalenobst (Nüsse)",
                     "Sellerie",
+                    "Sesam",
                     "Schwefeldioxid und Sulfite"
                 ]
             }
@@ -45,11 +47,14 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Falafel auf Gemüse-Couscous mit Granatapfelkernen\nTzatziki\nMenüsalat",
+                "meal_description": "Spätzlepfanne Vegan mit Pilzen und Kürbis | Apfel-Rotkraut",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Soja",
-                    "Sellerie"
+                    "Hartschalenobst (Nüsse)",
+                    "Sellerie",
+                    "Schwefeldioxid und Sulfite",
+                    "Lupine"
                 ]
             }
         ],
@@ -64,10 +69,9 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Pilzrisotto  \nRucola \nBalsamicoglace\nMenüsalat",
+                "meal_description": "Kräuter-Gnocchi mit Ratatouille | Rucola | Menüsalat",
                 "allergens": [
-                    "Sellerie",
-                    "Schwefeldioxid und Sulfite"
+                    "Glutenhaltiges Getreide"
                 ]
             }
         ],
@@ -82,11 +86,10 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Tikka Masala mit Planted und Kichererbsen\nMie Nudeln \nKefen",
+                "meal_description": "Ocean Sticks | Aioli Dip | Dampfkartoffeln | Knackerbsen",
                 "allergens": [
                     "Glutenhaltiges Getreide",
-                    "Soja",
-                    "Schwefeldioxid und Sulfite"
+                    "Soja"
                 ]
             }
         ],

@@ -8,9 +8,11 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Quinoa-Spinat-Tortelloni \nPeperonicremesauce\nZucchettigemüse\nMenüsalat",
+                "meal_description": "Mediterraner Linseneintopf mit Federkohl, Kürbis und Tomaten | Couscous | Aioli Dip vegan | Menüsalat",
                 "allergens": [
-                    "Glutenhaltiges Getreide"
+                    "Glutenhaltiges Getreide",
+                    "Soja",
+                    "Senf"
                 ]
             },
             {
@@ -20,10 +22,11 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Kartoffeltortilla mit Stangensellerie, \nBohnen und Broccoli\nTomatensauce\nMenüsalat",
+                "meal_description": "Quorn-Tex-Mex mit BBQ Sauce | Baked Potato | Cole Slaw",
                 "allergens": [
+                    "Glutenhaltiges Getreide",
                     "Eier",
-                    "Milch",
+                    "Senf",
                     "Schwefeldioxid und Sulfite"
                 ]
             },
@@ -34,7 +37,7 @@
                     "internal": 11.0,
                     "external": 14.5
                 },
-                "meal_description": "Schweinsschnitzel paniert\nPommes Frites\nFleisch: Schweiz",
+                "meal_description": "Paniertes Schweinsschnitzel mit Pommes Frites | Fleisch: Schweiz",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Eier",
@@ -48,12 +51,12 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Schirin polo\nmit Poulet, Linsen, \nDörrobst und Gemüse\nJoghurt-Pistazien-Dip\nApfel\nFleisch: Poulet, Schweiz",
+                "meal_description": "«Stroganoff» | Rindsgeschnetzeltes mit Champignons und Sauerrahm | Schupfnudeln | gebratene Zucchetti | Fleisch; Rind; Schweiz",
                 "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Eier",
                     "Milch",
-                    "Hartschalenobst (Nüsse)",
                     "Sellerie",
-                    "Senf",
                     "Schwefeldioxid und Sulfite"
                 ]
             },
@@ -64,8 +67,10 @@
                     "internal": 1.8,
                     "external": 3.0
                 },
-                "meal_description": "Bauernsuppe",
+                "meal_description": "Bündner Gersten Suppe | Fleisch; Rind; Schweiz",
                 "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Milch",
                     "Sellerie"
                 ]
             },
@@ -76,8 +81,9 @@
                     "internal": 2.3,
                     "external": ""
                 },
-                "meal_description": "Tobleronemousse",
+                "meal_description": "Streuselkuchen mit Äpfel",
                 "allergens": [
+                    "Glutenhaltiges Getreide",
                     "Eier",
                     "Soja",
                     "Milch",
@@ -96,9 +102,10 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "«Winter Eintopf»\nmit weissen Bohnen, Karotten,\nLauch & Schwarzwurzeln\nWildreis Mix\nRöstzwiebeln\nMenüsalat",
+                "meal_description": "«Panaeng Curry» Veganes Gemüsecurry mit Erdnüssen, Auberginen und Bohnen with peanuts, eggplant and beans | Hirse | Menüsalat",
                 "allergens": [
-                    "Glutenhaltiges Getreide"
+                    "Erdnüsse",
+                    "Schwefeldioxid und Sulfite"
                 ]
             },
             {
@@ -108,11 +115,13 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Appenzeller Käsehörnli\nmit Zwiebeln, Rahm \nund Käse\nApfelmus",
+                "meal_description": "Orientalischer Auflauf mit Ei, Kürbis, Zucchetti, Reis & Kichererbsen | Algen-Petersilien-Rouille | Menüsalat",
                 "allergens": [
-                    "Glutenhaltiges Getreide",
                     "Eier",
-                    "Milch"
+                    "Soja",
+                    "Sellerie",
+                    "Senf",
+                    "Schwefeldioxid und Sulfite"
                 ]
             },
             {
@@ -122,7 +131,7 @@
                     "internal": 11.0,
                     "external": 14.5
                 },
-                "meal_description": "Schweinsschnitzel paniert\nPommes Frites\nFleisch: Schweiz",
+                "meal_description": "Paniertes Schweinsschnitzel mit Pommes Frites | Fleisch: Schweiz",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Eier",
@@ -136,10 +145,13 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "«Currywurst»\nKalbsbratwurst \nCurry-Ketchup\nRosmarin Wedges\nErbsen und Rüebli\nFleisch: Schwein & Kalb, Schweiz",
+                "meal_description": "Schweinshalsbraten | Champigonrahmsauce | Tagliatelle | Blattspinat | Fleisch; Schwein; Schweiz",
                 "allergens": [
-                    "Soja",
-                    "Milch"
+                    "Glutenhaltiges Getreide",
+                    "Eier",
+                    "Milch",
+                    "Sellerie",
+                    "Senf"
                 ]
             },
             {
@@ -149,12 +161,8 @@
                     "internal": 1.8,
                     "external": 3.0
                 },
-                "meal_description": "Emmentaler Käse Suppe",
-                "allergens": [
-                    "Milch",
-                    "Sellerie",
-                    "Schwefeldioxid und Sulfite"
-                ]
+                "meal_description": "Kartoffelcremesuppe mit Oregano",
+                "allergens": []
             },
             {
                 "line_name": "Tagesdessert",
@@ -163,10 +171,8 @@
                     "internal": 2.3,
                     "external": ""
                 },
-                "meal_description": "Orangen-Tiramisu",
+                "meal_description": "Zwetschgenmousse",
                 "allergens": [
-                    "Glutenhaltiges Getreide",
-                    "Eier",
                     "Milch"
                 ]
             }
@@ -182,11 +188,11 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Kürbis-Krautstielragout\nmit Estragon\nGnocchi\nTortillachips\nMenüsalat",
+                "meal_description": "Tofu Casimir mit Apfel | Mandelreis | Broccoli",
                 "allergens": [
-                    "Glutenhaltiges Getreide",
-                    "Eier",
                     "Soja",
+                    "Milch",
+                    "Hartschalenobst (Nüsse)",
                     "Schwefeldioxid und Sulfite"
                 ]
             },
@@ -197,10 +203,11 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "Venere Risotto mit  Feta,\nBaumnüsse und Granatapfel\nRatatouille  \nMenüsalat",
+                "meal_description": "Tortellini Ricotta Spinat | Peperonatarahmsauce | Fenchel",
                 "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Eier",
                     "Milch",
-                    "Hartschalenobst (Nüsse)",
                     "Schwefeldioxid und Sulfite"
                 ]
             },
@@ -211,7 +218,7 @@
                     "internal": 11.0,
                     "external": 14.5
                 },
-                "meal_description": "Schweinsschnitzel paniert\nPommes Frites\nFleisch: Schweiz",
+                "meal_description": "Paniertes Schweinsschnitzel mit Pommes Frites | Fleisch: Schweiz",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Eier",
@@ -225,8 +232,11 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Coq au vin Poulet\nBratenjus \nPolenta \nBroccoli\nFleisch: Poulet, Schweiz",
+                "meal_description": "Pouletbrust «Korean-Style» mit Sesam, Ingwer und Sojasauce | Glasnudeln | Wok Gemüse | Fleisch; Poulet; Schweiz",
                 "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Soja",
+                    "Sesam",
                     "Schwefeldioxid und Sulfite"
                 ]
             },
@@ -237,97 +247,7 @@
                     "internal": 1.8,
                     "external": 3.0
                 },
-                "meal_description": "Schwarzwurzelcreme Suppe mit Äpfeln und Speck\nFleisch, Schwein, Schweiz",
-                "allergens": [
-                    "Milch",
-                    "Schwefeldioxid und Sulfite"
-                ]
-            },
-            {
-                "line_name": "Tagesdessert",
-                "price_info": {
-                    "students": 1.8,
-                    "internal": 2.3,
-                    "external": ""
-                },
-                "meal_description": "Biberli",
-                "allergens": [
-                    "Glutenhaltiges Getreide",
-                    "Milch",
-                    "Hartschalenobst (Nüsse)",
-                    "Schwefeldioxid und Sulfite"
-                ]
-            }
-        ],
-        "Dinner": []
-    },
-    "Thursday": {
-        "Lunch": [
-            {
-                "line_name": "garden",
-                "price_info": {
-                    "students": 6.1,
-                    "internal": 9.0,
-                    "external": 13.0
-                },
-                "meal_description": "Gemüse-Ecken\nSoja-Joghurt\nBratkartoffeln\nApfel-Fenchel",
-                "allergens": [
-                    "Glutenhaltiges Getreide",
-                    "Soja",
-                    "Schwefeldioxid und Sulfite"
-                ]
-            },
-            {
-                "line_name": "farm",
-                "price_info": {
-                    "students": 6.1,
-                    "internal": 9.0,
-                    "external": 13.0
-                },
-                "meal_description": "Pilz Stroganoff\nmit Preiselbeeren\nSpätzli \nRosenkohl",
-                "allergens": [
-                    "Glutenhaltiges Getreide",
-                    "Eier",
-                    "Soja",
-                    "Milch",
-                    "Schwefeldioxid und Sulfite"
-                ]
-            },
-            {
-                "line_name": "Hit",
-                "price_info": {
-                    "students": 9.5,
-                    "internal": 11.0,
-                    "external": 14.5
-                },
-                "meal_description": "Schweinsschnitzel paniert\nPommes Frites\nFleisch: Schweiz",
-                "allergens": [
-                    "Glutenhaltiges Getreide",
-                    "Eier",
-                    "Milch"
-                ]
-            },
-            {
-                "line_name": "butcher",
-                "price_info": {
-                    "students": 7.5,
-                    "internal": 10.5,
-                    "external": 15.0
-                },
-                "meal_description": "Spaghetti Carbonara \nmit Petersilie\nund Reibkäse\nMenüsalat\nFleisch: Schwein, Schweiz",
-                "allergens": [
-                    "Glutenhaltiges Getreide",
-                    "Milch"
-                ]
-            },
-            {
-                "line_name": "Tagessuppe",
-                "price_info": {
-                    "students": 1.7,
-                    "internal": 1.8,
-                    "external": 3.0
-                },
-                "meal_description": "Tomatencremesuppe",
+                "meal_description": "Lauchsuppe",
                 "allergens": []
             },
             {
@@ -348,7 +268,7 @@
         ],
         "Dinner": []
     },
-    "Friday": {
+    "Thursday": {
         "Lunch": [
             {
                 "line_name": "garden",
@@ -357,11 +277,11 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "«Nasi Goreng»\nIndonesisches Reis\nGericht mit Gemüse,\nPlanted, Röstzwiebeln\nCashewkerne & Sprossen\nMenüsalat",
+                "meal_description": "Festlicher Nussbraten | Bratensauce | Spätzli | Mischgemüse",
                 "allergens": [
                     "Glutenhaltiges Getreide",
-                    "Soja",
                     "Hartschalenobst (Nüsse)",
+                    "Sellerie",
                     "Schwefeldioxid und Sulfite"
                 ]
             },
@@ -372,11 +292,10 @@
                     "internal": 9.0,
                     "external": 13.0
                 },
-                "meal_description": "«Shakshuka»\nmit Kichererbsen, Peperoni und Ei \nBulgur\nMenüsalat",
+                "meal_description": "«Aloo Palak» | Kartoffel-Spinat-Curry | Quinoa | Menüsalat",
                 "allergens": [
-                    "Glutenhaltiges Getreide",
-                    "Eier",
-                    "Senf"
+                    "Hartschalenobst (Nüsse)",
+                    "Schwefeldioxid und Sulfite"
                 ]
             },
             {
@@ -386,7 +305,7 @@
                     "internal": 11.0,
                     "external": 14.5
                 },
-                "meal_description": "Schweinsschnitzel paniert\nPommes Frites\nFleisch: Schweiz",
+                "meal_description": "Paniertes Schweinsschnitzel mit Pommes Frites | Fleisch: Schweiz",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Eier",
@@ -400,8 +319,10 @@
                     "internal": 10.5,
                     "external": 15.0
                 },
-                "meal_description": "Rindsgeschnetzeltes mit Pilzen\nRösti\nPfälzer-Rüebli\nFleisch: Rind, Schweiz",
+                "meal_description": "Bratwurst mit Zwiebelsauce | Hausgemachte Rösti | Erbsen-Gemüse | Fleisch; Schwein & Kalb; Schweiz",
                 "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Soja",
                     "Milch",
                     "Schwefeldioxid und Sulfite"
                 ]
@@ -413,7 +334,7 @@
                     "internal": 1.8,
                     "external": 3.0
                 },
-                "meal_description": "Kürbissuppe",
+                "meal_description": "Zwiebelsuppe",
                 "allergens": []
             },
             {
@@ -423,12 +344,101 @@
                     "internal": 2.3,
                     "external": ""
                 },
-                "meal_description": "Apfel-Zimt-Mousse",
+                "meal_description": "Kaiserschmarrn",
                 "allergens": [
                     "Glutenhaltiges Getreide",
                     "Eier",
-                    "Milch",
+                    "Milch"
+                ]
+            }
+        ],
+        "Dinner": []
+    },
+    "Friday": {
+        "Lunch": [
+            {
+                "line_name": "garden",
+                "price_info": {
+                    "students": 6.1,
+                    "internal": 9.0,
+                    "external": 13.0
+                },
+                "meal_description": "Soissonbohnen mit Rosmarin in Tomatensauce | Bratkartoffeln | Lauchgemüse",
+                "allergens": [
+                    "Soja",
                     "Schwefeldioxid und Sulfite"
+                ]
+            },
+            {
+                "line_name": "farm",
+                "price_info": {
+                    "students": 6.1,
+                    "internal": 9.0,
+                    "external": 13.0
+                },
+                "meal_description": "Gebratener Reis mit Tempeh & Zwiebeln | Asiatischer Gurkensalat",
+                "allergens": [
+                    "Eier",
+                    "Soja",
+                    "Sellerie",
+                    "Sesam",
+                    "Schwefeldioxid und Sulfite"
+                ]
+            },
+            {
+                "line_name": "Hit",
+                "price_info": {
+                    "students": 9.5,
+                    "internal": 11.0,
+                    "external": 14.5
+                },
+                "meal_description": "Paniertes Schweinsschnitzel mit Pommes Frites | Fleisch: Schweiz",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Eier",
+                    "Milch"
+                ]
+            },
+            {
+                "line_name": "butcher",
+                "price_info": {
+                    "students": 7.5,
+                    "internal": 10.5,
+                    "external": 15.0
+                },
+                "meal_description": "Rind Bolognaise | Spaghetti | Reibkäse | Menüsalat | Fleisch; Rind; Schweiz",
+                "allergens": [
+                    "Glutenhaltiges Getreide",
+                    "Milch",
+                    "Sellerie",
+                    "Schwefeldioxid und Sulfite"
+                ]
+            },
+            {
+                "line_name": "Tagessuppe",
+                "price_info": {
+                    "students": 1.7,
+                    "internal": 1.8,
+                    "external": 3.0
+                },
+                "meal_description": "Rüeblisuppe",
+                "allergens": [
+                    "Milch"
+                ]
+            },
+            {
+                "line_name": "Tagesdessert",
+                "price_info": {
+                    "students": 1.8,
+                    "internal": 2.3,
+                    "external": ""
+                },
+                "meal_description": "Weisses Tobleronemousse",
+                "allergens": [
+                    "Eier",
+                    "Soja",
+                    "Milch",
+                    "Hartschalenobst (Nüsse)"
                 ]
             }
         ],

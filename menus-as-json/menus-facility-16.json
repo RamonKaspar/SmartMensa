@@ -7,21 +7,19 @@
     "Lunch": [
       {
         "line_name": "Street",
-        "meal_name": "Miso Ramen",
-        "meal_description": "pulled Beef | Udonnudeln | Misobrühe | Pak Choi | Shiitake | Sojasprossen",
+        "meal_name": "Taiwan Ramen",
+        "meal_description": "Weizennudeln | Pouletgehacktem | Sesam | Karotten | Gurken | Sojasprossen | Peperoncini | Koriander",
         "allergens": [
           "Gluten",
-          "Erdnüsse",
           "Soja",
           "Sesam"
         ],
         "meal_class": [
-          "Fleisch",
-          "Suppe"
+          "Fleisch"
         ],
         "meat_info": [
           {
-            "type": "Rind",
+            "type": "Huhn",
             "origin": [
               "Schweiz"
             ]
@@ -36,11 +34,10 @@
       },
       {
         "line_name": "Green",
-        "meal_name": "Miso Ramen Jackfruit",
-        "meal_description": "pulled Jackfruit | Udonnudeln | Misobrühe | Pak Choi | Shiitake | Sojasprossen",
+        "meal_name": "Taiwan Ramen",
+        "meal_description": "Weizennudeln | veganes Hack | Sesam | Karotten | Gurken | Sojasprossen | Peperoncini | Koriander",
         "allergens": [
           "Gluten",
-          "Erdnüsse",
           "Soja",
           "Sesam"
         ],
@@ -63,21 +60,19 @@
     "Lunch": [
       {
         "line_name": "Street",
-        "meal_name": "Miso Ramen",
-        "meal_description": "pulled Beef | Udonnudeln | Misobrühe | Pak Choi | Shiitake | Sojasprossen",
+        "meal_name": "Taiwan Ramen",
+        "meal_description": "Weizennudeln | Pouletgehacktem | Sesam | Karotten | Gurken | Sojasprossen | Peperoncini | Koriander",
         "allergens": [
           "Gluten",
-          "Erdnüsse",
           "Soja",
           "Sesam"
         ],
         "meal_class": [
-          "Fleisch",
-          "Suppe"
+          "Fleisch"
         ],
         "meat_info": [
           {
-            "type": "Rind",
+            "type": "Huhn",
             "origin": [
               "Schweiz"
             ]
@@ -92,11 +87,10 @@
       },
       {
         "line_name": "Green",
-        "meal_name": "Miso Ramen Jackfruit",
-        "meal_description": "pulled Jackfruit | Udonnudeln | Misobrühe | Pak Choi | Shiitake | Sojasprossen",
+        "meal_name": "Taiwan Ramen",
+        "meal_description": "Weizennudeln | veganes Hack | Sesam | Karotten | Gurken | Sojasprossen | Peperoncini | Koriander",
         "allergens": [
           "Gluten",
-          "Erdnüsse",
           "Soja",
           "Sesam"
         ],
@@ -119,21 +113,19 @@
     "Lunch": [
       {
         "line_name": "Street",
-        "meal_name": "Miso Ramen",
-        "meal_description": "pulled Beef | Udonnudeln | Misobrühe | Pak Choi | Shiitake | Sojasprossen",
+        "meal_name": "Taiwan Ramen",
+        "meal_description": "Weizennudeln | Pouletgehacktem | Sesam | Karotten | Gurken | Sojasprossen | Peperoncini | Koriander",
         "allergens": [
           "Gluten",
-          "Erdnüsse",
           "Soja",
           "Sesam"
         ],
         "meal_class": [
-          "Fleisch",
-          "Suppe"
+          "Fleisch"
         ],
         "meat_info": [
           {
-            "type": "Rind",
+            "type": "Huhn",
             "origin": [
               "Schweiz"
             ]
@@ -148,11 +140,10 @@
       },
       {
         "line_name": "Green",
-        "meal_name": "Miso Ramen Jackfruit",
-        "meal_description": "pulled Jackfruit | Udonnudeln | Misobrühe | Pak Choi | Shiitake | Sojasprossen",
+        "meal_name": "Taiwan Ramen",
+        "meal_description": "Weizennudeln | veganes Hack | Sesam | Karotten | Gurken | Sojasprossen | Peperoncini | Koriander",
         "allergens": [
           "Gluten",
-          "Erdnüsse",
           "Soja",
           "Sesam"
         ],
