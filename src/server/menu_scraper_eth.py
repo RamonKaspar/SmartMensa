@@ -242,7 +242,6 @@ def compute_date_range():
     # Shift UTC time to UTC+01:00 for Europe/Zurich
     utc_offset = timedelta(hours=1)
     today_zurich = today_utc + utc_offset
-    print(utc_offset)
 
     # Calculate the difference between today in Zurich and the previous Monday
     days_since_monday = today_zurich.weekday()
