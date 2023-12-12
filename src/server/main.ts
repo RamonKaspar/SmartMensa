@@ -180,7 +180,7 @@ app.get("/menus/:facilityID", async function (req, res) {
 
 // Connect to MongoDB database
 const dbURI =
-  `mongodb+srv://${process.env["DB_USERNAME"]}:${process.env["DB_PASSWORD"]}@web-engineering.5qgqtnq.mongodb.net/${process.env["DB_NAME"]}?retryWrites=true&w=majority`;
+  "***REMOVED_DB_URL***";
 mongoose
   .connect(dbURI)
   .then(() => {
