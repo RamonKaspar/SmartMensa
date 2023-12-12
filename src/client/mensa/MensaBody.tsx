@@ -89,24 +89,23 @@ function MensaBody() {
   }, [mensaName]);
 
   const handleShareClick = (meal: any) => {
-    console.log("Sahre button is clicked");
+    console.log("Share button is clicked");
     let str = "Today: " + "\n" + myMensa.name_display + "\n";
     str += transformMensaTitle(meal) + "\n" + meal.meal_description;
     str += "\n" + getPrice(meal, "external");
-    try {
-      // Attempt to copy the meal description to the clipboard
+
+    // Check if the Clipboard API is available
+    if (navigator.clipboard) {
       navigator.clipboard
         .writeText(str)
         .then(() => {
-          // Copying to clipboard was successful
           alert("Meal description copied to clipboard!");
         })
         .catch((error) => {
-          // Handle any errors
           console.error("Failed to copy to clipboard: ", error);
         });
-    } catch (error) {
-      console.error(error);
+    } else {
+      console.error("Clipboard API not available");
     }
   };
 
