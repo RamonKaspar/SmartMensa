@@ -176,11 +176,10 @@ function MensaBody({ appliedSettings, showSettings, setShowSettings }: any) {
               <div className="ingredients-component">
                 {meal.meal_description}
               </div>
-              {/* <div className="allergens-component">
-                {displayAllergens(meal.allergens, appliedSettings)}
-              </div> */}
               <div className="matched-allergens-component">
-                {displayMatchedAllergens(meal.allergens, appliedSettings)}
+                {meal.allergens && meal.allergens.length === 0
+                  ? "No allergy information available"
+                  : displayMatchedAllergens(meal.allergens, appliedSettings)}
               </div>
               <div className="last-row-actions">
                 <FaStar style={{ fontSize: "2em" }} />
@@ -260,14 +259,6 @@ function getPrice(meal: any, priceCategory: string): string {
     minimumFractionDigits: 2, // Set the minimum number of digits after the decimal point
   });
 }
-
-/* function displayAllergens(allergens: any[], appliedSettings: any): string {
-  let allergensString = "";
-  for (const allergen of allergens) {
-    allergensString += allergen + ", ";
-  }
-  return allergensString.slice(0, -2);
-} */
 
 function displayMatchedAllergens(
   allergens: any[],
