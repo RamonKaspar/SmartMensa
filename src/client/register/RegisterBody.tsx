@@ -6,7 +6,7 @@ function RegisterBody() {
   const navigate = useNavigate();
   const handleRegisterClick = async () => {
     try {
-      const response = await fetch("/api/users", {
+      const response = await fetch("/api/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -15,30 +15,28 @@ function RegisterBody() {
       });
 
       if (!isValidEmail(email)) {
-        alert("Enter a valid email");
+        alert("Enter a valid email!");
         return;
       }
-      if (!response.ok) {
-        const resBody = await response.text();
-        // Check for specific error messages related to duplicates
-        if (resBody.includes("Username already exists")) {
-          alert("Username already exists");
-        } else if (resBody.includes("Email already exists")) {
-          alert("Email already exists");
-        }
-        throw new Error(`HTTP error! Status: ${response.status}`);
+
+      if (!isValidPassword(password)) {
+        alert("Enter a valid password!");
+        return;
       }
 
-      // Navigate to home on successful submission
-      navigate("/login");
+      if (response.ok) {
+        const resBody = await response.json();
+        alert(resBody.message);
+        if (resBody.message.includes("Successfully")) {
+          navigate("/login");
+        }
+      } else {
+        const resBody = await response.json();
+        alert(resBody.message);
+      }
     } catch (error) {
-      console.error("Error:", error);
+      console.error("Registration Error:", error);
     }
-  };
-
-  const handleRegisterEduClick = async () => {
-    //To be implemented
-    navigate("/home");
   };
 
   const handleLoginClick = async () => {
@@ -87,6 +85,15 @@ function RegisterBody() {
     setIsPasswordValid(isValidPassword(passwordValue));
   };
 
+  // Check if all fields are filled
+  const isFormValid =
+    name !== "" &&
+    username !== "" &&
+    email !== "" &&
+    isEmailValid === true &&
+    password !== "" &&
+    isPasswordValid === true;
+
   return (
     <main className="register-body-container">
       <input
@@ -97,6 +104,7 @@ function RegisterBody() {
         onChange={handleNameChange}
         placeholder="Full Name"
         autoComplete="name"
+        required
       />
       <input
         className="username-input"
@@ -106,6 +114,7 @@ function RegisterBody() {
         onChange={handleUsernameChange}
         placeholder="Username"
         autoComplete="username"
+        required
       />
       <input
         className="email-input"
@@ -115,6 +124,7 @@ function RegisterBody() {
         onChange={handleEmailChange}
         placeholder="Email"
         autoComplete="email"
+        required
       />
       <div id="emailIndicator">
         {isEmailValid === false && (
@@ -129,6 +139,7 @@ function RegisterBody() {
         onChange={handlePasswordChange}
         placeholder="Password"
         autoComplete="new-password"
+        required
       />
       <div id="passwordIndicator">
         {isPasswordValid === false && (
@@ -138,8 +149,13 @@ function RegisterBody() {
           </span>
         )}
       </div>
-      <button onClick={handleRegisterClick}>Register</button>
-      <button onClick={handleRegisterEduClick}>Register with eduSWITCH</button>
+      <button
+        onClick={handleRegisterClick}
+        disabled={!isFormValid}
+        className={isFormValid ? "register-button" : "register-button-disabled"}
+      >
+        Register
+      </button>
       <button onClick={handleLoginClick}>Back to login</button>
 
       <img src="./logo.png" alt="SmartMensa" className="logo" />

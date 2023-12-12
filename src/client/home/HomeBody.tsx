@@ -43,19 +43,26 @@ function HomeBody({
   }, []);
   // Saves the state of the heart (mensa selected as favorite) for each mensa
   const [favorites, setFavorites] = useState<FavoritesState>({});
-  const [currentUserId, setCurrentUserId] = useState(null);
+  const [currentUserId, setCurrentUserId] = useState(-1);
 
   useEffect(() => {
-    fetch("/api/current-user")
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.userId) {
-          setCurrentUserId(data.userId);
-        }
-      })
-      .catch((error) =>
-        console.error("Error fetching current user ID:", error)
-      );
+    async function fetchUserID() {
+      try {
+        await fetch("/api/current-user")
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.userId) {
+              setCurrentUserId(data.userId);
+            }
+          })
+          .catch((error) =>
+            console.error("Error fetching current user ID:", error)
+          );
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    fetchUserID();
   }, []);
 
   /* Filter functionality */
@@ -127,13 +134,11 @@ function HomeBody({
         )}
         <h2>Your favorite menus today</h2>
         <div className="favorite-meus-container">
-          {/* Implement this in a later stage when we have user management */}
-          {currentUserId ? (
+          {currentUserId !== -1 ? (
             <div>Welcome, User ID: {currentUserId}</div>
           ) : (
-            <div>Loading or no user logged in...</div>
+            <div>No user logged in...</div>
           )}
-          {/* ... rest of your component */}
         </div>
         <h2>Mensas ({filteredMensas.length})</h2>
         <div className="mensa-buttons-container">

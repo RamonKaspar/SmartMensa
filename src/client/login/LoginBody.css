@@ -32,6 +32,10 @@
   }
 }
 
+.without-login-button {
+  min-height: 40px;
+}
+
 .register {
   width: 160px;
   margin-top: 20px;
