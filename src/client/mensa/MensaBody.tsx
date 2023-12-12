@@ -32,7 +32,7 @@ const getSpecificMensaStaticInfos = async (mensaName: string) => {
   }
 };
 
-function MensaBody() {
+function MensaBody({ appliedSettings, showSettings, setShowSettings }: any) {
   const location = useLocation();
   const mensaName = location.pathname.replace("/", "");
   const [currentDayMeals, setCurrentDayMeals] = useState<any[]>([]);
@@ -115,7 +115,7 @@ function MensaBody() {
   const handleShareClick = (meal: any) => {
     let str = "Today: " + "\n" + myMensa.name_display + "\n";
     str += transformMensaTitle(meal) + "\n" + meal.meal_description;
-    str += "\n" + getPrice(meal, "external");
+    str += "\n" + getPrice(meal, appliedSettings.price_class);
 
     // Check if the Clipboard API is available
     if (navigator.clipboard) {
@@ -136,7 +136,15 @@ function MensaBody() {
 
   return (
     <>
-      <main className="mensa-body-container">
+      <main className={`mensa-body-container ${showSettings ? "blurred" : ""}`}>
+        {showSettings && (
+          <div
+            className="overlay"
+            onClick={() => {
+              setShowSettings(false);
+            }}
+          ></div>
+        )}
         <div className="row-one-title">
           <h2>{myMensa.name_display}</h2>
           <p className="mark-as-favorite-menu">
@@ -159,15 +167,20 @@ function MensaBody() {
             <div key={index} className="menu-component">
               <h3 className="menu-title-and-price">
                 <p className="menu-title">{transformMensaTitle(meal)}</p>
-                <p className="menu-price">{getPrice(meal, "external")}</p>
+                <p className="menu-price">
+                  {getPrice(meal, appliedSettings.price_class)}
+                </p>
               </h3>
               {/* change later: priceCategory should be retrieved from user preference */}
               <div className="menu-line">{}</div>
               <div className="ingredients-component">
                 {meal.meal_description}
               </div>
-              <div className="allergens-component">
-                {displayAllergens(meal.allergens)}
+              {/* <div className="allergens-component">
+                {displayAllergens(meal.allergens, appliedSettings)}
+              </div> */}
+              <div className="matched-allergens-component">
+                {displayMatchedAllergens(meal.allergens, appliedSettings)}
               </div>
               <div className="last-row-actions">
                 <FaStar style={{ fontSize: "2em" }} />
@@ -240,12 +253,7 @@ function transformMensaTitle(meal: any): string {
 }
 
 function getPrice(meal: any, priceCategory: string): string {
-  let amount = meal.price_info.external;
-  if (priceCategory == "student") {
-    amount = meal.price_info.students;
-  } else if (priceCategory == "internal") {
-    amount = meal.price_info.internal;
-  }
+  let amount = meal.price_info[priceCategory];
   return amount.toLocaleString("en-US", {
     style: "currency",
     currency: "CHF", // Change the currency code as needed
@@ -253,12 +261,81 @@ function getPrice(meal: any, priceCategory: string): string {
   });
 }
 
-function displayAllergens(allergens: any[]): string {
+/* function displayAllergens(allergens: any[], appliedSettings: any): string {
   let allergensString = "";
   for (const allergen of allergens) {
     allergensString += allergen + ", ";
   }
   return allergensString.slice(0, -2);
+} */
+
+function displayMatchedAllergens(
+  allergens: any[],
+  appliedSettings: any
+): string {
+  let allergensString = "";
+  for (const allergen of allergens) {
+    if (markAllergen(allergen, appliedSettings)) {
+      allergensString += allergen + ", ";
+    }
+  }
+  return allergensString.slice(0, -2);
+}
+
+/* Hardcoded logic for handling allergies */
+function markAllergen(allergen: string, appliedSettings: any): boolean {
+  if (allergen.toLowerCase().includes("gluten")) {
+    return appliedSettings.gluten;
+  }
+  if (allergen.toLowerCase().includes("krebstiere")) {
+    return appliedSettings.krebstiere;
+  }
+  if (allergen.toLowerCase().includes("ei")) {
+    return appliedSettings.ei;
+  }
+  if (allergen.toLowerCase().includes("fisch")) {
+    return appliedSettings.fisch;
+  }
+  if (allergen.toLowerCase().includes("erdnüsse")) {
+    return appliedSettings.erdnüsse;
+  }
+  if (allergen.toLowerCase().includes("soja")) {
+    return appliedSettings.soja;
+  }
+  if (
+    allergen.toLowerCase().includes("milch") ||
+    allergen.toLowerCase().includes("laktose")
+  ) {
+    return appliedSettings.milch_laktose;
+  }
+  if (allergen.toLowerCase().includes("schalenfrüchte")) {
+    return appliedSettings.schalenfrüchte;
+  }
+  if (allergen.toLowerCase().includes("sellerie")) {
+    return appliedSettings.sellerie;
+  }
+  if (allergen.toLowerCase().includes("senf")) {
+    return appliedSettings.senf;
+  }
+  if (allergen.toLowerCase().includes("sesam")) {
+    return appliedSettings.sesam;
+  }
+  if (allergen.toLowerCase().includes("sulfite")) {
+    return appliedSettings.sulfite;
+  }
+  if (allergen.toLowerCase().includes("lupinen")) {
+    return appliedSettings.lupinen;
+  }
+  if (allergen.toLowerCase().includes("weichtiere")) {
+    return appliedSettings.weichtiere;
+  }
+  if (allergen.toLowerCase().includes("hartschalenobst")) {
+    return appliedSettings.hartschalenobst;
+  }
+
+  /* Handle case: allergy is not in our list --> Add it to be on the safe side*/
+  console.log(allergen.toUpperCase() + " is not in our list!!!!");
+  return true;
 }
 
 /* Makes the first char of every word to uppercase */

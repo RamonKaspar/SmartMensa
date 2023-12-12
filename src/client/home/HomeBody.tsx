@@ -21,7 +21,13 @@ interface FavoritesState {
   [key: string]: boolean;
 }
 
-function HomeBody({ showFilter, setShowFilter, appliedFilters }: any) {
+function HomeBody({
+  showFilter,
+  setShowFilter,
+  appliedFilters,
+  showSettings,
+  setShowSettings,
+}: any) {
   const [mensaInfos, setMensaInfos] = useState<any>([]);
 
   useEffect(() => {
@@ -105,9 +111,19 @@ function HomeBody({ showFilter, setShowFilter, appliedFilters }: any) {
 
   return (
     <>
-      <main className={`home-body-container ${showFilter ? "blurred" : ""}`}>
-        {showFilter && (
-          <div className="overlay" onClick={() => setShowFilter(false)}></div>
+      <main
+        className={`home-body-container ${
+          showFilter || showSettings ? "blurred" : ""
+        }`}
+      >
+        {(showFilter || showSettings) && (
+          <div
+            className="overlay"
+            onClick={() => {
+              setShowFilter(false);
+              setShowSettings(false);
+            }}
+          ></div>
         )}
         <h2>Your favorite menus today</h2>
         <div className="favorite-meus-container">
