@@ -88,9 +88,8 @@ Document here the major milestones of your code and future planned steps.\
 - [ ] Milestone 2: Make frontend functional (dynamic)
   - [x] Implement backend functionality to get the menus #6 !5
   - [x] Implement filter functions #12 !14
-  - [ ] Implement some settings
+  - [ ] Implement some settings #15
   - [x] Implement share functionality #14 !16
-  - [ ] Repair share functionality (works only locally, doesn't work when deployed)
 
 - [ ] Milestone 3: Use webscraping to get the latest menus
   - [x] Get the menus for ETH mensas: #2 !2
