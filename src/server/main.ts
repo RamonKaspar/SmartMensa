@@ -6,6 +6,10 @@ import apiRoutes from "./routes/api";
 import session from "express-session";
 import { spawn } from "child_process";
 import cron from "node-cron";
+import mongoose from "mongoose";
+import User from "./models/user";
+import crypto from "crypto";
+const uuid = require("uuid").v4;
 
 const app = express();
 
@@ -14,10 +18,13 @@ app.use(express.json());
 // Configure session middleware
 app.use(
   session({
-    secret: "your-secret-key", // Replace with a secure key
+    secret: crypto.randomBytes(32).toString("hex"),
     resave: false,
     saveUninitialized: true,
     cookie: { httpOnly: true, secure: false }, // Set secure to true if using HTTPS
+    genid: function (_req) {
+      return uuid(); // Generate a new UUID as the session key
+    },
   })
 );
 
@@ -168,6 +175,51 @@ app.get("/menus/:facilityID", async function (req, res) {
   } catch (error) {
     console.error(error); // Log the error for debugging
     res.status(404).json({ error: "File not found" });
+  }
+});
+
+// Connect to MongoDB database
+const dbURI =
+  `mongodb+srv://${process.env["DB_USERNAME"]}:${process.env["DB_PASSWORD"]}@web-engineering.5qgqtnq.mongodb.net/${process.env["DB_NAME"]}?retryWrites=true&w=majority`;
+mongoose
+  .connect(dbURI)
+  .then(() => {
+    console.log("Connected to MongoDB database");
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
+// Route to get the users favourite menus from mongoDB database using mongoose
+app.get("/favourite-menus/:userID", async function (req, res) {
+  // Get the users favourite menus from the database
+  try {
+    const userID = req.params.userID;
+
+    // Check if user is logged in
+    if (
+      !req.session ||
+      !req.session.userId ||
+      req.session.userId.toString() !== userID
+    ) {
+      res.status(401).json({ error: "Not logged in" });
+      return;
+    }
+
+    const user = await User.findOne({ id: userID });
+
+    // Check if the user exists
+    if (!user) {
+      res.status(404).json({ error: "User not found" });
+      return;
+    }
+
+    const favouriteMenus = user.favouriteMenus;
+    // Send the favourite menus as a JSON response
+    res.status(200).json({ favouriteMenus: favouriteMenus });
+  } catch (error) {
+    console.error(error);
+    res.status(404).json({ error: "Favourite menus not found" });
   }
 });
 
