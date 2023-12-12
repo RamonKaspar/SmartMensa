@@ -1,46 +1,46 @@
 import Layout from "../Layout";
 import Header from "../Header";
 import HomeBody from "./HomeBody";
-import { useEffect, useState } from "react";
 import Filter from "./Filter";
+import Settings from "../Settings";
 
-function Home() {
-  const [showFilter, setShowFilter] = useState(false);
-
-  /* State for handling the applied filters */
-  const [appliedFilters, setAppliedFilters] = useState(() => {
-    const savedFilters = localStorage.getItem("appliedFilters");
-    return savedFilters
-      ? JSON.parse(savedFilters)
-      : {
-          Zentrum_ETH: false,
-          Zentrum_UZH: false,
-          Irchel: false,
-          Höngg: false,
-          Currently_Open: false,
-          Favorites: false,
-        };
-  });
-
-  /* Save to local storage */
-  useEffect(() => {
-    localStorage.setItem("appliedFilters", JSON.stringify(appliedFilters));
-  }, [appliedFilters]);
-
+function Home({
+  appliedSettings,
+  setAppliedSettings,
+  appliedFilters,
+  setAppliedFilters,
+  showFilter,
+  setShowFilter,
+  showSettings,
+  setShowSettings,
+}: any) {
   return (
     <>
       <Layout>
-        <Header onFilterClick={() => setShowFilter(!showFilter)} />
+        <Header
+          onFilterClick={() => setShowFilter(!showFilter)}
+          onSettingsClick={() => setShowSettings(!showSettings)}
+        />
         <HomeBody
           showFilter={showFilter}
           setShowFilter={setShowFilter}
           appliedFilters={appliedFilters}
+          showSettings={showSettings}
+          setShowSettings={setShowSettings}
         />
         <div>
           {showFilter && (
             <Filter
               appliedFilters={appliedFilters}
               setAppliedFilters={setAppliedFilters}
+            />
+          )}
+        </div>
+        <div>
+          {showSettings && (
+            <Settings
+              appliedSettings={appliedSettings}
+              setAppliedSettings={setAppliedSettings}
             />
           )}
         </div>

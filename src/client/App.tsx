@@ -20,6 +20,56 @@ async function fetchMensaStaticInfos() {
 }
 
 function App() {
+  /* State to decide if settings or filter should be displayed */
+  const [showFilter, setShowFilter] = useState(false);
+  const [showSettings, setShowSettings] = useState(false);
+  /* State for handling the applied filters */
+  const [appliedFilters, setAppliedFilters] = useState(() => {
+    const savedFilters = localStorage.getItem("appliedFilters");
+    return savedFilters
+      ? JSON.parse(savedFilters)
+      : {
+          Zentrum_ETH: false,
+          Zentrum_UZH: false,
+          Irchel: false,
+          Höngg: false,
+          Currently_Open: false,
+          Favorites: false,
+        };
+  });
+  /* State for handling the applied settings */
+  const [appliedSettings, setAppliedSettings] = useState(() => {
+    const savedSettings = localStorage.getItem("appliedSettings");
+    return savedSettings
+      ? JSON.parse(savedSettings)
+      : {
+          price_class: "students",
+          gluten: false,
+          krebstiere: false,
+          ei: false,
+          fisch: false,
+          erdnüsse: false,
+          soja: false,
+          milch_laktose: false,
+          schalenfrüchte: false,
+          sellerie: false,
+          senf: false,
+          sesam: false,
+          sulfite: false,
+          lupinen: false,
+          weichtiere: false,
+          hartschalenobst: false,
+        };
+  });
+
+  /* Save to local storage */
+  useEffect(() => {
+    localStorage.setItem("appliedFilters", JSON.stringify(appliedFilters));
+  }, [appliedFilters]);
+  useEffect(() => {
+    localStorage.setItem("appliedSettings", JSON.stringify(appliedSettings));
+  }, [appliedSettings]);
+
   const [mensaRoutes, setMensaRoutes] = useState<any>([]);
 
   useEffect(() => {
@@ -42,9 +92,36 @@ function App() {
         <Route path="/" element={<Navigate to="/login" />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/home" element={<Home />} />
+        <Route
+          path="/home"
+          element={
+            <Home
+              appliedSettings={appliedSettings}
+              setAppliedSettings={setAppliedSettings}
+              appliedFilters={appliedFilters}
+              setAppliedFilters={setAppliedFilters}
+              showFilter={showFilter}
+              setShowFilter={setShowFilter}
+              showSettings={showSettings}
+              setShowSettings={setShowSettings}
+            />
+          }
+        />
         {mensaRoutes.map((mensa: string) => (
-          <Route key={mensa} path={`/${mensa}`} element={<Mensa />} />
+          <Route
+            key={mensa}
+            path={`/${mensa}`}
+            element={
+              <Mensa
+                showFilter={showFilter}
+                setShowFilter={setShowFilter}
+                showSettings={showSettings}
+                setShowSettings={setShowSettings}
+                appliedSettings={appliedSettings}
+                setAppliedSettings={setAppliedSettings}
+              />
+            }
+          />
         ))}
         {/* <Route path="*" element={<Navigate to="/login" />} /> */}
       </Routes>
