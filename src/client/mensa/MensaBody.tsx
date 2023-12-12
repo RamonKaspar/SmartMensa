@@ -1,8 +1,7 @@
 import "./MensaBody.css";
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar, faShareSquare } from "@fortawesome/free-solid-svg-icons";
+import { FaStar, FaShareSquare } from "react-icons/fa";
 import { BsHeartFill } from "react-icons/bs";
 import { RiExternalLinkFill } from "react-icons/ri";
 
@@ -88,8 +87,32 @@ function MensaBody() {
     fetchMeals();
   }, [mensaName]);
 
+  function copyTextFallback(str: string): void {
+    const el = document.createElement("textarea");
+    el.value = str;
+    el.setAttribute("readonly", "");
+    el.style.position = "absolute";
+    el.style.left = "-9999px";
+    document.body.appendChild(el);
+
+    el.select();
+    let success = false;
+    try {
+      success = document.execCommand("copy");
+    } catch (err) {
+      console.error("Fallback: Oops, unable to copy", err);
+    }
+
+    document.body.removeChild(el);
+
+    if (success) {
+      alert("Meal description copied to clipboard!");
+    } else {
+      console.error("Fallback: Copying to clipboard failed");
+    }
+  }
+
   const handleShareClick = (meal: any) => {
-    console.log("Share button is clicked");
     let str = "Today: " + "\n" + myMensa.name_display + "\n";
     str += transformMensaTitle(meal) + "\n" + meal.meal_description;
     str += "\n" + getPrice(meal, "external");
@@ -103,9 +126,13 @@ function MensaBody() {
         })
         .catch((error) => {
           console.error("Failed to copy to clipboard: ", error);
+          // Fallback to the alternative copy function
+          copyTextFallback(str);
         });
     } else {
       console.error("Clipboard API not available");
+      // Fallback to the alternative copy function
+      copyTextFallback(str);
     }
   };
 
@@ -145,9 +172,8 @@ function MensaBody() {
                 {displayAllergens(meal.allergens)}
               </div>
               <div className="last-row-actions">
-                <FontAwesomeIcon icon={faStar} style={{ fontSize: "2em" }} />
-                <FontAwesomeIcon
-                  icon={faShareSquare}
+                <FaStar style={{ fontSize: "2em" }} />
+                <FaShareSquare
                   style={{ fontSize: "2em" }}
                   onClick={() => handleShareClick(meal)}
                 />
