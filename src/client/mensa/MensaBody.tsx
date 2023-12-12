@@ -100,7 +100,7 @@ function MensaBody() {
     try {
       success = document.execCommand("copy");
     } catch (err) {
-      console.error("Fallback: Oops, unable to copy", err);
+      console.error("Fallback: Copying to clipboard failed", err);
     }
 
     document.body.removeChild(el);
@@ -124,13 +124,11 @@ function MensaBody() {
         .then(() => {
           alert("Meal description copied to clipboard!");
         })
-        .catch((error) => {
-          console.error("Failed to copy to clipboard: ", error);
+        .catch(() => {
           // Fallback to the alternative copy function
           copyTextFallback(str);
         });
     } else {
-      console.error("Clipboard API not available");
       // Fallback to the alternative copy function
       copyTextFallback(str);
     }
