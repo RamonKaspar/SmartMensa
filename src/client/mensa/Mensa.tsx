@@ -8,7 +8,6 @@ function Mensa() {
       <Layout>
         <Header onFilterClick={() => {}} />
         <MensaBody />
-        {/* <Footer /> */} {/* Inserted in MensaBody.tsx */}
       </Layout>
     </>
   );
