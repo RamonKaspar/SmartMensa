@@ -14,7 +14,7 @@ function LoginBody() {
   };
 
   const navigate = useNavigate();
-  const handleSubmitClick = async () => {
+  const handleLogInClick = async () => {
     try {
       const response = await fetch("/api/authenticate", {
         method: "POST",
@@ -30,10 +30,10 @@ function LoginBody() {
         navigate("/home");
         // Optionally, handle the user data received from server
       } else {
-        alert(data.message || "Login failed");
+        alert(data.message);
       }
     } catch (error) {
-      alert("Error handling login");
+      alert("Login failed");
     }
   };
   const handleRegisterClick = () => {
@@ -60,7 +60,13 @@ function LoginBody() {
         placeholder="Password"
         autoComplete="current-password"
       />
-      <button onClick={handleSubmitClick}>Submit</button>
+      <button onClick={handleLogInClick}>Log in</button>
+      <button
+        className="without-login-button"
+        onClick={() => navigate("/home")}
+      >
+        Use without login
+      </button>
       <div className="register">
         Are you the first time visiting this page?{" "}
         {/* <a href="https://ethz.ch/de.html">here</a> */}
