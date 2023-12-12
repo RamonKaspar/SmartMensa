@@ -90,6 +90,7 @@ Document here the major milestones of your code and future planned steps.\
   - [x] Implement filter functions #12 !14
   - [ ] Implement some settings
   - [x] Implement share functionality #14 !16
+  - [ ] Repair share functionality (works only locally, doesn't work when deployed)
 
 - [ ] Milestone 3: Use webscraping to get the latest menus
   - [x] Get the menus for ETH mensas: #2 !2
