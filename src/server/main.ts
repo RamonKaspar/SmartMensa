@@ -47,76 +47,88 @@ const pythonScriptPathUZH = path.join(__dirname, "menu_scraper_uzh.py");
 const pythonScriptPathETH = path.join(__dirname, "menu_scraper_eth.py");
 const pythonInterpreter = "/usr/bin/python3";
 
-// Schedule the execution of the menu scraper scripts (ETH and UZH) every Monday at 00:05
-cron.schedule(
-  "5 1 * * *", // Run every day at 01:05 (UTC+01:00)
-  () => {
-    console.log("Fetching new UZH menus...");
+// Schedule the execution of Python scripts after the server starts
+function runPythonScripts() {
+  console.log("Fetching new UZH menus...");
+  serverLogs.push({
+    timestamp: new Date().toISOString(),
+    logs: ["Fetching new UZH menus..."],
+  });
+
+  // Execute menu scraper script for UZH
+  const pythonProcessUZH = spawn(pythonInterpreter, [pythonScriptPathUZH]);
+
+  pythonProcessUZH.stdout.on("data", (data) => {
+    const output = data.toString().trim();
+    console.log(output);
+    // Push stdout output to server logs
     serverLogs.push({
       timestamp: new Date().toISOString(),
-      logs: ["Fetching new UZH menus..."],
+      logs: [output],
+    });
+  });
+
+  pythonProcessUZH.stderr.on("data", (data) => {
+    console.error(`Python script stderr: ${data}`);
+    // Push stderr output to server logs
+    serverLogs.push({
+      timestamp: new Date().toISOString(),
+      logs: [`Python script stderr: ${data}`],
+    });
+  });
+
+  pythonProcessUZH.on("close", (code) => {
+    console.log(`Python script process (UZH) exited with code ${code}`);
+    // Push process closure information to server logs
+    serverLogs.push({
+      timestamp: new Date().toISOString(),
+      logs: [`Python script process (UZH) exited with code ${code}`],
     });
 
-    // Spawn a new python process to run the menu scraper script for UZH
-    const pythonProcess_uzh = spawn(pythonInterpreter, [pythonScriptPathUZH]);
-
-    pythonProcess_uzh.stdout.on("data", (data) => {
-      const output = data.toString().trim();
-      console.log(output);
-      serverLogs.push({
-        timestamp: new Date().toISOString(),
-        logs: [output],
-      });
-    });
-
-    pythonProcess_uzh.stderr.on("data", (data) => {
-      console.error(`Python script stderr: ${data}`);
-      serverLogs.push({
-        timestamp: new Date().toISOString(),
-        logs: ["Python script stderr: " + data],
-      });
-    });
-
-    pythonProcess_uzh.on("close", (code) => {
-      console.log(`Python script process exited with code ${code}`);
-      serverLogs.push({
-        timestamp: new Date().toISOString(),
-        logs: ["Python script process exited with code " + code],
-      });
-    });
-
+    console.log("Fetching new ETH menus...");
     serverLogs.push({
       timestamp: new Date().toISOString(),
       logs: ["Fetching new ETH menus..."],
     });
 
-    // Spawn a new python process to run the menu scraper script for ETH
-    const pythonProcess_eth = spawn(pythonInterpreter, [pythonScriptPathETH]);
+    // Execute menu scraper script for ETH after UZH script completion
+    const pythonProcessETH = spawn(pythonInterpreter, [pythonScriptPathETH]);
 
-    pythonProcess_eth.stdout.on("data", (data) => {
+    pythonProcessETH.stdout.on("data", (data) => {
       const output = data.toString().trim();
       console.log(output);
+      // Push stdout output to server logs
       serverLogs.push({
         timestamp: new Date().toISOString(),
         logs: [output],
       });
     });
 
-    pythonProcess_eth.stderr.on("data", (data) => {
+    pythonProcessETH.stderr.on("data", (data) => {
       console.error(`Python script stderr: ${data}`);
+      // Push stderr output to server logs
       serverLogs.push({
         timestamp: new Date().toISOString(),
-        logs: ["Python script stderr: " + data],
+        logs: [`Python script stderr: ${data}`],
       });
     });
 
-    pythonProcess_eth.on("close", (code) => {
-      console.log(`Python script process exited with code ${code}`);
+    pythonProcessETH.on("close", (code) => {
+      console.log(`Python script process (ETH) exited with code ${code}`);
+      // Push process closure information to server logs
       serverLogs.push({
         timestamp: new Date().toISOString(),
-        logs: ["Python script process exited with code " + code],
+        logs: [`Python script process (ETH) exited with code ${code}`],
       });
     });
+  });
+}
+
+// Schedule the execution of the menu scraper scripts (ETH and UZH) every Monday at 00:05
+cron.schedule(
+  "5 1 * * *", // Run every day at 01:05 (UTC+01:00)
+  () => {
+    runPythonScripts();
   },
   {
     scheduled: true,
@@ -160,6 +172,15 @@ app.get("/menus/:facilityID", async function (req, res) {
 });
 
 // Do not change below this line
-ViteExpress.listen(app, 5173, () =>
-  console.log("Server is listening on http://localhost:5173")
-);
+ViteExpress.listen(app, 5173, () => {
+  console.log("Server is listening on http://localhost:5173");
+  // Log execution initiation in server logs
+  console.log("Executing Python scripts after server start...");
+  serverLogs.push({
+    timestamp: new Date().toISOString(),
+    logs: ["Executing Python scripts after server start..."],
+  });
+
+  // Execute the Python scripts after the server starts, with a delay of 5 seconds
+  setTimeout(runPythonScripts, 5000);
+});
