@@ -6,7 +6,7 @@ function Mensa() {
   return (
     <>
       <Layout>
-        <Header />
+        <Header onFilterClick={() => {}} />
         <MensaBody />
         {/* <Footer /> */} {/* Inserted in MensaBody.tsx */}
       </Layout>
