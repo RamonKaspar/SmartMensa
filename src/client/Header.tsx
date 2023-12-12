@@ -6,17 +6,14 @@ import { MdArrowBackIos } from "react-icons/md";
 
 interface HeaderProps {
   onFilterClick: () => void;
+  onSettingsClick: () => void;
 }
 
-function Header({ onFilterClick }: HeaderProps) {
+function Header({ onFilterClick, onSettingsClick }: HeaderProps) {
   const navigate = useNavigate();
 
   const handleBackClick = () => {
     navigate("/home");
-  };
-
-  const handleSettingsClick = () => {
-    console.log("This click would trigger the settings menu!");
   };
 
   const location = useLocation();
@@ -38,7 +35,7 @@ function Header({ onFilterClick }: HeaderProps) {
           <span>SmartMensa</span>
         </div>
         <div id="settings-button">
-          <FaGear size={30} onClick={() => handleSettingsClick()} />
+          <FaGear size={30} onClick={onSettingsClick} />
         </div>
       </header>
     </>
