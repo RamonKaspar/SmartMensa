@@ -105,10 +105,10 @@ function HomeBody({ showFilter, setShowFilter, appliedFilters }: any) {
 
   return (
     <>
-      {showFilter && (
-        <div className="overlay" onClick={() => setShowFilter(false)}></div>
-      )}
       <main className={`home-body-container ${showFilter ? "blurred" : ""}`}>
+        {showFilter && (
+          <div className="overlay" onClick={() => setShowFilter(false)}></div>
+        )}
         <h2>Your favorite menus today</h2>
         <div className="favorite-meus-container">
           {/* Implement this in a later stage when we have user management */}
