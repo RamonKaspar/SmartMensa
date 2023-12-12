@@ -1,86 +1,134 @@
 import express, { Request, Response } from "express";
-import fs from "fs";
-import path from "path";
+import User from "../models/user";
 
 const router = express.Router();
-const dataFilePath = path.join(__dirname, "../data.txt");
 
-// Helper function to read and parse the data file
-const readData = (): {
-  id: number;
-  name: string;
-  username: string;
-  email: string;
-  password: string;
-  favMenus: string[];
-}[] => {
-  try {
-    const data = fs.readFileSync(dataFilePath, "utf8");
-    return JSON.parse(data);
-  } catch (err) {
-    // If the file does not exist or is empty, return an empty array
-    return [];
-  }
-};
-
-// Helper function to write data to the file
-const writeData = (data: any) => {
-  fs.writeFileSync(dataFilePath, JSON.stringify(data, null, 2), "utf8");
-};
-
-// POST route for /api/users
-router.post("/users", (req: Request, res: Response) => {
+// POST route for /api/register
+router.post("/register", async (req: Request, res: Response) => {
   const { name, username, email, password } = req.body;
 
   if (!username || !password) {
-    res.status(400).send("Username and password are required");
-    return;
+    return res.status(400).json({ message: "Missing information!" });
   }
 
-  const users = readData();
+  try {
+    const usernameExists = await checkUsernameExists(username);
+    if (usernameExists) {
+      return res.status(400).json({ message: "Username already exists" });
+    }
 
-  // Check if username or email already exists
-  const isUsernameExist = users.some((user) => user.username === username);
-  const isEmailExist = users.some((user) => user.email === email);
+    const emailExists = await checkEmailExists(email);
+    if (emailExists) {
+      return res.status(400).json({ message: "Email already exists" });
+    }
 
-  if (isUsernameExist) {
-    res.status(400).send("Username already exists");
-    return;
+    const userCount = await countUsers();
+    const newID = userCount + 1;
+
+    const newUser = new User({
+      id: newID,
+      name: name,
+      username: username,
+      email: email,
+      password: password,
+      favouriteMenus: [
+        { facilityID: 9, meal_description: "This is the favourite menu 1" },
+        { facilityID: 5, meal_description: "This is the favourite menu 2" },
+      ],
+      favouriteMensas: [7, 9],
+      allergens: ["Gluten"],
+    });
+
+    await newUser.save();
+    return res.status(200).json({ message: "Successfully registered!" });
+  } catch (error) {
+    console.error("Error registering user:", error);
+    return res.status(500).json({ message: "Internal Server Error" });
   }
-
-  if (isEmailExist) {
-    res.status(400).send("Email already exists");
-    return;
-  }
-
-  const newId = users.length + 1; // Simple ID generation
-  const newUser = { id: newId, name, username, email, password, favMenus: [] };
-
-  users.push(newUser);
-  writeData(users);
-
-  res.status(200).json({ message: "User added", newUser });
 });
 
 // POST route for /api/authenticate
-router.post("/authenticate", (req, res) => {
+router.post("/authenticate", async (req, res) => {
   const { username, password } = req.body;
-  const users = readData();
 
-  const user = users.find(
-    (user) => user.username === username && user.password === password
-  );
+  if (!username || !password) {
+    return res.status(400).json({ message: "Username and password required!" });
+  }
 
-  if (user) {
-    req.session.userId = user.id;
-    req.session.userName = user.username;
-    req.session.favMenus = user.favMenus;
-    res.status(200).json({ message: "Authentication successful", user });
-  } else {
-    res.status(401).json({ message: "Authentication failed" });
+  try {
+    const [exists, userID] = await authenticateUser(username, password);
+
+    if (exists) {
+      req.session.userId = userID;
+      return res.status(200).json({ message: "Authentication successful!" });
+    } else {
+      return res.status(401).json({ message: "Wrong username or password" });
+    }
+  } catch (error) {
+    console.error("Error authenticating user:", error);
+    return res.status(500).json({ message: "Internal Server Error" });
   }
 });
 
-// Don't forget to export the router and include it in your Express app
+async function checkUsernameExists(usernameToCheck: string) {
+  try {
+    const existingUser = await User.findOne({ username: usernameToCheck });
+
+    if (existingUser) {
+      return true;
+    } else {
+      return false;
+    }
+  } catch (error) {
+    console.error("Error checking username:", error);
+    throw error;
+  }
+}
+
+async function checkEmailExists(emailToCheck: string) {
+  try {
+    const existingUser = await User.findOne({ email: emailToCheck });
+
+    if (existingUser) {
+      return true;
+    } else {
+      return false;
+    }
+  } catch (error) {
+    console.error("Error checking email:", error);
+    throw error;
+  }
+}
+
+async function countUsers() {
+  try {
+    const userCount = await User.countDocuments();
+    return userCount;
+  } catch (error) {
+    console.error("Error counting users:", error);
+    throw error;
+  }
+}
+
+async function authenticateUser(
+  usernameToCheck: string,
+  passwordToCheck: string
+) {
+  try {
+    const existingUser = await User.findOne({
+      username: usernameToCheck,
+      password: passwordToCheck,
+    });
+
+    if (existingUser) {
+      return [true, existingUser.id];
+    } else {
+      return [false, -1];
+    }
+  } catch (error) {
+    console.error("Error authenticating user:", error);
+    throw error;
+  }
+}
 
 export default router;
