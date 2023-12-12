@@ -98,12 +98,10 @@ Document here the major milestones of your code and future planned steps.\
 
 - [ ] Milestone 4: Personalize the web-app
   - [x] Add login functionality #5 !12
+  - [ ] Use mongodb to store user data
   - [ ] Add favourite menus functionality
   - [ ] Add favourite mensas functionality
   - [ ] Add personalized setting (allergens etc.)
-
-- [ ] Milestone 5: Use gitlap pipeline to run python in backend
-  - [ ] Install chrome-driver, chromium-browser and python with all the necessary packages
 
 Create a list subtask.\
 Open an issue for each subtask. Once you create a subtask, link the corresponding issue.\
