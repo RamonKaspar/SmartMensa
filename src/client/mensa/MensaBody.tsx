@@ -89,7 +89,8 @@ function MensaBody() {
   }, [mensaName]);
 
   const handleShareClick = (meal: any) => {
-    let str = "Today: " + "\n" + myMensa.name_display;
+    console.log("Sahre button is clicked");
+    let str = "Today: " + "\n" + myMensa.name_display + "\n";
     str += transformMensaTitle(meal) + "\n" + meal.meal_description;
     str += "\n" + getPrice(meal, "external");
     try {
@@ -104,7 +105,9 @@ function MensaBody() {
           // Handle any errors
           console.error("Failed to copy to clipboard: ", error);
         });
-    } catch (error) {}
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
