@@ -64,6 +64,12 @@
         margin-top: 10px;
       }
 
+      & .matched-allergens-component {
+        margin-top: 10px;
+        color: red;
+        font-weight: bold;
+      }
+
       & .last-row-actions {
         display: flex;
         justify-content: space-around;
