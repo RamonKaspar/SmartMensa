@@ -88,6 +88,25 @@ function MensaBody() {
     fetchMeals();
   }, [mensaName]);
 
+  const handleShareClick = (meal: any) => {
+    let str = "Today: " + "\n" + myMensa.name_display;
+    str += transformMensaTitle(meal) + "\n" + meal.meal_description;
+    str += "\n" + getPrice(meal, "external");
+    try {
+      // Attempt to copy the meal description to the clipboard
+      navigator.clipboard
+        .writeText(str)
+        .then(() => {
+          // Copying to clipboard was successful
+          alert("Meal description copied to clipboard!");
+        })
+        .catch((error) => {
+          // Handle any errors
+          console.error("Failed to copy to clipboard: ", error);
+        });
+    } catch (error) {}
+  };
+
   return (
     <>
       <main className="mensa-body-container">
@@ -126,6 +145,7 @@ function MensaBody() {
                 <FontAwesomeIcon
                   icon={faShareSquare}
                   style={{ fontSize: "2em" }}
+                  onClick={() => handleShareClick(meal)}
                 />
               </div>
             </div>
