@@ -1,9 +1,9 @@
 .filter-component {
   position: fixed;
-  bottom: 0;
+  top: calc(40px + 200px);
   width: 100%;
   padding: 20px;
-  height: calc(100dvh-40px);
+  height: calc(100dvh - 40px - 200px);
   background-color: black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   border-radius: 25px;
@@ -12,6 +12,7 @@
   z-index: 1000; /* Ensure it sits above other elements */
   color: white;
   box-sizing: border-box; /* Ensure padding is included in width */
+  overflow-y: auto;
 
   & h2 {
     text-align: center;
