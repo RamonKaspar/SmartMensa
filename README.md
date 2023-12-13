@@ -88,7 +88,7 @@ Document here the major milestones of your code and future planned steps.\
 - [ ] Milestone 2: Make frontend functional (dynamic)
   - [x] Implement backend functionality to get the menus #6 !5
   - [x] Implement filter functions #12 !14
-  - [ ] Implement some settings #15
+  - [x] Implement some settings #15 !17
   - [x] Implement share functionality #14 !16
 
 - [ ] Milestone 3: Use webscraping to get the latest menus
