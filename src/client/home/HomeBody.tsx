@@ -380,12 +380,14 @@ function HomeBody({
             <div className="todays-favourite-menus-container">
               {currentUserId !== -1 && (
                 <>
-                  <h2>Your favourite menus today</h2>
-                  <FaEdit
-                    size={30}
-                    onClick={() => navigate("/favourite-menus")}
-                    className="edit-favourites-button"
-                  />
+                  <div className="row-one-title">
+                    <h2>Your favourite menus today</h2>
+                    <FaEdit
+                      size={30}
+                      onClick={() => navigate("/favourite-menus")}
+                      className="edit-favourites-button"
+                    />
+                  </div>
                   <div className="menu-container">
                     {/* Create for each menu a component */}
                     {favouriteMenusToday.map(([meal, daytime], index) => (
