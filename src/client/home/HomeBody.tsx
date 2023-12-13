@@ -3,6 +3,7 @@ import "./HomeBody.css";
 import { BsHeartFill } from "react-icons/bs";
 import { MdArrowForwardIos } from "react-icons/md";
 import { useState, useEffect } from "react";
+import { FaEdit } from "react-icons/fa";
 
 async function fetchMensaStaticInfos() {
   try {
@@ -132,14 +133,28 @@ function HomeBody({
             }}
           ></div>
         )}
-        <h2>Your favorite menus today</h2>
-        <div className="favorite-meus-container">
-          {currentUserId !== -1 ? (
-            <div>Welcome, User ID: {currentUserId}</div>
-          ) : (
-            <div>No user logged in...</div>
-          )}
-        </div>
+        {currentUserId !== -1 && (
+          <>
+            <div className="favourite-menus-container">
+              {currentUserId !== -1 && (
+                <>
+                  <h2>Your favourite menus today</h2>
+                  <FaEdit
+                    size={30}
+                    onClick={() => navigate("/favourite-menus")}
+                  />
+                </>
+              )}
+            </div>
+            <div className="todays-favourite-menus-container">
+              {currentUserId !== -1 ? (
+                <div>Welcome, User ID: {currentUserId}</div>
+              ) : (
+                <div>No user logged in...</div>
+              )}
+            </div>
+          </>
+        )}
         <h2>Mensas ({filteredMensas.length})</h2>
         <div className="mensa-buttons-container">
           {filteredMensas.map((mensa: any, index: any) => (
