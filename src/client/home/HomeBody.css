@@ -7,16 +7,75 @@
     justify-content: center;
     align-items: center;
     color: #000000;
+    padding-left: 10px;
+  }
+
+  & .edit-favourites-button {
+    padding-right: 10px;
   }
 }
 
-.favourite-menus-container {
+.todays-favourite-menus-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px;
+
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex: 1; /* Ensures that the container stretches to fill the screen */
+    justify-content: flex-start;
+    min-width: calc(
+      100vw - 20px
+    ); /* Ensures that the container stretches to fill the screen */
+
+    & .menu-component {
+      padding: 15px;
+      background: var(
+        --greenish-color-background
+      ); /* Light grey background, change as needed */
+      border-radius: 25px; /* Rounded corners */
+      border: 1px solid black; /* Slight black border */
+      margin-top: 10px; /* Add space between buttons  */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Simple box shadow for depth */
+      &:first-of-type {
+        margin-top: 0;
+      }
+
+      & .menu-title-and-price {
+        display: flex;
+        justify-content: space-between;
+        margin: 0; /* Reset margin */
+        padding: 0; /* Reset padding */
+      }
+
+      & .ingredients-component {
+        margin-top: 10px;
+        font-size: large;
+      }
+
+      & .allergens-component {
+        margin-top: 10px;
+      }
+
+      & .matched-allergens-component {
+        margin-top: 10px;
+        color: red;
+        font-weight: bold;
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  & .banner-no-menus-available {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* Blurr the whole main component if we are in the filter menu */
