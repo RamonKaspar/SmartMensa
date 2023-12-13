@@ -33,7 +33,7 @@ const getSpecificMensaStaticInfos = async (mensaName: string) => {
 };
 
 interface Menu {
-  facilityID: number;
+  facility_id: number;
   line_name: string;
   meal_name: string;
   meal_description: string;
