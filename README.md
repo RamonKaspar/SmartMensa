@@ -98,8 +98,7 @@ Document here the major milestones of your code and future planned steps.\
 
 - [ ] Milestone 4: Personalize the web-app
   - [x] Add login functionality #5 !12
-  - [ ] Use mongodb to store user data
-  - [ ] Add favourite menus functionality
+  - [x] Create favourite menus page and store the favourite menus in remote mongoDB user database #17 !19
   - [ ] Add favourite mensas functionality
   - [ ] Add personalized setting (allergens etc.)
 
