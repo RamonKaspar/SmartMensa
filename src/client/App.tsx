@@ -4,6 +4,7 @@ import Login from "./login/Login";
 import Home from "./home/Home";
 import Mensa from "./mensa/Mensa";
 import Register from "./register/Register";
+import FavMenus from "./favouritemenus/FavMenus";
 import { useState, useEffect } from "react";
 
 async function fetchMensaStaticInfos() {
@@ -123,6 +124,21 @@ function App() {
             }
           />
         ))}
+        <Route
+          path="/favourite-menus"
+          element={
+            <FavMenus
+              appliedSettings={appliedSettings}
+              setAppliedSettings={setAppliedSettings}
+              appliedFilters={appliedFilters}
+              setAppliedFilters={setAppliedFilters}
+              showFilter={showFilter}
+              setShowFilter={setShowFilter}
+              showSettings={showSettings}
+              setShowSettings={setShowSettings}
+            />
+          }
+        />
         {/* <Route path="*" element={<Navigate to="/login" />} /> */}
       </Routes>
     </>

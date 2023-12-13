@@ -32,11 +32,75 @@ const getSpecificMensaStaticInfos = async (mensaName: string) => {
   }
 };
 
+interface Menu {
+  facilityID: number;
+  line_name: string;
+  meal_name: string;
+  meal_description: string;
+  allergens: string[];
+  price_info: {
+    students: number;
+    internal: number;
+    external: number;
+  };
+}
+
 function MensaBody({ appliedSettings, showSettings, setShowSettings }: any) {
   const location = useLocation();
   const mensaName = location.pathname.replace("/", "");
   const [currentDayMeals, setCurrentDayMeals] = useState<any[]>([]);
   const [myMensa, setMyMensa] = useState<any>({});
+  const [currentUserId, setCurrentUserId] = useState(-1);
+  const [favouriteMenus, setFavouriteMenus] = useState<Menu[]>([]);
+  const [dummy, setDummy] = useState(false);
+
+  // Function to check if a meal in favouriteMenus matches the meal_description
+  const checkFavouriteMeal = (mealDescription: string): boolean => {
+    // Check if there's any meal in favouriteMenus with the same meal_description
+    return favouriteMenus.some(
+      (meal) => meal.meal_description === mealDescription
+    );
+  };
+
+  useEffect(() => {
+    async function fetchUserID() {
+      try {
+        await fetch("/api/current-user")
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.userId) {
+              setCurrentUserId(data.userId);
+            }
+          })
+          .catch((error) =>
+            console.error("Error fetching current user ID:", error)
+          );
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    fetchUserID();
+  }, []);
+
+  useEffect(() => {
+    async function fetchFavouriteMenus() {
+      try {
+        if (currentUserId === -1) {
+          return;
+        }
+        const response = await fetch(`/serve-favourite-menus/${currentUserId}`);
+        if (!response.ok) {
+          throw new Error("Failed to fetch favorite meals");
+        }
+        const favoriteMeals = await response.json();
+        setFavouriteMenus(favoriteMeals.favouriteMenus);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    fetchFavouriteMenus();
+  }, [currentUserId, favouriteMenus]);
 
   useEffect(() => {
     async function fetchMeals() {
@@ -85,7 +149,7 @@ function MensaBody({ appliedSettings, showSettings, setShowSettings }: any) {
     }
 
     fetchMeals();
-  }, [mensaName]);
+  }, [mensaName, dummy]);
 
   function copyTextFallback(str: string): void {
     const el = document.createElement("textarea");
@@ -111,6 +175,64 @@ function MensaBody({ appliedSettings, showSettings, setShowSettings }: any) {
       console.error("Fallback: Copying to clipboard failed");
     }
   }
+
+  const handleStarClick = (meal: any) => {
+    // Store favourite menu to mongodb database
+    let mealName = "";
+    if (meal.meal_name) {
+      mealName = meal.meal_name;
+    }
+
+    const newFavouriteMenu = {
+      facility_id: myMensa.facility_id,
+      line_name: meal.line_name,
+      meal_name: mealName,
+      meal_description: meal.meal_description,
+      allergens: meal.allergens,
+      price_info: meal.price_info,
+    };
+
+    // Check if the meal is already in the favouriteMenus array
+    setDummy(!dummy);
+    if (checkFavouriteMeal(meal.meal_description)) {
+      // Remove meal from favouriteMenus
+      const index = favouriteMenus.indexOf(meal);
+      const newFavouriteMenus = favouriteMenus.filter(
+        (menu) => menu.meal_description !== meal.meal_description
+      );
+      setFavouriteMenus(newFavouriteMenus);
+      async function deleteFavouriteMenu() {
+        try {
+          await fetch(`/delete-favourite-menu/${currentUserId}`, {
+            method: "DELETE",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ index }),
+          });
+        } catch (error) {
+          console.error(error);
+        }
+      }
+      deleteFavouriteMenu();
+
+      return;
+    }
+
+    favouriteMenus.push(meal);
+
+    // add new favourite menu to database using /add-favorite-menu/:userID endpoint
+    fetch(`/add-favorite-menu/${currentUserId}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newFavouriteMenu),
+    })
+      .then((response) => response.json())
+      .then(() => {})
+      .catch((error) => console.error("Error:", error));
+  };
 
   const handleShareClick = (meal: any) => {
     let str = "Today: " + "\n" + myMensa.name_display + "\n";
@@ -182,7 +304,17 @@ function MensaBody({ appliedSettings, showSettings, setShowSettings }: any) {
                   : displayMatchedAllergens(meal.allergens, appliedSettings)}
               </div>
               <div className="last-row-actions">
-                <FaStar style={{ fontSize: "2em" }} />
+                <FaStar
+                  style={{
+                    fontSize: "2em",
+                  }}
+                  onClick={() => handleStarClick(meal)}
+                  className={`star-icon ${
+                    checkFavouriteMeal(meal.meal_description)
+                      ? "marked-as-favourite"
+                      : ""
+                  }`}
+                />
                 <FaShareSquare
                   style={{ fontSize: "2em" }}
                   onClick={() => handleShareClick(meal)}

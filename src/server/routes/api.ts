@@ -31,12 +31,9 @@ router.post("/register", async (req: Request, res: Response) => {
       username: username,
       email: email,
       password: password,
-      favouriteMenus: [
-        { facilityID: 9, meal_description: "This is the favourite menu 1" },
-        { facilityID: 5, meal_description: "This is the favourite menu 2" },
-      ],
+      favouriteMenus: [],
       favouriteMensas: [7, 9],
-      allergens: ["Gluten"],
+      allergens: ["Gluten", "Milch"],
     });
 
     await newUser.save();
