@@ -3,9 +3,20 @@
 .home-body-container {
   min-height: calc(100dvh-40px);
   & h2 {
-    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #000000;
   }
+}
+
+.favourite-menus-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 /* Blurr the whole main component if we are in the filter menu */
