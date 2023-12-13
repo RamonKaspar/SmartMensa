@@ -7,21 +7,29 @@
     justify-content: center;
     align-items: center;
     color: #000000;
-    padding-left: 10px;
+
+    @media (max-width: 375px) {
+      font-size: 1.3em;
+    }
   }
 
   & .edit-favourites-button {
+    padding-left: 10px;
+  }
+
+  .row-one-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
     padding-right: 10px;
+    max-width: 100vw; /* Ensure the width never exceeds viewport width */
+    width: 100%; /* Occupy available width within the constraints */
+    box-sizing: border-box; /* Include padding within the element's width */
   }
 }
 
 .todays-favourite-menus-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-
   .menu-container {
     display: flex;
     flex-direction: column;
