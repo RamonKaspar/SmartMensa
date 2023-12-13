@@ -53,6 +53,10 @@
         justify-content: space-between;
         margin: 0; /* Reset margin */
         padding: 0; /* Reset padding */
+
+        & .menu-title {
+          padding-right: 30px;
+        }
       }
 
       & .ingredients-component {
