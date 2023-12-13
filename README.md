@@ -15,7 +15,7 @@ In the bustling academic environment of ETH and UZH, finding the perfect meal ca
 The goal of SmartMensa is to create a user-friendly, accessible web application that simplifies and enriches the eating experience at ETH and UZH by providing real-time information on menus, nutritional content, allergy alerts, and personalized recommendations, all in one integrated platform. 
 
 ### Data Sources
-Mensa Menus from ETH: https://ethz.ch/de/campus/erleben/gastronomie-und-einkaufen/gastronomie/menueplaene.html
+Mensa Menus from ETH: https://ethz.ch/de/campus/erleben/gastronomie-und-einkaufen/gastronomie/menueplaene.html \\
 Mensa Menus from UZH: https://www.mensa.uzh.ch/de/menueplaene.html
 
 ### Tasks
@@ -78,20 +78,20 @@ docker run -it --rm -p 5173:5173 my-webapp bash
 
 ## Milestones
 Document here the major milestones of your code and future planned steps.\
-- [ ] Milestone 1: Create non-functional frontend
+- [x] Milestone 1: Create non-functional frontend
   - [x] Create react skeleton (all react components) and implement routes for BrowserRouter: #1 !1
   - [x] Implement and style the login- and homepage #4 !4
   - [x] Implement and style the mensa page #7 !8
   - [x] Refine mensa styling and make it functional #9 !10
   - [x] Hardcode all static mensa information (name, open hours etc.) #13 !15
 
-- [ ] Milestone 2: Make frontend functional (dynamic)
+- [x] Milestone 2: Make frontend functional (dynamic)
   - [x] Implement backend functionality to get the menus #6 !5
   - [x] Implement filter functions #12 !14
   - [x] Implement some settings #15 !17
   - [x] Implement share functionality #14 !16
 
-- [ ] Milestone 3: Use webscraping to get the latest menus
+- [x] Milestone 3: Use webscraping to get the latest menus
   - [x] Get the menus for ETH mensas: #2 !2
   - [x] Get the menus for UZH mensas: #3 !3
   - [x] Run python scripts daily in backend to fetch the new menus and store them as JSON files #8 !9
