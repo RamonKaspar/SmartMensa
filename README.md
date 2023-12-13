@@ -15,8 +15,18 @@ In the bustling academic environment of ETH and UZH, finding the perfect meal ca
 The goal of SmartMensa is to create a user-friendly, accessible web application that simplifies and enriches the eating experience at ETH and UZH by providing real-time information on menus, nutritional content, allergy alerts, and personalized recommendations, all in one integrated platform. 
 
 ### Data Sources
-Mensa Menus from ETH: https://ethz.ch/de/campus/erleben/gastronomie-und-einkaufen/gastronomie/menueplaene.html \
-Mensa Menus from UZH: https://www.mensa.uzh.ch/de/menueplaene.html
+These links are dynamically generated in the python scripts.
+
+Mensa Menus from ETH: \
+https://idapps.ethz.ch/cookpit-pub-services/v1/weeklyrotas/?client-id=ethz-wcms&lang={language}&rs-first=0&rs-size=50&valid-after={yyyy-mm-dd}&valid-before={yyyy-mm-dd}&facility={facility_id} \
+Example link for ETH: \
+https://idapps.ethz.ch/cookpit-pub-services/v1/weeklyrotas/?client-id=ethz-wcms&lang=de&rs-first=0&rs-size=50&valid-after=2023-11-27&valid-before=2023-12-04&facility=9
+
+Mensa Menus from UZH: \
+https://zfv.ch/{language}/menus/rssMenuPlan?menuId={facility_id}&type=uzh2&dayOfWeek={numberOfDayOfTheWeek} \
+Example link for UZH: \
+https://zfv.ch/en/menus/rssMenuPlan?menuId=509&type=uzh2&dayOfWeek=1
+
 
 ### Tasks
 Here we present the key features of our app:
