@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { FaTrash } from "react-icons/fa";
 
 interface Menu {
-  facilityID: number;
+  facility_id: number;
   line_name: string;
   meal_name: string;
   meal_description: string;
@@ -255,7 +255,6 @@ function FavMenusBody({ appliedSettings, showSettings, setShowSettings }: any) {
               </p>
             </h3>
             {/* change later: priceCategory should be retrieved from user preference */}
-            <div className="menu-line">{/* Content for menu line */}</div>
             <div className="ingredients-component">{meal.meal_description}</div>
             <div className="matched-allergens-component">
               {meal.allergens && meal.allergens.length === 0
