@@ -1,5 +1,6 @@
 import express, { Request, Response } from "express";
 import User from "../models/user";
+import bcrypt from "bcrypt";
 
 const router = express.Router();
 
@@ -25,12 +26,23 @@ router.post("/register", async (req: Request, res: Response) => {
     const userCount = await countUsers();
     const newID = userCount + 1;
 
+    // Hash the password
+    const saltRounds = 10;
+    const passwordHash = await bcrypt
+      .hash(password, saltRounds)
+      .then((hash) => {
+        return hash;
+      })
+      .catch((err) => {
+        throw new Error(err.message);
+      });
+
     const newUser = new User({
       id: newID,
       name: name,
       username: username,
       email: email,
-      password: password,
+      password: passwordHash,
       favouriteMenus: [],
       favouriteMensas: [7, 9],
       allergens: ["Gluten", "Milch"],
@@ -53,10 +65,16 @@ router.post("/authenticate", async (req, res) => {
   }
 
   try {
-    const [exists, userID] = await authenticateUser(username, password);
+    const existingUser = await User.findOne({ username });
 
-    if (exists) {
-      req.session.userId = userID;
+    if (!existingUser) {
+      return res.status(401).json({ message: "Wrong username or password" });
+    }
+
+    const passwordMatch = await bcrypt.compare(password, existingUser.password);
+
+    if (passwordMatch) {
+      req.session.userId = existingUser.id;
       return res.status(200).json({ message: "Authentication successful!" });
     } else {
       return res.status(401).json({ message: "Wrong username or password" });
@@ -78,7 +96,7 @@ async function checkUsernameExists(usernameToCheck: string) {
     }
   } catch (error) {
     console.error("Error checking username:", error);
-    throw error;
+    throw new Error("Error checking username");
   }
 }
 
@@ -93,7 +111,7 @@ async function checkEmailExists(emailToCheck: string) {
     }
   } catch (error) {
     console.error("Error checking email:", error);
-    throw error;
+    throw new Error("Error checking email");
   }
 }
 
@@ -103,28 +121,7 @@ async function countUsers() {
     return userCount;
   } catch (error) {
     console.error("Error counting users:", error);
-    throw error;
-  }
-}
-
-async function authenticateUser(
-  usernameToCheck: string,
-  passwordToCheck: string
-) {
-  try {
-    const existingUser = await User.findOne({
-      username: usernameToCheck,
-      password: passwordToCheck,
-    });
-
-    if (existingUser) {
-      return [true, existingUser.id];
-    } else {
-      return [false, -1];
-    }
-  } catch (error) {
-    console.error("Error authenticating user:", error);
-    throw error;
+    throw new Error("Error counting users");
   }
 }
 
