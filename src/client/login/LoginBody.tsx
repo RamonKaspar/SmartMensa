@@ -66,11 +66,9 @@ function LoginBody() {
       >
         Use without login
       </button>
-      <div className="register">
-        Are you the first time visiting this page?{" "}
-        {/* <a href="https://ethz.ch/de.html">here</a> */}
-        <button onClick={handleRegisterClick}>Go Register</button>
-      </div>
+      <div className="register">Are you the first time visiting this page?</div>
+      <button onClick={handleRegisterClick}>Go Register</button>
+
       <img src="./logo.png" alt="SmartMensa" className="logo" />
     </main>
   );
