@@ -110,7 +110,8 @@ Document here the major milestones of your code and future planned steps.\
   - [x] Add login functionality #5 !12
   - [x] Create favourite menus page and store the favourite menus in remote mongoDB user database #17 !19
   - [x] Display all favourite menus which are available today #18 !20
-  - [ ] Add functionality to store favourite mensas, allergens and price class (student, intern, extern) in database
+  - [ ] Add functionality to store allergens and price class (student, intern, extern) in database #20 !21
+  - [ ] Add functionality to store favourite mensas in database
 
 Create a list subtask.\
 Open an issue for each subtask. Once you create a subtask, link the corresponding issue.\
