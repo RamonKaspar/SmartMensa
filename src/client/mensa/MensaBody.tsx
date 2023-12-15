@@ -296,7 +296,9 @@ function MensaBody({ appliedSettings, showSettings, setShowSettings }: any) {
               {/* change later: priceCategory should be retrieved from user preference */}
               <div className="menu-line">{}</div>
               <div className="ingredients-component">
-                {meal.meal_description}
+                {meal.meal_description === ""
+                  ? "No meal description available"
+                  : meal.meal_description}
               </div>
               <div className="matched-allergens-component">
                 {meal.allergens && meal.allergens.length === 0
@@ -385,11 +387,15 @@ function transformMensaTitle(meal: any): string {
 
 function getPrice(meal: any, priceCategory: string): string {
   let amount = meal.price_info[priceCategory];
-  return amount.toLocaleString("en-US", {
-    style: "currency",
-    currency: "CHF", // Change the currency code as needed
-    minimumFractionDigits: 2, // Set the minimum number of digits after the decimal point
-  });
+  if (amount) {
+    return amount.toLocaleString("en-US", {
+      style: "currency",
+      currency: "CHF", // Change the currency code as needed
+      minimumFractionDigits: 2, // Set the minimum number of digits after the decimal point
+    });
+  } else {
+    return "No price information available";
+  }
 }
 
 function displayMatchedAllergens(
