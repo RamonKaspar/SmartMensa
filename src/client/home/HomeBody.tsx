@@ -306,30 +306,47 @@ function HomeBody({
   const filteredMensas = noFiltersApplied
     ? mensaInfos
     : mensaInfos.filter((mensa: any) => {
-        let matchesFilter = false;
-        if (appliedFilters.Zentrum_ETH && mensa.location === "Zentrum (ETH)")
-          matchesFilter = true;
-        if (appliedFilters.Zentrum_UZH && mensa.location === "Zentrum (UZH)")
-          matchesFilter = true;
-        if (appliedFilters.Irchel && mensa.location === "Irchel")
-          matchesFilter = true;
-        if (appliedFilters.Höngg && mensa.location === "Höngg")
-          matchesFilter = true;
-        if (appliedFilters.Oerlikon && mensa.location === "Oerlikon")
-          matchesFilter = true;
+        // Check if mensa is a favorite if the Favorites filter is applied
+        let isFavorite =
+          !appliedFilters.Favorites || favorites[mensa.name_display];
 
-        // If 'Currently Open' filter is active, further filter by open status
-        if (!matchesFilter) {
-          if (appliedFilters.Currently_Open) {
-            matchesFilter = currentlyOpen(mensa);
-          }
-        } else {
-          if (appliedFilters.Currently_Open) {
-            matchesFilter = matchesFilter && currentlyOpen(mensa);
-          }
+        // Check location filters
+        let locationMatch = false;
+        if (appliedFilters.Zentrum_ETH && mensa.location === "Zentrum (ETH)") {
+          locationMatch = true;
+        }
+        if (appliedFilters.Zentrum_UZH && mensa.location === "Zentrum (UZH)") {
+          locationMatch = true;
+        }
+        if (appliedFilters.Irchel && mensa.location === "Irchel") {
+          locationMatch = true;
+        }
+        if (appliedFilters.Höngg && mensa.location === "Höngg") {
+          locationMatch = true;
+        }
+        if (appliedFilters.Oerlikon && mensa.location === "Oerlikon") {
+          locationMatch = true;
         }
 
-        return matchesFilter;
+        // If no location filter is set, consider all locations as matching
+        if (
+          !appliedFilters.Zentrum_ETH &&
+          !appliedFilters.Zentrum_UZH &&
+          !appliedFilters.Irchel &&
+          !appliedFilters.Höngg &&
+          !appliedFilters.Oerlikon
+        ) {
+          locationMatch = true;
+        }
+
+        // Check 'Currently Open' filter
+        let openMatch = true; // Default to true if filter is not set
+        if (appliedFilters.Currently_Open) {
+          openMatch = currentlyOpen(mensa);
+        }
+
+        // Return true if both location and open status match
+        return locationMatch && openMatch && isFavorite;
       });
 
   // Handles if one clicks on a heart (for now, only the color changes)
@@ -337,7 +354,7 @@ function HomeBody({
     locationName: string,
     event: React.MouseEvent
   ) => {
-    event.stopPropagation(); // Prevents the button's click event
+    event.stopPropagation();
     setFavorites((prevFavorites) => ({
       ...prevFavorites,
       [locationName]: !prevFavorites[locationName], // Toggle the favorite state for the clicked location

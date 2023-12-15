@@ -356,5 +356,5 @@ ViteExpress.listen(app, 5173, () => {
   });
 
   // Execute the Python scripts after the server starts, with a delay of 5 seconds
-  setTimeout(runPythonScripts, 5000);
+  /* setTimeout(runPythonScripts, 5000); */
 });
