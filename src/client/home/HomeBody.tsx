@@ -2,8 +2,10 @@ import { useNavigate } from "react-router-dom";
 import "./HomeBody.css";
 import { BsHeartFill } from "react-icons/bs";
 import { MdArrowForwardIos } from "react-icons/md";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { FaEdit } from "react-icons/fa";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { FaArrowLeftLong } from "react-icons/fa6";
 
 async function fetchMensaStaticInfos() {
   try {
@@ -220,6 +222,32 @@ function HomeBody({
   // Saves the state of the heart (mensa selected as favorite) for each mensa
   const [favorites, setFavorites] = useState<FavoritesState>({});
   const [currentUserId, setCurrentUserId] = useState(-1);
+  const [position, setPosition] = useState(0);
+  const menuContainerRef = useRef<HTMLDivElement>(null);
+
+  // Function to handle scrolling right
+  const scrollRight = () => {
+    const container = menuContainerRef.current;
+    if (container && position < favouriteMenusToday.length - 1) {
+      container.scrollTo({
+        left: container.clientWidth * (position + 1),
+        behavior: "smooth",
+      });
+      setPosition(position + 1);
+    }
+  };
+
+  // Function to handle scrolling left
+  const scrollLeft = () => {
+    const container = menuContainerRef.current;
+    if (container && position > 0) {
+      container.scrollTo({
+        left: container.clientWidth * (position - 1),
+        behavior: "smooth",
+      });
+      setPosition(position - 1);
+    }
+  };
 
   useEffect(() => {
     if (currentUserId === -1) {
@@ -402,14 +430,16 @@ function HomeBody({
               {currentUserId !== -1 && (
                 <>
                   <div className="row-one-title">
-                    <h2>Your favourite menus today</h2>
+                    <h2>
+                      Favourite menus today ({favouriteMenusToday.length})
+                    </h2>
                     <FaEdit
                       size={30}
                       onClick={() => navigate("/favourite-menus")}
                       className="edit-favourites-button"
                     />
                   </div>
-                  <div className="menu-container">
+                  <div className="menu-container" ref={menuContainerRef}>
                     {/* Create for each menu a component */}
                     {favouriteMenusToday.map(([meal, daytime], index) => (
                       <div key={index} className="menu-component">
@@ -442,12 +472,30 @@ function HomeBody({
                         </div>
                       </div>
                     ))}
-                    {favouriteMenus.length === 0 && (
-                      <div className="banner-no-menus-available">
-                        No favourite menus today!
-                      </div>
-                    )}
                   </div>
+                  {favouriteMenusToday.length > 1 && (
+                    <div className="arrow-icon-container">
+                      {position === 0 ? (
+                        <FaArrowLeftLong
+                          size={30}
+                          onClick={scrollLeft}
+                          style={{ visibility: "hidden" }}
+                        />
+                      ) : (
+                        <FaArrowLeftLong size={30} onClick={scrollLeft} />
+                      )}
+                      <div className="mini-info">Click to scroll</div>
+                      {position === favouriteMenusToday.length - 1 ? (
+                        <FaArrowRightLong
+                          size={30}
+                          onClick={scrollLeft}
+                          style={{ visibility: "hidden" }}
+                        />
+                      ) : (
+                        <FaArrowRightLong size={30} onClick={scrollRight} />
+                      )}
+                    </div>
+                  )}
                 </>
               )}
             </div>
