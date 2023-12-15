@@ -32,26 +32,36 @@
 .todays-favourite-menus-container {
   .menu-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-left: 10px;
-    margin-right: 10px;
-    flex: 1; /* Ensures that the container stretches to fill the screen */
+    flex: 1;
     justify-content: flex-start;
-    min-width: calc(
-      100vw - 20px
-    ); /* Ensures that the container stretches to fill the screen */
+    align-items: flex-start;
+    max-height: 400px;
+    overflow-x: scroll;
+    gap: 10px;
 
     & .menu-component {
+      min-width: calc(100dvw - 52px);
+      max-width: calc(100dvw - 52px);
       padding: 15px;
       background: var(
         --greenish-color-background
       ); /* Light grey background, change as needed */
       border-radius: 25px; /* Rounded corners */
       border: 1px solid black; /* Slight black border */
-      margin-top: 10px; /* Add space between buttons  */
+      margin-bottom: 10px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Simple box shadow for depth */
-      &:first-of-type {
-        margin-top: 0;
+      max-height: 300px;
+
+      &:last-of-type {
+        margin-right: 10px;
+      }
+
+      & .mensa-name {
+        font-size: 0.8em;
+        font-weight: bold;
+        margin-bottom: 10px;
       }
 
       & .menu-title-and-price {
@@ -59,6 +69,17 @@
         justify-content: space-between;
         margin: 0; /* Reset margin */
         padding: 0; /* Reset padding */
+        max-width: calc(100dvw - 20px - 20px);
+
+        & .menu-title {
+          padding-right: 20px;
+        }
+
+        & .menu-price {
+          text-wrap: wrap;
+          font-size: 0.8em;
+          padding-top: 4px;
+        }
       }
 
       & .ingredients-component {
@@ -83,6 +104,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+.arrow-icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  & .mini-info {
+    font-size: 0.8em;
   }
 }
 
