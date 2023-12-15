@@ -31,8 +31,11 @@ app.use(
 app.use("/api", apiRoutes);
 
 app.get("/api/current-user", (req, res) => {
-  if (req.session && req.session.userId) {
-    res.json({ userId: req.session.userId });
+  if (req.session && req.session.userId && req.session.appliedSettings) {
+    res.json({
+      userId: req.session.userId,
+      appliedSettings: req.session.appliedSettings,
+    });
   } else {
     res.status(401).json({ message: "No user logged in" });
   }
@@ -259,6 +262,46 @@ app.post("/add-favorite-menu/:userID", async function (req, res) {
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "Failed to add new favorite menu" });
+  }
+});
+
+// Route to change the applied settings for a user
+app.post("/modify-applied-settings/:userID", async function (req, res) {
+  try {
+    const userID = req.params.userID;
+    const newAppliedSettings = req.body;
+
+    // Check if user is logged in
+    if (
+      !req.session ||
+      !req.session.userId ||
+      req.session.userId.toString() !== userID
+    ) {
+      res.status(401).json({ error: "Not logged in" });
+      return;
+    }
+
+    const user = await User.findOne({ id: userID });
+
+    // Check if the user exists
+    if (!user) {
+      res.status(404).json({ error: "User not found" });
+      return;
+    }
+
+    // Add the new applied settings to the user's appliedSettings
+    user.appliedSettings = newAppliedSettings;
+
+    // Save the updated user object
+    await user.save();
+
+    res.status(200).json({
+      success: true,
+      message: "New applied settings added successfully",
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "Failed to add new applied settings" });
   }
 });
 
