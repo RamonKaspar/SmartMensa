@@ -22,7 +22,7 @@ export type appliedSettingsType = {
 
 function Settings({ appliedSettings, setAppliedSettings }: any) {
   const [currentUserId, setCurrentUserId] = useState(-1);
-  const [wasSent, setWasSent] = useState(false);
+  const [key, setKey] = useState(0); // Add key state
 
   useEffect(() => {
     async function fetchUserData() {
@@ -32,9 +32,6 @@ function Settings({ appliedSettings, setAppliedSettings }: any) {
           .then((data) => {
             if (data.userId) {
               setCurrentUserId(data.userId);
-            }
-            if (data.appliedSettings) {
-              setAppliedSettings(data.appliedSettings);
             }
           })
           .catch((error) =>
@@ -46,20 +43,35 @@ function Settings({ appliedSettings, setAppliedSettings }: any) {
     }
 
     fetchUserData();
-  }, [wasSent]);
+  }, []);
+
+  useEffect(() => {
+    async function fetchAppliedSettings() {
+      try {
+        if (currentUserId === -1) {
+          return;
+        }
+        await fetch(`/serve-applied-settings/${currentUserId}`)
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.appliedSettings) {
+              setAppliedSettings(data.appliedSettings);
+            }
+          })
+          .catch((error) =>
+            console.error("Error fetching applied settings:", error)
+          );
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    fetchAppliedSettings();
+  }, [currentUserId, key]);
 
   const toggleAllergies = (filterKey: keyof appliedSettingsType) => {
-    // Idea: First send to server, then using server sent event, update the state locally
-
-    setAppliedSettings((prevFilters: appliedSettingsType) => ({
-      ...prevFilters,
-      [filterKey]: !prevFilters[filterKey],
-    }));
-
-    const newAppliedSettings = {
-      ...appliedSettings,
-      [filterKey]: !appliedSettings[filterKey],
-    };
+    const newAppliedSettings = appliedSettings;
+    newAppliedSettings[filterKey] = !newAppliedSettings[filterKey];
 
     if (currentUserId !== -1) {
       fetch(`/modify-applied-settings/${currentUserId}`, {
@@ -74,16 +86,33 @@ function Settings({ appliedSettings, setAppliedSettings }: any) {
         .catch((error) => console.error("Error:", error));
     }
 
-    setWasSent(!wasSent);
+    setTimeout(() => {
+      setKey((prevKey) => prevKey + 1);
+    }, 100);
   };
 
   const setPriceClass = (
     newPriceClass: "students" | "external" | "internal"
   ) => {
-    setAppliedSettings((prevFilters: appliedSettingsType) => ({
-      ...prevFilters,
-      ["price_class"]: newPriceClass,
-    }));
+    const newAppliedSettings = appliedSettings;
+    newAppliedSettings.price_class = newPriceClass;
+
+    if (currentUserId !== -1) {
+      fetch(`/modify-applied-settings/${currentUserId}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newAppliedSettings),
+      })
+        .then((response) => response.json())
+        .then(() => {})
+        .catch((error) => console.error("Error:", error));
+    }
+
+    setTimeout(() => {
+      setKey((prevKey) => prevKey + 1);
+    }, 100);
   };
 
   return (
