@@ -6,6 +6,7 @@ import Mensa from "./mensa/Mensa";
 import Register from "./register/Register";
 import FavMenus from "./favouritemenus/FavMenus";
 import { useState, useEffect } from "react";
+import { appliedSettingsType } from "./Settings";
 
 async function fetchMensaStaticInfos() {
   try {
@@ -24,6 +25,7 @@ function App() {
   /* State to decide if settings or filter should be displayed */
   const [showFilter, setShowFilter] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
+  const [mensaRoutes, setMensaRoutes] = useState<any>([]);
   /* State for handling the applied filters */
   const [appliedFilters, setAppliedFilters] = useState(() => {
     const savedFilters = localStorage.getItem("appliedFilters");
@@ -38,40 +40,30 @@ function App() {
           Favorites: false,
         };
   });
-  /* State for handling the applied settings */
-  const [appliedSettings, setAppliedSettings] = useState(() => {
-    const savedSettings = localStorage.getItem("appliedSettings");
-    return savedSettings
-      ? JSON.parse(savedSettings)
-      : {
-          price_class: "students",
-          gluten: false,
-          krebstiere: false,
-          ei: false,
-          fisch: false,
-          erdnüsse: false,
-          soja: false,
-          milch_laktose: false,
-          schalenfrüchte: false,
-          sellerie: false,
-          senf: false,
-          sesam: false,
-          sulfite: false,
-          lupinen: false,
-          weichtiere: false,
-          hartschalenobst: false,
-        };
+  /* State for handling the applied settings (initialized with default values) */
+  const [appliedSettings, setAppliedSettings] = useState<appliedSettingsType>({
+    price_class: "students",
+    gluten: false,
+    krebstiere: false,
+    ei: false,
+    fisch: false,
+    erdnüsse: false,
+    soja: false,
+    milch_laktose: false,
+    schalenfrüchte: false,
+    sellerie: false,
+    senf: false,
+    sesam: false,
+    sulfite: false,
+    lupinen: false,
+    weichtiere: false,
+    hartschalenobst: false,
   });
 
   /* Save to local storage */
   useEffect(() => {
     localStorage.setItem("appliedFilters", JSON.stringify(appliedFilters));
   }, [appliedFilters]);
-  useEffect(() => {
-    localStorage.setItem("appliedSettings", JSON.stringify(appliedSettings));
-  }, [appliedSettings]);
-
-  const [mensaRoutes, setMensaRoutes] = useState<any>([]);
 
   useEffect(() => {
     async function fetchMeals() {
@@ -85,6 +77,26 @@ function App() {
       }
     }
     fetchMeals();
+  }, []);
+
+  useEffect(() => {
+    async function fetchAppliedSettings() {
+      try {
+        await fetch("/api/current-user")
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.appliedSettings) {
+              setAppliedSettings(data.appliedSettings);
+            }
+          })
+          .catch((error) =>
+            console.error("Error fetching current users Settings:", error)
+          );
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    fetchAppliedSettings();
   }, []);
 
   return (
@@ -139,7 +151,7 @@ function App() {
             />
           }
         />
-        {/* <Route path="*" element={<Navigate to="/login" />} /> */}
+        <Route path="*" element={<Navigate to="/login" />} />
       </Routes>
     </>
   );
