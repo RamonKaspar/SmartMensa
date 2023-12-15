@@ -21,9 +21,8 @@
     margin-right: 10px;
     flex: 1; /* Ensures that the container stretches to fill the screen */
     justify-content: flex-start;
-    min-width: calc(
-      100vw - 20px
-    ); /* Ensures that the container stretches to fill the screen */
+    min-width: calc(100vw - 20px);
+    max-width: calc(100vw - 20px);
 
     & .menu-component {
       padding: 15px;
@@ -43,6 +42,17 @@
         justify-content: space-between;
         margin: 0; /* Reset margin */
         padding: 0; /* Reset padding */
+        max-width: calc(100dvw - 20px - 20px);
+
+        & .menu-title {
+          padding-right: 20px;
+        }
+
+        & .menu-price {
+          text-wrap: wrap;
+          font-size: 0.8em;
+          padding-top: 4px;
+        }
       }
 
       & .ingredients-component {
