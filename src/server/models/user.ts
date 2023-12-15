@@ -11,7 +11,7 @@ const userSchema = new mongoose.Schema(
     password: { type: String, required: true },
     favouriteMenus: { type: Array, required: true },
     favouriteMensas: { type: Array, required: true },
-    allergens: { type: Array, required: true },
+    appliedSettings: { type: Object, required: true },
   },
   { timestamps: true }
 );
