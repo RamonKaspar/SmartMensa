@@ -435,7 +435,7 @@
     {
       "name": "cafeteria-irchel-seerose-dinner",
       "facility_id": "256",
-      "name_display": "Cafter Irchel Seerose (Dinner)",
+      "name_display": "Cafeteria Irchel Seerose (Dinner)",
       "location": "Irchel",
       "daytime": "Dinner",
       "opening_time_start": 7.3,
