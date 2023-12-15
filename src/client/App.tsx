@@ -79,26 +79,6 @@ function App() {
     fetchMeals();
   }, []);
 
-  useEffect(() => {
-    async function fetchAppliedSettings() {
-      try {
-        await fetch("/api/current-user")
-          .then((response) => response.json())
-          .then((data) => {
-            if (data.appliedSettings) {
-              setAppliedSettings(data.appliedSettings);
-            }
-          })
-          .catch((error) =>
-            console.error("Error fetching current users Settings:", error)
-          );
-      } catch (error) {
-        console.error(error);
-      }
-    }
-    fetchAppliedSettings();
-  }, []);
-
   return (
     <>
       <Routes>
