@@ -265,6 +265,39 @@ app.post("/add-favorite-menu/:userID", async function (req, res) {
   }
 });
 
+// Route to get the users applied settings from mongoDB database using mongoose
+app.get("/serve-applied-settings/:userID", async function (req, res) {
+  // Get the users applied settings from the database
+  try {
+    const userID = req.params.userID;
+
+    // Check if user is logged in
+    if (
+      !req.session ||
+      !req.session.userId ||
+      req.session.userId.toString() !== userID
+    ) {
+      res.status(401).json({ error: "Not logged in" });
+      return;
+    }
+
+    const user = await User.findOne({ id: userID });
+
+    // Check if the user exists
+    if (!user) {
+      res.status(404).json({ error: "User not found" });
+      return;
+    }
+
+    const appliedSettings = user.appliedSettings;
+    // Send the applied settings as a JSON response
+    res.status(200).json({ appliedSettings: appliedSettings });
+  } catch (error) {
+    console.error(error);
+    res.status(404).json({ error: "Applied settings not found" });
+  }
+});
+
 // Route to change the applied settings for a user
 app.post("/modify-applied-settings/:userID", async function (req, res) {
   try {
