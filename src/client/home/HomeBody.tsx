@@ -209,6 +209,7 @@ function HomeBody({
   showSettings,
   setShowSettings,
   appliedSettings,
+  setAppliedSettings,
 }: any) {
   const [mensaInfos, setMensaInfos] = useState<any>([]);
   const [favouriteMenus, setFavouriteMenus] = useState<Menu[]>([]);
@@ -256,13 +257,16 @@ function HomeBody({
   }, []);
 
   useEffect(() => {
-    async function fetchUserID() {
+    async function fetchUserData() {
       try {
         await fetch("/api/current-user")
           .then((response) => response.json())
           .then((data) => {
             if (data.userId) {
               setCurrentUserId(data.userId);
+            }
+            if (data.appliedSettings) {
+              setAppliedSettings(data.appliedSettings);
             }
           })
           .catch((error) =>
@@ -272,7 +276,7 @@ function HomeBody({
         console.error(error);
       }
     }
-    fetchUserID();
+    fetchUserData();
   }, []);
 
   useEffect(() => {

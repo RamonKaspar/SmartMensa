@@ -6,7 +6,7 @@ const router = express.Router();
 
 // POST route for /api/register
 router.post("/register", async (req: Request, res: Response) => {
-  const { name, username, email, password } = req.body;
+  const { name, username, email, password, appliedSettings } = req.body;
 
   if (!username || !password) {
     return res.status(400).json({ message: "Missing information!" });
@@ -44,8 +44,8 @@ router.post("/register", async (req: Request, res: Response) => {
       email: email,
       password: passwordHash,
       favouriteMenus: [],
-      favouriteMensas: [7, 9],
-      allergens: ["Gluten", "Milch"],
+      favouriteMensas: [],
+      appliedSettings: appliedSettings,
     });
 
     await newUser.save();
@@ -75,6 +75,7 @@ router.post("/authenticate", async (req, res) => {
 
     if (passwordMatch) {
       req.session.userId = existingUser.id;
+      req.session.appliedSettings = existingUser.appliedSettings;
       return res.status(200).json({ message: "Authentication successful!" });
     } else {
       return res.status(401).json({ message: "Wrong username or password" });

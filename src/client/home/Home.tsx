@@ -28,6 +28,7 @@ function Home({
           showSettings={showSettings}
           setShowSettings={setShowSettings}
           appliedSettings={appliedSettings}
+          setAppliedSettings={setAppliedSettings}
         />
         <div>
           {showFilter && (

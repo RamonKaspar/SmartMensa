@@ -1,78 +1,167 @@
-/* Here goes the CSS for the LoginBody component */
 .register-body-container {
-  height: 100%;
-  width: 100%;
-  background-color: #e5f9ee;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 150px;
+  justify-content: center;
+  background-color: #e5f9ee;
+  min-height: 100dvh;
+  max-height: 100dvh;
+  width: 100%;
+  overflow-y: auto;
 
-  & input {
-    border-radius: 20px;
-    margin-top: 20px;
-    height: 20px;
-    text-align: center;
-    border: black;
+  & .email-invalid {
+    color: red;
+    font-size: 0.8em;
+  }
+
+  & .password-requirements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 0.8em;
+    color: red;
+
+    & ul {
+      margin-bottom: 0;
+      padding: 0;
+
+      & .valid {
+        color: green;
+      }
+
+      & .invalid {
+        color: red;
+      }
+    }
+  }
+
+  & h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+
+  & .user-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+
+    & input {
+      border-radius: 20px;
+      height: 40px;
+      width: 250px;
+      text-align: center;
+      border: black;
+      font-size: 1em;
+    }
   }
 
   & button {
     border-radius: 20px;
-    margin-top: 20px;
-    height: 35px;
+    height: 40px;
+    width: 100px;
     text-align: center;
     border: black;
-    width: 100px;
     background-color: #656363;
     color: white;
-    font-size: 0.8em;
+    font-size: 1em;
     cursor: pointer;
   }
 
-  & button:hover {
-    background-color: #e0e0e0; /* Light grey background on hover */
-    /* Other hover effects (e.g., change in color or border) */
-  }
+  & .register-settings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    overflow-y: scroll;
 
-  & div {
-    margin-top: 5px;
+    & h3 {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 20px;
+    }
 
-    .email-invalid {
-      color: red;
-      font-size: 14px; /* Adjust the font size as needed */
+    & .mini-info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      font-size: 0.6em;
+      padding-top: 6px;
+      padding-bottom: 10px;
+    }
+
+    & .register-price-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      max-width: calc(100dvw - 20px);
+      padding-left: 10px;
+      padding-right: 10px;
+      gap: 10px;
+
+      & .applied {
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+      }
+    }
+
+    & .register-allergies-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 100dvw;
+      justify-items: center;
+      align-items: center;
+      row-gap: 5px;
+      column-gap: 5px;
+      margin-left: 10px;
+      margin-right: 10px;
+
+      & .register-settings-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 0.8em;
+      }
+
+      & .applied {
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+      }
     }
   }
 
   /* Normal state styles for enabled button */
   .register-button {
-    background-color: 656363;
+    font-size: 1em;
+    background-color: var(--green-color);
     color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
   }
 
   /* Styles for disabled button */
   .register-button:disabled,
   .register-button-disabled {
+    font-size: 1em;
     background-color: lightgrey;
     color: darkgray;
     cursor: not-allowed;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
   }
-}
-
-.register {
-  width: 160px;
-  margin-top: 20px;
-  font-size: 0.8em;
-  text-align: center;
-  font-style: italic;
-}
-
-.logo {
-  margin-top: 30px;
-  width: 200px;
-  height: 200px;
-}
-
-.password-invalid {
-  color: red;
-  font-size: 14px; /* Adjust as needed */
 }

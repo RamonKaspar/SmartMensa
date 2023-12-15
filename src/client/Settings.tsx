@@ -1,6 +1,7 @@
 import "./Settings.css";
+import { useState, useEffect } from "react";
 
-type appliedSettingsType = {
+export type appliedSettingsType = {
   price_class: "students" | "external" | "internal";
   gluten: boolean;
   krebstiere: boolean;
@@ -20,11 +21,60 @@ type appliedSettingsType = {
 };
 
 function Settings({ appliedSettings, setAppliedSettings }: any) {
+  const [currentUserId, setCurrentUserId] = useState(-1);
+  const [wasSent, setWasSent] = useState(false);
+
+  useEffect(() => {
+    async function fetchUserData() {
+      try {
+        await fetch("/api/current-user")
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.userId) {
+              setCurrentUserId(data.userId);
+            }
+            if (data.appliedSettings) {
+              setAppliedSettings(data.appliedSettings);
+            }
+          })
+          .catch((error) =>
+            console.error("Error fetching current user ID:", error)
+          );
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    fetchUserData();
+  }, [wasSent]);
+
   const toggleAllergies = (filterKey: keyof appliedSettingsType) => {
+    // Idea: First send to server, then using server sent event, update the state locally
+
     setAppliedSettings((prevFilters: appliedSettingsType) => ({
       ...prevFilters,
       [filterKey]: !prevFilters[filterKey],
     }));
+
+    const newAppliedSettings = {
+      ...appliedSettings,
+      [filterKey]: !appliedSettings[filterKey],
+    };
+
+    if (currentUserId !== -1) {
+      fetch(`/modify-applied-settings/${currentUserId}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newAppliedSettings),
+      })
+        .then((response) => response.json())
+        .then(() => {})
+        .catch((error) => console.error("Error:", error));
+    }
+
+    setWasSent(!wasSent);
   };
 
   const setPriceClass = (

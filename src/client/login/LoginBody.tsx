@@ -28,7 +28,6 @@ function LoginBody() {
 
       if (response.status === 200) {
         navigate("/home");
-        // Optionally, handle the user data received from server
       } else {
         alert(data.message);
       }
