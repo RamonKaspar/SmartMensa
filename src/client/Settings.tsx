@@ -315,7 +315,10 @@ function Settings({
                 <h3 className="login-info">Go to the login page</h3>
                 <button
                   className="login-button"
-                  onClick={() => navigate("/login")}
+                  onClick={() => {
+                    setShowSettings(false);
+                    navigate("/login");
+                  }}
                 >
                   Login
                 </button>
