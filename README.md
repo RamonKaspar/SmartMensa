@@ -147,4 +147,4 @@ We will evaluate your code every week, based on the corresponding version.
 Tags:
 - Week 1: [v1.1.1](https://gitlab.inf.ethz.ch/course-fwe2023/students/project/express/lumast_project_express/-/tags/v1.1.1)
 - Week 2: [v1.4.0](https://gitlab.inf.ethz.ch/course-fwe2023/students/project/express/lumast_project_express/-/tags/v1.4.0)
-- Week 3: [v1.12.0](https://gitlab.inf.ethz.ch/course-fwe2023/students/project/express/lumast_project_express/-/tags/v1.12.0)
+- Week 3: [v2.0.0](https://gitlab.inf.ethz.ch/course-fwe2023/students/project/express/lumast_project_express/-/tags/v2.0.0)
