@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { FaStar, FaShareSquare } from "react-icons/fa";
 import { BsHeartFill } from "react-icons/bs";
 import { RiExternalLinkFill } from "react-icons/ri";
+import type { favouriteMensasType } from "../home/HomeBody";
 
 async function fetchMensaStaticInfos() {
   try {
@@ -52,6 +53,41 @@ function MensaBody({ appliedSettings, showSettings, setShowSettings }: any) {
   const [myMensa, setMyMensa] = useState<any>({});
   const [currentUserId, setCurrentUserId] = useState(-1);
   const [favouriteMenus, setFavouriteMenus] = useState<Menu[]>([]);
+  const [favouriteMensas, setFavouriteMensas] = useState<favouriteMensasType>({
+    archimedes: false,
+    clausiusbar: false,
+    dozentenfoyer: false,
+    "food-lab": false,
+    "mensa-polyterrasse-lunch": false,
+    "mensa-polyterrasse-dinner": false,
+    polysnack: false,
+    tannenbar: false,
+    "alumni-quattro-lounge-lunch": false,
+    "alumni-quattro-lounge-dinner": false,
+    "bistro-hpi": false,
+    "food-market-green-day": false,
+    "food-market-grill-bbq": false,
+    "food-market-pizza-pasta-day": false,
+    "food-market-dinner": false,
+    "fusion-meal": false,
+    "fusion-coffee": false,
+    "rice-up": false,
+    octavo: false,
+    "uzh-untere-mensa-lunch": false,
+    "uzh-untere-mensa-dinner": false,
+    "uzh-obere-mensa": false,
+    "lichthof-rondell": false,
+    "raemi-59": false,
+    "platte-14": false,
+    "uzh-irchel": false,
+    "cafeteria-irchel-seerose-lunch": false,
+    "cafeteria-irchel-seerose-dinner": false,
+    binzmuehle: false,
+    "cafeteria-cityport": false,
+    "cafeteria-zentrum-fuer-zahnmedizin": false,
+    "cafeteria-tierspital": false,
+    "cafeteria-botanischer-garten": false,
+  });
   const [dummy, setDummy] = useState(false);
 
   // Function to check if a meal in favouriteMenus matches the meal_description
@@ -99,7 +135,26 @@ function MensaBody({ appliedSettings, showSettings, setShowSettings }: any) {
       }
     }
 
+    async function fetchFavouriteMensas() {
+      try {
+        if (currentUserId === -1) {
+          return;
+        }
+        const response = await fetch(
+          `/serve-favourite-mensas/${currentUserId}`
+        );
+        if (!response.ok) {
+          throw new Error("Failed to fetch favorite mensas");
+        }
+        const favouriteMensas = await response.json();
+        setFavouriteMensas(favouriteMensas.favouriteMensas);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
     fetchFavouriteMenus();
+    fetchFavouriteMensas();
   }, [currentUserId, favouriteMenus]);
 
   useEffect(() => {
@@ -234,6 +289,27 @@ function MensaBody({ appliedSettings, showSettings, setShowSettings }: any) {
       .catch((error) => console.error("Error:", error));
   };
 
+  const handleHeartClick = (mensa_name: string, event: React.MouseEvent) => {
+    event.stopPropagation();
+    // Store favourite mensa to mongodb database
+    const newFavouriteMensas = { ...favouriteMensas };
+    newFavouriteMensas[mensa_name as keyof favouriteMensasType] =
+      !newFavouriteMensas[mensa_name as keyof favouriteMensasType];
+
+    setFavouriteMensas(newFavouriteMensas);
+
+    fetch(`/modify-favourite-mensas/${currentUserId}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newFavouriteMensas),
+    })
+      .then((response) => response.json())
+      .then(() => {})
+      .catch((error) => console.error("Error:", error));
+  };
+
   const handleShareClick = (meal: any) => {
     let str = "Today: " + "\n" + myMensa.name_display + "\n";
     str += transformMensaTitle(meal) + "\n" + meal.meal_description;
@@ -269,8 +345,20 @@ function MensaBody({ appliedSettings, showSettings, setShowSettings }: any) {
         )}
         <div className="row-one-title">
           <h2>{myMensa.name_display}</h2>
-          <p className="mark-as-favorite-menu">
-            <BsHeartFill size={20} />
+          <p className="mark-as-favorite-mensa">
+            <BsHeartFill
+              size={20}
+              style={{
+                color: favouriteMensas[
+                  myMensa.name as keyof favouriteMensasType
+                ]
+                  ? "red"
+                  : "black",
+              }}
+              onClick={(e) =>
+                handleHeartClick(myMensa.name as keyof favouriteMensasType, e)
+              }
+            />
           </p>
         </div>
         <div className="second-row-tags">
@@ -499,5 +587,20 @@ function currentlyOpen(mensa: any): boolean {
   ) {
     return false;
   }
-  return true;
+
+  const daysOfWeek = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  const currentDate = new Date();
+  const currentDay = daysOfWeek[currentDate.getDay()] as string;
+  const isWeekend = currentDay === "Saturday" || currentDay === "Sunday";
+
+  return true && !isWeekend;
 }
