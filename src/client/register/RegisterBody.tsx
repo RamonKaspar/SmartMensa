@@ -150,8 +150,15 @@ function RegisterBody() {
     const hasLowerCase = /[a-z]/.test(password);
     const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
     const isLongEnough = password.length >= 8;
+    const hasNumber = /[0-9]/.test(password);
 
-    return hasUpperCase && hasLowerCase && hasSpecialChar && isLongEnough;
+    return (
+      hasUpperCase &&
+      hasLowerCase &&
+      hasSpecialChar &&
+      isLongEnough &&
+      hasNumber
+    );
   }
 
   // Check if all fields are filled
