@@ -45,6 +45,7 @@ function Home({
             setAppliedSettings={setAppliedSettings}
             showSettings={showSettings}
             setShowSettings={setShowSettings}
+            setShowFilter={setShowFilter}
           />
         </div>
       </Layout>
