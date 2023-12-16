@@ -31,20 +31,20 @@ function Home({
           setAppliedSettings={setAppliedSettings}
         />
         <div>
-          {showFilter && (
+          {
             <Filter
               appliedFilters={appliedFilters}
               setAppliedFilters={setAppliedFilters}
+              showFilter={showFilter}
             />
-          )}
+          }
         </div>
         <div>
-          {showSettings && (
-            <Settings
-              appliedSettings={appliedSettings}
-              setAppliedSettings={setAppliedSettings}
-            />
-          )}
+          <Settings
+            appliedSettings={appliedSettings}
+            setAppliedSettings={setAppliedSettings}
+            showSettings={showSettings}
+          />
         </div>
       </Layout>
     </>
