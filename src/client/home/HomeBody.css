@@ -166,6 +166,7 @@
   font-size: 1.2em;
   text-align: left;
   font-weight: bold;
+  color: black;
 }
 
 .open-closed-tag {
@@ -197,7 +198,6 @@
 .mark-as-favorite-mensa {
   display: flex;
   justify-content: flex-end; /* Aligns the icon to the right */
-  cursor: pointer; /* Changes the cursor to indicate it can be clicked */
 }
 
 .goTo {
