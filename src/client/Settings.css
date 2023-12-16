@@ -45,15 +45,49 @@
   font-size: 1em;
   text-align: center;
   color: #ffffff;
+  border: none;
 }
 
 & .applied {
-  background: white;
   color: black;
+  background-color: white;
+  border: none;
 }
 
 & .allergy-info {
   text-align: center;
   font-style: italic;
   margin-bottom: 20px;
+  font-size: 0.6em;
+}
+
+.slideIn {
+  animation: slideIn 0.5s forwards;
+}
+
+/* Animation for sliding out */
+.slideOut {
+  animation: slideOut 0.5s forwards;
+}
+
+.hidden-settings {
+  display: none;
+}
+
+@keyframes slideIn {
+  from {
+    top: 100dvh; /* Start off-screen */
+  }
+  to {
+    top: calc(40px + 200px); /* Slide to this position */
+  }
+}
+
+@keyframes slideOut {
+  from {
+    top: calc(40px + 200px); /* Start from the visible position */
+  }
+  to {
+    top: 100dvh; /* Slide off-screen */
+  }
 }
