@@ -32,17 +32,21 @@ https://zfv.ch/en/menus/rssMenuPlan?menuId=509&type=uzh2&dayOfWeek=1
 Here we present the key features of our app:
 
 - *Comprehensive Menu Display:* The app features a real-time showcase of all available menus across various canteens in both ETH and UZH.
-- *Detailed Nutritional Information:* Each menu item comes with a detailed breakdown of its nutritional content (i.e. ingredients)
-- *Allergy Informations*: The user can select his allergies in the settings and the app automatically filter out/highlights the dishes which the user could not eat.
-- *Filtering*: Filter out list of dishes by location, opening time and price.
-- *Sorting*: Sort by name and location.
-- *Opening Hours*: Display whether a mensa is open (eventually detailed opening times as well).
-- *Sharing*: Feature to copy text directly or copy the link to send it via WhatsApp/…
+- *Detailed Menu Information:* Each menu item comes with a detailed breakdown of its nutritional content (i.e. ingredients)
+- *Allergy Informations*: The user can select his allergies in the settings and the app highlights all selected allergens which are contained in the respective menu.
+- *Price catergory*: Users can select their preferred price category (student, intern, extern).
+- *Favourite Mensas*: Users can give their favourite mensas a heart which then stores their favourite mensas in a database.
+- *Favourite Menus*: Users can give their favourite menus a star which stores it to the database. On the home page, users can click the edit button to see all their starred favourite menus on a seperate page.
+- *Todays favourite menus*: On the home page, users can see their favourite menus which are available today.
+- *Filtering*: Filter by name, location, currently open and favourite mensas.
+- *Opening Hours*: Display whether a mensa is open and when the dining times are.
+- *Sharing*: Feature to copy a menu in a nicely formatted way to send it to friends to suggest a menu.
 
 
 ## Requirements
 Write here all intructions to build the environment and run your code.\
 **NOTE:** If we cannot run your code following these requirements we will not be able to evaluate it.
+
 
 ## How to Run
 Write here **DETAILED** intructions on how to run your code.\
@@ -116,13 +120,6 @@ Document here the major milestones of your code and future planned steps.\
   - [x] Add functionality to store favourite mensas in database #22 !24
   - [x] Add login and logout button to settings and destroy current session on server-side #24 !26
 
-Create a list subtask.\
-Open an issue for each subtask. Once you create a subtask, link the corresponding issue.\
-Create a merge request (with corresponding branch) from each issue.\
-Finally accept the merge request once issue is resolved. Once you complete a task, link the corresponding merge commit.\
-Take a look at [Issues and Branches](https://www.youtube.com/watch?v=DSuSBuVYpys) for more details. 
-
-This will help you have a clearer overview of what you are currently doing, track your progress and organise your work among yourselves. Moreover it gives us more insights on your progress.  
 
 ## Weekly Summary 
 Write here a short summary with weekly progress, including challanges and open questions.\
@@ -135,14 +132,10 @@ In the first week, we focused on getting the menus with help of webscraping and 
 In the second week, we managed to schedule the python script daily at 00:05 to fetch new menus by modifying the Dockerfile and installing python to the base [Node](https://hub.docker.com/_/node/) image together with the needed python packages. This took many commits to the main branch as there was no other way to test the deployment and as we are using an Express backend, in order to run the python scripts we had to spawn child processes. As we have no possibility to check errors on the VM in the kubernetes cluster, we added [serverlogs](http://lumast-project-express.course-fwe-2023.isginf.ch/serverlogs). We also improved the frontend and moved much of the hardcoded mensa information to a JSON file in the backend to store this data more centralized which makes it easier to change. We also added the user login functionality (this will allow us to store favourite menus and personalized settings per user).  
 
 **Week 3:**\
-In the third and last week, we used a mongoDB database to store user data. Users can now store their favourite menus by clicking the star icon on a menu box so they can see their favourite menus on the home page if they are available today. They can also edit their favourite menus on the favourite menus page where they see all their favourite menus stored (not only the once which are available today). They can also store their favourite mensas by clicking the heart icon either on the home page or on a specific mensa page. We also changed the registration process such that users can now chose their preferred price catergory (student, inter, extern) and their allergies in the registration process (both can be changed later in the settings). We also extensively tested our web app to find and fix bugs or logic errors in our code. We improved some styling and added more small functionalities like a share (copy to clipboard) feature where users can send todays menus in a nicely formatted way to their friends to suggest where and what they would like to eat today.  
+In the third and last week, we used a mongoDB database to store user data. Users can now store their favourite menus by clicking the star icon on a menu box so they can see their favourite menus on the home page if they are available today. They can also edit their favourite menus on the favourite menus page where they see all their favourite menus stored (not only the once which are available today). They can also store their favourite mensas by clicking the heart icon either on the home page or on a specific mensa page. We also changed the registration process such that users can now chose their preferred price category (student, inter, extern) and their allergies in the registration process (both can be changed later in the settings). We also extensively tested our web app to find and fix bugs or logic errors in our code. We improved some styling and added more small functionalities like a share (copy to clipboard) feature where users can send todays menus in a nicely formatted way to their friends to suggest where and what they would like to eat today.  
+
 
 ## Versioning
-Create stable versions of your code each week by using gitlab tags.\
-Take a look at [Gitlab Tags](https://docs.gitlab.com/ee/topics/git/tags.html) for more details. 
-
-Then list here the weekly tags. \
-We will evaluate your code every week, based on the corresponding version.
 
 Tags:
 - Week 1: [v1.1.1](https://gitlab.inf.ethz.ch/course-fwe2023/students/project/express/lumast_project_express/-/tags/v1.1.1)
