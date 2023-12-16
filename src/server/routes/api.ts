@@ -120,6 +120,19 @@ router.post("/authenticate", async (req, res) => {
   }
 });
 
+// POST route for /api/logout
+router.post("/logout", (req, res) => {
+  req.session.userId = -1;
+  req.session.destroy((err) => {
+    if (err) {
+      console.error("Error logging out:", err);
+      return res.status(500).json({ message: "Internal Server Error" });
+    }
+
+    return res.status(200).json({ message: "Logout successful!" });
+  });
+});
+
 async function checkUsernameExists(usernameToCheck: string) {
   try {
     const existingUser = await User.findOne({ username: usernameToCheck });
