@@ -24,12 +24,12 @@ function FavMenus({
           setShowSettings={setShowSettings}
         />
         <div>
-          {showSettings && (
-            <Settings
-              appliedSettings={appliedSettings}
-              setAppliedSettings={setAppliedSettings}
-            />
-          )}
+          <Settings
+            appliedSettings={appliedSettings}
+            setAppliedSettings={setAppliedSettings}
+            showSettings={showSettings}
+            setShowSettings={setShowSettings}
+          />
         </div>
       </Layout>
     </>
