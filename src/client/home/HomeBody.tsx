@@ -184,12 +184,59 @@ function currentlyOpen(mensa: any): boolean {
   ) {
     return false;
   }
-  return true;
+
+  const daysOfWeek = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  const currentDate = new Date();
+  const currentDay = daysOfWeek[currentDate.getDay()] as string;
+  const isWeekend = currentDay === "Saturday" || currentDay === "Sunday";
+
+  return true && !isWeekend;
 }
 
-interface FavoritesState {
-  [key: string]: boolean;
-}
+export type favouriteMensasType = {
+  archimedes: boolean;
+  clausiusbar: boolean;
+  dozentenfoyer: boolean;
+  "food-lab": boolean;
+  "mensa-polyterrasse-lunch": boolean;
+  "mensa-polyterrasse-dinner": boolean;
+  polysnack: boolean;
+  tannenbar: boolean;
+  "alumni-quattro-lounge-lunch": boolean;
+  "alumni-quattro-lounge-dinner": boolean;
+  "bistro-hpi": boolean;
+  "food-market-green-day": boolean;
+  "food-market-grill-bbq": boolean;
+  "food-market-pizza-pasta-day": boolean;
+  "food-market-dinner": boolean;
+  "fusion-meal": boolean;
+  "fusion-coffee": boolean;
+  "rice-up": boolean;
+  octavo: boolean;
+  "uzh-untere-mensa-lunch": boolean;
+  "uzh-untere-mensa-dinner": boolean;
+  "uzh-obere-mensa": boolean;
+  "lichthof-rondell": boolean;
+  "raemi-59": boolean;
+  "platte-14": boolean;
+  "uzh-irchel": boolean;
+  "cafeteria-irchel-seerose-lunch": boolean;
+  "cafeteria-irchel-seerose-dinner": boolean;
+  binzmuehle: boolean;
+  "cafeteria-cityport": boolean;
+  "cafeteria-zentrum-fuer-zahnmedizin": boolean;
+  "cafeteria-tierspital": boolean;
+  "cafeteria-botanischer-garten": boolean;
+};
 
 interface Menu {
   facility_id: number;
@@ -219,8 +266,42 @@ function HomeBody({
     [Menu, string][]
   >([]);
 
-  // Saves the state of the heart (mensa selected as favorite) for each mensa
-  const [favorites, setFavorites] = useState<FavoritesState>({});
+  const [favouriteMensas, setFavouriteMensas] = useState<favouriteMensasType>({
+    archimedes: false,
+    clausiusbar: false,
+    dozentenfoyer: false,
+    "food-lab": false,
+    "mensa-polyterrasse-lunch": false,
+    "mensa-polyterrasse-dinner": false,
+    polysnack: false,
+    tannenbar: false,
+    "alumni-quattro-lounge-lunch": false,
+    "alumni-quattro-lounge-dinner": false,
+    "bistro-hpi": false,
+    "food-market-green-day": false,
+    "food-market-grill-bbq": false,
+    "food-market-pizza-pasta-day": false,
+    "food-market-dinner": false,
+    "fusion-meal": false,
+    "fusion-coffee": false,
+    "rice-up": false,
+    octavo: false,
+    "uzh-untere-mensa-lunch": false,
+    "uzh-untere-mensa-dinner": false,
+    "uzh-obere-mensa": false,
+    "lichthof-rondell": false,
+    "raemi-59": false,
+    "platte-14": false,
+    "uzh-irchel": false,
+    "cafeteria-irchel-seerose-lunch": false,
+    "cafeteria-irchel-seerose-dinner": false,
+    binzmuehle: false,
+    "cafeteria-cityport": false,
+    "cafeteria-zentrum-fuer-zahnmedizin": false,
+    "cafeteria-tierspital": false,
+    "cafeteria-botanischer-garten": false,
+  });
+
   const [currentUserId, setCurrentUserId] = useState(-1);
   const [position, setPosition] = useState(0);
   const menuContainerRef = useRef<HTMLDivElement>(null);
@@ -324,7 +405,26 @@ function HomeBody({
       }
     }
 
+    async function fetchFavouriteMensas() {
+      try {
+        if (currentUserId === -1) {
+          return;
+        }
+        const response = await fetch(
+          `/serve-favourite-mensas/${currentUserId}`
+        );
+        if (!response.ok) {
+          throw new Error("Failed to fetch favorite mensas");
+        }
+        const favouriteMensas = await response.json();
+        setFavouriteMensas(favouriteMensas.favouriteMensas);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
     fetchFavouriteMenus();
+    fetchFavouriteMensas();
   }, [currentUserId]);
 
   /* Filter functionality */
@@ -336,7 +436,8 @@ function HomeBody({
     : mensaInfos.filter((mensa: any) => {
         // Check if mensa is a favorite if the Favorites filter is applied
         let isFavorite =
-          !appliedFilters.Favorites || favorites[mensa.name_display];
+          !appliedFilters.Favorites ||
+          favouriteMensas[mensa.name as keyof favouriteMensasType];
 
         // Check location filters
         let locationMatch = false;
@@ -377,16 +478,25 @@ function HomeBody({
         return locationMatch && openMatch && isFavorite;
       });
 
-  // Handles if one clicks on a heart (for now, only the color changes)
-  const handleFavoriteClick = (
-    locationName: string,
-    event: React.MouseEvent
-  ) => {
+  const handleHeartClick = (mensa_name: string, event: React.MouseEvent) => {
     event.stopPropagation();
-    setFavorites((prevFavorites) => ({
-      ...prevFavorites,
-      [locationName]: !prevFavorites[locationName], // Toggle the favorite state for the clicked location
-    }));
+    // Store favourite mensa to mongodb database
+    const newFavouriteMensas = { ...favouriteMensas };
+    newFavouriteMensas[mensa_name as keyof favouriteMensasType] =
+      !newFavouriteMensas[mensa_name as keyof favouriteMensasType];
+
+    setFavouriteMensas(newFavouriteMensas);
+
+    fetch(`/modify-favourite-mensas/${currentUserId}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newFavouriteMensas),
+    })
+      .then((response) => response.json())
+      .then(() => {})
+      .catch((error) => console.error("Error:", error));
   };
 
   // Navigates to the corresponding mensa
@@ -512,10 +622,17 @@ function HomeBody({
                     <BsHeartFill
                       size={20}
                       onClick={(e) =>
-                        handleFavoriteClick(mensa.name_display, e)
+                        handleHeartClick(
+                          mensa.name as keyof favouriteMensasType,
+                          e
+                        )
                       }
                       style={{
-                        fill: favorites[mensa.name_display] ? "red" : "gray",
+                        color: favouriteMensas[
+                          mensa.name as keyof favouriteMensasType
+                        ]
+                          ? "red"
+                          : "gray",
                       }}
                     />
                   </div>
@@ -533,7 +650,7 @@ function HomeBody({
                     className="goTo"
                     onClick={() => handleClickAndNavigate(mensa.name)}
                   >
-                    <MdArrowForwardIos size={20} />
+                    <MdArrowForwardIos size={20} color="black" />
                   </div>
                 </div>
               </button>
