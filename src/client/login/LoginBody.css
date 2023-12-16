@@ -1,14 +1,14 @@
 /* Here goes the CSS for the LoginBody component */
 .login-body-container {
-  height: 100%;
+  max-height: 100dvh;
+  min-height: 100dvh;
   width: 100%;
   background-color: #e5f9ee;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   flex: 1;
-  padding-top: 150px;
-  max-height: calc(100dvh - 40px);
   overflow-y: auto;
 
   & input,
