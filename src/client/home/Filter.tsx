@@ -1,4 +1,5 @@
 import "./Filter.css";
+import { useState, useEffect } from "react";
 
 type appliedFiltersType = {
   Zentrum_ETH: boolean;
@@ -10,7 +11,8 @@ type appliedFiltersType = {
   Favorites: boolean;
 };
 
-function Filter({ appliedFilters, setAppliedFilters }: any) {
+function Filter({ appliedFilters, setAppliedFilters, showFilter }: any) {
+  const [slideOut, setSlideOut] = useState(0);
   const toggleFilter = (filterKey: keyof appliedFiltersType) => {
     setAppliedFilters((prevFilters: appliedFiltersType) => ({
       ...prevFilters,
@@ -18,69 +20,80 @@ function Filter({ appliedFilters, setAppliedFilters }: any) {
     }));
   };
 
+  // If showFilter changes from true to false, set slideOut to true
+  useEffect(() => {
+    if (document.getElementsByClassName("hidden-filter").length === 0) {
+      setSlideOut(1);
+    }
+  }, [showFilter]);
+
   return (
     <>
-      <div className="filter-component">
+      <div
+        className={`filter-component ${
+          showFilter ? "slideIn" : slideOut > 0 ? "slideOut" : "hidden-filter"
+        }`}
+      >
         <h2>Filter</h2>
         <h3>Location:</h3>
         <div className="filter-container">
-          <div
+          <button
             className={`filter-button ${
               appliedFilters.Zentrum_ETH ? "applied" : ""
             }`}
             onClick={() => toggleFilter("Zentrum_ETH")}
           >
             Zentrum (ETH)
-          </div>
-          <div
+          </button>
+          <button
             className={`filter-button ${
               appliedFilters.Zentrum_UZH ? "applied" : ""
             }`}
             onClick={() => toggleFilter("Zentrum_UZH")}
           >
             Zentrum (UZH)
-          </div>
-          <div
+          </button>
+          <button
             className={`filter-button ${
               appliedFilters.Irchel ? "applied" : ""
             }`}
             onClick={() => toggleFilter("Irchel")}
           >
             Irchel
-          </div>
-          <div
+          </button>
+          <button
             className={`filter-button ${appliedFilters.Höngg ? "applied" : ""}`}
             onClick={() => toggleFilter("Höngg")}
           >
             Höngg
-          </div>
-          <div
+          </button>
+          <button
             className={`filter-button ${
               appliedFilters.Oerlikon ? "applied" : ""
             }`}
             onClick={() => toggleFilter("Oerlikon")}
           >
             Oerlikon
-          </div>
+          </button>
         </div>
         <h3>Other:</h3>
         <div className="filter-container">
-          <div
+          <button
             className={`filter-button ${
               appliedFilters.Currently_Open ? "applied" : ""
             }`}
             onClick={() => toggleFilter("Currently_Open")}
           >
             Currently Open
-          </div>
-          <div
+          </button>
+          <button
             className={`filter-button ${
-              appliedFilters.Favorites ? "applied" : ""
+              appliedFilters.Favorite ? "applied" : ""
             }`}
             onClick={() => toggleFilter("Favorites")}
           >
-            Favorites
-          </div>
+            Favourite Mensas
+          </button>
         </div>
       </div>
     </>
