@@ -26,6 +26,7 @@ function Settings({
   setAppliedSettings,
   showSettings,
   setShowSettings,
+  setShowFilter,
 }: any) {
   const [currentUserId, setCurrentUserId] = useState(-1);
   const [key, setKey] = useState(0); // dummy state to force re-render
@@ -142,6 +143,7 @@ function Settings({
       .catch((error) => console.error("Error:", error));
 
     setShowSettings(false);
+    setShowFilter(false);
     navigate("/login");
   };
 
@@ -317,6 +319,7 @@ function Settings({
                   className="login-button"
                   onClick={() => {
                     setShowSettings(false);
+                    setShowFilter(false);
                     navigate("/login");
                   }}
                 >
