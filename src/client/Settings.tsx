@@ -147,6 +147,12 @@ function Settings({
     navigate("/login");
   };
 
+  const handleLogin = () => {
+    setShowSettings(false);
+    setShowFilter(false);
+    navigate("/login");
+  };
+
   return (
     <>
       <div
@@ -315,14 +321,7 @@ function Settings({
             {currentUserId === -1 ? (
               <>
                 <h3 className="login-info">Go to the login page</h3>
-                <button
-                  className="login-button"
-                  onClick={() => {
-                    setShowSettings(false);
-                    setShowFilter(false);
-                    navigate("/login");
-                  }}
-                >
+                <button className="login-button" onClick={() => handleLogin()}>
                   Login
                 </button>
               </>
