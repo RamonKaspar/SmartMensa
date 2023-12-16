@@ -44,7 +44,7 @@ router.post("/register", async (req: Request, res: Response) => {
       email: email,
       password: passwordHash,
       favouriteMenus: [],
-      favouriteMensas: [],
+      favouriteMensas: {},
       appliedSettings: appliedSettings,
     });
 
