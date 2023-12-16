@@ -64,7 +64,7 @@
 
 @keyframes slideIn {
   from {
-    top: 100dvh; /* Start off-screen */
+    top: 5000px; /* Start off-screen */
   }
   to {
     top: calc(40px + 200px); /* Slide to this position */
@@ -76,6 +76,6 @@
     top: calc(40px + 200px); /* Start from the visible position */
   }
   to {
-    top: 100dvh; /* Slide off-screen */
+    top: 5000px; /* Slide off-screen */
   }
 }
