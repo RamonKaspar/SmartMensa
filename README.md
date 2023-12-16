@@ -114,6 +114,7 @@ Document here the major milestones of your code and future planned steps.\
   - [x] Display all favourite menus which are available today #18 !20
   - [x] Add functionality to store allergens and price class (student, intern, extern) in database #20 !21
   - [x] Add functionality to store favourite mensas in database #22 !24
+  - [x] Add login and logout button to settings and destroy current session on server-side #24 !26
 
 Create a list subtask.\
 Open an issue for each subtask. Once you create a subtask, link the corresponding issue.\
