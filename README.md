@@ -100,6 +100,8 @@ Document here the major milestones of your code and future planned steps.\
   - [x] Implement filter functions #12 !14
   - [x] Implement some settings #15 !17
   - [x] Implement share functionality #14 !16
+  - [x] Restyle Login page and adapt filter logic #21 !22
+  - [x] Add smooth animation for filter and settings
 
 - [x] Milestone 3: Use webscraping to get the latest menus
   - [x] Get the menus for ETH mensas: #2 !2
@@ -111,8 +113,7 @@ Document here the major milestones of your code and future planned steps.\
   - [x] Create favourite menus page and store the favourite menus in remote mongoDB user database #17 !19
   - [x] Display all favourite menus which are available today #18 !20
   - [x] Add functionality to store allergens and price class (student, intern, extern) in database #20 !21
-  - [ ] Add functionality to store favourite mensas in database
-  - [x] Restyle Login page and adapt filter logic #21 !22
+  - [x] Add functionality to store favourite mensas in database #22 !24
 
 Create a list subtask.\
 Open an issue for each subtask. Once you create a subtask, link the corresponding issue.\
