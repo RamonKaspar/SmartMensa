@@ -265,6 +265,46 @@ app.post("/add-favorite-menu/:userID", async function (req, res) {
   }
 });
 
+// Route to delete a favorite menu entry by index for a user
+app.delete("/delete-favourite-menu/:userID", async function (req, res) {
+  try {
+    const userID = req.params.userID;
+    const index = req.body;
+
+    // Check if user is logged in
+    if (
+      !req.session ||
+      !req.session.userId ||
+      req.session.userId.toString() !== userID
+    ) {
+      res.status(401).json({ error: "Not logged in" });
+      return;
+    }
+
+    const user = await User.findOne({ id: userID });
+
+    // Check if the user exists
+    if (!user) {
+      res.status(404).json({ error: "User not found" });
+      return;
+    }
+
+    // Remove the menu entry at the specified index
+    user.favouriteMenus.splice(index, 1);
+
+    // Save the updated user object
+    await user.save();
+
+    res.status(200).json({
+      success: true,
+      message: "Favorite menu entry deleted successfully",
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "Failed to delete favorite menu entry" });
+  }
+});
+
 // Route to get the users applied settings from mongoDB database using mongoose
 app.get("/serve-applied-settings/:userID", async function (req, res) {
   // Get the users applied settings from the database
@@ -338,11 +378,11 @@ app.post("/modify-applied-settings/:userID", async function (req, res) {
   }
 });
 
-// Route to delete a favorite menu entry by index for a user
-app.delete("/delete-favourite-menu/:userID", async function (req, res) {
+// Route to get the users favourite mensas from mongoDB database using mongoose
+app.get("/serve-favourite-mensas/:userID", async function (req, res) {
+  // Get the users favourite mensas from the database
   try {
     const userID = req.params.userID;
-    const index = req.body;
 
     // Check if user is logged in
     if (
@@ -362,19 +402,52 @@ app.delete("/delete-favourite-menu/:userID", async function (req, res) {
       return;
     }
 
-    // Remove the menu entry at the specified index
-    user.favouriteMenus.splice(index, 1);
+    const favouriteMensas = user.favouriteMensas;
+    // Send the favourite mensas as a JSON response
+    res.status(200).json({ favouriteMensas: favouriteMensas });
+  } catch (error) {
+    console.error(error);
+    res.status(404).json({ error: "Favourite mensas not found" });
+  }
+});
+
+// Route to change favourite mensas for a user in the database
+app.post("/modify-favourite-mensas/:userID", async function (req, res) {
+  try {
+    const userID = req.params.userID;
+    const newFavouriteMensas = req.body;
+
+    // Check if user is logged in
+    if (
+      !req.session ||
+      !req.session.userId ||
+      req.session.userId.toString() !== userID
+    ) {
+      res.status(401).json({ error: "Not logged in" });
+      return;
+    }
+
+    const user = await User.findOne({ id: userID });
+
+    // Check if the user exists
+    if (!user) {
+      res.status(404).json({ error: "User not found" });
+      return;
+    }
+
+    // Add the new favourite mensas to the user's favouriteMensas
+    user.favouriteMensas = newFavouriteMensas;
 
     // Save the updated user object
     await user.save();
 
     res.status(200).json({
       success: true,
-      message: "Favorite menu entry deleted successfully",
+      message: "New favourite mensas added successfully",
     });
   } catch (error) {
     console.error(error);
-    res.status(500).json({ error: "Failed to delete favorite menu entry" });
+    res.status(500).json({ error: "Failed to add new favourite mensas" });
   }
 });
 
@@ -389,5 +462,5 @@ ViteExpress.listen(app, 5173, () => {
   });
 
   // Execute the Python scripts after the server starts, with a delay of 5 seconds
-  setTimeout(runPythonScripts, 5000);
+  // setTimeout(runPythonScripts, 5000);
 });

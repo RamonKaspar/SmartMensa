@@ -10,7 +10,7 @@ const userSchema = new mongoose.Schema(
     email: { type: String, required: true },
     password: { type: String, required: true },
     favouriteMenus: { type: Array, required: true },
-    favouriteMensas: { type: Array, required: true },
+    favouriteMensas: { type: Object, required: true },
     appliedSettings: { type: Object, required: true },
   },
   { timestamps: true }
