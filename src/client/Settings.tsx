@@ -20,9 +20,17 @@ export type appliedSettingsType = {
   hartschalenobst: boolean;
 };
 
-function Settings({ appliedSettings, setAppliedSettings }: any) {
+function Settings({ appliedSettings, setAppliedSettings, showSettings }: any) {
   const [currentUserId, setCurrentUserId] = useState(-1);
-  const [key, setKey] = useState(0); // Add key state
+  const [key, setKey] = useState(0); // dummy state to force re-render
+  const [slideOut, setSlideOut] = useState(0);
+
+  // If showFilter changes from true to false, set slideOut to true
+  useEffect(() => {
+    if (document.getElementsByClassName("hidden-settings").length === 0) {
+      setSlideOut(1);
+    }
+  }, [showSettings]);
 
   useEffect(() => {
     async function fetchUserData() {
@@ -117,159 +125,166 @@ function Settings({ appliedSettings, setAppliedSettings }: any) {
 
   return (
     <>
-      <div className="settings-component">
+      <div
+        className={`settings-component ${
+          showSettings
+            ? "slideIn"
+            : slideOut > 0
+            ? "slideOut"
+            : "hidden-settings"
+        }`}
+      >
         <h2>Settings</h2>
         <h3>Change Price:</h3>
         <div className="price-container">
-          <div
+          <button
             className={`settings-button ${
               appliedSettings.price_class === "students" ? "applied" : ""
             }`}
             onClick={() => setPriceClass("students")}
           >
             Student
-          </div>
-          <div
+          </button>
+          <button
             className={`settings-button ${
               appliedSettings.price_class === "internal" ? "applied" : ""
             }`}
             onClick={() => setPriceClass("internal")}
           >
             Intern
-          </div>
-          <div
+          </button>
+          <button
             className={`settings-button ${
               appliedSettings.price_class === "external" ? "applied" : ""
             }`}
             onClick={() => setPriceClass("external")}
           >
             Extern
-          </div>
+          </button>
         </div>
         <h3>Please select all your allergies:</h3>
         <div className="allergy-info">
-          The menu containing any of the selected allergens will be marked in
-          red!
+          Selected allergens will be highlighted in red in the menu overview.
         </div>
         <div className="allergies-container">
-          <div
+          <button
             className={`settings-button ${
               appliedSettings.gluten ? "applied" : ""
             }`}
             onClick={() => toggleAllergies("gluten")}
           >
             Gluten
-          </div>
-          <div
+          </button>
+          <button
             className={`settings-button ${
               appliedSettings.krebstiere ? "applied" : ""
             }`}
             onClick={() => toggleAllergies("krebstiere")}
           >
             Krebstiere
-          </div>
-          <div
+          </button>
+          <button
             className={`settings-button ${appliedSettings.ei ? "applied" : ""}`}
             onClick={() => toggleAllergies("ei")}
           >
             Ei
-          </div>
-          <div
+          </button>
+          <button
             className={`settings-button ${
               appliedSettings.fisch ? "applied" : ""
             }`}
             onClick={() => toggleAllergies("fisch")}
           >
             Fisch
-          </div>
-          <div
+          </button>
+          <button
             className={`settings-button ${
               appliedSettings.erdnüsse ? "applied" : ""
             }`}
             onClick={() => toggleAllergies("erdnüsse")}
           >
             Erdnüsse
-          </div>
-          <div
+          </button>
+          <button
             className={`settings-button ${
               appliedSettings.soja ? "applied" : ""
             }`}
             onClick={() => toggleAllergies("soja")}
           >
             Soja
-          </div>
-          <div
+          </button>
+          <button
             className={`settings-button ${
               appliedSettings.milch_laktose ? "applied" : ""
             }`}
             onClick={() => toggleAllergies("milch_laktose")}
           >
             Milch / Laktose
-          </div>
-          <div
+          </button>
+          <button
             className={`settings-button ${
               appliedSettings.schalenfrüchte ? "applied" : ""
             }`}
             onClick={() => toggleAllergies("schalenfrüchte")}
           >
             Schalenfrüchte
-          </div>
-          <div
+          </button>
+          <button
             className={`settings-button ${
               appliedSettings.sellerie ? "applied" : ""
             }`}
             onClick={() => toggleAllergies("sellerie")}
           >
             Sellerie
-          </div>
-          <div
+          </button>
+          <button
             className={`settings-button ${
               appliedSettings.senf ? "applied" : ""
             }`}
             onClick={() => toggleAllergies("senf")}
           >
             Senf
-          </div>
-          <div
+          </button>
+          <button
             className={`settings-button ${
               appliedSettings.sesam ? "applied" : ""
             }`}
             onClick={() => toggleAllergies("sesam")}
           >
             Sesam
-          </div>
-          <div
+          </button>
+          <button
             className={`settings-button ${
               appliedSettings.sulfite ? "applied" : ""
             }`}
             onClick={() => toggleAllergies("sulfite")}
           >
             Sulfite
-          </div>
-          <div
+          </button>
+          <button
             className={`settings-button ${
               appliedSettings.lupinen ? "applied" : ""
             }`}
             onClick={() => toggleAllergies("lupinen")}
           >
             Lupinen
-          </div>
-          <div
+          </button>
+          <button
             className={`settings-button ${
               appliedSettings.weichtiere ? "applied" : ""
             }`}
             onClick={() => toggleAllergies("weichtiere")}
           >
             Weichtiere
-          </div>
-          <div
+          </button>
+          <button
             className={`settings-button ${
               appliedSettings.hartschalenobst ? "applied" : ""
             }`}
             onClick={() => toggleAllergies("hartschalenobst")}
           >
             Hartschalenobst (Nüsse)
-          </div>
+          </button>
         </div>
       </div>
     </>
