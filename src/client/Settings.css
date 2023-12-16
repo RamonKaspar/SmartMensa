@@ -1,9 +1,9 @@
 .settings-component {
   position: fixed;
-  top: calc(40px + 200px);
+  top: 1000px; /* Start off-screen */
   width: 100%;
-  padding: 20px;
   height: calc(100dvh - 40px - 200px);
+  padding: 20px;
   background-color: black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   border-radius: 25px;
@@ -13,6 +13,7 @@
   color: white;
   box-sizing: border-box; /* Ensure padding is included in width */
   overflow-y: auto;
+  animation: slideIn 0.5s forwards; /* Animation for sliding in */
 
   & h2 {
     text-align: center;
@@ -34,6 +35,46 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px; /* Adjust space between buttons */
+  }
+
+  & .user-login-logout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+    & .login-button {
+      width: 100%;
+      background: #656363;
+      border-radius: 15px;
+      font-size: 1em;
+      text-align: center;
+      color: #ffffff;
+      border: none;
+      padding: 5px 10px;
+      background-color: var(--green-color);
+    }
+
+    & .logout-button {
+      width: 100%;
+      background: #656363;
+      border-radius: 15px;
+      font-size: 1em;
+      text-align: center;
+      color: #ffffff;
+      border: none;
+      padding: 5px 10px;
+      background-color: var(--red-color);
+    }
+
+    & .login-info {
+      margin-top: 20px;
+    }
+
+    & .logout-info {
+      margin-top: 20px;
+    }
   }
 }
 
@@ -76,7 +117,7 @@
 
 @keyframes slideIn {
   from {
-    top: 100dvh; /* Start off-screen */
+    top: 1000px; /* Start off-screen */
   }
   to {
     top: calc(40px + 200px); /* Slide to this position */
@@ -88,6 +129,6 @@
     top: calc(40px + 200px); /* Start from the visible position */
   }
   to {
-    top: 100dvh; /* Slide off-screen */
+    top: 1000px; /* Slide off-screen */
   }
 }
