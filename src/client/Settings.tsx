@@ -164,7 +164,7 @@ function Settings({ appliedSettings, setAppliedSettings, showSettings }: any) {
         </div>
         <h3>Please select all your allergies:</h3>
         <div className="allergy-info">
-          Selected allergens will be highlighted in red in the menu overview.
+          Selected allergens will be highlighted in red in the menu overview
         </div>
         <div className="allergies-container">
           <button
