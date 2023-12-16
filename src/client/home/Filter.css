@@ -1,18 +1,20 @@
 .filter-component {
   position: fixed;
-  top: calc(40px + 200px);
+  position: fixed;
+  top: 100dvh;
   width: 100%;
-  padding: 20px;
   height: calc(100dvh - 40px - 200px);
+  padding: 20px;
   background-color: black;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 25px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  z-index: 1000; /* Ensure it sits above other elements */
+  z-index: 1000;
   color: white;
-  box-sizing: border-box; /* Ensure padding is included in width */
+  box-sizing: border-box;
   overflow-y: auto;
+  animation: slideIn 0.5s forwards; /* Animation for sliding in */
 
   & h2 {
     text-align: center;
@@ -37,11 +39,43 @@
       font-size: 1em;
       text-align: center;
       color: #ffffff;
+      border: none;
     }
 
     & .applied {
       background: white;
       color: black;
     }
+  }
+}
+
+.slideIn {
+  animation: slideIn 0.5s forwards;
+}
+
+/* Animation for sliding out */
+.slideOut {
+  animation: slideOut 0.5s forwards;
+}
+
+.hidden-filter {
+  display: none;
+}
+
+@keyframes slideIn {
+  from {
+    top: 100dvh; /* Start off-screen */
+  }
+  to {
+    top: calc(40px + 200px); /* Slide to this position */
+  }
+}
+
+@keyframes slideOut {
+  from {
+    top: calc(40px + 200px); /* Start from the visible position */
+  }
+  to {
+    top: 100dvh; /* Slide off-screen */
   }
 }
