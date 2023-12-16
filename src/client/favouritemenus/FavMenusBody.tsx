@@ -182,53 +182,6 @@ function FavMenusBody({ appliedSettings, showSettings, setShowSettings }: any) {
     deleteFavouriteMenu();
   };
 
-  // function copyTextFallback(str: string): void {
-  //   const el = document.createElement("textarea");
-  //   el.value = str;
-  //   el.setAttribute("readonly", "");
-  //   el.style.position = "absolute";
-  //   el.style.left = "-9999px";
-  //   document.body.appendChild(el);
-
-  //   el.select();
-  //   let success = false;
-  //   try {
-  //     success = document.execCommand("copy");
-  //   } catch (err) {
-  //     console.error("Fallback: Copying to clipboard failed", err);
-  //   }
-
-  //   document.body.removeChild(el);
-
-  //   if (success) {
-  //     alert("Meal description copied to clipboard!");
-  //   } else {
-  //     console.error("Fallback: Copying to clipboard failed");
-  //   }
-  // }
-
-  // const handleShareClick = (meal: any) => {
-  //   let str = "Today: " + "\n" + myMensa.name_display + "\n";
-  //   str += transformMensaTitle(meal) + "\n" + meal.meal_description;
-  //   str += "\n" + getPrice(meal, appliedSettings.price_class);
-
-  //   // Check if the Clipboard API is available
-  //   if (navigator.clipboard) {
-  //     navigator.clipboard
-  //       .writeText(str)
-  //       .then(() => {
-  //         alert("Meal description copied to clipboard!");
-  //       })
-  //       .catch(() => {
-  //         // Fallback to the alternative copy function
-  //         copyTextFallback(str);
-  //       });
-  //   } else {
-  //     // Fallback to the alternative copy function
-  //     copyTextFallback(str);
-  //   }
-  // };
-
   return (
     <main
       className={`favourite-body-container ${showSettings ? "blurred" : ""}`}
@@ -242,7 +195,7 @@ function FavMenusBody({ appliedSettings, showSettings, setShowSettings }: any) {
         ></div>
       )}
       <div className="row-one-title">
-        <h2>Edit your favourite menus</h2>
+        <h2>Edit your favourite menus ({favouriteMenus.length})</h2>
       </div>
       <div className="menu-container">
         {/* Create for each menu a component */}
@@ -267,10 +220,6 @@ function FavMenusBody({ appliedSettings, showSettings, setShowSettings }: any) {
                 style={{ fontSize: "2em" }}
                 onClick={() => handleTrashClick(meal)}
               />
-              {/* <FaShareSquare
-                style={{ fontSize: "2em" }}
-                onClick={() => handleShareClick(meal)}
-              /> */}
             </div>
           </div>
         ))}
