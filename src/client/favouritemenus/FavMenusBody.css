@@ -37,6 +37,10 @@
         margin-top: 0;
       }
 
+      &:last-of-type {
+        margin-bottom: 10px;
+      }
+
       & .menu-title-and-price {
         display: flex;
         justify-content: space-between;
