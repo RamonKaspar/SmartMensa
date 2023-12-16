@@ -1,5 +1,6 @@
 import "./Settings.css";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export type appliedSettingsType = {
   price_class: "students" | "external" | "internal";
@@ -20,10 +21,16 @@ export type appliedSettingsType = {
   hartschalenobst: boolean;
 };
 
-function Settings({ appliedSettings, setAppliedSettings, showSettings }: any) {
+function Settings({
+  appliedSettings,
+  setAppliedSettings,
+  showSettings,
+  setShowSettings,
+}: any) {
   const [currentUserId, setCurrentUserId] = useState(-1);
   const [key, setKey] = useState(0); // dummy state to force re-render
   const [slideOut, setSlideOut] = useState(0);
+  const navigate = useNavigate();
 
   // If showFilter changes from true to false, set slideOut to true
   useEffect(() => {
@@ -121,6 +128,21 @@ function Settings({ appliedSettings, setAppliedSettings, showSettings }: any) {
     setTimeout(() => {
       setKey((prevKey) => prevKey + 1);
     }, 100);
+  };
+
+  const handleLogout = () => {
+    // Use /logout route to destroy session
+    fetch("/api/logout", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then(() => {})
+      .catch((error) => console.error("Error:", error));
+
+    setShowSettings(false);
+    navigate("/login");
   };
 
   return (
@@ -286,6 +308,31 @@ function Settings({ appliedSettings, setAppliedSettings, showSettings }: any) {
             Hartschalenobst (Nüsse)
           </button>
         </div>
+        <>
+          <div className="user-login-logout">
+            {currentUserId === -1 ? (
+              <>
+                <h3 className="login-info">Go to the login page</h3>
+                <button
+                  className="login-button"
+                  onClick={() => navigate("/login")}
+                >
+                  Login
+                </button>
+              </>
+            ) : (
+              <>
+                <h3 className="logout-info">Logout from current session</h3>
+                <button
+                  className="logout-button"
+                  onClick={() => handleLogout()}
+                >
+                  Logout
+                </button>
+              </>
+            )}
+          </div>
+        </>
       </div>
     </>
   );
