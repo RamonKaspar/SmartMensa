@@ -13,7 +13,10 @@ header {
   #back-button,
   #settings-button {
     color: var(--background-color-light);
-    cursor: pointer;
+  }
+
+  & #settings-button {
+    padding-top: 2px;
   }
 
   & #app-name {
