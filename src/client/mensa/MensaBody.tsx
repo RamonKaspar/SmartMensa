@@ -408,6 +408,7 @@ function MensaBody({ appliedSettings, showSettings, setShowSettings }: any) {
                 <FaShareSquare
                   style={{ fontSize: "2em" }}
                   onClick={() => handleShareClick(meal)}
+                  className="share-icon"
                 />
               </div>
             </div>

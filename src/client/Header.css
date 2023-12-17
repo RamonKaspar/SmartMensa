@@ -24,3 +24,16 @@ header {
     font-size: 2em;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  header {
+    & #settings-button {
+      cursor: pointer;
+    }
+
+    & #filter-button,
+    #back-button {
+      cursor: pointer;
+    }
+  }
+}

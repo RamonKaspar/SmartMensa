@@ -134,3 +134,63 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .menu-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu-component {
+    width: 90vw;
+
+    & .menu-price {
+      text-wrap: wrap;
+      font-size: 1.17rem !important;
+      padding-top: 0 !important;
+    }
+  }
+
+  .row-one-title {
+    font-size: 25px;
+    align-items: center;
+  }
+
+  .second-row-tags {
+    width: 95vw;
+    height: 30px;
+    padding-bottom: 10px;
+  }
+
+  .location-tag {
+    height: 20px;
+  }
+
+  .open-closed-tag {
+    height: 20px;
+  }
+
+  .footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer-times {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .visit-website {
+    cursor: pointer;
+  }
+
+  .star-icon {
+    cursor: pointer;
+  }
+
+  .share-icon {
+    cursor: pointer;
+  }
+}

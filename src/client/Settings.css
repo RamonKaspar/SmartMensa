@@ -132,3 +132,17 @@
     top: 1000px; /* Slide off-screen */
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .settings-button {
+    cursor: pointer;
+  }
+
+  .login-button {
+    cursor: pointer;
+  }
+
+  .logout-button {
+    cursor: pointer;
+  }
+}

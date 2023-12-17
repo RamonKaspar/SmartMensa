@@ -216,3 +216,114 @@ z-index than the main content but lower than the filter menu */
   min-height: 100dvh;
   z-index: 100; /* Adjust the z-index as needed */
 }
+
+/* Media query for desktop screens */
+@media screen and (min-width: 1024px) {
+  .mensa-buttons-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .mensas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mensa-component {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+  }
+
+  .mensa-title {
+    font-size: 1.5em;
+  }
+
+  .home-body-container h2 {
+    text-align: center;
+  }
+
+  .row-one-title {
+    & h2 {
+      font-size: 1em;
+    }
+  }
+
+  .first-row {
+    justify-content: flex-start;
+    padding: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .second-row {
+    padding: 15px;
+    width: 100%;
+    height: 22px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .mark-as-favorite-mensa {
+    font-size: 30px;
+    display: flex;
+    cursor: pointer;
+  }
+
+  .location-tag {
+    min-width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .open-closed-tag {
+    min-width: 75px;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .goTo {
+    width: 100%;
+  }
+
+  .goTo-icon {
+    font-size: 35px;
+  }
+
+  .edit-favourites-button {
+    cursor: pointer;
+  }
+
+  .left-arrow-icon,
+  .right-arrow-icon {
+    cursor: pointer;
+  }
+
+  .mensa-name {
+    font-size: 1em !important;
+  }
+}
