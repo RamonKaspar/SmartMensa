@@ -590,9 +590,14 @@ function HomeBody({
                           size={30}
                           onClick={scrollLeft}
                           style={{ visibility: "hidden" }}
+                          className="left-arrow-icon"
                         />
                       ) : (
-                        <FaArrowLeftLong size={30} onClick={scrollLeft} />
+                        <FaArrowLeftLong
+                          size={30}
+                          onClick={scrollLeft}
+                          className="left-arrow-icon"
+                        />
                       )}
                       <div className="mini-info">Click to scroll</div>
                       {position === favouriteMenusToday.length - 1 ? (
@@ -600,9 +605,14 @@ function HomeBody({
                           size={30}
                           onClick={scrollLeft}
                           style={{ visibility: "hidden" }}
+                          className="right-arrow-icon"
                         />
                       ) : (
-                        <FaArrowRightLong size={30} onClick={scrollRight} />
+                        <FaArrowRightLong
+                          size={30}
+                          onClick={scrollRight}
+                          className="right-arrow-icon"
+                        />
                       )}
                     </div>
                   )}
