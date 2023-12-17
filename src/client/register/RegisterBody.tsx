@@ -231,9 +231,7 @@ function RegisterBody() {
       )}
 
       <div className="register-settings-container">
-        <div>
-          <h3>Choose your price category:</h3>
-        </div>
+        <h3>Choose your price category:</h3>
         <div className="mini-info">(Can be changed later in settings)</div>
         <div className="register-price-container">
           <button
