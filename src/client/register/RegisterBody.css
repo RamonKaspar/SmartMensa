@@ -58,10 +58,6 @@
       text-align: center;
       border: black;
       font-size: 1em;
-
-      &:last-of-type {
-        margin-bottom: 20px;
-      }
     }
   }
 
@@ -83,6 +79,7 @@
     justify-content: flex-start;
     width: 100%;
     overflow-y: scroll;
+    margin-top: 20px;
 
     /* Hide the default scrollbar */
     scrollbar-width: none; /* Firefox */
