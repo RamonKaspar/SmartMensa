@@ -171,6 +171,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     width: 200px;
+    height: 40px;
   }
 
   /* Styles for disabled button */
@@ -183,5 +184,78 @@
     margin-top: 20px;
     margin-bottom: 20px;
     width: 200px;
+    height: 40px;
+  }
+}
+
+/* Your existing styles... */
+
+/* Media query for desktop screens */
+@media screen and (min-width: 1024px) {
+  .register-body-container {
+    & .email-invalid {
+      font-size: 1em;
+    }
+
+    & .password-requirements {
+      font-size: 1em;
+    }
+
+    & h2 {
+      padding-top: 40px; /* Increase padding */
+      padding-bottom: 40px; /* Increase padding */
+    }
+
+    & .user-input-container {
+      & input {
+        height: 45px;
+        width: 450px;
+        font-size: 1.1em;
+      }
+    }
+
+    & button {
+      height: 45px;
+      width: 200px;
+      font-size: 1.2em; /* Increase font size */
+      cursor: pointer;
+    }
+
+    & .register-settings-container {
+      & h3 {
+        font-size: 1.2em; /* Increase font size */
+      }
+
+      & .mini-info {
+        font-size: 0.8em; /* Increase font size */
+      }
+    }
+
+    /* Adjust other styles within the container for larger screens */
+    .register-button {
+      font-size: 1.1em;
+      width: 350px;
+      cursor: pointer;
+      height: 45px;
+    }
+
+    .register-title {
+      font-size: 2em;
+    }
+
+    .register-button:disabled,
+    .register-button-disabled {
+      font-size: 1.2em;
+      width: 350px;
+      min-height: 45px;
+    }
+
+    & .register-allergies-container {
+      & .register-settings-button {
+        font-size: 1.1em !important;
+        width: 250px !important;
+        height: 45px;
+      }
+    }
   }
 }
