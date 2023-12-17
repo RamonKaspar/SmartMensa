@@ -37,7 +37,7 @@ function App() {
           Irchel: false,
           Höngg: false,
           Currently_Open: false,
-          Favorites: false,
+          Favourite_Mensas: false,
         };
   });
   /* State for handling the applied settings (initialized with default values) */
@@ -120,14 +120,12 @@ function App() {
           path="/favourite-menus"
           element={
             <FavMenus
-              appliedSettings={appliedSettings}
-              setAppliedSettings={setAppliedSettings}
-              appliedFilters={appliedFilters}
-              setAppliedFilters={setAppliedFilters}
               showFilter={showFilter}
               setShowFilter={setShowFilter}
               showSettings={showSettings}
               setShowSettings={setShowSettings}
+              appliedSettings={appliedSettings}
+              setAppliedSettings={setAppliedSettings}
             />
           }
         />

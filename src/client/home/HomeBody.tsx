@@ -436,7 +436,7 @@ function HomeBody({
     : mensaInfos.filter((mensa: any) => {
         // Check if mensa is a favorite if the Favorites filter is applied
         let isFavorite =
-          !appliedFilters.Favorites ||
+          !appliedFilters.Favourite_Mensas ||
           favouriteMensas[mensa.name as keyof favouriteMensasType];
 
         // Check location filters

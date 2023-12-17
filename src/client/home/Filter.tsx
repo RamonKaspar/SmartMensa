@@ -8,7 +8,7 @@ type appliedFiltersType = {
   Höngg: boolean;
   Oerlikon: boolean;
   Currently_Open: boolean;
-  Favorites: boolean;
+  Favourite_Mensas: boolean;
 };
 
 function Filter({ appliedFilters, setAppliedFilters, showFilter }: any) {
@@ -88,9 +88,9 @@ function Filter({ appliedFilters, setAppliedFilters, showFilter }: any) {
           </button>
           <button
             className={`filter-button ${
-              appliedFilters.Favorite ? "applied" : ""
+              appliedFilters.Favourite_Mensas ? "applied" : ""
             }`}
-            onClick={() => toggleFilter("Favorites")}
+            onClick={() => toggleFilter("Favourite_Mensas")}
           >
             Favourite Mensas
           </button>
