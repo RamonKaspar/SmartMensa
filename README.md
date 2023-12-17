@@ -98,6 +98,7 @@ Document here the major milestones of your code and future planned steps.\
   - [x] Implement and style the mensa page #7 !8
   - [x] Refine mensa styling and make it functional #9 !10
   - [x] Hardcode all static mensa information (name, open hours etc.) #13 !15
+  - [x] Add CSS styling for desktop devices #25 !27
 
 - [x] Milestone 2: Make frontend functional (dynamic)
   - [x] Implement backend functionality to get the menus #6 !5
