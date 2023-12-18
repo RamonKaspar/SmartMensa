@@ -163,8 +163,14 @@ function FavMenusBody({ appliedSettings, showSettings, setShowSettings }: any) {
   const handleTrashClick = (meal: any) => {
     const index = favouriteMenus.indexOf(meal);
     const newFavouriteMenus = favouriteMenus.filter(
-      (menu) => menu.meal_description !== meal.meal_description
+      (menu) =>
+        !(
+          menu.meal_description === meal.meal_description &&
+          menu.line_name === meal.line_name &&
+          menu.meal_name === meal.meal_name
+        )
     );
+
     setFavouriteMenus(newFavouriteMenus);
     async function deleteFavouriteMenu() {
       try {

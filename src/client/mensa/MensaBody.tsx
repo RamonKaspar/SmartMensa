@@ -91,10 +91,17 @@ function MensaBody({ appliedSettings, showSettings, setShowSettings }: any) {
   const [dummy, setDummy] = useState(false);
 
   // Function to check if a meal in favouriteMenus matches the meal_description
-  const checkFavouriteMeal = (mealDescription: string): boolean => {
+  const checkFavouriteMeal = (
+    mealDescription: string,
+    lineName: string,
+    meal_name: string
+  ): boolean => {
     // Check if there's any meal in favouriteMenus with the same meal_description
     return favouriteMenus.some(
-      (meal) => meal.meal_description === mealDescription
+      (meal) =>
+        meal.meal_description === mealDescription &&
+        meal.line_name === lineName &&
+        meal.meal_name === meal_name
     );
   };
 
@@ -249,11 +256,14 @@ function MensaBody({ appliedSettings, showSettings, setShowSettings }: any) {
 
     // Check if the meal is already in the favouriteMenus array
     setDummy(!dummy);
-    if (checkFavouriteMeal(meal.meal_description)) {
+    if (checkFavouriteMeal(meal.meal_description, meal.line_name, mealName)) {
       // Remove meal from favouriteMenus
       const index = favouriteMenus.indexOf(meal);
       const newFavouriteMenus = favouriteMenus.filter(
-        (menu) => menu.meal_description !== meal.meal_description
+        (menu) =>
+          menu.meal_description !== meal.meal_description &&
+          menu.line_name !== meal.line_name &&
+          menu.meal_name !== meal.meal_name
       );
       setFavouriteMenus(newFavouriteMenus);
       async function deleteFavouriteMenu() {
@@ -400,7 +410,11 @@ function MensaBody({ appliedSettings, showSettings, setShowSettings }: any) {
                   }}
                   onClick={() => handleStarClick(meal)}
                   className={`star-icon ${
-                    checkFavouriteMeal(meal.meal_description)
+                    checkFavouriteMeal(
+                      meal.meal_description,
+                      meal.line_name,
+                      meal.meal_name ? meal.meal_name : ""
+                    )
                       ? "marked-as-favourite"
                       : ""
                   }`}
