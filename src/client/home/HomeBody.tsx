@@ -44,12 +44,20 @@ function transformMensaTitle(meal: any): string {
 }
 
 function getPrice(meal: any, priceCategory: string): string {
+  if (!meal.price_info) {
+    return "No price information available";
+  }
+
   let amount = meal.price_info[priceCategory];
-  return amount.toLocaleString("en-US", {
-    style: "currency",
-    currency: "CHF", // Change the currency code as needed
-    minimumFractionDigits: 2, // Set the minimum number of digits after the decimal point
-  });
+  if (amount) {
+    return amount.toLocaleString("en-US", {
+      style: "currency",
+      currency: "CHF", // Change the currency code as needed
+      minimumFractionDigits: 2, // Set the minimum number of digits after the decimal point
+    });
+  } else {
+    return "No price information available";
+  }
 }
 
 function displayMatchedAllergens(
