@@ -1,6 +1,7 @@
 import express, { Request, Response } from "express";
 import User from "../models/user";
 import bcrypt from "bcrypt";
+import crypto from "crypto";
 
 const router = express.Router();
 
@@ -26,10 +27,22 @@ router.post("/register", async (req: Request, res: Response) => {
     const userCount = await countUsers();
     const newID = userCount + 1;
 
+    const pepper = "process.env["PEPPER"] as string";
+
+    // Function to generate HMAC-SHA256 hash
+    function generateHMAC(password: string, pepper: string) {
+      const hmac = crypto.createHmac("sha256", pepper);
+      hmac.update(password);
+      return hmac.digest("base64");
+    }
+
+    // Modify password hashing (add pepper)
+    const passwordHMAC = generateHMAC(password, pepper);
+
     // Hash the password
     const saltRounds = 10;
     const passwordHash = await bcrypt
-      .hash(password, saltRounds)
+      .hash(passwordHMAC, saltRounds)
       .then((hash) => {
         return hash;
       })
@@ -105,7 +118,22 @@ router.post("/authenticate", async (req, res) => {
       return res.status(401).json({ message: "Wrong username or password" });
     }
 
-    const passwordMatch = await bcrypt.compare(password, existingUser.password);
+    const pepper = "process.env["PEPPER"] as string";
+
+    // Function to generate HMAC-SHA256 hash
+    function generateHMAC(password: string, pepper: string) {
+      const hmac = crypto.createHmac("sha256", pepper);
+      hmac.update(password);
+      return hmac.digest("base64");
+    }
+
+    // Modify password hashing (add pepper)
+    const passwordHMAC = generateHMAC(password, pepper);
+
+    const passwordMatch = await bcrypt.compare(
+      passwordHMAC,
+      existingUser.password
+    );
 
     if (passwordMatch) {
       req.session.userId = existingUser.id;
