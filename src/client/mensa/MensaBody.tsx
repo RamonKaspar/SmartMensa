@@ -94,14 +94,14 @@ function MensaBody({ appliedSettings, showSettings, setShowSettings }: any) {
   const checkFavouriteMeal = (
     mealDescription: string,
     lineName: string,
-    meal_name: string
+    mealName: string
   ): boolean => {
     // Check if there's any meal in favouriteMenus with the same meal_description
     return favouriteMenus.some(
       (meal) =>
         meal.meal_description === mealDescription &&
         meal.line_name === lineName &&
-        meal.meal_name === meal_name
+        meal.meal_name === mealName
     );
   };
 
@@ -258,13 +258,23 @@ function MensaBody({ appliedSettings, showSettings, setShowSettings }: any) {
     setDummy(!dummy);
     if (checkFavouriteMeal(meal.meal_description, meal.line_name, mealName)) {
       // Remove meal from favouriteMenus
-      const index = favouriteMenus.indexOf(meal);
+      const index = favouriteMenus.findIndex((menu) => {
+        return (
+          menu.facility_id === newFavouriteMenu.facility_id &&
+          menu.line_name === newFavouriteMenu.line_name &&
+          menu.meal_name === newFavouriteMenu.meal_name
+        );
+      });
+
       const newFavouriteMenus = favouriteMenus.filter(
         (menu) =>
-          menu.meal_description !== meal.meal_description &&
-          menu.line_name !== meal.line_name &&
-          menu.meal_name !== meal.meal_name
+          !(
+            menu.meal_description === meal.meal_description &&
+            menu.line_name === meal.line_name &&
+            menu.meal_name === meal.meal_name
+          )
       );
+
       setFavouriteMenus(newFavouriteMenus);
       async function deleteFavouriteMenu() {
         try {
