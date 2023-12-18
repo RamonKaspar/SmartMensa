@@ -269,7 +269,7 @@ app.post("/add-favorite-menu/:userID", async function (req, res) {
 app.delete("/delete-favourite-menu/:userID", async function (req, res) {
   try {
     const userID = req.params.userID;
-    const index = req.body;
+    const index = req.body.index;
 
     // Check if user is logged in
     if (
