@@ -326,4 +326,82 @@ z-index than the main content but lower than the filter menu */
   .mensa-name {
     font-size: 1em !important;
   }
+
+  .todays-favourite-menus-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .menu-container {
+      max-width: calc(60dvw - 10px);
+
+      & .menu-component {
+        min-width: calc(60dvw - 52px);
+        max-width: calc(60dvw - 52px);
+        padding: 15px;
+        background: var(
+          --greenish-color-background
+        ); /* Light grey background, change as needed */
+        border-radius: 25px; /* Rounded corners */
+        border: 1px solid black; /* Slight black border */
+        margin-bottom: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Simple box shadow for depth */
+        max-height: 300px;
+
+        &:last-of-type {
+          margin-right: 10px;
+        }
+
+        &:first-of-type {
+          margin-left: 5px;
+        }
+
+        & .mensa-name {
+          font-size: 0.8em;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+
+        & .menu-title-and-price {
+          display: flex;
+          justify-content: space-between;
+          margin: 0; /* Reset margin */
+          padding: 0; /* Reset padding */
+          max-width: calc(100dvw - 20px - 20px);
+
+          & .menu-title {
+            padding-right: 20px;
+          }
+
+          & .menu-price {
+            text-wrap: wrap;
+            font-size: 0.8em;
+            padding-top: 4px;
+          }
+        }
+
+        & .ingredients-component {
+          margin-top: 10px;
+          font-size: large;
+        }
+
+        & .allergens-component {
+          margin-top: 10px;
+        }
+
+        & .matched-allergens-component {
+          margin-top: 10px;
+          color: red;
+          font-weight: bold;
+          padding-bottom: 20px;
+        }
+      }
+    }
+
+    & .banner-no-menus-available {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
