@@ -27,7 +27,7 @@ router.post("/register", async (req: Request, res: Response) => {
     const userCount = await countUsers();
     const newID = userCount + 1;
 
-    const pepper = "process.env["PEPPER"] as string";
+    const pepper = process.env["PEPPER"] as string;
 
     // Function to generate HMAC-SHA256 hash
     function generateHMAC(password: string, pepper: string) {
@@ -118,7 +118,7 @@ router.post("/authenticate", async (req, res) => {
       return res.status(401).json({ message: "Wrong username or password" });
     }
 
-    const pepper = "process.env["PEPPER"] as string";
+    const pepper = process.env["PEPPER"] as string;
 
     // Function to generate HMAC-SHA256 hash
     function generateHMAC(password: string, pepper: string) {
