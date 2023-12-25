@@ -1,6 +1,4 @@
-# Project Title
-
-[[_TOC_]]
+# SmartMensa
 
 ## Team Members
 1. Lukas Mast
@@ -42,54 +40,6 @@ Here we present the key features of our app:
 - *Opening Hours*: Display whether a mensa is open and when the dining times are.
 - *Sharing*: Feature to copy a menu in a nicely formatted way to send it to friends to suggest a menu.
 
-
-## Requirements
-Write here all intructions to build the environment and run your code.\
-**NOTE:** If we cannot run your code following these requirements we will not be able to evaluate it.
-
-
-## How to Run
-Write here **DETAILED** intructions on how to run your code.\
-**NOTE:** If we cannot run your code following these instructions we will not be able to evaluate it.
-
-As an example here are the instructions to run the Dummy Project:
-To run the Dummy project you have to:
-- clone the repository;
-- open a terminal instance and using the command ```cd``` move to the folder where the project has been downloaded;
-- then run:
-
-
-### Local Development
-
-Only change files inside the `src` directory.
-
-**Client side**
-
-All client side files are located in the `src/client` directory.
-
-**Server side**
-
-All server side files are located in the `src/server` directory.
-
-### Local Testing
-
-**run container for local testing**
-
-```bash
-docker build -t my-webapp .
-
-docker run -it --rm -p 5173:5173 my-webapp
-```
-Open a browser and connect to http://localhost:5173
-
-**run bash in interactive container**
-```bash
-docker build -t my-webapp src/.
-
-docker run -it --rm -p 5173:5173 my-webapp bash
-```
-
-
 ## Milestones
 Document here the major milestones of your code and future planned steps.\
 - [x] Milestone 1: Create non-functional frontend
@@ -123,8 +73,6 @@ Document here the major milestones of your code and future planned steps.\
 
 
 ## Weekly Summary 
-Write here a short summary with weekly progress, including challanges and open questions.\
-We will use this to understand what your struggles and where did the weekly effort go to.
 
 **Week 1:**\
 In the first week, we focused on getting the menus with help of webscraping and built the basic frontend for our app. We noticed that for the mensa card component, the footer is too large, so will change that in the next week and we will also create a json file, in which we will sotore the hardcoded mensa information like opening times and location for the footer. Additionally, we will try to incorporate the login functionality into our app.
