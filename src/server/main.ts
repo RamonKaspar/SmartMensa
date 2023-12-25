@@ -10,6 +10,8 @@ import mongoose from "mongoose";
 import User from "./models/user";
 import crypto from "crypto";
 const uuid = require("uuid").v4;
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
 
@@ -182,8 +184,8 @@ app.get("/menus/:facilityID", async function (req, res) {
 });
 
 // Connect to MongoDB database
-const dbURI =
-  "***REMOVED_DB_URL***";
+const dbURI = `mongodb+srv://${process.env["DB_USERNAME"]}:${process.env["DB_PASSWORD"]}@web-engineering.5qgqtnq.mongodb.net/${process.env["DB_NAME"]}?retryWrites=true&w=majority`;
+
 mongoose
   .connect(dbURI)
   .then(() => {
