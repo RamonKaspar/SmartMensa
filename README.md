@@ -101,34 +101,34 @@ Tags:
 
 ## Screenshots of deployed website
 
-<table>
+<table style="width: 100%; border-collapse: collapse;">
   <tr>
-    <td align="center">
+    <td align="center" style="vertical-align: top;">
       <h3>Overview Page</h3>
       <img src="images/overview-page.png" alt="Overview Page" style="width: 100%;">
     </td>
-    <td align="center">
+    <td align="center" style="vertical-align: top;">
       <h3>Mensa Page</h3>
       <img src="images/mensa-page.png" alt="Mensa Page" style="width: 100%;">
     </td>
   </tr>
   <tr>
-    <td align="center">
+    <td align="center" style="vertical-align: top;">
       <h3>Settings Page</h3>
       <img src="images/settings-page.png" alt="Settings Page" style="width: 100%;">
     </td>
-    <td align="center">
+    <td align="center" style="vertical-align: top;">
       <h3>Filter Page</h3>
       <img src="images/filter-page.png" alt="Filter Page" style="width: 100%;">
     </td>
   </tr>
   <tr>
-    <td align="center">
+    <td align="center" style="vertical-align: top;">
       <h3>Login Page</h3>
       <img src="images/login-page.png" alt="Login Page" style="width: 100%;">
     </td>
-    <td align="center">
-      <h3>Registration Page</h3>
+    <td align="center" style="vertical-align: top;">
+      <h3>Register Page</h3>
       <img src="images/register-page.png" alt="Register Page" style="width: 100%;">
     </td>
   </tr>
